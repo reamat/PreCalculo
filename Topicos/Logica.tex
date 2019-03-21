@@ -1,0 +1,638 @@
+\chapter{Lógica}
+
+De acordo com (www.dicio.com.br); uma sentença é uma construção sintática com sentido completo, composta por uma ou mais palavras; frase. E de acordo com (michaelis.uol.com.br) uma sentença é uma frase, uma oração ou qualquer declaração sem levar em conta sua falsidade ou veracidade; proposição.
+
+No Português, as sentenças são classificadas de diversas formas. Exemplo:
+\begin{itemize}
+ \item Interrogativas: "Vai chover hoje?"
+ \item Imperativas: "Leve guarda-chuva!"
+ \item Declarativas: "Eu estou estudando matemática."
+\end{itemize}
+
+As sentenças que são objetos de estudo na \emph{lógica proposicional} ou \emph{lógica sentencial} são as sentenças declarativas, que podem ser classificadas como verdadeiras ou falsas, mas não como verdadeira e falsa simultâneamente. Como por exemplo:
+
+\begin{enumerate}
+ \item A lógica é uma ramo do conhecimento.
+ \item A UDESC é uma Universidade Estadual.
+ \item A matemática é uma ciência.
+ \item Os gatos não são animais.
+\end{enumerate}
+
+
+Chamamos estas sentenças de \textbf{proposição}. 
+
+As proposições são ditas \emph{simples} quando não possuem nenhum dos conectivos lógicos: ``não", ``e", "ou", ``se $\cdots$ então", ``se e somente se". Por exemplo:
+\begin{center}
+Santa Catarina é um estado.
+\end{center}
+Elas são consideradas as unidades básicas do discurso. A partir da combinação destas por intermédio dos conectivos lógicos: ``não", ``e", ``ou", ``se $\cdots$ então", ``se e somente se", constroem-se sentenças mais complexas chamadas de \emph{proposições compostas}. Por exemplo:
+\begin{center}
+A UFSC é uma Universidade Federal e gratuita.
+\end{center}
+
+ No contexto da Lógica as proposições serão denotadas por $P, Q, R, S, P_1, Q_1, R_1, S_1, \cdots$, assim por vezes ao invés de escrever a proposição iremos nos referir a ela através de um destes símbolos. Principalmente quando estivermos verificando o valor verdade de proposições compostas, afinal como veremos a seguir, nesta situação estaremos preocupados com o conectivo lógico e com os valores verdade de cada uma das proposições simples que a compõem.
+ 
+ Antes de nos preocuparmos com os valores verdade das proposições compostas, vamos entender melhor estas proposições.
+ 
+ A primeira coisa que precisamos saber é que as proposições compostas recebem nomes específicos de acordo com o tipo de conectivo lógico que possuem. Desta forma dadas as proposições $P, Q, R$ diremos que:
+ 
+ \begin{itemize}
+  \item $P$ é uma \textbf{negação} se $P$ for da forma ``não vale $Q$''.
+  \item $P$ é uma \textbf{conjunção} se $P$ for da forma ``$Q$ e $R$''.
+  \item $P$ é uma \textbf{disjunção} se $P$ for da forma ``$Q$ ou $R$''.
+  \item $P$ é uma \textbf{implicação} se $P$ for da forma ``Se $Q$ então $R$''.
+  \item $P$ é uma \textbf{bi-implicação} se $P$ for da forma ``$Q$ se e somente se $R$''.
+ \end{itemize}
+
+ Vejamos alguns exemplos de cada um destes tipos de proposição composta, para entender como a partir de proposições simples podemos chegar em uma proposição composta, e como a partir de uma proposição composta identificamos quais são as proposições simples que a compõem.
+ 
+ \begin{itemize}
+  \item \textbf{Negação:} Neste exemplos consideremos como dada a proposição $Q$, e vejamos como fica sua negação.
+ 
+  \begin{exem} \label{(Neg. 1)}
+    $Q:$ A Copa do Mundo FIFA de 2014 foi realizada no Brasil. (V) \\
+    $\sim Q= P:$ A Copa do Mundo FIFA de 2014 não foi realizada no Brasil. (F)
+  \end{exem}
+ 
+ \begin{exem} \label{(Neg. 2)}
+   $Q:$ O gato não pertence a família dos felinos. (F)\\
+   $\sim Q= P:$ O gato pertence a família dos felinos. (V)
+ \end{exem}
+ 
+ \begin{exem} \label{(Neg. 3)}
+   $Q:$ O escorpião é um inseto. (F)\\
+   $\sim Q= P:$ O escorpião não é um inseto. (V)
+ \end{exem}
+ 
+ 
+ \item \textbf{Conjunção}
+ 
+ 
+  \begin{exem} \label{(E 1)}
+ Considere a seguinte proposição composta $P$. 
+ 
+ $P:$ O termo coruja é a designação comum das aves estrigiformes, das famílias dos titonídeos e estrigídeos. (V)
+ 
+ Note que a proposição $P$ é a conjunção das seguintes proposições simples:\\
+ $Q:$ O termo coruja é a designação comum das aves estrigiformes, da família dos titonídeos. \\
+ $R:$ O termo coruja é a designação comum das aves estrigiformes, da família dos estrigídeos.
+ \end{exem}
+
+ \begin{exem} \label{(E 2)}
+ Façamos agora o processo inverso, dadas as proposições simples $Q$ e $R$:
+ 
+ $Q:$ O gato angorá é uma raça de gato doméstico. (V)\\
+ $R:$ O gato angorá surgiu na região de Ancara, na Turquia. (V)
+ 
+ Obtemos a seguinte proposição composta:\\
+ $P= (Q$ e $R):$ O gato angorá é uma raça de gato doméstico que surgiu na região de Ancara, na Turquia.
+ 
+ Apesar da conjunção $e$ não aparecer explícitamente na proposição $P$, temos que $P= (Q$ e $R)$.
+ \end{exem}
+ 
+ \begin{exem} \label{(E 3)}
+ Dadas as proposições simples $Q$ e $R$:
+ 
+ $Q:$  Charles Darwin estudou a evolução das espécies.(V)\\
+ $R:$  O reality show Big Brother Brasil teve sua primeira edição no ano 2000. (F)
+ 
+ Obtemos a seguinte proposição composta:\\
+ $P= (Q$ e $R):$ Charles Darwin estudou a evolução das espécies e o reality show Big Brother Brasil teve sua primeira edição no ano 2000.
+ \end{exem}
+ 
+ \begin{exem} \label{(E 4)}
+ Dadas as proposições simples $Q$ e $R$:
+ 
+ $Q:$  O reality show A Fazenda é um show de talentos de culinária brasileiro. (F)\\
+ $R:$  O reality show MasterChef Brasil mostra os participantes em uma fazenda lidando com tarefas típicas do meio rural.(F)
+ 
+ Obtemos a seguinte proposição composta:\\
+ $P= (Q$ e $R):$ O reality show A Fazenda é um show de talentos de culinária brasileiro e o reality show MasterChef Brasil mostra os participantes em uma fazenda lidando com tarefas típicas do meio rural.
+ \end{exem}
+ 
+ 
+ \item \textbf{Disjunção}
+ 
+  \begin{exem} \label{(Ou 1)}
+ Considere a seguinte proposição:
+ 
+ $P:$ A ansiedade pode causar sintomas físicos, como ritmo cardíaco acelerado ou tremores. (V)
+ 
+ Observe que $P$ é a disjunção das seguintes proposições $Q$ e $R$.
+ 
+ $Q:$ A ansiedade pode causar sintomas físicos, como ritmo cardíaco acelerado. \\
+ $R:$ A ansiedade pode causar sintomas físicos, como tremores. 
+ \end{exem}
+
+ \begin{exem} \label{(Ou 2)}
+ Dadas as seguintes proposições simples $Q$ e $R$: 
+ 
+ $Q:$ O Império Inca foi um Estado criado pela civilização inca. (V) \\
+ $R:$ Roma Antiga foi uma civilização que se desenvolveu a partir da cidade-estado de Roma. (V)
+ 
+ Podemos obter a seguinte proposição composta $P$:
+ 
+ $P= (Q$ ou $R):$ O Império Inca foi um Estado criado pela civilização inca, ou, Roma Antiga foi uma civilização que se desenvolveu a partir da cidade-estado de Roma.
+ \end{exem}
+  
+ \begin{exem} \label{(Ou 3)}
+ Analogamente, dadas as seguintes proposições simples $Q$ e $R$: 
+ 
+ $Q:$ O Aquecimento global é o processo de aumento da temperatura média dos oceanos e da atmosfera da Terra. (V) \\
+ $R:$ A massa e o peso são a mesma unidade de medida. (F)
+ 
+ Podemos obter a seguinte proposição composta $P$:
+ 
+ $P= (Q$ ou $R):$ O Aquecimento global é o processo de aumento da temperatura média dos oceanos e da atmosfera da Terra, ou, a massa e o peso são a mesma unidade de medida.  
+ \end{exem}
+ 
+ 
+ \item \textbf{Implicação}
+ 
+ Vamos agora a exemplos nos quais dadas as proposições simples $Q$ e $R$ construímos a proposição composta $P$ dada por: Se $Q$ então $R$.
+ 
+  \begin{exem} \label{(Se 1)}
+ $Q:$ Estou no planeta Terra. (V) \\
+ $R:$ Estou sofrendo uma ação da força gravitacional de $9,8 m/s^2$.(V) \\
+ $P=$ Se $Q$ então $R$: Se estou no planeta Terra então estou sofrendo uma ação da força gravitacional de $9,8 m/s^2$.
+ 
+ Neste caso a implicação recebe também o nome de \textbf{condicional}, pois a proposição $Q$ é uma condição para que a proposição $R$ ocorra.\end{exem}
+
+ \begin{exem} \label{(Se 2)}
+ $Q:$ O Hidrogênio é um elemento químico de símbolo H. (V) \\
+ $R:$ A Oceânia é um país. (F) \\
+ $P=$ Se $Q$ então $R$: Se o Hidrogênio é um elemento químico de símbolo H então a Oceânia é um país.
+ \end{exem}
+
+ \begin{exem} \label{(Se 3)}
+ $Q:$ Os anéis de Saturno são um sistema de anéis que circunda o planeta Terra. (F) \\
+ $R:$ Isaac Newton foi um cientista inglês, considerado o pai da Mecânica Clássica. (V) \\
+ $P=$ Se $Q$ então $R$: Se os anéis de Saturno são um sistema de anéis que circunda o planeta Terra então Isaac Newton foi um cientista inglês, considerado o pai da Mecânica Clássica.
+ \end{exem}
+ 
+ \begin{exem} \label{(Se 4)}
+ $Q:$ A atmosfera terrestre é uma camada de rochas que envolve a Terra. (F) \\
+ $R:$ Stephen William Hawking é um biólogo. (F) \\
+ $P=$ Se $Q$ então $R$: Se a atmosfera terrestre é uma camada de rochas que envolve a Terra então Stephen William Hawking é um biólogo. 
+ \end{exem}
+ 
+ 
+ Observe que para se ter uma proposição composta do tipo implicação não é obrigatório que as proposições simples que a compõem tenham relação, quando isso ocorre a implicação recebe o nome de condicional.
+ 
+ \item \textbf{Bi-implicação}
+ 
+ Dadas as proposições simples $Q$ e $R$ abaixo, podemos construir a proposição composta $P=$ $Q$ e somente se $R$.
+ 
+  \begin{exem} \label{(Def 1)}
+  $Q:$ Uma mulher experimenta amor romântico ou atração sexual por outra mulher.\\
+ $R:$ A mulher é lésbica. \\
+ $P=$ $Q$ e somente se $R$: Uma mulher experimenta amor romântico ou atração sexual por outra mulher e somente se ela é lésbica.
+ \end{exem}
+ 
+ \begin{exem} \label{(Def 2)}
+ $Q:$ O sistema operacional utiliza o núcleo Linux. \\
+ $R:$ O sistema operacional é Linux. \\
+ $P=$ $Q$ e somente se $R$: Se o sistema operacional utiliza o núcleo Linux e somente se ele é Linux.
+ \end{exem}
+ 
+ Note que nestes dois exemplos, a bi-implicação é utilizada para expressar os significados dos termos lésbica e Linux, respectivamente. Porém podemos construir uma bi-implicação e analisar seu valor verdade sem que as proposições simples que a compõem tenham relação. Vejamos uns exemplos de bi-implicações nas quais as proposições simples não possuem relação.
+ 
+ 
+ \begin{exem} \label{(Sse 1)}
+ Consideremos as seguintes proposições $Q$ e $R$:\\
+ $Q:$ A beringela é uma fruta. (V) \\
+ $R:$ Barroco é um estilo artístico que floresceu inicialmente na Itália. (V)
+ 
+ A partir destas proposições obtemos:\\
+ $P=$ $Q$ e somente se $R$: A beringela é uma fruta se e somente se o Barroco é um estilo artístico que floresceu inicialmente na Itália.
+ \end{exem}
+
+ \begin{exem} \label{(Sse 2)}
+ Consideremos as seguintes proposições $Q$ e $R$:\\
+ $Q:$ A meiose é o tipo de divisão celular que leva à redução do número de cromossomos para metade. (V) \\
+ $R:$ Macapá é a capital do Acre. (F)
+ 
+ A partir destas proposições obtemos:\\
+ $P=$ $Q$ e somente se $R$:  A meiose é o tipo de divisão celular que leva à redução do número de cromossomos para metade se e somente se Macapá é a capital do Acre.
+ \end{exem}  
+ 
+ \begin{exem} \label{(Sse 3)}
+ Consideremos as seguintes proposições $Q$ e $R$:\\
+ $Q:$ A Primeira Guerra Mundial começou em 1913.  (F) \\
+ $R:$ A Segunda Guerra Mundial começou em 1940. (F)
+ 
+ A partir destas proposições obtemos:\\
+ $P=$ $Q$ e somente se $R$:  A Primeira Guerra Mundial começou em 1913 se e somente se a Segunda Guerra Mundial começou em 1940. 
+ \end{exem}  
+ 
+ \end{itemize}
+
+ Quando vamos estudar o valor verdade de proposições compostas precisamos lembrar que devemos nos preocupar apenas com os valores verdade das proposições simples que as compõem, por isso representamos as proposições simples por letras e os conectivos lógicos pelos seguintes sinais:
+
+ \begin{table}[H]
+  \centering
+ \begin{tabular}{|c|c|} \hline
+ \rowcolor{verde}
+ \textbf{Conectivos Lógicos} & \textbf{Símbolos} \\ \hline
+ não $\cdots$ & $\sim$ ou $\neg$ \\ \hline
+ $\cdots$ e $\cdots$ &  $\land$ \\ \hline
+ $\cdots$ ou $\cdots$ &  $\lor$ \text{ ou } $\veebar$ \\ \hline
+ se $\cdots$ então $\cdots$ &  $\rightarrow$ \\ \hline
+ $\cdots$ se e somente se $\cdots$ & $\leftrightarrow$ \\ \hline
+ \end{tabular}
+ \caption{Conectivos lógicos - Símbolos}
+\end{table}
+
+
+ Assim, dadas as proposições $Q$ e $R$, podemos representar simbólicamente a proposição $P$ composta por $Q$ e $R$ de acordo com a tabela abaixo: 
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|} \hline
+ \rowcolor{verde}
+ \textbf{Proposições compostas} & \textbf{Símbolos} \\ \hline
+ $P:$ a negação de $Q$ & $\sim Q$ \\ \hline
+ $P:$ a conjunção de $Q$ e $R$ &  $Q \land R$ \\ \hline
+ $P:$ a disjunção inclusiva de $Q$ e $R$ &  $Q \lor R$ \\ \hline
+ $P:$ a disjunção exclusiva de $Q$ e $R$ &  $Q \veebar R$ \\ \hline
+ $P:$ se $Q$ então $R$ &  $Q \rightarrow R$ \\ \hline
+ $P:$ $Q$ se e somente se $R$ & $Q \leftrightarrow R$ \\ \hline
+ \end{tabular}
+ \caption{Proposições compostas - Símbolos}
+\end{table}
+
+Como as proposições compostas podem possuir mais de um conectivo lógico, assim como as expressões matemáticas podem possuir mais de uma operação, é aqui também necessário definir um ordem de precedência dos conectivos proposicionais. Esta ordem de precedência é a seguinte:
+\begin{itemize}
+ \item Maior precedência: $\sim$ ou $\neg$;
+ \item Precedência intermediária: $ \rightarrow $ ou $ \leftrightarrow $;
+ \item Menor precedência: $\land$, $\lor$ ou $\veebar$.
+\end{itemize}
+
+ Estamos agora aptos a começar o estudo do valor verdade de uma proposição composta $P$. Como já comentado o valor verdade de uma proposição composta independe do conteúdo de suas proposições, tendo como base somente os valores verdade de cada uma das proposições simples que a compõem e o conectivo lógico que as relaciona. De posse destas informações a ferramenta que nos permite decidir se $P$ é verdadeira ou falsa é a tabela verdade de seu conectivo lógico. Na próxima seção apresentamos as tabelas verdade de cada uma das proposições e como utiliza-lás.
+
+\section{Tabelas verdade básicas}
+
+ Dadas duas proposições quaisquer $Q$ e $R$ e um dos conectivos lógicos $\{\neg, \land, \lor, \veebar, \rightarrow, \leftrightarrow \}$, a tabela verdade deste conectivo, é a ferramenta que nos diz quais são todos os possíveis valores verdades da proposição composta por $Q$ e $R$ através deste conectivo, considerando todas as possíveis combinações de valores verdade destas proposições.
+ 
+ Vamos começar estudando a Negação.
+ 
+ A tabela abaixo representa os possíveis valores verdade de $P$ e de sua negação ($\neg P$). Através dela concluímos também a \textbf{Lei da dupla negação}: 
+ 
+  \[\destaque{P \leftrightarrow \neg(\neg P)}\]
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $\neg P$ & $\neg (\neg P)$ & $ P \leftrightarrow \neg (\neg P)$\\ \hline
+ V & F & V & V \\ \hline
+ F & V & F & V \\ \hline
+ \end{tabular}
+ \caption{Negação}
+\end{table}
+
+ Já vimos alguns exemplos simples de negação, e seus valores verdade. Vamos agora à um exemplo mais elaborado do uso da negação, no qual utilizaremos o fato da dupla negação $\neg(\neg P)$ ser equivalente a afirmação $P$. 
+
+ \begin{exem}
+ $Q:$ A cannabis não é ilegal no Brasil.\\
+ $\sim Q:$ A cannabis não é legalizada no Brasil.
+ 
+ Lembremos aqui que:\\
+   \[\text{ilegal= não é legalizada}\] 
+ logo, 
+   \[\text{não é ilegal= não, não é legalizada}\]
+ como $P \leftrightarrow \neg(\neg P)$ sendo, $P:$ é legalizada, obtemos que: 
+   \[\text{não é ilegal= não, não é legalizada= é legalizada.}\] 
+ Portanto, 
+    \[\sim P:\text{não é legalizada.}\]
+    
+    \fim
+ \end{exem}
+
+
+ Tabela verdade da conjunção de $Q$ com $R$ ($(Q \land R)= (Q \text{ e } R)$):
+  
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+ $Q$ & $R$ & $Q \land R$ \\ \hline
+ V & V & V  \\ \hline
+ V & F & F  \\ \hline
+ F & V & F  \\ \hline
+ F & F & F \\ \hline
+ \end{tabular}
+ \caption{Conjunção - e}
+\end{table}
+
+\begin{exem}
+ Voltamos para o exemplo \ref{(E 1)}, neste exemplo a proposição $P$ é uma proposição composta com conectivo lógico $e$, e sabemos que $P$ é verdadeira, então pela 1ª linha da tabela verdade acima percebemos que a única forma desta proposição composta ser verdade é que cada uma de suas proposições simples sejam verdadeiras, portanto as proposições $Q$ e $R$ são verdadeiras.
+ 
+ No exemplo \ref{(E 2)} temos que as proposições $Q$ e $R$ são verdadeiras, portanto também pela 1ª linha da tabela da conjunção concluímos que a proposição composta $P= Q \land R$ é verdadeira.
+ 
+ Já nos exemplos \ref{(E 3)} e \ref{(E 4)} ao menos uma das proposições $Q$, $R$ são falsas, portanto da tabela acima concluímos que a proposição $P$ é falsa.
+\end{exem}
+
+ 
+ Tabela verdade da disjunção inclusiva de $P$ com $Q$ ($(P \lor Q)= (P \text{ ou } Q)$): 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $P \lor Q$ \\ \hline
+ V & V & V \\ \hline
+ V & F & V \\ \hline
+ F & V & V \\ \hline
+ F & F & F \\ \hline
+ \end{tabular}
+ \caption{Disjunção inclusiva - ou}
+\end{table}
+
+ \begin{exem}
+  Voltemos aos exemplos \ref{(Ou 1)} , \ref{(Ou 2)} , \ref{(Ou 3)} .
+  
+  No exemplo \ref{(Ou 1)} é dada um proposição composta $P$ verdadeira, então pela tabela verdade acima, temos três possibilidades:
+  \begin{itemize}
+   \item $Q$: V e $R$: V
+   \item $Q$: V e $R$: F
+   \item $Q$: F e $R$: V
+  \end{itemize}
+  logo, na podemos afirmar sobre os valores verdade de $Q$ e $R$.
+  
+  No exemplo \ref{(Ou 2)}, como $Q$ e $R$ são verdadeiras, pela 1ª linha da tabela concluímos que $P$ é verdadeira. E no exemplo \ref{(Ou 3)} como somente $R$ é falsa, pela 2ª linha da tabela temos que $P$ é verdadeira. 
+
+ \end{exem}
+ 
+ Tabela verdade da disjunção exclusiva de $P$ com $Q$ ($(P \veebar Q)= (P \text{ ou } Q)$): 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $P \veebar Q$ \\ \hline
+ V & V & F \\ \hline
+ V & F & V \\ \hline
+ F & V & V \\ \hline
+ F & F & F \\ \hline
+ \end{tabular}
+ \caption{Disjunção exclusiva - ou}
+\end{table}
+
+ 
+ Tabela verdade da implicação de $P$ em $Q$ ($P \rightarrow Q $): 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $P \rightarrow Q$ \\ \hline
+ V & V & V \\ \hline
+ V & F & F \\ \hline
+ F & V & V \\ \hline
+ F & F & V \\ \hline
+ \end{tabular}
+ \caption{Implicação - $(\rightarrow$)}
+\end{table}
+ 
+ \begin{exem}
+  Vamos agora analisar aos exemplos \ref{(Se 1)} , \ref{(Se 2)} , \ref{(Se 3)} , \ref{(Se 4)}.
+  
+  De posse da tabela verdade da implicação concluímos que dos exemplos citados acima o único que gerou uma proposição composta $P$ cujo valor verdade é falso é o exemplo \ref{(Se 2)}. Já nos exemplos \ref{(Se 1)} , \ref{(Se 3)} e \ref{(Se 4)} os valores verdade de suas proposições simples estão presentes, respectivamente, nas linhas 1, 3 e 4 da tabela verdade, o que nos leva a concluir que a proposição composta $P$ é verdadeira nestes casos.
+  
+  \end{exem}
+ 
+  Tabela verdade da bi-implicação de $P$ com $Q$ ($P \leftrightarrow Q $): 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $P \leftrightarrow Q$ \\ \hline
+ V & V & V \\ \hline
+ V & F & F \\ \hline
+ F & V & F \\ \hline
+ F & F & V \\ \hline
+ \end{tabular}
+ \caption{Bi - implicação - ($\leftrightarrow$)}
+\end{table}
+
+ \begin{exem}
+  Para compreender o uso da tabela verdade da Bi-implicação, voltemos aos exemplos \ref{(Sse 1)} , \ref{(Sse 2)} , \ref{(Sse 3)} .
+  
+  O exemplo \ref{(Sse 1)}, possui seus valores verdade presentes na 1ª linha da tabela, portanto neste caso concluímos que a proposição $P$ é verdadeira.
+  
+  As linhas 2 e 3 da tabela podem ser aplicadas ao exemplo \ref{(Sse 2)} , o que nos leva a conclusão que neste caso $P$ é falsa.
+  
+  Já no exemplo \ref{(Sse 3)} , apesar de $Q$ e $R$ serem ambas falsas a tabela nos garante que $P$ é verdadeira.
+ \end{exem}
+
+
+ \section{Resultados importantes}
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+ Uma proposição $P$ é dita ser uma \textbf{Tautologia} quando seu único valor verdade possível é o \emph{verdadeiro}.
+ \end{center}
+ \end{minipage}}
+
+
+ \begin{exem}
+  Dada uma proposição $P$ qualquer a proposição composta $Q= P \lor \neg P$ é uma tautologia como pode ser observado pela sua tabela verdade abaixo:
+  \begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|} \hline
+  \rowcolor{cinza}
+  $P$ & $\neg P$ & $P \lor \neg P$ \\ \hline
+  V & F & V \\ \hline
+  F & V & V \\ \hline
+  \end{tabular}
+  \end{table}
+\end{exem}
+ 
+ \colorbox{amarelo}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ O fato de a fórmula $P \lor \neg P$ ser uma tautologia está relacionado ao \textbf{princípio do terceiro-excluído}: dada uma proposição e sua negação, pelo menos uma delas é verdadeira ($P \lor \neg P$).
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ Uma proposição $P$ é dita ser uma \textbf{Contradição} quando seu único valor verdade possível é o \emph{falso}.
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+\begin{exem}
+  Dada uma proposição $P$ qualquer a proposição composta $Q= P \land \neg P$ é uma contradição como pode ser observado pela sua tabela verdade abaixo:
+  \begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|} \hline
+  \rowcolor{cinza}
+  $P$ & $\neg P$ & $P \land \neg P$ \\ \hline
+  V & F & F \\ \hline
+  F & V & F \\ \hline
+  \end{tabular}
+  \end{table}
+\end{exem}
+ 
+ Este exemplo mostra que a proposição $Q= P \land \neg P$ é uma contradição.
+ 
+ \vskip0.3cm
+ 
+ \colorbox{amarelo}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ Se a proposição $Q= P \land \neg P$ é uma contradição, então $\neg Q= \neg ( P \land \neg P)$ é uma tautologia. Isto está relacionado com o \textbf{princípio da não-contradição}: dada uma proposição e sua negação, pelo menos uma delas é falsa ($\neg(P \land \neg P)$).
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ \textbf{Leis de De Morgan}
+ 
+ A primeira Lei de De Morgan é definida pela fórmula
+ \[\neg(P \land Q) \leftrightarrow (\neg P \lor \neg Q)\]
+ que é uma tautologia. 
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ Essa lei define uma regra para a distribuição do conectivo $\neg$ em uma conjunção. Observe que o conectivo $\land$ se transforma no conectivo $\lor$. A tabela verdade abaixo demonstra a veracidade desta lei:
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $\neg P$ & $Q$ & $\neg Q$ & $P \land Q$ & $\neg (P \land Q)$ & $\neg P \lor \neg Q$ & $\neg(P \land Q) \leftrightarrow (\neg P \lor \neg Q)$ \\ \hline
+ V & F & V & F & V & F & F & V \\ \hline
+ V & F & F & V & F & V & V & V \\ \hline
+ F & V & V & F & F & V & V & V \\ \hline
+ F & V & F & V & F & V & V & V \\ \hline
+ \end{tabular}
+ \end{table}
+
+ \colorbox{azul}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ A segunda Lei de De Morgan é definida pela fórmula
+ \[\neg(P \lor Q) \leftrightarrow (\neg P \land \neg Q)\]
+ que também é uma tautologia. 
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ Essa lei define uma regra para a distribuição do conectivo $\neg$ em uma disjunção. Observe que o conectivo $\lor$ se transforma no conectivo $\land$. A tabela verdade abaixo demonstra a veracidade desta lei:
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $\neg P$ & $Q$ & $\neg Q$ & $P \lor Q$ & $\neg (P \lor Q)$ & $\neg P \land \neg Q$ & $\neg(P \lor Q) \leftrightarrow (\neg P \land \neg Q)$ \\ \hline
+ V & F & V & F & V & F & F & V \\ \hline
+ V & F & F & V & V & F & F & V \\ \hline
+ F & V & V & F & V & F & F & V \\ \hline
+ F & V & F & V & F & V & V & V \\ \hline
+ \end{tabular}
+\end{table}
+
+ \vskip0.3cm
+ 
+ Ainda da seção de negações é importante ressaltar a negação de uma implicação:
+ 
+  \colorbox{azul}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ \textbf{Negação da implicação}
+ 
+ \[\neg (P \rightarrow Q) = P \land \neg Q\]
+ 
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14cm}
+ \begin{center}
+ \textbf{Lei da contraposição}
+ 
+ A Lei da contraposição é definida pela fórmula
+ \[(P \rightarrow Q) \leftrightarrow (\neg Q \rightarrow \neg P)\]
+ que é uma tautologia.
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+
+
+  Como pode ser visto pela seguinte tabela verdade:
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $P \rightarrow Q$ & $\neg Q$ & $\neg P$ & $\neg Q \rightarrow \neg P$ & $(P \rightarrow Q) \leftrightarrow (\neg Q \rightarrow \neg P)$ \\ \hline
+ V & V & V & F & F & V & V \\ \hline
+ V & F & F & V & F & F & V \\ \hline
+ F & V & V & F & V & V & V \\ \hline
+ F & F & V & V & V & V & V \\ \hline
+ \end{tabular}
+ \end{table}
+
+\vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+ \textbf{Lei da transitividade}
+ 
+ A Lei da transitividade definida pela fórmula
+ \[((P \rightarrow Q) \land (Q \rightarrow R)) \rightarrow (P \rightarrow R)\]
+ é um tautologia e nos diz que se $(P \rightarrow Q)$ e $(Q \rightarrow R)$ são proposições verdadeiras então a proposição $(P \rightarrow R)$ é verdadeira.
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $Q$ & $R$ & $P \rightarrow Q$ & $Q \rightarrow R$ & $(P \rightarrow Q) \land (Q \rightarrow R)$ & $(P \rightarrow R)$ & $((P \rightarrow Q) \land (Q \rightarrow R)) \rightarrow (P \rightarrow R)$\\ \hline
+ V & V & V & V & V & V & V & V \\ \hline
+ V & V & F & V & F & F & F & V \\ \hline
+ V & F & V & F & V & F & V & V \\ \hline
+ V & F & F & F & V & F & V & V \\ \hline
+ F & V & V & V & V & V & V & V \\ \hline
+ F & V & F & V & F & F & V & V \\ \hline
+ F & F & V & V & V & V & V & V \\ \hline
+ F & F & F & V & V & V & V & V \\ \hline
+ \end{tabular}
+ \end{table}
+ 
+ Algumas equivalências e negações lógicas:
+ \begin{enumerate}
+  \item $(P \rightarrow Q) \leftrightarrow (\neg P \lor Q)$;
+  \item $(P \land Q) \leftrightarrow \neg(\neg P \lor \neg Q)$;
+  \item $(P \leftrightarrow Q)$ equivale a $((P \rightarrow Q) \land (Q \rightarrow P))$;
+  \item $\neg (\forall x)= \exists x$, onde $\forall$ significa para todo e $\exists$ significa existe;
+  \item $\neg (\exists x)= \forall x$, onde $\forall$ significa para todo e $\exists$ significa existe;
+  \item $\neg (x < y) \leftrightarrow (x \geq y)$;
+  \item $\neg (x > y) \leftrightarrow (x \leq y)$;
+ \end{enumerate}
+ 
+
+ Vale observar que a \emph{lógica proposicional} ou \emph{lógica sentencial} segue o principio da bivalência, ou seja, as proposições assumem apenas os valores verdade: verdadeiro ou falso. Essa é uma limitação desta lógica já que nem tudo pode ser interpretado como verdadeiro ou falso. Mas existem outras lógicas onde isso não acontece como por exemplo \textbf{Lógica Paraconsistente} e a \textbf{Lógica Fuzzy} que não iremos estudar.
+
+
+ 
+
+

@@ -1,0 +1,207 @@
+\chapter{Análise Combinatória}
+
+Análise combinatória é a área da matemática dedicada aos processos de contagem. É nela que encontramos as ferramentas para contar o número de possibilidades de agrupar e organizar elementos de grupos finitos sobre determinadas circunstâncias.
+
+Um exemplo de um problema de contagem é:
+\begin{exem}\label{escnum}
+ Quantos números diferentes, sem algarismos repetidos, podemos escrever usando os algarismos $\{4,5,6\}$?
+ 
+ \underline{Resolução:}
+ 
+ Para facilitar a compreensão da análise do número de possibilidades vamos usar os seguintes esquemas, chamados árvores de possibilidade:
+ \begin{displaymath}
+    \xymatrix{4 \ar[dd] \ar[r] \ar[dr] &  5 \\
+                & 6 \ar[d] \\
+                \text{1 possibilidade} & \text{2 possibilidades} \\
+              5 \ar[dd] \ar[r] \ar[dr] & 4 \\
+                & 6 \ar[d] \\
+                \text{1 possibilidade} & \text{2 possibilidades}}
+ \end{displaymath}
+ 
+ \begin{displaymath}
+    \xymatrix{ 6 \ar[dd] \ar[r] \ar[dr] &  4 \\
+                & 5 \ar[d] \\
+                \text{1 possibilidade} \ar[d] & \text{2 possibilidades} \ar[d] \\
+                \text{3 possibilidades} & \text{2 possibilidades}}
+\end{displaymath}
+Portanto o total de possibilidades é $3 \cdot 2=6$ que como podemos observar é exatamente o número de linhas que temos na 2ª coluna.
+
+Observe que as possibilidades são as seguintes $\{45, 46, 54, 56, 64, 65\}$.
+
+\fim
+\end{exem}
+
+Este e outros problemas de contagem, por vezes com condições mais complexas, podem ser resolvidos por meio da análise combinatória, cujas principais ferramentas são princípio fundamental da contagem, fatorial, permutações, arranjos e combinações. Sendo que permutações, arranjos e combinações podem ser simples ou com elementos repetidos.
+
+\section{Princípio fundamental da contagem}
+
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Se um evento é composto por duas etapas sucessivas e independentes de tal maneira que o número de possibilidades na primeira etapa é $m$ e para cada possibilidade da primeira etapa o número de possibilidades na segunda etapa é $n$, então o número total de possibilidades de o evento ocorrer é dado pelo produto $m \cdot n$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+No exemplo \ref{escnum} acima queremos contar quantos números diferentes podemos escrever usando os algarismos $\{4,5,6\}$. Este é um exemplo que pode ser resolvido usando o princípio fundamental da contagem. Neste caso, a primeira etapa é o 1º algarismo utilizado para formar o número, para o qual temos $3$ possibilidades de escolha. A segunda etapa é o 2º algarismo utilizado para formar o número, que como não pode repetir algarismos, por exemplo não é permitido formar o número $44$, após cada escolha do 1º algarismo sobram então $2$ algarismos, como possibilidades de escolha para a 2º etapa, que é o 2º algarismo. Logo o número total de possibilidades de o evento ocorrer é dado pelo produto $3 \cdot 2= 6$, como vimos no exemplos \ref{escnum}.
+
+\begin{obs}
+ O produto do número de possibilidades vale para qualquer número de etapas independentes.
+\end{obs}
+
+
+\section{Fatorial}
+
+\vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  O fatorial de um número natural $n$, representado por $n!$, é o produto de todos os inteiros positivos menores ou iguais a $n$, ou seja,
+ \[n! = n.(n-1).(n-2)...3.2.1 \ . \]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ Considera-se $\destaque{0!= 1}$ e $\destaque{1!= 1}$.
+
+
+\section{Permutações}
+
+Dado um conjunto com $n$ elementos, o ato de organizar estes elementos ordenando-os, de forma que cada nova ordem é considerada como um novo elemento é chamado de permutação. Existem dois tipos de permutação, a permutação simples quando os $n$ elementos são distintos, e a permutação com repetição quando no conjuntos de $n$ elementos temos elementos repetidos.
+
+\subsection{Permutação simples}
+
+Dados $n$ elementos distintos, vejamos como calcular quantos agrupamentos é possível formar usando os $n$ elementos.
+\begin{exem}
+ Quantos números de 3 algarismo (sem repeti-los num mesmo número) podemos formar com os algarismos $2, 4, 8$?
+ 
+ \underline{Resolução:}
+ \begin{displaymath}
+    \xymatrix{2 \ar[dd] \ar[r] \ar[dr] &  4 \ar[r] & 8 \\
+                & 8 \ar[d] \ar[r] & 4 \ar[d]\\
+                \text{1 possibilidade} & \text{2 possibilidades} & \text{1 possibilidade} }
+ \end{displaymath}
+ 
+ \begin{displaymath}
+    \xymatrix{4 \ar[dd] \ar[r] \ar[dr] & 2 \ar[r] & 8 \\
+                & 8 \ar[d] \ar[r] & 2 \ar[d] \\
+                \text{1 possibilidade} & \text{2 possibilidades} & \text{1 possibilidade}}
+ \end{displaymath}
+ 
+ \begin{displaymath}
+    \xymatrix{ 8 \ar[dd] \ar[r] \ar[dr] &  2 \ar[r] & 4 \\
+                & 4 \ar[d] \ar[r] & 2 \ar[d] \\
+                \text{1 possibilidade} \ar[d] & \text{2 possibilidades} \ar[d] & \text{1 possibilidade} \ar[d] \\
+                \text{3 possibilidades} & \text{2 possibilidades} & \text{1 possibilidade}}
+\end{displaymath}
+ Assim pelo princípio fundamental da contagem temos $3 \cdot 2 \cdot 1= 6$ possibilidades, observe que como neste caso nosso conjunto possui 3 elementos temos $n= 3$, logo a o número de possibilidade é igual a $n!= n \cdot (n-1) \cdot (n-2)= 3 \cdot 2 \cdot 1= 6$.
+\end{exem}
+
+De maneira geral o número de permutações simples de $n$ elementos é dado por:
+\[n!= n \cdot (n-1) \cdot (n-2) \cdots 3 \cdot 2 \cdot 1 \ .\]
+
+
+
+\subsection{Permutação com repetição}
+
+Dado um conjunto de $n$ elementos no qual existem elementos repetidos, vejamos através de um exemplo como calcular quantos agrupamentos é possível formar usando os $n$ elementos.
+
+\begin{exem}
+ Quantos anagramas existem com as letras da palavra ABACAXI?
+ 
+ \underline{Resolução:}
+ 
+ A palavra ABACAXI possui 7 letras, logo $n=7$, e uma vogal, a vogal A, que se repete três vezes. Portanto, o número de anagramas desta palavras é dado por:
+ \[P_{7}^{3}= \frac{7!}{3!}= \frac{7.6.5.4.3!}{3!}= 7.6.5.4= 840 \text{ anagramas.}\]
+ Dentre eles temos por exemplo: IXACABA, ABACAIX .... 
+\end{exem}
+
+\begin{exem}
+ Quantos anagramas existem com as letras da palavra MATEMÁTICA, desconsiderando o acento?
+ 
+ \underline{Resolução:}
+ 
+ A palavra MATEMÁTICA, possui 10 letras, logo $n=10$, além disso a vogal A se repete 3 vezes, a consoante T se repete 2 vezes, e a consoante M se repete 2 vezes. Portanto, o número de anagramas desta palavras é dado por:
+ \[P_{10}^{3;2;2}= \frac{10!}{3!2!2!}= \frac{10.9.8.7.6.5.4.3!}{3!.2.1.2.1}= 10.9.8.7.3.5.2= 151200 \text{ anagramas.} \]
+ 
+\end{exem}
+
+\begin{obs}
+ No caso em que a palavra da qual estamos calculando o número de anagramas possíveis não possuir letras repetidas então se trata de uma permutação simples.
+\end{obs}
+
+\section{Arranjos e combinações simples}
+
+Acabamos de ver como calcular a quantidade de possibilidades de ordenar $n$ elementos distintos, o que é chamado de permutação simples.
+
+Agora consideremos um conjunto com $n$ elementos distintos vamos estudar os agrupamentos de 1 elemento, 2 elementos, 3 elementos, $\cdots$, $p$ elementos com $p \leqslant n$, deste conjunto.
+
+\subsection{Arranjos simples}
+
+Dado um conjunto com $n$ elementos distintos, a ferramenta que nos permite contar de quantas formas diferentes podemos tomar $p$ destes $n$ elementos sendo $p \leq n$, \textit{importando a ordem} na qual estes elementos são escolhidos é chamado de arranjo simples. Antes de vermos a definição formal deste conceito vejamos um exemplo no qual o utilizamos.
+
+\begin{exem}
+ Usando os algarismo 2, 3, 5, 7 e 9, quantos números naturais de 3 algarismos distintos podemos formar?
+ 
+ \underline{Resolução:}
+ \[\overline{\text{centena}} \ \ \ \overline{\text{dezena}} \ \ \  \overline{\text{unidade}} \]
+  Há 5 possibilidades para a centena, 4 possibilidades para a dezena, 3 possibilidades para a unidade. No total podemos então formar: $5 \cdot 4 \cdot 3= 60$ números.
+  
+  Neste exemplo fizemos arranjos de 5 elementos 3 a 3, e o número de possíveis arranjos é 60.
+  
+  Indicamos isso por: $A_{5, 3}= 5 \cdot 4 \cdot 3= 60$.
+\end{exem}
+
+Para o caso geral temos a seguinte definição que generaliza a conta que acabamos de fazer:
+
+\vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Arranjos simples de $n$ elementos tomados $p$ a $p$ $(p \leqslant n)$ são agrupamentos ordenados diferentes que se podem formar com $p$ dos $n$ elementos dados. (A ordem em que os elementos são escolhidos IMPORTA!).
+ 
+ Indica-se por $A_{n, p}$ ou $A_{n}^{p}$ o total de possíveis agrupamentos deste tipo, que calculamos por:
+ \[A_{n, p}= \frac{n!}{(n-p)!}\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+
+\subsection{Combinações simples}
+
+Dado um conjunto com $n$ elementos distintos, a ferramenta que nos permite contar de quantas formas diferentes podemos tomar $p$ destes $n$ elementos sendo $p \leq n$, \textit{não importando a ordem} na qual estes elementos são escolhidos é chamado de combinação simples. Antes de vermos a definição formal deste conceito vejamos um exemplo no qual o utilizamos.
+
+\begin{exem}
+ De quantas maneiras diferentes podemos escolher 2 sabores de sorvete em uma sorveteria que dispõe dos seguintes sabores: morango (M), chocolate (C), flocos (F)?
+ 
+ \underline{Resolução:}
+ 
+ As possibilidades são: $\{M, C\}, \{M, F\}, \{C, F\}= 3$ possibilidades.
+ 
+ Neste caso $n= 3$ e $p= 2$. Desafio refazer o cálculo usando a fórmula.
+\end{exem}
+
+\vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Combinações simples de $n$ elementos tomados $p$ e $p$ $(p \leq n)$ são os subconjuntos com exatamente $p$ elementos que se podem formar com os $n$ elementos dados. (A ordem em que os elementos são escolhidos NÃO IMPORTA!).
+ 
+ Indica-se por $C_{n, p}$, $C_{n}^{p}$ ou ${n \choose p} $ o número total de combinações de $n$ elementos tomados $p$ a $p$ e calcula-se por:
+ \[C_{n, p}= \frac{n!}{p!(n-p)!}\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+
+\begin{exem}
+ De quantas maneiras diferentes podemos escolher 3 sabores de sorvete em uma sorveteria que dispõe dos seguintes sabores: morango (M), chocolate (C), flocos (F), doce de leite (D), açaí (A), baunilha (B), passas (P)?
+ 
+ \underline{Resolução:}
+ 
+ Neste caso $n= 7$ e $p= 3$, portanto o número de combinações possíveis é:
+ \[C_{7, 3}= \frac{7!}{3!(7-3)!}= \frac{7.6.5.4!}{3!4!}= 7.5= 35 \text{ combinações.}\]
+\end{exem}
+
+\newpage

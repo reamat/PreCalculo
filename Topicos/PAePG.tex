@@ -1,0 +1,157 @@
+\chapter{Sequências Numéricas}
+
+ %\vskip0.3cm
+
+\colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Uma \textbf{sequência} ou \textbf{sucessão} de elementos/números é uma lista ordenada de elementos/números.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ 
+A ideia de sequência esta muito presente em nosso dia-a-dia, aparecendo por exemplo nas seguintes situações:
+\begin{exem}
+ \begin{itemize}
+  Exemplos de sequências:
+  \item a sequência dos dias das semana:\\
+  \{domingo, segunda, terça, quarta, quinta, sexta, sábado.\}
+  \item a sequência dos meses do ano: \\
+  \{janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro.\}
+  \item a sequência dos anos nos quais a Copa do Mundo de Futebol é realizada: \\
+  \{1930, 1934, 1938, 1950, 1954, 1958, 1962, 1966, 1970, 1974, 1978, 1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018.\}
+  \item a sequência dos anos nos quais ocorreram eleições para presidente do Brasil: \\
+  \{1891, 1894, 1898, 1902, 1906, 1910, 1914, 1918, 1919, 1922, 1926, 1930, 1934, 1938, 1945, 1950, 1955, 1960, 1964, 1965, 1966, 1969, 1974, 1978, 1985, 1989, 1994, 1998, 2002, 2006, 2010, 2014, 2018\}
+  \item a sequência de Fibonacci: \\
+  \{0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, $\cdots$\}
+  \item a sequência dos números primos: \\
+  \{2, 3, 5, 7, 11, 13, 17, 19, 23, $\cdots$ \}
+  \item a sequência das potências de 2: \\
+  \{1, 2, 4, 8, 16, 32, 64, 128, $\cdots$\}
+  \item a sequência das potências de 10: \\
+  \{1, 10, 100, 1000, 10000, 100000, $\cdots$\}
+  \end{itemize}
+
+\end{exem}
+
+ Note que em todos os exemplos acima existe uma ordem nos elementos da sequência. Esses elementos são também chamados de \textbf{termos da sequência}, e são indicados pela letra $a_i$, onde $i$ indica a posição do termo na sequência. Por exemplo, na sequência dos dias da semana, temos: \\
+ 1º termo: $a_1=$ domingo\\
+ 2º termo: $a_2=$ segunda\\
+ 3º termo: $a_3=$ terça\\
+ 4º termo: $a_4=$ quarta\\
+ 5º termo: $a_5=$ quinta\\
+ 6º termo: $a_6=$ sexta \\
+ 7º termo: $a_7=$ sábado.
+ 
+ Pelos exemplos percebemos também que algumas sequências são finitas, isto é, possuem um número finito de elementos, e outras são infinitas, isto é, possuem um número infinito de elementos, ao listar os elementos das sequências infinitas costumamos colocar alguns elementos seguidos de $\cdots$ para indicar que a sequência possui mais elementos.
+ 
+ Algumas sequências numéricas são dadas por regras ou leis de formação, que possibilitam explicitar todos os termos da sequência. Por exemplo:
+ \begin{exem}
+  A sequência $a_n= 2n-1$, $n \in \N^{\ast}$, é dada por:
+  \begin{itemize}
+   \item para $n=1 \Rightarrow a_1=2\cdot 1 - 1= 1$,
+   \item para $n=2 \Rightarrow a_2=2\cdot 2 - 1= 3$,
+   \item para $n=3 \Rightarrow a_3=2\cdot 3 - 1= 5$,
+   \item para $n=4 \Rightarrow a_4=2\cdot 4 - 1= 7$, etc.
+  \end{itemize}
+ Portanto a sequência é $\{1, 3, 5, 7, \cdots\}$, sequência dos números ímpares.
+ 
+ Neste caso $a_n= 2n-1$, é chamado, \textbf{termo geral da sequência}.
+ \end{exem}
+
+ Nas próximas seções vamos estudar dois tipos especiais de sequências chamadas Progressão Aritmética (PA) e Progressão Geométrica (PG), que estão presentes em muitas questões de concurso.
+
+\section{Progressão Aritmética (PA)}
+
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  \textbf{Progressão Aritmética (PA)} é uma sequência na qual cada termo é igual à soma do termo anterior com uma constante $(r)$ denominada "razão da PA". Ou seja,
+  \[a_{n}= a_{n-1} + r, \ \ \forall n \in \N^{\ast}, n > 1\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Desta definição obtemos que dados o 1ª termo $(a_1)$ e a razão $r$ de uma PA para obter os próximos termos basta fazer:
+ \[a_2= a_1 + r\]
+ \[a_3= a_2 + r= a_1 + r + r= a_1 + 2 \cdot r\]
+ \[a_4= a_3 + r= a_1 + 2 \cdot r + r= a_1 + 3 \cdot r\]
+ e assim por diante, desta forma podemos o $nº$ termo de ordem da sequência, representado por $a_n$, e denonimado termo geral da PA, é dado por:
+ \[\destaque{a_n= a_1 + (n-1) \cdot r} \ .\]
+ Na qual: $a_n=$ termo geral, $a_1=$ 1º termo, $n=$ nº de termos (até $a_n$) e $r=$ razão da PA.
+ 
+ Ainda da definição de PA é fácil temos que:
+ \[a_{n}= a_{n-1} + r \Rightarrow 
+ \destaque{r= a_{n} - a_{n-1}} \ ,\]
+ logo para calcular a razão $r$ de uma PA basta fazer a diferença entre dois números consecutivos. Percebemos então que a PA:
+ \begin{itemize}
+  \item é constante, $a_n= a_{n-1} \Leftrightarrow r= 0$, 
+  \item é crescente, $a_n > a_{n-1} \Leftrightarrow r > 0$,
+  \item é decrescente, $a_n < a_{n-1} \Leftrightarrow r < 0$.
+ \end{itemize}
+ 
+ \begin{exem} Exemplos de progressões artiméticas:
+  \begin{itemize}
+   \item PA constante: $\{5, 5, 5, 5, \cdots\}$ com $a_1= 5$ e razão $r= 0$.
+   \item PA crescente: $\{2, 5, 8, 11, 14, \cdots\}$ com $a_1= 2$ e razão $r= 3$.
+   \item PA descrescente: $\{9, 5, 1, -3, -7, \cdots\}$ com $a_1= 9$ e razão $r= -4$.
+  \end{itemize}
+ \end{exem}
+ 
+ Dada uma PA é comum nos perguntarmos qual a soma dos $n$ primeiros termos desta PA, a fórmula que nos permite fazer este cálculo é a seguinte:
+ \[\destaque{S_n= \frac{(a_1 + a_n)\cdot n}{2}}\]
+ Em que: $a_n=$ é o enésimo termo, $a_1=$ é o 1º termo, $n=$ nº de termos (até $a_n$) e $S_n=$ é a soma dos $n$ primeiros termos.
+
+ 
+
+\section{Progressão Geométrica (PG)}
+
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  \textbf{Progressão Geométrica (PG)} é uma sequência na qual cada termo é igual ao produto do termo anterior com uma constante $(q)$ denominada "razão da PG". Ou seja,
+  \[a_{n}= a_{n-1} \cdot q, \ \ \forall n \in \N^{\ast}, n > 1\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Desta definição obtemos que dados o 1ª termo $(a_1)$ e a razão $q$ de uma PG para obter os próximos termos basta fazer:
+ \[a_2= a_1 \cdot q\]
+ \[a_3= a_2 \cdot q= a_1 \cdot q \cdot q= a_1 \cdot q^2\]
+ \[a_4= a_3 \cdot q= a_1 \cdot q^2 \cdot q= a_1 \cdot q^3 \]
+ e assim por diante, desta forma o $nº$ termo da sequência, representado por $a_n$, e denonimado termo geral da PG, é dado por:
+ \[\destaque{a_n= a_1 \cdot q^{(n-1)}} \ .\]
+ Na qual: $a_n=$ termo geral, $a_1=$ 1º termo, $n=$ nº de termos (até $a_n$) e $q=$ razão da PG.
+ 
+ Ainda da definição de PG é fácil temos que:
+ \[a_{n}= a_{n-1} \cdot q \Rightarrow
+ \destaque{q= \frac{a_{n}}{ a_{n-1}}} \ ,\]
+ logo para calcular a razão $q$ de uma PG basta fazer a razão entre dois números consecutivos. Percebemos então que a PG:
+ \begin{itemize}
+  \item é constante, $a_n= a_{n-1} \Leftrightarrow q= 1$, 
+  \item é crescente, $a_n > a_{n-1} \Leftrightarrow a_1 > 0$ e $q > 1$, ou, $a_1 < 0$ e $0 < q < 1$,
+  \item é decrescente, $a_n < a_{n-1} \Leftrightarrow a_1 > 0$ e $0 < q < 1$, ou, $a_1 < 0$ e $q > 1$.
+ \end{itemize}
+ 
+ \begin{exem} Exemplos de progressões geométricas:
+  \begin{itemize}
+   \item PG constante: $\{5, 5, 5, 5, \cdots\}$ com $a_1= 5$ e razão $q= 1$.
+   \item PG crescente:
+   \begin{enumerate}
+   \item $a_1 > 0$ e $q > 1$: $\{2, 4, 8, 16, \cdots\}$ com $a_1= 2$ e razão $q= 2$.
+   \item $a_1 < 0$ e $0 < q < 1$: $\{-81, -27, -9, -3, \cdots\}$ com $a_1= -81$ e razão $q= \frac{1}{3}$.
+   \end{enumerate}
+   \item PG descrescente:
+    \begin{enumerate}
+   \item $a_1 > 0$ e $0 < q < 1$: $\{4096, 1024, 256, 64, \cdots\}$ com $a_1= 4096$ e razão $q= \frac{1}{4}$.
+   \item $a_1 < 0$ e $q > 1$: $\{-5, -10, -20, -40, \cdots\}$ com $a_1= -5$ e razão $q= 2$.
+   \end{enumerate}
+  \end{itemize}
+ \end{exem}
+ 
+ Dada uma PG é comum nos perguntarmos qual a soma dos $n$ primeiros termos desta PG, a fórmula que nos permite fazer este cálculo para uma PG com razão $q \neq 1$ é a seguinte:
+ \[\destaque{S_n= a_1 \cdot \frac{ 1 - q^n}{1 - q}}\]
+ Em que: $a_1=$ é o 1º termo, $n=$ nº de termos (até $a_n$), $q=$ é a razão da PG e $S_n=$ é a soma dos $n$ primeiros termos.
+
+\newpage

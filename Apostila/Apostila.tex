@@ -1,0 +1,211 @@
+\documentclass[a4paper,12pt]{book}
+%\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[portuguese]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
+\usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
+\usepackage{color}    % Possibilita o uso de cores no documento
+\usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
+\usepackage{listings}
+
+% Alguns pacotes adicionais (ADICIONE/REMOVA DE ACORDO COM A SUA NECESSIDADE)
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{gensymb} %usar comando \degree
+\usepackage{venndiagram}
+\usepackage{tikz}               % para criar desenhos legais
+\usetikzlibrary{fit,shapes.geometric,arrows} %pra fazer os diagramas de funções
+\usepackage{verbatim}
+\usepackage[normalem]{ulem}     %para riscar palavra usando \sout
+\usepackage{float}
+\usepackage{multirow}           % para tabelas, basicamente essencial
+\usepackage{multicol}
+\usepackage{cite}               % usado para citações
+\usepackage{enumerate}          % para fazer listas com tipos diferentes de itens (a, i, 1,...)
+\usepackage{calrsfs}
+\usepackage[all]{xy}
+\usepackage{graphicx,txfonts}   %test for heart
+\usepackage[pdftex]{hyperref}   %usado para incluir links no texto
+\usepackage{subfigure}           %para colocar figuras lado a lado
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{makeidx}
+\usepackage[a4paper,margin=3cm,headsep=24pt,headheight=2cm]{geometry}
+\usepackage{fancyhdr}
+
+\usepackage{shadethm}
+\newshadetheorem{defic}{Definição}
+\definecolor{shadethmcolor}{HTML}{AAAAFF}
+\definecolor{shaderulecolor}{HTML}{FFFFFF}
+\definecolor{rosa}{HTML}{ed82d5} %para fórmulas
+\definecolor{azul}{HTML}{aae5ed} %para definições
+\definecolor{amarelo}{HTML}{f4e649} %para observações importantes
+\definecolor{verde}{HTML}{a3ff87} 
+\definecolor{cinza}{HTML}{c6c9c5} %para linhas das tabelas
+\setlength{\shadeboxrule}{.4pt}
+
+
+%\usepackage{showframe} %REMOVA
+\fancyhead{}
+%Esquerda do Cabeçalho
+ %\lhead{\includegraphics[width=5cm]{../Topicos/Figuras/LOGO_1.pdf}}
+ %Centro do Cabeçalho
+ \chead{}
+ %Direita do Cabeçalho
+ \rhead{APOSTILA DE MATEMÁTICA \\ PROFª FRANCIELI TRICHES}
+ %\renewcommand{\headrulewidth}{1pt}
+
+% Alguns estilos para ambientes matemáticos (ADICIONE/REMOVA/MODIFIQUE DE ACORDO COM A SUA VONTADE)
+\theoremstyle{definition}
+%\newtheorem{exem}{Exemplo}
+\newtheorem{obs}{Observação}
+
+\theoremstyle{plain}
+\newtheorem{defi}{Definição}
+\newtheorem{teo}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{cor}{Corolário}
+\newtheorem{prop}{Proposição}
+\newtheorem{afir}{Afirmação}
+\newtheorem{exem}{Exemplo}
+%\newtheorem*{dem}{Demonstração}
+\newenvironment{dem}[1][\textbf{Demonstração:} \ ]{\textbf{#1}}{\hfill\rule{2mm}{2mm}}
+\newcommand{\fim}{\hfill {$\Box$}}
+\newcommand{\destaque}[1]{\colorbox{rosa}{$\displaystyle #1$}}
+
+
+\numberwithin{defi}{section} % Numerar equações conforme seção
+%\numberwithin{equation}{section} % Numerar equações conforme seção
+\numberwithin{cor}{section} % Numerar corolários conforme seção
+\numberwithin{teo}{section} % Numerar teoremas conforme seção
+\numberwithin{prop}{section} % Numerar proposição conforme seção
+\numberwithin{lema}{section} % Numerar lemas conforme seção
+%\numberwithin{section}{chapter} %Numerar seções conforme capítulo
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\paralela}{\hspace{3pt}/\hspace{-2pt}/\hspace{3pt}}
+\newcommand{\heart}{\ensuremath\varheartsuit} %test coração
+
+%opening
+ \title{Apostila de Matemática \\ \includegraphics[width=7cm]{../Topicos/Figuras/circunftangentes.pdf} } 
+ \author{\textbf{Professora Francieli Triches} \\ 
+ \textbf{frantriches@gmail.com} \\ \\ \\ 
+  Esta apostila está licenciada sob uma licença \\ 
+ \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Atribuição-Compartilha Igual 4.0 Internacional}.}
+
+\begin{document}
+\pagestyle{fancy}
+
+\maketitle
+
+\newpage
+\tableofcontents
+
+
+\newpage
+
+ %\input{ProgramaCurso.tex}
+  
+    \input{../Topicos/TeoriaDeConjuntos.tex}   
+%    \input{../Topicos/QC_TeoriaDeConjuntos.tex}
+%    teamo
+% 
+   \input{../Topicos/Conjuntosnumericos.tex}                                                                                            
+%   \input{../Topicos/QC_Conjuntosnumericos.tex}
+%  
+   \input{../Topicos/Divisibilidade.tex}
+%   \input{../Topicos/QC_Divisibilidade.tex}
+% 
+   \input{../Topicos/OperacoesPropriedades.tex}
+%   \input{../Topicos/QC_OperacoesPropriedades.tex}
+% 
+   \input{../Topicos/Equacoes.tex}
+%   \input{../Topicos/QC_Equacoes.tex}
+%  
+  \input{../Topicos/Funcao.tex}
+%  \input{../Topicos/QC_Funcao.tex}
+%  
+  \input{../Topicos/Trigonometria.tex}
+%  \input{../Topicos/QC_Trigonometria.tex}
+%  
+
+
+% Algumas coisas que tinha escrito e que não estão na ementa
+%   \input{../Topicos/Logica.tex}   
+% %  \input{../Topicos/QC_Logica.tex}
+% %
+%     \input{../Topicos/regra_de_tres.tex}
+% %    \input{../Topicos/QC_regra_de_tres.tex}
+% %  
+%   \input{../Topicos/SistemasDeMedida.tex}
+% %  \input{../Topicos/QC_SistemasDeMedida.tex}
+% %  
+%   \input{../Topicos/SistemaLinear.tex}
+% %  \input{../Topicos/QC_SistemaLinear.tex}
+% %  
+%    \input{../Topicos/Matrizes.tex}
+% %  \input{../Topicos/QC_Matrizes.tex}
+% %
+%   \input{../Topicos/Geometria.tex}
+% %  \input{../Topicos/QC_Geometria.tex}
+% %  
+%   \input{../Topicos/AnaliseCombinatoria.tex}
+% %  \input{../Topicos/QC_AnaliseCombinatoria.tex}
+% %  
+%   \input{../Topicos/MtmFinanceira.tex}
+% %  \input{../Topicos/QC_MtmFinanceira.tex}
+% %  
+%   \input{../Topicos/PAePG.tex}
+% %  \input{../Topicos/QC_PAePG.tex} 
+% %  
+%   \input{../Topicos/Estatistica.tex} 
+% %  \input{../Topicos/QC_Estatistica.tex}
+
+%  \input{../Topicos/NumerosComplexos.tex}
+%  \input{../Topicos/QC_NumerosComplexos.tex}
+%  
+  \input{../Topicos/SoPraGarantir.tex}
+% 
+% \input{../Topicos/Questoes.tex}
+% 
+%  
+%  \newpage
+   \input{../Topicos/Referencias.tex}
+%  
+%  
+ 
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Comandos que estou usando:
+
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  texto
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ 
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+ $P$ & $\neg P$ & $\neg (\neg P)$ & $ P \leftrightarrow \neg (\neg P)$\\ \hline
+ V & F & V & V \\ \hline
+ F & V & F & V \\ \hline
+ \end{tabular}
+ \end{table}

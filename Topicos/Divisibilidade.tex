@@ -1,0 +1,280 @@
+\chapter{Divisibilidade}
+ 
+ Dados dois números $a, b \in \Z$, com $b \neq 0$ calculamos a divisão de $a$ por $b$ como mostra a figura abaixo:
+ 
+  \begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[width=5cm]{../Topicos/Figuras/divisao.pdf}}
+   \caption{Representação conjuntos numéricos}
+  \end{figure}
+ 
+ logo, dados $a, b \in \Z$ existem $q, r \in \Z$ tais que $a= bq + r$. 
+ 
+ \vskip0.3cm
+
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Um número inteiro $a$ é \textbf{divisível} por um número inteiro $b$, se a divisão de $a$ por $b$ tem resto $r= 0$.
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \begin{exem}
+ \begin{itemize}
+ \item Todo número par é divisível por $2$.
+ \item Todo número terminado em $0$ ou $5$ é divisível por $5$.
+ \item Todo número divisível por $2$ e $3$ é também divisível por $6$.
+ \end{itemize}
+ \end{exem}
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  Um número $a \in \N$ diferente de $0$ e de $1$ é \textbf{primo} se for divisível apenas por $1$ e por ele mesmo.
+ \end{center}
+ \end{minipage}}
+
+ 
+ \begin{exem}
+ Primos: $\{2, 3, 5, 7, 11, 13, \cdots\}$
+ \end{exem}
+ 
+ \begin{teo}[Teorema Fundamental da Aritmética]
+ Todo número $a \in \N$ diferente de $0$ e de $1$ possui uma decomposição única em números primos, em outras palavras, pode ser escrito como produto de números primos.
+ \end{teo}
+ 
+ \begin{defi}
+ Um número $a \in \N$ diferente de $0$ e de $1$ cuja decomposição em primos possui números diferentes de $a$ é chamado de \emph{número composto}. Neste caso, $1$ e $a$ não são os únicos divisores de $a$.
+ \end{defi}
+ 
+ \begin{exem} De números compostos e suas fatorações em números primos:
+ \begin{align*} 
+ &25= 5 \cdot 5 \\
+ &12= 2 \cdot 2 \cdot 3 \\
+ &15= 3 \cdot 5 \\
+ &24= 2 \cdot 2 \cdot 2 \cdot 3
+ \end{align*}
+ \end{exem}
+ 
+ Para ilustrar o algoritmo utilizado na fatoração dos números naturais iremos utilizá-lo para fatorar os números acima.
+ 
+ \begin{tabular}{c|c}
+  Números a ser fatorado & Números primos em ordem crescente \\
+  25 & 5 \\
+  5  & 5 \\
+  1  & = 5.5  \\
+ \end{tabular}
+ 
+ \begin{multicols}{3}
+   \begin{tabular}{c|c}
+  12 & 2 \\
+   6 & 2 \\
+   3 & 3 \\
+   1 & = 2.2.3 \\
+ \end{tabular}
+ 
+ \begin{tabular}{c|c}
+  15 & 3 \\
+   5 & 5 \\
+   1 & = 3.5 \\
+ \end{tabular}
+ 
+ \begin{tabular}{c|c}
+  24 & 2 \\
+  12 & 2 \\
+   6 & 2 \\
+   3 & 3 \\
+   1 & 2.2.2.3 \\
+ \end{tabular}
+ \end{multicols}
+
+ \begin{obs}
+ Um número natural sempre é divisível por todos os seus fatores primos e também pelos produtos de seus fatores primos.
+ \end{obs}
+ 
+ \begin{exem} 
+ Como $12= 2 \cdot 2 \cdot 3$, temos que seus divisores são: \[D(12)= \{1, 2, 3, 4, 6, 12\}.\]
+ Como $24= 2 \cdot 2 \cdot 2 \cdot 3$, temos que seus divisores são: \[D(24)= \{1, 2, 3, 4, 6, 8, 12, 24\}.\]
+ \end{exem}
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+  \textbf{MDC - máximo divisor comum}
+ 
+  Dados dois números $a, b \in \N$, o máximo divisor comum entre eles, é o maior número natural que divide $a$ e $b$. Se MDC$(a, b)= 1$ então $a$ e $b$ são primos entre si.
+ \end{center}
+ \end{minipage}}
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{14.5cm}
+ \begin{center}
+ \textbf{MMC - mínimo múltiplo comum}
+ 
+ Dados dois números $a, b \in \N$, o mínimo múltiplo comum entre eles, é o menor número natural divisível por $a$ e $b$. Se $a$ e $b$ são primos entre si então MMC$(a, b)= ab$.
+ \end{center}
+ \end{minipage}}
+ 
+ 
+ \begin{exem} 
+ \begin{align*} 
+ & \text{MDC}(12, 24)= 12 \\
+ & \text{MMC}(12, 24)= 24
+ \end{align*}
+ \end{exem}
+ 
+ O cálculo do MMC entre dois números pode ser feito rapidamente com auxílio de seguinte algoritmo, que apresentaremos através de exemplos:
+ 
+  \begin{exem}
+  \begin{enumerate}[a)]
+  \item MMC(12, 24):
+  
+ \begin{tabular}{c|c}
+  12, 24 & 2 \\
+   6, 12 & 2 \\
+   3,  6 & 2 \\
+   3,  3 & 3 \\
+   1,  1 & 
+ \end{tabular}
+ $MMC(12, 24) = 2.2.2.3= 24$. Neste caso observe que 24= 2.12.
+ 
+   \item MMC(9, 10):
+   
+   \begin{tabular}{c|c}
+    9, 10 & 2 \\
+    9, 5  & 3 \\
+    3, 5  & 3 \\
+    1, 5  & 5 \\
+    1, 1  & \\
+   \end{tabular}
+   $MMC(9, 10)= 2.3.3.5= 90= 9.10$. Neste caso como 9 e 10 não possuem nenhum divisor comum, nesta situação dizemos que eles são primos entre si.
+   
+   \item MMC(12, 20):
+   
+   \begin{tabular}{c|c}
+    12, 20 & 2 \\
+     6, 10 & 2 \\
+     3,  5 & 3 \\
+     1,  5 & 5 \\
+     1,  1 & \\
+   \end{tabular}
+  $MMC(12, 20)= 2.2.3.5= 60 < 12.20= 240$. Este é um caso em que calcular o MMC será uma vantagem, pois o MMC é menor que o produto dos dois números.
+   
+  \item MMC(7, 15):
+  
+  \begin{tabular}{c|c}
+   7, 15 & 3 \\
+   7,  5 & 5 \\
+   7,  1 & 7 \\
+   1,  1 &  \\
+  \end{tabular}
+  $MMC(7, 15)= 3.5.7= 105$. Observe que neste caso o número 7 é primo, e o número 15 não é um múltiplo de 7, sempre que esta situações ocorrer o MMC entre os números será o produto deles.
+  \end{enumerate}
+
+ \end{exem}
+
+
+ 
+ \newpage
+ 
+ \section{Exercícios Nível Fácil}
+ \begin{enumerate}
+  \item Determine os divisores dos seguintes números naturais:
+  \begin{enumerate}
+ \begin{multicols}{2}
+  \item $10$
+  \item $12$
+  \item $13$
+  \item $21$
+ \end{multicols}
+ \end{enumerate}
+ 
+ \item Calcule o $MMC$ dos seguintes pares de números:
+  \begin{enumerate}
+ \begin{multicols}{2}
+  \item 2 e 8
+  \item 3 e 21
+  \item 15 e 8
+  \item 5 e 11
+  \item 1 e 50
+  \item 28 e 42
+ \end{multicols}
+ \end{enumerate}
+
+  \item Considere os seguintes subconjuntos do conjunto Universo ($U$) dos números naturais:
+  \[A= \text{conjunto dos divisores de } 20 \]
+  \[B= \text{conjunto dos números pares}\]
+  \[I= \text{conjunto dos números ímpares}\]
+  \[C= \text{conjunto dos múltiplos de } 5 \]
+  Com base nestes conjuntos determine:
+  \begin{enumerate}[a)]
+  \item $A \cap B$
+  \item $A \cap I$
+  \item $A \cap C$
+  \item $B^{c}$
+  \item $I^{c}$
+  \item $B \cup I$
+  \end{enumerate}
+  
+  \item Liste todos os números primos menores que 30.
+  
+ \end{enumerate}
+ 
+  \newpage
+ 
+ \section{Exercícios Nível Médio}
+ \begin{enumerate}
+  \item (FEPESE - 2013) Um ônibus está circulando com 40 passageiros e tem 4 paradas pela frente até o destino final. Sabe-se que na primeira parada entram 7 e saem 9 passageiros do ônibus. Ainda, a cada parada subsequente o número de passageiros que entram é o dobro do número de passageiros que entraram na parada anterior e o mesmo vale para o número de passageiros que saem. Logo, ao chegar ao destino final, o número de passageiros no ônibus é de:
+ \begin{enumerate}[a)]
+ \item 5
+ \item 10
+ \item 15
+ \item 20
+ \item 30
+ \end{enumerate}
+ 
+  \item (FEPESE - 2013) Uma pessoa deve colocar 312 lâmpadas brancas e 845 lâmpadas amarelas em caixas, de maneira que todas as caixas tenham o mesmo número de lâmpadas, o número de lâmpadas amarelas em cada caixa seja igual e não sobrem lâmpadas fora das caixas. Logo, o número de caixas necessárias para fazer tal divisão é:
+  \begin{enumerate}[a)]
+  \item 8
+  \item 9
+  \item 10
+  \item 11
+  \item 13
+  \end{enumerate}
+
+  
+  \item (FEPESE - 2016) João trabalha 5 dias e folga 1, enquanto Maria trabalha 3 dias e folga 1. Se João e Maria folgam no mesmo dia, então quantos dias, no mínimo, passarão para que eles folguem no mesmo dia novamente?
+  \begin{enumerate}[a)]
+  \item 8
+  \item 10
+  \item 12
+  \item 15
+  \item 24
+  \end{enumerate}
+  
+   \item (FEPESE - 2016) Em uma excursão participam 120 homens e 160 mulheres. Em determinado momento é preciso dividir os participantes em grupos formados somente por homens ou somente por mulheres, de maneira que os grupos tenham o mesmo número de integrantes. Neste caso, o número máximo de integrantes em um grupo é:
+  \begin{enumerate}[a)]
+  \item 10
+  \item 15
+  \item 20
+  \item 30
+  \item 40
+  \end{enumerate}
+  
+  \item (FEPESE - 2013) Em uma fábrica, a entrega do insumo A ocorre a cada 18 dias e do insumo B, a cada 24 dias. Se ambos os insumos são entregues no dia de hoje, em quantos dias ambos serão novamente entregues simultaneamente?
+  \begin{enumerate}[a)]
+  \item 32
+  \item 44
+  \item 60
+  \item 72
+  \item 144
+  \end{enumerate}
+ \end{enumerate}
+
