@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="6.2cm"
+     height="5.18cm"
+     viewBox="0 0 308 257"
+     >
+<title>
+
+</title>
+<g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clipa43f87e0-59c4-4188-9d19-42e6219a8290">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g fill-opacity=".098039" fill-rule="nonzero" stroke="none" fill="#006400">
+  <path d="M 87.000 225.00 C 87.000 212.39 79.112 201.12 67.261 196.81 L 57.000 225.00 z"/>
+<title>Ângulo α</title>
+<desc>Ângulo α: Ângulo entre C, A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<clipPath id="clipa59623dd-ca39-4606-bd63-9c285af55e31">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#006400">
+  <path d="M 87.000 225.00 C 87.000 212.39 79.112 201.12 67.261 196.81 L 57.000 225.00 z"/>
+<title>Ângulo α</title>
+<desc>Ângulo α: Ângulo entre C, A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<clipPath id="clipf092b465-df70-43d3-8629-e9f1d46ccb6e">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#006400">
+  <path d="M 86.609 197.92 L 86.266 196.12 Q 85.922 194.27 84.531 194.27 Q 83.484 194.27 83.000 195.12 Q 82.406 196.20 82.406 197.62 Q 82.406 199.34 82.984 200.17 Q 83.578 201.00 84.531 201.00 Q 85.578 201.00 86.141 199.34 L 86.609 197.92 z M 87.422 195.53 L 88.188 193.25 L 89.469 193.25 L 87.875 197.98 L 88.188 199.70 Q 88.250 200.08 88.531 200.41 Q 88.844 200.78 89.094 200.78 L 89.781 200.78 L 89.781 202.00 L 88.922 202.00 Q 88.188 202.00 87.531 201.34 Q 87.219 201.02 87.078 200.33 Q 86.719 201.19 85.984 201.88 Q 85.641 202.20 84.531 202.20 Q 82.688 202.20 81.797 201.00 Q 80.891 199.78 80.891 197.62 Q 80.891 195.33 81.875 194.25 Q 82.984 193.05 84.531 193.05 Q 86.953 193.05 87.422 195.53 z M 97.336 194.73 L 107.35 194.73 L 107.35 196.05 L 97.336 196.05 L 97.336 194.73 z M 97.336 197.92 L 107.35 197.92 L 107.35 199.25 L 97.336 199.25 L 97.336 197.92 z M 115.44 190.33 L 122.94 190.33 L 122.94 191.00 L 118.70 202.00 L 117.06 202.00 L 121.05 191.66 L 115.44 191.66 L 115.44 190.33 z M 129.40 191.38 Q 128.18 191.38 127.56 192.57 Q 126.95 193.77 126.95 196.17 Q 126.95 198.58 127.56 199.77 Q 128.18 200.97 129.40 200.97 Q 130.62 200.97 131.23 199.77 Q 131.85 198.58 131.85 196.17 Q 131.85 193.77 131.23 192.57 Q 130.62 191.38 129.40 191.38 z M 129.40 190.12 Q 131.35 190.12 132.39 191.67 Q 133.43 193.22 133.43 196.17 Q 133.43 199.12 132.39 200.68 Q 131.35 202.23 129.40 202.23 Q 127.43 202.23 126.40 200.68 Q 125.37 199.12 125.37 196.17 Q 125.37 193.22 126.40 191.67 Q 127.43 190.12 129.40 190.12 z M 138.48 191.12 Q 137.86 191.12 137.43 191.56 Q 137.00 192.00 137.00 192.62 Q 137.00 193.23 137.43 193.66 Q 137.86 194.09 138.48 194.09 Q 139.11 194.09 139.54 193.66 Q 139.97 193.23 139.97 192.62 Q 139.97 192.00 139.54 191.56 Q 139.11 191.12 138.48 191.12 z M 138.48 190.12 Q 138.98 190.12 139.45 190.31 Q 139.91 190.50 140.25 190.86 Q 140.61 191.22 140.79 191.66 Q 140.97 192.11 140.97 192.62 Q 140.97 193.66 140.24 194.37 Q 139.52 195.08 138.47 195.08 Q 137.42 195.08 136.72 194.38 Q 136.02 193.67 136.02 192.62 Q 136.02 191.58 136.73 190.85 Q 137.45 190.12 138.48 190.12 z"/>
+<title>Ângulo α</title>
+<desc>Ângulo α: Ângulo entre C, A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+<clipPath id="clip035c332a-19a0-49a2-a6cb-5d098bc4e578">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 257.00 225.00 L 57.000 225.00"/>
+<title>Segmento c&apos;</title>
+<desc>Segmento c&apos;: Segmento C, A</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip9428799a-4c85-4d0e-a6a2-e4d23801a861">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 57.000 225.00 L 125.40 37.061"/>
+<title>Segmento c_1</title>
+<desc>Segmento c_1: Segmento A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clip0c942187-a5ee-4420-a745-1c550fcd6b90">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 125.40 37.061 L 257.00 225.00"/>
+<title>Segmento a_1</title>
+<desc>Segmento a_1: Segmento B, C</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clipd59dc815-f3d0-4f5e-9bb5-feb67352f558">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 62.000 225.00 C 62.000 227.76 59.761 230.00 57.000 230.00 C 54.239 230.00 52.000 227.76 52.000 225.00 C 52.000 222.24 54.239 220.00 57.000 220.00 C 59.761 220.00 62.000 222.24 62.000 225.00 z"/>
+<title>Ponto A</title>
+<desc>A = (2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clipb06ad838-dc87-4c18-bf76-aebd15751d11">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 62.000 225.00 C 62.000 227.76 59.761 230.00 57.000 230.00 C 54.239 230.00 52.000 227.76 52.000 225.00 C 52.000 222.24 54.239 220.00 57.000 220.00 C 59.761 220.00 62.000 222.24 62.000 225.00 z"/>
+<title>Ponto A</title>
+<desc>A = (2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clipbc24f72a-f9f8-45d4-83d7-fe4f5f7601d0">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 40.469 232.89 L 38.328 238.69 L 42.625 238.69 L 40.469 232.89 z M 39.578 231.33 L 41.375 231.33 L 45.812 243.00 L 44.172 243.00 L 43.109 240.00 L 37.859 240.00 L 36.797 243.00 L 35.125 243.00 L 39.578 231.33 z"/>
+<title>Ponto A</title>
+<desc>A = (2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<clipPath id="clip81415d9c-f18f-4239-93a8-15fc1c9600e9">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 262.00 225.00 C 262.00 227.76 259.76 230.00 257.00 230.00 C 254.24 230.00 252.00 227.76 252.00 225.00 C 252.00 222.24 254.24 220.00 257.00 220.00 C 259.76 220.00 262.00 222.24 262.00 225.00 z"/>
+<title>Ponto C</title>
+<desc>C = (6, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+<clipPath id="clip9bb00b09-9b68-4ea3-adf3-1e26a61b6c5b">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 262.00 225.00 C 262.00 227.76 259.76 230.00 257.00 230.00 C 254.24 230.00 252.00 227.76 252.00 225.00 C 252.00 222.24 254.24 220.00 257.00 220.00 C 259.76 220.00 262.00 222.24 262.00 225.00 z"/>
+<title>Ponto C</title>
+<desc>C = (6, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clip49708f7a-6a8b-4cf7-881a-8d76aaec315a">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 271.31 204.23 L 271.31 205.89 Q 270.52 205.16 269.61 204.79 Q 268.70 204.42 267.69 204.42 Q 265.69 204.42 264.62 205.64 Q 263.56 206.86 263.56 209.17 Q 263.56 211.48 264.62 212.70 Q 265.69 213.92 267.69 213.92 Q 268.70 213.92 269.61 213.55 Q 270.52 213.19 271.31 212.45 L 271.31 214.09 Q 270.48 214.66 269.55 214.95 Q 268.62 215.23 267.59 215.23 Q 264.95 215.23 263.43 213.61 Q 261.91 211.98 261.91 209.17 Q 261.91 206.36 263.43 204.74 Q 264.95 203.12 267.59 203.12 Q 268.64 203.12 269.57 203.40 Q 270.50 203.67 271.31 204.23 z"/>
+<title>Ponto C</title>
+<desc>C = (6, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clip95cc9da1-8ae6-44bf-886b-0f7d6c5b509f">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 130.40 37.061 C 130.40 39.823 128.17 42.061 125.40 42.061 C 122.64 42.061 120.40 39.823 120.40 37.061 C 120.40 34.300 122.64 32.061 125.40 32.061 C 128.17 32.061 130.40 34.300 130.40 37.061 z"/>
+<title>Ponto B</title>
+<desc>Ponto B: Rotação de C pelo ângulo 70°</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clip5e00d5df-da1c-43ef-a760-ff88438449a7">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 130.40 37.061 C 130.40 39.823 128.17 42.061 125.40 42.061 C 122.64 42.061 120.40 39.823 120.40 37.061 C 120.40 34.300 122.64 32.061 125.40 32.061 C 128.17 32.061 130.40 34.300 130.40 37.061 z"/>
+<title>Ponto B</title>
+<desc>Ponto B: Rotação de C pelo ângulo 70°</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clipee94cacd-11a0-4b91-a83a-448e8edc39cf">
+  <path d="M 0.0000 0.0000 L 0.0000 259.00 L 310.00 259.00 L 310.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#4d4dff">
+  <path d="M 132.16 21.422 L 132.16 25.703 L 134.69 25.703 Q 135.95 25.703 136.57 25.172 Q 137.19 24.641 137.19 23.562 Q 137.19 22.469 136.57 21.945 Q 135.95 21.422 134.69 21.422 L 132.16 21.422 z M 132.16 16.625 L 132.16 20.141 L 134.48 20.141 Q 135.64 20.141 136.21 19.711 Q 136.78 19.281 136.78 18.391 Q 136.78 17.500 136.21 17.062 Q 135.64 16.625 134.48 16.625 L 132.16 16.625 z M 130.58 15.328 L 134.61 15.328 Q 136.41 15.328 137.38 16.078 Q 138.36 16.828 138.36 18.219 Q 138.36 19.281 137.86 19.914 Q 137.36 20.547 136.39 20.703 Q 137.56 20.953 138.20 21.750 Q 138.84 22.547 138.84 23.734 Q 138.84 25.297 137.78 26.148 Q 136.72 27.000 134.77 27.000 L 130.58 27.000 L 130.58 15.328 z"/>
+<title>Ponto B</title>
+<desc>Ponto B: Rotação de C pelo ângulo 70°</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+</g><!-- layer0 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->

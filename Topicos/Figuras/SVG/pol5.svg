@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="2.6cm"
+     height="2.44cm"
+     viewBox="0 0 128 121"
+     >
+<title>
+
+</title>
+<g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clipc7621abb-0ef9-40b1-bc4f-9830e06dff15">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 39.000 103.00 L 89.000 103.00 L 104.45 55.447 L 64.000 26.058 L 23.549 55.447 z"/>
+<title>Polígono pol1</title>
+<desc>Polígono pol1: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<clipPath id="clip07c0522f-8fe4-41c2-b25c-c83915612eb5">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 39.000 103.00 L 89.000 103.00"/>
+<title>Segmento f</title>
+<desc>Segmento f: Segmento A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<clipPath id="clip2926bca6-ffa1-4480-a12b-be241d2bba1d">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 39.000 103.00 L 89.000 103.00"/>
+<title>Segmento g</title>
+<desc>Segmento g: Segmento A, B</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+<clipPath id="clip1d24775e-d3ac-46a7-9476-ad3f3fe52799">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 89.000 103.00 L 104.45 55.447"/>
+<title>Segmento h</title>
+<desc>Segmento h: Segmento B, C</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip0cc40b9c-93af-4b68-93ed-c5e6c58497e0">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 104.45 55.447 L 64.000 26.058"/>
+<title>Segmento i</title>
+<desc>Segmento i: Segmento C, D</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clip15d7445c-e230-4802-88ba-3f8fe67cd9a0">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 64.000 26.058 L 23.549 55.447"/>
+<title>Segmento j</title>
+<desc>Segmento j: Segmento D, E</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clipdc4c43c5-ca59-484f-8f53-c2e1aedac07d">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 23.549 55.447 L 39.000 103.00"/>
+<title>Segmento k</title>
+<desc>Segmento k: Segmento E, A</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clipa1e01359-281c-454d-a930-2e137795bd2d">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 44.000 103.00 C 44.000 105.76 41.761 108.00 39.000 108.00 C 36.239 108.00 34.000 105.76 34.000 103.00 C 34.000 100.24 36.239 98.000 39.000 98.000 C 41.761 98.000 44.000 100.24 44.000 103.00 z"/>
+<title>Ponto A</title>
+<desc>A = (0, -0.42)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clipb0fdce3c-77cc-4da5-9f8a-adf5c5a6578a">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 44.000 103.00 C 44.000 105.76 41.761 108.00 39.000 108.00 C 36.239 108.00 34.000 105.76 34.000 103.00 C 34.000 100.24 36.239 98.000 39.000 98.000 C 41.761 98.000 44.000 100.24 44.000 103.00 z"/>
+<title>Ponto A</title>
+<desc>A = (0, -0.42)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<clipPath id="clip09c84e55-05a1-4d6b-a7be-48e8d1cf30fb">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 94.000 103.00 C 94.000 105.76 91.761 108.00 89.000 108.00 C 86.239 108.00 84.000 105.76 84.000 103.00 C 84.000 100.24 86.239 98.000 89.000 98.000 C 91.761 98.000 94.000 100.24 94.000 103.00 z"/>
+<title>Ponto B</title>
+<desc>Ponto B: Ponto sobre Círculo(A, 1)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+<clipPath id="clip97792337-b303-4fcb-943b-96e74accb46b">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 94.000 103.00 C 94.000 105.76 91.761 108.00 89.000 108.00 C 86.239 108.00 84.000 105.76 84.000 103.00 C 84.000 100.24 86.239 98.000 89.000 98.000 C 91.761 98.000 94.000 100.24 94.000 103.00 z"/>
+<title>Ponto B</title>
+<desc>Ponto B: Ponto sobre Círculo(A, 1)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clip0c4a1bea-4013-430c-8fb0-e00dc27b6b59">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#444444">
+  <path d="M 109.45 55.447 C 109.45 58.209 107.21 60.447 104.45 60.447 C 101.69 60.447 99.451 58.209 99.451 55.447 C 99.451 52.686 101.69 50.447 104.45 50.447 C 107.21 50.447 109.45 52.686 109.45 55.447 z"/>
+<title>Ponto C</title>
+<desc>Ponto C: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clip45572c19-5566-45fe-ba49-4aa474564579">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 109.45 55.447 C 109.45 58.209 107.21 60.447 104.45 60.447 C 101.69 60.447 99.451 58.209 99.451 55.447 C 99.451 52.686 101.69 50.447 104.45 50.447 C 107.21 50.447 109.45 52.686 109.45 55.447 z"/>
+<title>Ponto C</title>
+<desc>Ponto C: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clip32bcfa92-62d7-47f8-b75d-2c49fc721545">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#444444">
+  <path d="M 69.000 26.058 C 69.000 28.819 66.761 31.058 64.000 31.058 C 61.239 31.058 59.000 28.819 59.000 26.058 C 59.000 23.296 61.239 21.058 64.000 21.058 C 66.761 21.058 69.000 23.296 69.000 26.058 z"/>
+<title>Ponto D</title>
+<desc>Ponto D: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clip3e5b7d01-b53a-4607-8d34-821236f94153">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 69.000 26.058 C 69.000 28.819 66.761 31.058 64.000 31.058 C 61.239 31.058 59.000 28.819 59.000 26.058 C 59.000 23.296 61.239 21.058 64.000 21.058 C 66.761 21.058 69.000 23.296 69.000 26.058 z"/>
+<title>Ponto D</title>
+<desc>Ponto D: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+<clipPath id="clipbdc736d7-2c53-4163-bb80-17a9075946bb">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip16)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#444444">
+  <path d="M 28.549 55.447 C 28.549 58.209 26.311 60.447 23.549 60.447 C 20.788 60.447 18.549 58.209 18.549 55.447 C 18.549 52.686 20.788 50.447 23.549 50.447 C 26.311 50.447 28.549 52.686 28.549 55.447 z"/>
+<title>Ponto E</title>
+<desc>Ponto E: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip16 -->
+<clipPath id="clipa5e4a4f4-dbd6-488d-b755-232bed139027">
+  <path d="M 0.0000 0.0000 L 0.0000 122.00 L 130.00 122.00 L 130.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip17)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 28.549 55.447 C 28.549 58.209 26.311 60.447 23.549 60.447 C 20.788 60.447 18.549 58.209 18.549 55.447 C 18.549 52.686 20.788 50.447 23.549 50.447 C 26.311 50.447 28.549 52.686 28.549 55.447 z"/>
+<title>Ponto E</title>
+<desc>Ponto E: Polígono(A, B, 5)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip17 -->
+</g><!-- layer0 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->
