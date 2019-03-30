@@ -90,7 +90,7 @@ O mais fácil de definir de todos os conjuntos numéricos apresentados até ent�
 Porém como o produto de dois números negativos, é sempre positivo, neste conjunto não podemos calcular a raiz quadrada de qualquer número real, temos portanto mais um problema a ser resolvido, e para tal os matemáticos criaram então mais um conjunto numérico o conjunto dos números complexos!
 
 
-\section{Conjunto dos números Complexos ()\texorpdfstring{$\C$}{C})}
+\section{Conjunto dos números Complexos (\texorpdfstring{$\C$}{C})}
 
 Para resolver o problema da raiz quadrada de um número negativo, criou-se o número imaginário puro $i$, definido por $i= \sqrt{-1}$, portanto $i^2= -1$, criou-se assim um número $i$ que elevado ao quadrado desse $-1$. Temos agora como calcular a raiz quadrada de qualquer número real. Definimos a partir deste número imaginário o conjunto dos números complexos por:
 \[\C= \{a + bi; a, b \in \R \} ,\]
@@ -105,69 +105,92 @@ Note que, se tivermos $b=0$, estamos com o conjunto dos números reais, portanto
   \end{figure}
 
 \section{Subconjuntos numéricos e suas representações}
-\textbf{Subconjuntos dos números Reais}
-\begin{itemize}
- \item $\R^{*}=\{x \in \R \mid x \neq 0\}$ conjunto dos números reais não-nulos;
- \item $\R_{+}=\{x \in \R \mid x \geq 0\}$ conjunto dos números reais não-negativos;
- \item $\R^{*}_{+}=\{x \in \R \mid x > 0\}$ conjunto dos números reais positivos;
- \item $\R_{-}=\{x \in \R \mid x \leq 0\}$ conjunto dos números reais não-positivos;
- \item $\R^{*}_{-}=\{x \in \R \mid x < 0\}$ conjunto dos números reais negativos.
-\end{itemize}
 
-\textbf{Intervalos numéricos}
+\textbf{Intervalos numéricos limitados}
 \begin{itemize}
  \item Intervalo aberto: $]a, b[= \{x \in \R \mid a < x < b\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/aberto-a-aberto-b.pdf}
+ \end{figure}
  \item Intervalo fechado: $[a, b]= \{x \in \R \mid a \leq x \leq b\}$;
- \item Intervalo aberto a direita e fechado a esquerda: $[a, b[= \{x \in \R \mid a \leq x < b\}$;
- \item Intervalo aberto a esquerda e fechado a direita: $]a, b]= \{x \in \R \mid a < x \leq b\}$.
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/fechado-a-fechado-b.pdf}
+ \end{figure}
+ \item Intervalo aberto à direita e fechado à esquerda: $[a, b[= \{x \in \R \mid a \leq x < b\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/fechado-a-aberto-b.pdf}
+ \end{figure}
+ \item Intervalo aberto à esquerda e fechado à direita: $]a, b]= \{x \in \R \mid a < x \leq b\}$.
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/aberto-a-fechado-b.pdf}
+ \end{figure}
 \end{itemize}
 
 
-\newpage
 
-\section{Exercícios}
-\begin{enumerate}
- \item Dados os conjuntos $A = \{x \in \N \mid -1 < x \leq 4 \}$ e $B = \{ x \in \Z \mid 0 \leq x < 2\}$. Determine:
- \begin{enumerate}
- \item O conjunto $A \cap B$:
- \item O conjunto $A \cup B$:
- \end{enumerate}
+\textbf{Intervalos numéricos ilimitados}
+\begin{itemize}
+\item Conjunto dos números reais maiores que $a$: $[a, +\infty[ = \{ x \in \R \mid a < x \}$
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/aberto-a-inf.pdf}
+ \end{figure}
 
- \item Determine o menor número que pertence a cada um dos conjuntos:
- \begin{enumerate}
- \item $\{x \in \N \mid x \geq 2 \}$:
- \item $\{x \in \N \mid x > \frac{7}{5} \}$:
- \item $\{x \in \N \mid x > \pi \}$:
- \item $\{x \in \N \mid x > -3 \}$:
- \item $\{x \in \Z \mid x \geq -3 \}$:
- \item $\{x \in \Z \mid x > \frac{7}{5} \}$:
- \item $\{x \in \Z \mid x > e \}$:
- \end{enumerate}
+\item Conjunto dos números reais maiores ou iguais à $a$: $[a, +\infty[ = \{ x \in \R \mid a \leq x \}$
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/fechado-a-inf.pdf}
+ \end{figure}
+ 
+\item Conjunto dos números reais menores que $b$: $]-\infty, b] = \{ x \in \R \mid x < b \}$
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/inf-aberto-b.pdf}
+ \end{figure}
 
- \item Complete as lacunas usando os símbolos $\in$ e $\notin$:
- \begin{enumerate}
- \begin{multicols}{2}
- \item $-3 \underline{\hspace{1cm}} \N$
- \item $-102 \underline{\hspace{1cm}} \Z$
- \item $0,25 \underline{\hspace{1cm}} \Q$
- \item $\pi \underline{\hspace{1cm}} \I$
- \item $\sqrt{3} \underline{\hspace{1cm}} \R$
- \item $(-6)^2 \underline{\hspace{1cm}} \N$
- \item $\frac{2}{5} \underline{\hspace{1cm}} \Z$
- \item $\frac{7}{9} \underline{\hspace{1cm}} \Q$
- \item $e \underline{\hspace{1cm}} \I$
- \item $\sqrt{-4} \underline{\hspace{1cm}} \R$
- \end{multicols}
- \end{enumerate}
+\item Conjunto dos números reais menores ou iguais à $b$: $]-\infty, b] = \{ x \in \R \mid x \leq b \}$
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=3.5cm]{../Topicos/Figuras/inf-fechado-b.pdf}
+ \end{figure}
 
- \item Indique qual o número racional geratriz das seguintes dízimas periódicas:
- \begin{enumerate}
- \item $0,464646 \cdots$
- \item $2,222222 \cdots$
- \item $7,2333 \cdots$
- \item $0,124124 \cdots$
- \end{enumerate}
-
- \item Sejam $x$ e $y$ dois números reais. Sendo $x = 2,777 \cdots$ e $y = 0,256 \cdots$, dízimas periódicas. Calcule soma das frações geratrizes de $x$ e $y$.
-
-\end{enumerate}
+\item Conjunto dos números reais: $]-\infty, +\infty[ = \R$
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/reta.pdf}
+ \end{figure}
+\end{itemize}
+ 
+ 
+\textbf{Outros subconjuntos dos números Reais}
+\begin{itemize}
+ \item Conjunto dos números reais não-nulos: $\R^{*}=\{x \in \R \mid x \neq 0\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/n-nulos.pdf}
+ \end{figure}
+ \item Conjunto dos números reais não-negativos: $\R_{+}=\{x \in \R \mid x \geq 0\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/n-negativos.pdf}
+ \end{figure}
+ \item Conjunto dos números reais positivos: $\R^{*}_{+}=\{x \in \R \mid x > 0\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/positivos.pdf}
+ \end{figure}
+ \item Conjunto dos números reais não-positivos: $\R_{-}=\{x \in \R \mid x \leq 0\}$;
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/n-positivos.pdf}
+ \end{figure}
+ \item Conjunto dos números reais negativos: $\R^{*}_{-}=\{x \in \R \mid x < 0\}$.
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=7.5cm]{../Topicos/Figuras/negativos.pdf}
+ \end{figure}
+\end{itemize}
