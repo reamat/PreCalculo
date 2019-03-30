@@ -9,7 +9,7 @@ A notação $x \in A$ (lê-se "$x$ pertence à $A$) significa que $x$ é um elem
 Dados os elementos $a, e, i, o, u$ indica-se com $\{a, e, i, o, u\}$ o conjunto que é formado por estes elementos. Assim, por exemplo, $V= \{a, e, i, o, u\}$ é o conjunto das vogais do alfabeto português, quando representamos um conjunto desta forma dizemos que estamos representando o conjunto por enumeração de seus elementos.
 
 Assim se denotarmos por $U$ o conjunto formado pelas letras do alfabeto português, como toda vogal é uma letra do alfabeto português, podemos representar o conjunto $V$ da seguinte forma:
-\[V= \{x \in U | x \text{ é uma vogal}\}\]
+\[V= \{x \in U \mid x \text{ é uma vogal}\}\]
 aqui $x$ representa um elemento qualquer do conjunto $U$.
 
 Esta segunda forma que usamos para descrever o conjunto $V$ é uma forma usual de descrever conjuntos na matemática, perceba que nela começamos pensando em um conjunto "grande" $U$ (que chamamos de conjunto universo) e em uma propriedade $P$ bem particular que alguns elementos deste conjunto satifaziam, e assim obtemos o conjunto $V$.
@@ -66,7 +66,7 @@ Notações:
 Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimos as seguintes operações entre estes conjuntos:
 \begin{itemize}
  \item União:
- $A \cup B=\{x / x \in A \text{ ou } x \in B\}.$
+ $A \cup B=\{x \mid x \in A \text{ ou } x \in B\}.$
 
  \begin{venndiagram2sets}
   \fillA \fillB
@@ -76,7 +76,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \newpage
 
  \item Interseção:
- $A \cap B=\{x / x \in A \text{ e } x \in B\}.$
+ $A \cap B=\{x \mid x \in A \text{ e } x \in B\}.$
 
  \begin{venndiagram2sets}
   \fillACapB
@@ -86,13 +86,13 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \item Diferença:
 
- $A - B= \{x | x \in A \text{ e } x \notin B\}.$
+ $A - B= \{x \mid x \in A \text{ e } x \notin B\}.$
 
  \begin{venndiagram2sets}
   \fillANotB
  \end{venndiagram2sets}
 
- $B - A= \{x | x \notin A \text{ e } x \in B\}.$
+ $B - A= \{x \mid x \notin A \text{ e } x \in B\}.$
 
  \begin{venndiagram2sets}
   \fillBNotA
@@ -102,25 +102,25 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \item Complementares:
 
- $\overline{A}= A^{C}= \{x \in U / x \notin A\}$
+ $\overline{A}= A^{C}= \{x \in U \mid x \notin A\}$
 
  \begin{venndiagram2sets}
   \fillNotA
  \end{venndiagram2sets}
 
- $\overline{B}= B^{C}= \{x \in U / x \notin B\}$
+ $\overline{B}= B^{C}= \{x \in U \mid x \notin B\}$
 
  \begin{venndiagram2sets}
   \fillNotB
  \end{venndiagram2sets}
 
- $\overline{A \cap B}= (A\cap B)^{C}= \{x \in U / x \notin (A\cap B)\}$
+ $\overline{A \cap B}= (A\cap B)^{C}= \{x \in U \mid x \notin (A\cap B)\}$
 
  \begin{venndiagram2sets}
   \fillNotAorNotB
  \end{venndiagram2sets}
 
- $\overline{A\cup B}= (A\cup B)^{C}= \{x \in U / x \notin (A\cup B)\}$
+ $\overline{A\cup B}= (A\cup B)^{C}= \{x \in U \mid x \notin (A\cup B)\}$
 
  \begin{venndiagram2sets}
   \fillNotAorB
@@ -129,7 +129,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \vskip0.4cm
 
  \item Produto cartesiano:
- $A \times B= \{(a, b)| a \in A \text{ e } b \in B \}$
+ $A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \}$
 
  O produto cartesiano de dois conjuntos pode ser representado usando eixos coordenados, como mostra o exemplo abaixo. Esta representação é particularmente útil para representar os gráficos de funções de $\R$ para $\R$.
 
@@ -204,9 +204,9 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  Dada uma família $\mathcal{A}$ de conjuntos, ou seja, dado um conjunto $\mathcal{A}$ de conjuntos, temos:
  \item União de todos os conjuntos que são elementos de $\mathcal{A}$:
- $$\bigcup_{A \in \mathcal{A}} A = \{x| x \in A \text{ para algum } A \in \mathcal{A}\}$$
+ $$\bigcup_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para algum } A \in \mathcal{A}\}$$
  \item Interseção de todos os conjuntos que são elementos de $\mathcal{A}$:
- $$\bigcap_{A \in \mathcal{A}} A = \{x| x \in A \text{ para todo } A \in \mathcal{A}\}$$
+ $$\bigcap_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para todo } A \in \mathcal{A}\}$$
 \end{itemize}
 
 \begin{prop}
