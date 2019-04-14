@@ -42,33 +42,58 @@ Observe que $\N \subset \Z \subset \Q$. E ainda que no conjunto dos números rac
  \begin{exem} Vejamos alguns exemplos de dízimas periódicas, e como dada a dízima encontrar a fração que a representa.
 
   \begin{enumerate}[a)]
-   \item Considere o número $0,333 \cdots$, neste caso o período é $3$, assim,
-   \[0,3333 \cdots= 0,\overline{3}= \frac{3}{9}= \frac{1}{3}\]
+   \item Considere o número $0,333 \ldots$, neste caso o período é $3$, assim,
+   \[0,3333 \ldots= 0,\overline{3}= \frac{3}{9}= \frac{1}{3}\]
    De fato,
    \begin{eqnarray*}
-    x &=& 0,3333 \cdots \\
-    10x &=& 10 \cdot 0,3333 \cdots \\
-    10x &=& 3,3333 \cdots \\
-    10x &=& 3 + 0,3333 \cdots \\
+    x &=& 0,3333 \ldots \\
+    10x &=& 10 \ldots 0,3333 \ldots \\
+    10x &=& 3,3333 \ldots \\
+    10x &=& 3 + 0,3333 \ldots \\
     10x &=& 3 + x \\
     10x - x &=& 3 \\
     9x &=& 3 \\
     x &=& \frac{3}{9} \\
-    0,3333 \cdots &=& \frac{1}{3}
+    0,3333 \ldots &=& \frac{1}{3}
    \end{eqnarray*}
    usando a mesma ideia conseguimos mostrar os exemplos abaixo.
 
-   \item Considere o número $0,121212 \cdots$, neste caso o período é $12$, assim,
-   \[0,121212 \cdots= 0,\overline{12}= \frac{12}{99}= \frac{4}{33}\]
-   \item Considere o número $0,225225225 \cdots$, neste caso o período é $225$, assim,
-   \[0,225225225 \cdots= 0,\overline{225}= \frac{225}{999}= \frac{75}{333}=\frac{25}{111}\]
-   \item Considere o número $7,464646 \cdots$, neste caso o número tem uma parte inteira que é $7$ e uma parte decimal $0,464646 \cdots$ na qual o período é $46$. Portanto,
+   \item Considere o número $0,121212 \ldots$, neste caso o período é $12$, assim,
+   \[0,121212 \ldots= 0,\overline{12}= \frac{12}{99}= \frac{4}{33}\]
+   
+   \item Considere o número $0,225225225 \ldots$, neste caso o período é $225$, assim,
+   \[0,225225225 \ldots= 0,\overline{225}= \frac{225}{999}= \frac{75}{333}=\frac{25}{111}\]
+   
+   \item Considere o número $7,464646 \ldots$, neste caso o número tem uma parte inteira que é $7$ e uma parte decimal $0,464646 \ldots$ na qual o período é $46$. Portanto,
    \begin{eqnarray*}
-    7,464646 \cdots &=& 7+0,464646 \cdots \\
+    7,464646 \ldots &=& 7+0,464646 \ldots \\
     &=& 7 + \frac{46}{99} \\
     &=& \frac{7\cdot 99 + 46}{99}\\
     &=& \frac{739}{99}
    \end{eqnarray*}
+   
+   \item Considere o número $0,2\bar{5}= 0,2555 \ldots$, neste caso o período é $5$. Assim para obter a fração equivalente a esta dízima, procedemos da seguinte forma:
+   \begin{eqnarray*}
+    x &=& 0,2555 \ldots \\
+    100x &=& 25,555 \ldots \\
+    10x &=& 2,555 \ldots \\
+    100x - 10x &=& 25,\bar{5} - 2, \bar{5} \\
+    90x &=& 23 \\
+    x&=& \frac{23}{90}    
+   \end{eqnarray*}
+   
+   \item Considere o número $1,317\bar{6}$, neste caso o período é $6$. Assim para obter a fração equivalente a esta dízima, procedemos da seguinte forma:
+   \begin{eqnarray*}
+    x &=& 1,317\bar{6} \\
+    10000 x &=& 13176, \bar{6} \\
+    1000 x &=& 1317,\bar{6}\\
+    10000 x - 1000 x &=& 13176, \bar{6} - 1317,\bar{6}\\
+    9000 x &=& 11859 \\
+    x &=& \frac{11859}{9000}\\
+    x &=& \frac{3953}{3000}
+   \end{eqnarray*}
+
+
 
   \end{enumerate}
 
@@ -273,7 +298,39 @@ Vamos agora apresentar alguns exemplos de como aplicar as operações de união,
  \includegraphics[width=8cm]{../Topicos/Figuras/intersecaoa-c-db.pdf}
  \end{figure}
  
+ \item Considere agora o conjunto $A= [1, \infty[ \times [2, 4[$, que é também representado da seguinte forma:
+ \[A= \{(x, y) \in \R^2 \mid 1 \leq x \text{ e } 2 \leq y < 4 \}\]
+   \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{../Topicos/Figuras/cartesiano1infty24.pdf}
+ \end{figure}
+ 
+ \item Considere agora o conjunto $B= [1, 4[ \times [3, 5[$, que é também representado da seguinte forma:
+ \[B= \{(x, y) \in \R^2 \mid 1 \leq x \leq 4 \text{ e } 3 \leq y < 5 \}\]
+   \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{../Topicos/Figuras/cartesiano1435.pdf}
+ \end{figure}
+ 
+ \item Considerando agora os seguintes conjuntos $A$ e $B$:
+ \[A= \{(x, y) \in \R^2 \mid 1 \leq x \text{ e } 2 \leq y < 4 \}\]
+ \[B= \{(x, y) \in \R^2 \mid 1 \leq x \leq 4 \text{ e } 3 \leq y < 5 \}\]
+ temos que:
+  
+ \item $A \cap B$ é representado graficamente por:
+    \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{../Topicos/Figuras/cartesianointersecao.pdf}
+ \end{figure}
+ 
+ \begin{itemize}
+ \item $A \cup B$ é representado graficamente por:
+    \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{../Topicos/Figuras/cartesianouniao.pdf}
+ \end{figure}
+ 
+ \end{itemize}
  
  
 \end{itemize}
-
