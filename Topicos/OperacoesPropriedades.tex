@@ -1,4 +1,4 @@
- \chapter{Operações Numéricas e Algébricas}
+ \chapter{Operações Numéricas}
 
  Antes de tratar das operações numéricas e algébricas, vale ressaltar que quando estamos resolvendo uma expressão numérica ou uma expressão algébrica temos vários cálculos para serem feitos sucessivamente, e para tal precisamos obedecer uma ordem de prioridades que é a seguinte:
 
@@ -46,9 +46,9 @@ Priorize cálculos em:
   \begin{multicols}{2}
   \begin{enumerate}[1)]
    \item $8 \cdot 20= 160$
-   \item $8 \cdot (-7)= -160$
-   \item $-8 \cdot 7= -160$
-   \item $(-8) \cdot (-7)= 160$
+   \item $8 \cdot (-20)= -160$
+   \item $-8 \cdot 20= -160$
+   \item $(-8) \cdot (-20)= 160$
    \item $45 \div 5= 9$
    \item $45 \div (-5)= -9$
    \item $(-45) \div 5= -9$
@@ -266,7 +266,7 @@ Priorize cálculos em:
  \end{tabular}
  \end{table}
 
- \section{Operações Algébricas}
+ \chapter{Operações Algébricas}
 
  Expressões algébricas são expressões matemáticas que envolvem números, letras e operações.
 
@@ -312,6 +312,7 @@ Priorize cálculos em:
    \item $x \cdot 2y= (1 \cdot 2)xy= 2xy$
    \item $3x \cdot 2x^2y= (3 \cdot 2)x^{1+2}y= 6x^3y$
    \item $4x^4 \cdot \frac{1}{2}x^{-2}= (4 \cdot \frac{1}{2})x^{4-2}= 2x^2$
+   \item $(x - 1) \cdot (x - 2)= x(x-2) - 1(x-2)= x^2 -2x -x +2= x^2 - 3x + 2$
   \end{itemize}
 
   \vskip0.3cm
@@ -326,6 +327,7 @@ Priorize cálculos em:
    \item $2y \div x= 2\frac{y}{x}$
    \item $4y^3 \div 2y^2= \frac{4}{2} \cdot \frac{y^3}{y^2}= 2y^{3-2}= 2y$
    \item $\frac{x^2yz^3}{x^2y^3z^2}= x^{2-2}y^{1-3}z^{3-2}= x^0 y^{-2}z^{1}= \frac{z}{y^2}$
+   \item $\frac{(x+3) \cdot (x-1)}{(x-1)\cdot (2x+3)}= \frac{x+3}{2x+3}$
   \end{itemize}
 
  \vskip0.3cm
@@ -335,7 +337,7 @@ Priorize cálculos em:
   Na potenciação devemos aplicar o expoente ao coeficiente e à incógnita, obedecendo as propriedades de potência.
 
     \begin{itemize}
-     \item $(2x)^2= 2^2 \cdot x^2= 2x^2$
+     \item $(2x)^2= 2^2 \cdot x^2= 4x^2$
      \item $(3x^2)^3= 3^3 \cdot x^{2\cdot 3}= 27x^6$
      \item $\left(\frac{3a^2}{4}\right)^2= \frac{3^2 a^{2 \cdot 2}}{4^2}= \frac{9a^4}{16}$
     \end{itemize}
@@ -349,7 +351,8 @@ Priorize cálculos em:
      \item $\sqrt{x}= x^{\frac{1}{2}}$
      \item $\sqrt{x^4}= (x^4)^{\frac{1}{2}}= x^{\frac{4}{2}}= x^2$
      \item $\sqrt[3]{8x^6}= \sqrt[3]{8} \cdot \sqrt[3]{x^6}= 2 x^{\frac{6}{3}}= 2x^2$
-     \item $\sqrt{\frac{2x^2}{16}}= \frac{\sqrt{2x^2}}{\sqrt{16}}= \frac{\sqrt{2}x}{4}$
+     \item $\sqrt{\frac{2x^2}{16}}= \frac{\sqrt{2x^2}}{\sqrt{16}}= \frac{|x|\sqrt{2}}{4}$
+     \item $\sqrt{x^2}= |x|$
     \end{itemize}
 
  \vskip0.3cm
@@ -370,3 +373,52 @@ Priorize cálculos em:
   \item Cubo perfeito (+): $(a+b)^3= a^3 + 3a^2b + 3ab^2 + b^3$
   \item Cubo perfeito (-): $(a-b)^3= a^3 - 3a^2b + 3ab^2 - b^3$
  \end{itemize}
+ 
+ \section{Polinômios}
+ 
+ Seja $K= \R \text{ ou } \C$. Um polinômio sobre $K$ ou em $K$ é uma função de $p(x): K \to K$, dada por: \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
+ onde $a_n, \ldots, a_0 \in K$.
+ 
+ \begin{teo}
+  Seja $p$ um polinômio em $K$, escrito na forma
+  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
+  Se nem todos os $a_n, \ldots, a_0$ forem iguais a $0$, então $p$ tem no máximo $n$ raízes em $K$. Se  
+  \[q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0\]
+  é outro polinômio, tal que, $p(x)= q(x)$ para todo $x \in K$, então $a_i= b_i$ para todo $i$.
+ \end{teo}
+ 
+ Este Teorema mostra que, quando escrevemos um polinômio $p$ na forma 
+ \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
+ com $a_i \in K$, então os números $a_0, \ldots, a_n$ são determinados de modo único. Eles são chamados coefiecientes do polinômio. 
+ 
+ Se $n$ é o maior inteiro tal que $a_n \neq 0$, dizemos que $n$ é o grau do de $p$, e escrevemos $n= gr p$. Dizemos também que $a_0$ é o termo constante de $p$.
+ 
+ \begin{teo}
+  Sejam $p$, $q$ polinômios com coeficientes em $K$. Então
+  \[gr(fg)= gr(f) + gr (q) \ .\]
+ \end{teo}
+ 
+ \begin{teo}
+  Sejam $p(x)$, $g(x)$ polinômios sobre o corpo $K$, i.e., polinômios em $K[x]$, e suponhamos que $gr g \geq 0$. Então, existem polinômios $q(x)$ e $r(x)$ tais que
+  \[p(x)= q(x)g(x) + r(x) \ , \]
+  em que $gr(r) < gr (g)$. Essas condições permitem determinar os polinômio $q$ e $r$ de modo único.
+ \end{teo}
+
+
+
+ 
+ \begin{exem}
+  Como um exemplo para a divisão de polinômios, façamos a divisão do polinômio $p_1(x)=x^3-4x^2+x+6$ pelo binômio $g_1(x)=x+1$:
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{../Topicos/Figuras/polinomiosdivisao.pdf}
+ \end{figure}
+ 
+ note que o quociente da divisão é $q_1(x)= x^2 - 5x + 6$, e o resto desta divisão é $r(x)=0$ (zero). Como o resto é zero concluímos que $p_1(x)$ é divisível por $g_1(x)$. Portanto $p_1(x)= q_1(x)g_1(x)$, ou seja, $x^3-4x^2+x+6= (x^2-5x+6)(x+1)$.
+ \end{exem}
+ 
+ \begin{teo}
+  Todo polinômio de grau $\geq 1$ em $K[x]$ pode ser expresso como um produto $p_1, \ldots, p_n$ de polinômios irredutíveis. Nesse produto, os polinômios $p_1, \ldots, p_n$ são determinados de modo único, a menos de um rearranjo, e a menos de eventuais fatores constantes não-nulos.   
+ \end{teo}
+
