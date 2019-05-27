@@ -133,7 +133,7 @@ Simplificando as notações podemos representar as duas informações acima da s
 Dada uma função $f: A \rightarrow B$, o conjunto $A$ chama-se \textbf{domínio} da função $f$ e o conjunto $B$ chama-se \textbf{contradomínio} da função $f$.  Para cada $x \in A$, o elemento $f(x)= y \in B$ chama-se imagem de $x$ pela função $f$. Assim o conjunto \textbf{imagem} da função $f$ é dado por:
 \[Im(f)= \{ y \in B \mid y = f(x) \text{ para algum } x \in A\} .\]
 
-Em outras palavras o domínio de uma função é um subconjunto de números Reais nos quais faz sentido aplicar a regra da função, e contradomínio é o conjunto $\mathbb{R}$, ou um subconjunto de $\mathbb{R}$ que contenha o conjunto $Im(f)$.
+No nosso contexto, o domínio de uma função é um subconjunto dos números Reais nos quais faz sentido aplicar a regra da função, e o contradomínio é o conjunto $\mathbb{R}$, ou um subconjunto de $\mathbb{R}$ que contenha o conjunto $Im(f)$.
 
 E o \textbf{gráfico} da função é dado por:
 \[Gr(f) = \{ (x, y) \in A \times B \mid x \in A, y = f(x) \in B\} .\]
@@ -231,7 +231,7 @@ As funções são classificadas em:
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (a.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (b.west);
 \end{tikzpicture} \\
-\textbf{sobrejetora \\ e \\ não injetora}
+\textbf{sobrejetora e não injetora}
 \end{multicols}
 
 \begin{multicols}{2}
@@ -250,7 +250,7 @@ As funções são classificadas em:
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
 \end{tikzpicture} \\
-\textbf{não sobrejetora \\ e \\ não injetora}\\
+\textbf{não sobrejetora e não injetora}\\
  \begin{tikzpicture}
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
@@ -267,7 +267,7 @@ As funções são classificadas em:
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
 \end{tikzpicture} \\
-\textbf{não sobrejetora \\ e \\ injetora}
+\textbf{não sobrejetora e injetora}
 \end{multicols}
 
 \begin{exem}
@@ -434,24 +434,40 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
 
  Casos particulares:
  \begin{itemize}
- \item Funções do 1º grau, ou função afim
+ \item Funções do 1º grau, ou funções afim
 
  São funções $f: \R \rightarrow \R$ dadas por:
  \[f(x)= ax + b\]
- \todo{ zeros ou raízes, crescente, decrescente, gráfico, coeficiente angular e coeficiente linear}
 
- Os zeros ou raízes das funções de 1ª grau $f$ são os $x \in dom(f)$ tais que $ax+b=0$, como esta equação do 1º grau possui uma única raiz, a função de 1º grau também possui uma única raiz $x_1$, o ponto $(x_1, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$.
+ Os zeros ou raízes das funções de 1ª grau $f$ são os $\tilde{x} \in dom(f)$ tais que $f(\tilde{x})=0$, ou seja, são os $\tilde{x} \in dom(f)$, tais que $a\tilde{x}+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
 
- Quando $\destaque{a > 0}$ temos que dados $x_1 < x_2 \in dom(f)$, teremos $f(x_1) < f(x_2)$, logo $f$ é por definição \textbf{crescente}.
+ Quando $\destaque{a > 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
+ \[x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,\]
+  portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}. 
 
- Quando $\destaque{a < 0}$ temos que dados $x_1 < x_2 \in dom(f)$, teremos $f(x_1) > f(x_2)$, logo $f$ é por definição \textbf{decrescente}.
+ Quando $\destaque{a < 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
+ \[x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,\]
+ portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
+ 
+ Observe que no caso destas funções de 1º grau esta propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
 
- Na figura abaixo temos os gráficos de três funções de primeiro grau, sendo uma delas a função $f_1(x)= x$, que é a função identidade.
+ Na figura abaixo temos os gráficos de três funções de primeiro grau crescentes, sendo uma delas a função $f_1(x)= x$, que é a função identidade.
  \begin{figure}[H]
  \centering
     \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao1grau.pdf}}
     \caption{Gráficos de funções do 1º grau}
   \end{figure}
+  
+ Observe na figura que o gráfico de uma função de 1º grau é uma reta no plano $\R^2$. Na figura temos o gráfico de três funções:
+ $f_1(x)= x$ cujo gráfico passa pelos pontos $(0,0)$ e $(1,1)$;
+ $f_2(x)= x+1$ cujo gráfico passa pelos pontos $(0,1)$ e $(1,2)$;
+ $f(x)= 2x$ cujo gráfico passa pelos pontos $(0,2)$ e $(1,2)$.
+ 
+ Observe que os gráficos das funções $f_1$ e $f_2$ são retas paralelas, isso acontece por que o coeficiente $a$ que multiplica o $x$ em ambas as funções é $1$, já o gráfico da função $f$ que possui $a= 2$ não é paralelo aos outros dois gráficos. Esta é uma propriedade das funções de este coeficiente mede a inclinação da reta (gráfico da função) em relação ao eixo $x$, ou seja, $a$ determina o ângulo que o gráfico da função forma com o eixo $x$, observamos que ao mudar o valor de $a$ realmente mudamos a inclinação do gráfico da função em relação ao eixo $x$.
+ 
+ Uma outra propriedade das funções de 1º grau é que o valor de $b$ das funções, conhecido como \textbf{coeficiente linear}, determina a interseção do gráfico da função com o eixo $y$, e no nosso exemplo vemos que isso realmente acontece, pois as funções $f_1$ e $f$ que possuem $b=0$ interseccionam o eixo $y$ na origem, já a função $f_2$ que possui $b=1$ intersecciona o eixo $y$ no ponto $(0,1)$.
+ 
+ 
 
 
 
@@ -459,7 +475,6 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
 
  São funções $f: \R \rightarrow \R$ dadas por:
  \[f(x)= ax^2 + bx + c\]
- \todo{ zeros ou raízes, concavidade, máximos ou mínimo}
 
  Os zeros ou raízes das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
  \[\destaque{\Delta= b^2 - 4*a*c}\]
@@ -468,6 +483,8 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
  Se $\destaque{\Delta = 0}$ a função $f$ possui uma única raiz real;
 
  Se $\destaque{\Delta > 0}$ a função $f$ possui duas raízes reais distintas, que podem ser calculadas resolvendo a equação de 2º grau através da fórmula para equações de 2º grau.
+ 
+ As raízes da equação $ax^2+bx+c=0$, são os zeros da função $f(x)= ax^2+bx+c$, pois são os valores de $x$ para os quais $f(x)=0$. Graficamente, quando estas funções possuem zeros eles são exatamente os pontos de interseção do gráfico da $f$ com o eixo $x$.
 
  Com relação a concavidade, o gráfico da função de 2º grau tem concavidade voltada \textbf{para cima} quando $\destaque{a > 0}$, e concavidade voltada \textbf{para baixo} quando $\destaque{a < 0}$.
 
@@ -483,90 +500,373 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
   \begin{figure}[H]
    \fbox{\subfigure[$a > 0$ e $\Delta < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f1.pdf}}}
    \fbox{\subfigure[$a > 0$ e $\Delta = 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f2.pdf}}}
+  \end{figure} 
+  
+  \begin{figure}[H] 
    \fbox{\subfigure[$a > 0$ e $\Delta > 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f3.pdf}}}
    \fbox{\subfigure[$a < 0$ e $\Delta < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f4.pdf}}}
+  \end{figure}
+  
+   \begin{figure}[H]
    \fbox{\subfigure[$a < 0$ e $\Delta = 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f5.pdf}}}
    \fbox{\subfigure[$a < 0$ e $\Delta > 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f6.pdf}}}
    \caption{Gráficos de funções do 2º grau}
-\end{figure}
+ \end{figure}
+ 
+ Quando abordamos as funções de 1º grau discutimos as noções de crescente e decrescente, observamos que no caso das funções de 1º grau estes conceitos são globais, ou seja estas funções são crescentes ou decrescentes em todo o seu domínio. Estes conceitos podem ser aplicados também em funções de 2º grau, porém para funções de 2º grau eles conceitos locais, ou seja valem apenas em um intervalo do domínio da função. De fato, considere a função $f(x)= ax^2+bx+c$, com $a>0$ já vimos que neste caso existe um ponto $x_1$ que é o ponto de mínimo de $f$, nesta situação $f$ será descrescente no intervalo $]- \infty, x_1[$, e crescente no intervalo $]x_1, \infty[$. Caso tenhamos $a<0$, a função passa a ter um ponto de máximo, e nesta situação os intervalos de crescimento e descrescimento da função invertem.
+ 
+ Mas ainda temos que o conceito de concavidade para estas funções é um conceito global, ou seja estas funções possuem a mesma concavidade em todos os pontos do seu domínio.
 
-  \newpage
- \item Funções do 3º grau ou função cúbica
+ \newpage
+ \item Funções do 3º grau ou funções cúbicas
 
  São funções $f: \R \rightarrow \R$ dadas por:
  \[f(x)= ax^3 + bx^2 + cx + d .\]
- \todo{ zeros ou raízes, concavidades, máximos local ou mínimo local}
-
- As raízes ou zeros das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as função de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
+ 
+ As raízes ou zeros das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
  \begin{enumerate}[(I)]
-  \item 3 raízes distintas;
-  \item 1 única raiz;
-  \item 3 raízes sendo duas delas iguais;
-  \item 3 raízes iguais.
+  \item 3 raízes reais distintas;
+  \item 1 raiz real e duas raízes complexas;
+  \item 3 raízes reais sendo duas delas iguais;
+  \item 3 raízes reais iguais.
  \end{enumerate}
  Estes casos estão representados nos gráficos abaixo, onde consideramos sempre $a< 0$, o caso $a> 0$ é análogo.
 
 
    \begin{figure}[H]
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/g1.pdf}}}
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/g2.pdf}}}
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/g3.pdf}}}
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/g4.pdf}}}
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{../Topicos/Figuras/g1.pdf}}}
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{../Topicos/Figuras/g2.pdf}}}
+   \end{figure}
+   
+  \begin{figure}[H]
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{../Topicos/Figuras/g3.pdf}}}
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{../Topicos/Figuras/g4.pdf}}}
    \caption{Gráficos de funções do 3º grau}
   \end{figure}
 
- Observamos que as funções cúbicas não possuem pontos de mínimo e máximo global, estas possuem apenas pontos extremantes locais. Além disso o estudo de suas concavidades pode ser feito apenas localmente.
-
+ Observe que as funções de 3º grau possuem como imagem o conjunto $\R$, por isto não possuem pontos de mínimo e máximo global, além disso podem possuir intervalos em que elas são crescentes e intervalos nos quais elas são decrescentes, bem como apresentar intervalos com concavidade para cima e intervalos com concavidade para baixo, o que faz com que neste contexto possamos discutir os conceitos de pontos de mínimo e máximo, crescimento e decrescimento, e o conceito de concavidade todos localmente, porém uma discussão detalhada destes conceitos exige o conhecimento de algumas ferramentas de cálculo I, por este motivo não iremos detalhar estes conceitos.
+ 
  \end{itemize}
+ 
+ \begin{defi}
+  Dada um função $f: \R \rightarrow \R$. Dizemos que $f$ é uma \textbf{função par} se, para todo $x \in R$,
+  \[f(-x)= f(x) \ .\]
+  Dizemos que $f$ é uma \textbf{função ímpar} se, para todo $x \in R$,
+  \[f(-x)= - f(x) \ .\]
+ \end{defi}
+ 
+ \begin{exem}
+  \begin{enumerate}[a)]
+   \item a função $f(x)= x$ é uma função ímpar;
+   \[f(-x)= -x= -f(x) \]
+   \item a função $f(x)= x^2$ é uma função par;
+   \[f(-x)= (-x)^2= x^2 = f(x) \]
+   \item a função $f(x)= x^3$ é uma função ímpar.
+   \[f(-x)= (-x)^3= -x^3= -f(x)\]
+  \end{enumerate}
+
+ \end{exem}
+
+
 
   \subsection{Função modular}
+  
+  Considere a função $f: \R \rightarrow \R$, dada por $f(x)= |x|$, pela definição de módulo temos que $f$ é uma função definida por partes, da seguinte forma:
 
   \[f(x)= |x| = \begin{cases}
                  x, \text{ se } x \geq 0 \\
-                 -x, \text{ se } x \leq 0
-                \end{cases}\]
+                 -x, \text{ se } x < 0
+                \end{cases} \ .\]
+ 
+ Cujo gráfico é dado por:
+                
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcaomodulo.pdf}}
+    \caption{Gráfico da função módulo}
+  \end{figure}
+  
+  Note que $f$ é decrescente no intervalo $]-\infty, 0[$, e decrescente no intervalo $]0, \infty[$, e admite um mínimo em $x=0$.
+  
+  Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= |x+1|$, observe que:
+  \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
+  com isso podemos reescrever a função $f_1$ sem os módulos da seguinte forma:
+  
+  \[f_1(x)= \begin{cases}
+                 x + 1, \text{ se } x \geq -1 \\
+                 -x - 1, \text{ se } x < -1
+                \end{cases} \ .\]
+  Com isso a função modular pode ser vista como uma função linear por partes.
+  
+  Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= |x+1|+2$, temos que:
+  \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
+  com isso podemos reescrever a função $f_2$ sem os módulos da seguinte forma:
+  
+  \[f_2(x)= \begin{cases}
+                 x + 3, \text{ se } x \geq -1 \\
+                 -x + 1, \text{ se } x < -1
+                \end{cases} \ .\]
+  Com isso a função modular também pode ser vista como uma função linear por partes.
+  
+  Os gráficos das funções $f$, $f_1$ e $f_2$ estão dados na figura a seguir.  
+  
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcaomodulo2.pdf}}
+    \caption{Gráfico da função módulo}
+  \end{figure}
+  
+  Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante "dentro" do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante "fora" do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
+  
+  \section{Trigonometria}
 
+ \subsection{Triângulo retângulo}
+
+  Considere o triângulo retângulo, (triângulo que possui um de seus ângulos internos medindo $90 \degree$), como na figura abaixo:
+  \begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[width=7cm]{../Topicos/Figuras/triangulo_retangulo.pdf}}
+   \caption{Triângulo retângulo}
+  \end{figure}
+ para este triângulo temos que é válido o seguinte teorema:
+
+ \vskip0.3cm
+
+\colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ \textbf{Teorema de Pitágoras}
+  \[a^2= b^2 + c^2.\]
+ \end{center}
+ \end{minipage}}
+
+ \vskip0.3cm
+
+ Este é um resultado importante, já que com ele é possível encontrar o valor de um dos lados do triângulo, nos casos em que não temos todos os lados dados.
+
+ Para este triângulo, as funções seno, cosseno e tangente são dadas pelas seguintes razões trigonométricas, nesta ordem:
+
+ \vskip0.3cm
+
+\colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ \textbf{Funções trigonométricas}
+  \begin{eqnarray*}
+   sen(\alpha)= \frac{c}{a}= \frac{CO}{HI} \ ; \ \ cos(\alpha)= \frac{b}{a}= \frac{CA}{HI} \ ; \ \ tan(\alpha)= \frac{c}{b}= \frac{CO}{CA}.
+ \end{eqnarray*}
+ \end{center}
+ \end{minipage}}
+
+ \vskip0.3cm
+
+ Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. Porém estas funções estão definidas para qualquer número real, mas para um primeiro estudo é suficiente conhecer seus valores para os ângulos $0 \degree \leqslant \alpha \leqslant 360 \degree$.
+
+ Destacamos aqui os valores do seno, cosseno e tangente dos \emph{ângulos notáveis} que são os mais utilizados:
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|c|c|} \hline
+ \rowcolor{cinza}
+               & $0 \degree$  & $30 \degree$  & $45 \degree$  & $60 \degree$ & $90 \degree$  \\\hline
+  \textbf{sen} & $0$ &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ \\\hline
+  \textbf{cos} & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ \\\hline
+  \textbf{tan} & $0$ & $\frac{\sqrt{3}}{3}$ & $1$ & $\sqrt{3}$ & $\nexists$ \\\hline
+ \end{tabular}
+\end{table}
+ Na próxima seção veremos como utilizar estes valores para calcular seno, cosseno e tangente de ângulos maiores que $90 \degree$.
+
+\subsection{Círculo Trigonométrico}
+
+ No plano cartesiano, consideremos um círculo de centro na origem e raio $1$, neste círculo representamos as imagens das funções trigonométricas aplicadas à  $0 \degree \leqslant \alpha \leqslant 360 \degree$. Como mostra a seguinte figura:
+ \begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[width=9cm]{../Topicos/Figuras/circulo_trigonometrico.pdf}}
+   \caption{Círculo trigonométrico}
+  \end{figure}
+
+  A partir do círculo trigonométrico concluímos que:
+
+  \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+               &  $120\degree$  & $135\degree$  &  $150\degree$ \\\hline
+  \textbf{sen} & $sen(60\degree)$ &$sen(45\degree)$ & $sen(30\degree)$  \\\hline
+  \textbf{cos} & $-cos(60\degree)$ &$-cos(45\degree)$ & $-cos(30\degree)$  \\\hline
+  \textbf{tan} & $-tan(60\degree)$ &$-tan(45\degree)$ & $-tan(30\degree)$  \\\hline
+ \end{tabular}
+\end{table}
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+                & $210\degree$ & $225\degree$  & $240\degree$  \\\hline
+  \textbf{sen} &  $-sen(30\degree)$ & $-sen(45\degree)$ & $-sen(60\degree)$  \\\hline
+  \textbf{cos} &  $-cos(30\degree)$ & $-cos(45\degree)$ & $-cos(60\degree)$  \\\hline
+  \textbf{tan} &  $tan(30\degree)$ & $tan(45\degree)$ & $tan(60\degree)$   \\\hline
+ \end{tabular}
+\end{table}
+
+ \begin{table}[h]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+               & $300\degree$ & $315\degree$ & $330\degree$ \\\hline
+  \textbf{sen} & $sen(60\degree)$ & $sen(45\degree)$ & $sen(30\degree)$ \\\hline
+  \textbf{cos} & $cos(60\degree)$ & $cos(45\degree)$ & $cos(30\degree)$  \\\hline
+  \textbf{tan} & $-tan(60\degree)$ & $-tan(45\degree)$ & $-tan(30\degree)$  \\\hline
+ \end{tabular}
+\end{table}
+
+
+  Os ângulos podem também ser representados em radianos, respeitando a seguinte relação:
+
+  \[\destaque{\pi \text{ radianos}= 180 \degree}\]
+
+  Usando esta relação podemos transformar graus para radianos e radianos para graus, vamos ver dois exemplos:
+
+  \begin{exem}
+   Qual a medida em graus do ângulo que mede $\frac{\pi}{4} rad$?
+
+   \underline{Resolução:}
+
+   Sabemos que $\pi rad= 180\degree$, portanto usando a regra de 3 abaixo conseguimos encontrar o valor em graus deste ângulo:
+   \begin{eqnarray*}
+  \text{Graus} & & \text{Radianos} \\
+   180 & = & \pi\\
+  x & = & \frac{\pi}{4}
+ \end{eqnarray*}
+ usando a propriedade da proporcionalidade, ou seja, multiplicando cruzado temos:
+
+ $180 \cdot \frac{\pi}{4}= \pi \cdot x \Rightarrow \pi \cdot x= \frac{180 \pi}{4} \Rightarrow x= \frac{45 \pi}{\pi} \Rightarrow x= 45\degree$.
+
+ \fim
+  \end{exem}
+
+  \begin{exem}
+   Qual a medida em radianos do ângulo que mede $30\degree$?
+
+   \underline{Resolução:}
+
+   Sabemos que $\pi rad= 180\degree$, portanto usando a regra de 3 abaixo conseguimos encontrar o valor em graus deste ângulo:
+   \begin{eqnarray*}
+  \text{Graus} & & \text{Radianos} \\
+   180 & = & \pi\\
+  30 & = & x
+ \end{eqnarray*}
+ usando a propriedade da proporcionalidade, ou seja, multiplicando cruzado temos:
+
+ $180 \cdot x= \pi \cdot 30 \Rightarrow x= \frac{30 \pi}{180} \Rightarrow x= \frac{\pi}{6} rad$.
+
+ \fim
+  \end{exem}
+
+
+
+ \subsection{Relações trigonométricas}
+
+ Segue uma lista de algumas relações trigonométricas que são interessantes pela grande quantidade de aplicações:
+
+ \begin{eqnarray*}
+  tan(x)&=&\frac{sen(x)}{cos(x)} \\
+  sen^2(x) + cos^2(x)&=&1 \\
+  sen(a+b)&=&sen(a)\cdot cos(b)+sen(b)\cdot cos(a) \\
+  sen(a-b)&=&sen(a)\cdot cos(b)-sen(b)\cdot cos(a) \\
+  cos(a+b)&=&cos(a)\cdot cos(b)-sen(a)\cdot sen(b) \\
+  cos(a-b)&=&cos(a)\cdot cos(b)+sen(a)\cdot sen(b) \\
+  tan(a+b)&=& \frac{tan(a)+tan(b)}{1-tan(a)\cdot tan(b)} \\
+  tan(a-b)&=& \frac{tan(a)-tan(b)}{1-tan(a)\cdot tan(b)}
+ \end{eqnarray*}
+
+  
   \section{Funções Trigonométricas}
 
-  Casos particulares:
+  As funções trigonométricas fazem parte do grupo de funções periódicas, que são as funções que satisfazem a seguinte definição.
+  
+  \begin{defi}
+   Uma função $f: \R \rightarrow \R$ é denominada \textbf{periódica} quando existe um número real positivo $P$ tal que
+   \[f(x + P)= f(x)\]
+   para todo $x$ no domínio da $f$. O menor número real positivo $P$ que satisfaz esta propriedade é denominado período de $f$.
+  \end{defi}
+
+  Vamos definir as funções trigonométricas no maior subconjunto real possível, e estudar o comportamento de seus gráficos.
 
   \todo{ períodos, amplitude, intervalo de bijetividade, função inversa}
 
   \begin{itemize}
-  \item Função Seno: $f(x)= sen (x)$
+  \item Função Seno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= sen (x)$, cujo gráfico é:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/sen.pdf}}
 
-  \item Função Cosseno: $f(x)= cos (x)$
+  \item Função Cosseno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= cos (x)$, cujo gráfico é:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/cos.pdf}}
-
-  \item Função Tangente: $f(x)= tan (x)$
+  
+  Geométricamente podemos observar que o comportamento do gráfico das funções seno o cosseno no intervalo $[0, 2\pi]$ se repete em cada intervalo de comprimento $2\pi$. Isso pode ser visualizado também olhando para o círculo trigonométrico, por exemplo quando estamos olhando para um ângulo $\theta= 4\pi + \frac{\pi}{4}$ estamos apenas dando duas voltas no círculo trigonométrico e andando mais $\frac{\pi}{4}$, por isso:
+  \[sen(4\pi + \frac{\pi}{4})= sen(\frac{\pi}{4}) \ ,\]
+  \[cos(4\pi + \frac{\pi}{4})= cos(\frac{\pi}{4}) \ , \]
+  funções com esta propriedade de repetição de comportamento são denominadas funções periódicas, e o intervalo que se repete é chamado de período.
+  
+  Por interpretação do círculo trigonométrico vemos que, para todo $x \in \R$:
+  \[sen(x + 2 \pi)= sen(x) \ ,\]
+  \[cos(x + 2\pi)= cos(x) \ , \]
+  logo as funções seno e cosseno são de fato funções períodicas de período $2\pi$.
+  
+  \item Função Tangente: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= tan (x)$, cujo gráfico é:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/tan.pdf}}
+  
+  Lembramos que $tan(x)= \frac{sen(x)}{cos(x)}$, logo podemos entender o domínio da função tangente como o conjunto dos $x \in \R$ tais que $cos(x) \neq 0$.
+  
+  Note que o comportamento do gráfico da função tangente no intervalo $]-\frac{\pi}{2}, \frac{\pi}{2}[$ se repete indefinadamente, e ainda
+  \[tan(x)= tan(x + \pi)\]
+  donde concluímos que a função tangente é uma função períodica de período $\pi$.
 
-  \item Função Cossecante: $csc(x)= \dfrac{1}{sen (x)}$
+  \item Função Cossecante: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= csc(x)$, o gráfico desta função é: 
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/csc.pdf}}
+  
+  Como $csc(x)= \dfrac{1}{sen (x)}$ o domínio da função cossecante é exatamente o conjunto dos $x \in \R$ tais que $sen(x) \neq 0$.
+  
+  Ao observar o gráfico da função cossecante notamos que o gráfico da função no intervalo $]0, \pi[ \cup ] \pi, 2 \pi[$ se repete indefinidamente, e ainda
+  \[csc(x + 2\pi)= csc(x) \ , \]
+  logo esta é uma função periódica, com período $2\pi$.
 
-  \item Função Secante: $sec(x)= \dfrac{1}{cos (x)}$
+  \item Função Secante: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= sec(x)$, com gráfico dado por:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/sec.pdf}}
+  
+  Como $sec(x)= \dfrac{1}{cos (x)}$ o domínio da função secante é o conjunto dos $x \in \R$ tais que $cos(x) \neq 0$.
+  
+  Ao observar o gráfico da função secante notamos que o intervalo que se repete neste caso é $]\frac{-\pi}{2}, \frac{\pi}{2}[ \cup ] \frac{\pi}{2}, \frac{3\pi}{2}[$, e ainda que
+  \[sec(x + 2\pi)= sec(x) \ ,\]
+  logo esta é uma função periódica com período $2\pi$.
 
-  \item Função Cotangente: $cot(x)= \dfrac{1}{tan (x)}$
+  \item Função Cotangente: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= cotan(x)$, cujo gráfico é:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/cot.pdf}}
+  
+  Lembramos que $cotan(x)= \dfrac{cos(x)}{sen(x)}$ logo o domínio da função cotangente é o conjunto dos $x \in \R$ tais que $sen(x) \neq 0$.
+  
+  Já no gráfico da função cotangente vemos a repetição do comportamento do intervalo $]0, \pi[$, e temos que
+  \[cotan(x + \pi)= cotan(x)\]
+  portanto esta é uma função periódica de período $\pi$.
 
   \textbf{Funções Inversas}
-  \item Função Arco Seno: $sen^{-1}(x)= arcsen (x)$
+  
+  As funções trigonométricas admitem inversas quando restringimos seus domínios a um único período da função, assim temos por exemplo as seguintes funções:
+  
+  \item Função Arco Seno: $f: [-1, 1] \rightarrow [\frac{-\pi}{2}, \frac{\pi}{2}]$ dada por $f(x)= arcsen(x)$, que também denotamos por $sen^{-1}(x)= arcsen (x)$, neste caso o gráfico será:
 
   \frame{\includegraphics[width=5.0cm]{../Topicos/Figuras/arcsen.pdf}}
 
-  \item Função Arco Cosseno: $cos^{-1}(x)= arccos (x)$
+  \item Função Arco Cosseno: $f: [-1, 1] \rightarrow [0, \pi]$ dada por $f(x)= arccos(x)$, que também denotamos por $cos^{-1}(x)= arccos (x)$, neste caso temos o seguinte gráfico:
 
   \frame{\includegraphics[width=5.0cm]{../Topicos/Figuras/arccos.pdf}}
 
-  \item Função Arco Tangente: $tan^{-1}(x)= arctan (x)$
+  \item Função Arco Tangente: $f: \R \rightarrow ]\frac{-\pi}{2}, \frac{\pi}{2}[$, dada por $f(x)= arctan(x)$ que também denotamos por $tan^{-1}(x)= arctan (x)$, neste caso o gráfico será:
 
   \frame{\includegraphics[width=12.0cm]{../Topicos/Figuras/arctan.pdf}}
 
