@@ -518,7 +518,18 @@ Logo o gráfico da função $Id$ é:
   \end{figure}
   
   o coeficiente angular da reta que passa por estes dois pontos é dado por:
-  \[a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1}\]
+  \[a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1} \ .\]
+  
+  De fato, dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, podemos encontrar a função $f(x)= ax+b$, cujo gráfico passa por estes dois pontos lembrando que ambos devem satisfazer a equação da função assim obtemos:
+  \[ \begin{cases}
+   y_0= ax_0 + b \\
+   y_1= ax_1 + b
+  \end{cases} \]
+  logo $y_0 - ax_0= b$, substituindo na segunda equação decorre que:
+  \[y_1= ax_1 + y_0 - ax_0 \Rightarrow y_1 - y_0= a(x_1 - x_0) \Rightarrow a= \frac{y_1 - y_0}{x_1 - x_0} \ . \]
+  
+  Este sistema linear sempre pode ser usado para encontrar a regra da função linear que passa por dois pontos dados.
+
   
   \begin{exem}
   Vamos determinar o coeficiente angular da reta que passa pelos pontos:
@@ -531,40 +542,36 @@ Logo o gráfico da função $Id$ é:
 
   \end{exem}
   
-  Quando dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 = x_1$, temos uma reta vertical, que não é o gráfico de uma função, por isso não iremos detalhar este caso.
+  Quando dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 = x_1$, temos uma reta vertical, cuja equação é $x= a$ para algum $a \in \R$, que não é o gráfico de uma função, por isso não iremos detalhar este caso.
   
-  A partir da análise do coeficiente angular de duas retas podemos decidir a posição relativa destas retas. Consideremos $f(x)=a_1 x + b_1$ e $g(x)= a_2 x + b_2$, tais que $f(x) \neq g(x)$, nesta situação temos que dois casos especiais:
+  Dadas duas funções lineares $f(x)=a_1 x + b_1$ e $g(x)= a_2 x + b_2$, tais que $f(x) \neq g(x)$, a partir da análise de seus coeficientes angulares podemos conhecer a posição relativa de seus gráficos. Nesta situação temos que dois casos especiais:
   \begin{itemize}
   \item Se $a_1= a_2$ então os gráficos de $f$ e $g$ são retas \textbf{paralelas};
-  \item Se $a_1= \frac{-1}{a_2}$ então os gráficos de $f$ e $g$ são retas \textbf{perpendiculares}.
+  \item Se $a_1 \cdot a_2= -1$ então os gráficos de $f$ e $g$ são retas \textbf{perpendiculares}.
   \end{itemize}
   
+  \begin{exem}
+  Considere as funções $g(x)= -2x+4$, $f(x)= -2x+2$, $h(x)= \frac{-1}{-2}x+ 1,5$, pela análise com coeficientes angulares temos que os gráficos de $g$ e $f$ são retas paralelas e os gráficos $g$ e $h$ são retas perpendiculares, como podemos ver nos seguintes gráficos:
+     \begin{figure}[H]
+   \fbox{\subfigure[Retas paralelas]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/retasparalelas.pdf}}}
+   \fbox{\subfigure[Retas perpendiculares]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/retasperpendiculares.pdf}}}
+  \end{figure} 
+  \end{exem}
+
   
-%%%%%%%%%%%% ___________
+  
+ \textbf{Zeros ou raízes das funções lineares}
  
- Os \textbf{zeros} ou \textbf{raízes} das funções de 1ª grau $f$ são os $\tilde{x} \in dom(f)$ tais que $f(\tilde{x})=0$, ou seja, são os $\tilde{x} \in dom(f)$, tais que $a\tilde{x}+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
-
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ Os zeros ou raízes de uma função $y= f(x)$ são os $x \in Dom(f)$ tais que $f(x)= 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
  
-% 
-%  Na figura abaixo temos os gráficos de três funções de primeiro grau crescentes, sendo uma delas a função $f_1(x)= x$, que é a função identidade.
-%  \begin{figure}[H]
-%  \centering
-%     \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao1grau.pdf}}
-%     \caption{Gráficos de funções do 1º grau}
-%   \end{figure}
-%   
-%  Observe na figura que o gráfico de uma função de 1º grau é uma reta no plano $\R^2$. Na figura temos o gráfico de três funções:
-%  $f_1(x)= x$ cujo gráfico passa pelos pontos $(0,0)$ e $(1,1)$;
-%  $f_2(x)= x+1$ cujo gráfico passa pelos pontos $(0,1)$ e $(1,2)$;
-%  $f(x)= 2x$ cujo gráfico passa pelos pontos $(0,2)$ e $(1,2)$.
-%  
-%  Observe que os gráficos das funções $f_1$ e $f_2$ são retas paralelas, isso acontece por que o coeficiente $a$ que multiplica o $x$ em ambas as funções é $1$, já o gráfico da função $f$ que possui $a= 2$ não é paralelo aos outros dois gráficos. Esta é uma propriedade das funções de este coeficiente mede a inclinação da reta (gráfico da função) em relação ao eixo $x$, ou seja, $a$ determina o ângulo que o gráfico da função forma com o eixo $x$, observamos que ao mudar o valor de $a$ realmente mudamos a inclinação do gráfico da função em relação ao eixo $x$.
-%  
-%  Uma outra propriedade das funções de 1º grau é que o valor de $b$ das funções, conhecido como \textbf{coeficiente linear}, determina a interseção do gráfico da função com o eixo $y$, e no nosso exemplo vemos que isso realmente acontece, pois as funções $f_1$ e $f$ que possuem $b=0$ interseccionam o eixo $y$ na origem, já a função $f_2$ que possui $b=1$ intersecciona o eixo $y$ no ponto $(0,1)$.
- 
- 
-
-
+ Desta definição de \textbf{zeros} decorre que os zeros de uma função de 1º grau são as raízes da equação $ax+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
 
  \item Funções do 2º grau ou função quadrática
 
@@ -579,7 +586,7 @@ Logo o gráfico da função $Id$ é:
 
  Se $\destaque{\Delta > 0}$ a função $f$ possui duas raízes reais distintas, que podem ser calculadas resolvendo a equação de 2º grau através da fórmula para equações de 2º grau.
  
- As raízes da equação $ax^2+bx+c=0$, são os zeros da função $f(x)= ax^2+bx+c$, pois são os valores de $x$ para os quais $f(x)=0$. Graficamente, quando estas funções possuem zeros eles são exatamente os pontos de interseção do gráfico da $f$ com o eixo $x$.
+ Por definição, os zeros da função $f(x)= ax^2+bx+c$, são as raízes da equação $ax^2+bx+c=0$, já que estes são os valores de $x$ para os quais $f(x)=0$. Graficamente, quando estas funções possuem zeros eles são exatamente os pontos de interseção do gráfico da $f$ com o eixo $x$.
 
  Com relação a concavidade, o gráfico da função de 2º grau tem concavidade voltada \textbf{para cima} quando $\destaque{a > 0}$, e concavidade voltada \textbf{para baixo} quando $\destaque{a < 0}$.
 
@@ -607,10 +614,7 @@ Logo o gráfico da função $Id$ é:
    \fbox{\subfigure[$a < 0$ e $\Delta > 0$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f6.pdf}}}
    \caption{Gráficos de funções do 2º grau}
  \end{figure}
- 
-%  Quando abordamos as funções de 1º grau discutimos as noções de crescente e decrescente, observamos que no caso das funções de 1º grau estes conceitos são globais, ou seja estas funções são crescentes ou decrescentes em todo o seu domínio. Estes conceitos podem ser aplicados também em funções de 2º grau, porém para funções de 2º grau eles são conceitos locais, ou seja valem apenas em um intervalo do domínio da função. De fato, considere a função $f(x)= ax^2+bx+c$, com $a>0$ já vimos que neste caso existe um ponto $x_1$ que é o ponto de mínimo de $f$, nesta situação $f$ será descrescente no intervalo $]- \infty, x_1[$, e crescente no intervalo $]x_1, \infty[$. Caso tenhamos $a<0$, a função passa a ter um ponto de máximo, e nesta situação os intervalos de crescimento e descrescimento da função invertem.
-%  
-%  Mas ainda temos que o conceito de concavidade para estas funções é um conceito global, ou seja estas funções possuem a mesma concavidade em todos os pontos do seu domínio.
+
 
  \newpage
  \item Funções do 3º grau ou funções cúbicas
@@ -638,8 +642,6 @@ Logo o gráfico da função $Id$ é:
    \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{../Topicos/Figuras/g4.pdf}}}
    \caption{Gráficos de funções do 3º grau}
   \end{figure}
-
-%  Observe que as funções de 3º grau possuem como imagem o conjunto $\R$, por isto não possuem pontos de mínimo e máximo global, além disso podem possuir intervalos em que elas são crescentes e intervalos nos quais elas são decrescentes, bem como apresentar intervalos com concavidade para cima e intervalos com concavidade para baixo, o que faz com que neste contexto possamos discutir os conceitos de pontos de mínimo e máximo, crescimento e decrescimento, e o conceito de concavidade todos localmente, porém uma discussão detalhada destes conceitos exige o conhecimento de algumas ferramentas de cálculo I, por este motivo não iremos detalhar estes conceitos.
  
  \end{itemize}
  
@@ -693,7 +695,7 @@ Logo o gráfico da função $Id$ é:
   
   Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante "dentro" do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante "fora" do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
   
-  \section{Título a definir}
+  \section{Algumas propriedades das funções}
   
    \vskip0.3cm
  \colorbox{azul}{
