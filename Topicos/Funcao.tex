@@ -377,14 +377,33 @@ Além destas operações, é possível também definir a composição de funçõ
 
 \subsection{Função constante}
 
-É a função que associa todos os elementos do domínio a um único elemento do contradomínio. Por exemplo, dado $a \in \R$ fixo, a função $f$:
+É a função que associa todos os elementos do domínio a um único elemento do contradomínio. Ou seja, dado $a \in \R$ fixo, a função $f$:
 \begin{eqnarray*}
  f: \R & \rightarrow & \R \\
  x & \mapsto & a,
 \end{eqnarray*}
 é uma função constante.
 
-Outro exemplo, a função $f: \R \rightarrow \R$ dada por $f(x)= 2$ para todo $x$, cujo gráfico é:
+Por exemplo, a função $f$:
+\begin{eqnarray*}
+ f: \R & \rightarrow & \R \\
+ x & \mapsto & 2 \ .
+\end{eqnarray*}
+
+É uma função constante. Para construir o gráfico desta função começamos encontrando alguns pontos $(x, y)= (x, f(x))$ do gráfico, o que pode ser feito através da seguinte tabela:
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+  x & f(x)= 2 & (x, y)  \\\hline
+  -1 & f(-1)= 2 & (-1, 2) \\\hline
+   0 & f(0)= 2 & (0, 2)  \\\hline
+   1 & f(1)= 2 & (1, 2) \\\hline
+ \end{tabular}
+\end{table}
+
+Após encontrar os pontos basta marcar os mesmo o plano cartesiano e traçar a curva que liga estes pontos com isso objetos o gráfico da função. Neste caso o gráfico é:
 \begin{figure}[H]
  \centering
     \fbox{\includegraphics[width=7cm]{../Topicos/Figuras/f(x)=2.pdf}}
@@ -393,79 +412,155 @@ Outro exemplo, a função $f: \R \rightarrow \R$ dada por $f(x)= 2$ para todo $x
 
 \subsection{Função identidade}
 
-Dado um conjunto $A$ qualquer. A função $Id: A \rightarrow A$, definida por $Id(x)= x$ para todo $x \in A$ é chamada \textit{função identidade}.
+A função $Id$:
+\begin{eqnarray*}
+ Id: \R & \rightarrow & \R \\
+ x & \mapsto & x \ ,
+\end{eqnarray*}
+é chamada \textit{função identidade real}.
 
-Um exemplo de função identidade que vamos usar bastante é $Id: \R \rightarrow \R$ dada por $Id(x)= x$, cujo gráfico é:
+Para encontrar alguns pontos $(x, f(x))$ do gráfico desta função, construímos a seguinte tabela:
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+  x & f(x)= x & (x, y)  \\\hline
+  -1 & f(-1)= -1 & (-1, -1) \\\hline
+   0 & f(0)= 0 & (0, 0)  \\\hline
+   1 & f(1)= 1 & (1, 1) \\\hline
+ \end{tabular}
+\end{table}
+
+Logo o gráfico da função $Id$ é:
 \begin{figure}[H]
  \centering
     \fbox{\includegraphics[width=7cm]{../Topicos/Figuras/Id(x)=x.pdf}}
     \caption{Gráfico da função $Id(x)=x$}
   \end{figure}
 
-\subsection{Função inversa}
-
-Considere uma função $f: A \rightarrow B$. Se existir uma função $g: B \rightarrow A$ tal que:
-\[(g \circ f)(x)= x, \forall x \in A\]
-\[ \text {e}\]
-\[(f \circ g)(x)= x, \forall x \in B\]
-então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g= f^{-1}$.
-
-\begin{exem}
- A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
- \[h(x)= (f \circ g)(x)= f(g(x))= (x-2) + 2= x-2+2= x \Rightarrow (f \circ g)(x)= Id(x)\]
- \[\text{e}\]
- \[(g \circ f)(x)= g(f(x))= (x+2) - 2= x+2-2= x \Rightarrow (g \circ f)(x)= Id(x) ,\]
- logo $g= f^{-1}$ é a função inversa de $f$.
-
- \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao_composta.pdf}}
-    \caption{Composta das funções $f$ e $g$}
-  \end{figure}
-
-\end{exem}
-
 
 \subsection{Funções polinomiais de grau \texorpdfstring{$n$}{n}}
 
- São funções $f: \mathbb{R} \rightarrow \mathbb{R}$ com a seguinte regra geral:
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ As funções $f: \R \to \R$ com a seguinte regra geral:
  \[f(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n\]
- onde $\{a_0, a_1, a_2, a_3, \ldots a_n\} \in \R$ com $a_n \neq 0$, $n \in \mathbb{N}$.
+ para $\{a_0, a_1, a_2, a_3, \ldots a_n\} \in \R$ e $n \in \N$, tais que $a_n \neq 0$ são denominadas \\ \textbf{funções polinomiais de grau $n$}.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ 
 
  Casos particulares:
  \begin{itemize}
  \item Funções do 1º grau, ou funções afim
 
  São funções $f: \R \rightarrow \R$ dadas por:
- \[f(x)= ax + b\]
+ \[f(x)= ax + b \ , \]
 
- Os zeros ou raízes das funções de 1ª grau $f$ são os $\tilde{x} \in dom(f)$ tais que $f(\tilde{x})=0$, ou seja, são os $\tilde{x} \in dom(f)$, tais que $a\tilde{x}+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
-
- Quando $\destaque{a > 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
- \[x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,\]
-  portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}. 
-
- Quando $\destaque{a < 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
- \[x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,\]
- portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
+ para certos $a, b \in \R$ com $a \neq 0$. Note que um caso particular e já conhecido de função de 1º grau é a função identidade, $f(x)= x$, a qual possui $a=1$ e $b=0$. 
  
- Observe que no caso destas funções de 1º grau esta propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
+ Vejamos mais alguns exemplos de funções de 1º grau.
+ 
+ Consideremos as funções $f, g: \R \to \R$ dadas por:
+ \begin{enumerate}[a)]
+  \item $f(x)= x+2$
+  \item $g(x)= x-1$
+ \end{enumerate}
 
- Na figura abaixo temos os gráficos de três funções de primeiro grau crescentes, sendo uma delas a função $f_1(x)= x$, que é a função identidade.
+ 
+ \begin{figure}[H]
+   \fbox{\subfigure[$f(x)= x+2$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f(x)=x+2.pdf}}}
+   \fbox{\subfigure[$g(x)= x-1$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f(x)=x-1.pdf}}}
+  \end{figure} 
+  Note que o que muda na definição destas funções é apenas o coeficiente $b$. Fazendo uma análise comparativa dos gráficos destas funções notamos que os ângulos que as retas formam com o eixo $x$ é o mesmo, portanto as retas são paralelas, porém o ponto de interseção das retas com o eixo $y$, que são os pontos $(0, f(0))$, $(0, g(0))$ muda, ou seja, $f(0) \neq g(0)$. De fato:
+  \[f(0)= 0 + 2= 2\]
+  \[g(0)= 0 -1 = -1 \ .\]
+  No caso geral em que $f(x)=ax+b$, teremos que $f(0)=a0 + b= b$, portanto o gráfico de $f$ irá intersectar o eixo $y$ no ponto $(0,b)$. O coeficiente $b$ é chamado de \textbf{coeficiente linear} da reta/função linear.
+  
+  Consideremos as funções $f, g: \R \to \R$ dadas por:
+ \begin{enumerate}[a)]
+  \item $f(x)= 2x$
+  \item $g(x)= -2x$
+ \end{enumerate}
+  
+ \begin{figure}[H]
+   \fbox{\subfigure[$f(x)= 2x$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/f(x)=2x.pdf}}}
+   \fbox{\subfigure[$g(x)= -2x$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/g(x)=-2x.pdf}}}
+  \end{figure} 
+  Neste exemplos estamos mudando apenas o coeficiente $a$ das funções, o que está alterando o ângulo que as retas formam com o eixo $x$, ou seja a inclinação das retas em relação ao eixo $x$. Já o ponto de interseção das retas com o eixo $y$ é o mesmo pois $f(0)= g(0)= 0$. O coeficiente $a$ é chamado de \textbf{coeficiente angular} da reta/função linear.
+  
+   \vskip0.3cm
+ \colorbox{amarelo}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ O gráfico de uma função linear $f: \R \to \R$ dada por:
+ \[f(x) = ax + b\]
+ é uma reta com coeficiente angular $a$ e cuja interseção com o eixo $y$ ocorre no ponto $(0, b)$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Frequentemente a equação da reta é dada pela equação $y=mx+n$, que nada mais é do que uma função de 1º grau, basta considerar $y=f(x)$ o que fazemos no contexto de funções para trabalhar com o gráfico da função.
+ 
+ \textbf{Coeficiente angular da reta}
+ 
+  Dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, como na figura:
+ 
  \begin{figure}[H]
  \centering
-    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao1grau.pdf}}
-    \caption{Gráficos de funções do 1º grau}
+    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/coefangular.pdf}}
+    \caption{Coeficiente angular}
   \end{figure}
   
- Observe na figura que o gráfico de uma função de 1º grau é uma reta no plano $\R^2$. Na figura temos o gráfico de três funções:
- $f_1(x)= x$ cujo gráfico passa pelos pontos $(0,0)$ e $(1,1)$;
- $f_2(x)= x+1$ cujo gráfico passa pelos pontos $(0,1)$ e $(1,2)$;
- $f(x)= 2x$ cujo gráfico passa pelos pontos $(0,2)$ e $(1,2)$.
+  o coeficiente angular da reta que passa por estes dois pontos é dado por:
+  \[a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1}\]
+  
+  \begin{exem}
+  Vamos determinar o coeficiente angular da reta que passa pelos pontos:
+   \begin{enumerate}[a)]
+    \item $P_0=(0,2)$ e $P_1=(-2,0)$
+    \[a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{0 - 2}{-2 - 0}= \frac{-2}{-2}= 1\]
+    \item $P_0=(1,2)$ e $P_1=(-1,-2)$
+    \[a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{-2 - 2}{-1 - 1}= \frac{-4}{-2}= 2\]
+   \end{enumerate}
+
+  \end{exem}
+  
+  Quando dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 = x_1$, temos uma reta vertical, que não é o gráfico de uma função, por isso não iremos detalhar este caso.
+  
+  A partir da análise do coeficiente angular de duas retas podemos decidir a posição relativa destas retas. Consideremos $f(x)=a_1 x + b_1$ e $g(x)= a_2 x + b_2$, tais que $f(x) \neq g(x)$, nesta situação temos que dois casos especiais:
+  \begin{itemize}
+  \item Se $a_1= a_2$ então os gráficos de $f$ e $g$ são retas \textbf{paralelas};
+  \item Se $a_1= \frac{-1}{a_2}$ então os gráficos de $f$ e $g$ são retas \textbf{perpendiculares}.
+  \end{itemize}
+  
+  
+%%%%%%%%%%%% ___________
  
- Observe que os gráficos das funções $f_1$ e $f_2$ são retas paralelas, isso acontece por que o coeficiente $a$ que multiplica o $x$ em ambas as funções é $1$, já o gráfico da função $f$ que possui $a= 2$ não é paralelo aos outros dois gráficos. Esta é uma propriedade das funções de este coeficiente mede a inclinação da reta (gráfico da função) em relação ao eixo $x$, ou seja, $a$ determina o ângulo que o gráfico da função forma com o eixo $x$, observamos que ao mudar o valor de $a$ realmente mudamos a inclinação do gráfico da função em relação ao eixo $x$.
+ Os \textbf{zeros} ou \textbf{raízes} das funções de 1ª grau $f$ são os $\tilde{x} \in dom(f)$ tais que $f(\tilde{x})=0$, ou seja, são os $\tilde{x} \in dom(f)$, tais que $a\tilde{x}+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
+
  
- Uma outra propriedade das funções de 1º grau é que o valor de $b$ das funções, conhecido como \textbf{coeficiente linear}, determina a interseção do gráfico da função com o eixo $y$, e no nosso exemplo vemos que isso realmente acontece, pois as funções $f_1$ e $f$ que possuem $b=0$ interseccionam o eixo $y$ na origem, já a função $f_2$ que possui $b=1$ intersecciona o eixo $y$ no ponto $(0,1)$.
+% 
+%  Na figura abaixo temos os gráficos de três funções de primeiro grau crescentes, sendo uma delas a função $f_1(x)= x$, que é a função identidade.
+%  \begin{figure}[H]
+%  \centering
+%     \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao1grau.pdf}}
+%     \caption{Gráficos de funções do 1º grau}
+%   \end{figure}
+%   
+%  Observe na figura que o gráfico de uma função de 1º grau é uma reta no plano $\R^2$. Na figura temos o gráfico de três funções:
+%  $f_1(x)= x$ cujo gráfico passa pelos pontos $(0,0)$ e $(1,1)$;
+%  $f_2(x)= x+1$ cujo gráfico passa pelos pontos $(0,1)$ e $(1,2)$;
+%  $f(x)= 2x$ cujo gráfico passa pelos pontos $(0,2)$ e $(1,2)$.
+%  
+%  Observe que os gráficos das funções $f_1$ e $f_2$ são retas paralelas, isso acontece por que o coeficiente $a$ que multiplica o $x$ em ambas as funções é $1$, já o gráfico da função $f$ que possui $a= 2$ não é paralelo aos outros dois gráficos. Esta é uma propriedade das funções de este coeficiente mede a inclinação da reta (gráfico da função) em relação ao eixo $x$, ou seja, $a$ determina o ângulo que o gráfico da função forma com o eixo $x$, observamos que ao mudar o valor de $a$ realmente mudamos a inclinação do gráfico da função em relação ao eixo $x$.
+%  
+%  Uma outra propriedade das funções de 1º grau é que o valor de $b$ das funções, conhecido como \textbf{coeficiente linear}, determina a interseção do gráfico da função com o eixo $y$, e no nosso exemplo vemos que isso realmente acontece, pois as funções $f_1$ e $f$ que possuem $b=0$ interseccionam o eixo $y$ na origem, já a função $f_2$ que possui $b=1$ intersecciona o eixo $y$ no ponto $(0,1)$.
  
  
 
@@ -513,9 +608,9 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
    \caption{Gráficos de funções do 2º grau}
  \end{figure}
  
- Quando abordamos as funções de 1º grau discutimos as noções de crescente e decrescente, observamos que no caso das funções de 1º grau estes conceitos são globais, ou seja estas funções são crescentes ou decrescentes em todo o seu domínio. Estes conceitos podem ser aplicados também em funções de 2º grau, porém para funções de 2º grau eles conceitos locais, ou seja valem apenas em um intervalo do domínio da função. De fato, considere a função $f(x)= ax^2+bx+c$, com $a>0$ já vimos que neste caso existe um ponto $x_1$ que é o ponto de mínimo de $f$, nesta situação $f$ será descrescente no intervalo $]- \infty, x_1[$, e crescente no intervalo $]x_1, \infty[$. Caso tenhamos $a<0$, a função passa a ter um ponto de máximo, e nesta situação os intervalos de crescimento e descrescimento da função invertem.
- 
- Mas ainda temos que o conceito de concavidade para estas funções é um conceito global, ou seja estas funções possuem a mesma concavidade em todos os pontos do seu domínio.
+%  Quando abordamos as funções de 1º grau discutimos as noções de crescente e decrescente, observamos que no caso das funções de 1º grau estes conceitos são globais, ou seja estas funções são crescentes ou decrescentes em todo o seu domínio. Estes conceitos podem ser aplicados também em funções de 2º grau, porém para funções de 2º grau eles são conceitos locais, ou seja valem apenas em um intervalo do domínio da função. De fato, considere a função $f(x)= ax^2+bx+c$, com $a>0$ já vimos que neste caso existe um ponto $x_1$ que é o ponto de mínimo de $f$, nesta situação $f$ será descrescente no intervalo $]- \infty, x_1[$, e crescente no intervalo $]x_1, \infty[$. Caso tenhamos $a<0$, a função passa a ter um ponto de máximo, e nesta situação os intervalos de crescimento e descrescimento da função invertem.
+%  
+%  Mas ainda temos que o conceito de concavidade para estas funções é um conceito global, ou seja estas funções possuem a mesma concavidade em todos os pontos do seu domínio.
 
  \newpage
  \item Funções do 3º grau ou funções cúbicas
@@ -544,30 +639,10 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
    \caption{Gráficos de funções do 3º grau}
   \end{figure}
 
- Observe que as funções de 3º grau possuem como imagem o conjunto $\R$, por isto não possuem pontos de mínimo e máximo global, além disso podem possuir intervalos em que elas são crescentes e intervalos nos quais elas são decrescentes, bem como apresentar intervalos com concavidade para cima e intervalos com concavidade para baixo, o que faz com que neste contexto possamos discutir os conceitos de pontos de mínimo e máximo, crescimento e decrescimento, e o conceito de concavidade todos localmente, porém uma discussão detalhada destes conceitos exige o conhecimento de algumas ferramentas de cálculo I, por este motivo não iremos detalhar estes conceitos.
+%  Observe que as funções de 3º grau possuem como imagem o conjunto $\R$, por isto não possuem pontos de mínimo e máximo global, além disso podem possuir intervalos em que elas são crescentes e intervalos nos quais elas são decrescentes, bem como apresentar intervalos com concavidade para cima e intervalos com concavidade para baixo, o que faz com que neste contexto possamos discutir os conceitos de pontos de mínimo e máximo, crescimento e decrescimento, e o conceito de concavidade todos localmente, porém uma discussão detalhada destes conceitos exige o conhecimento de algumas ferramentas de cálculo I, por este motivo não iremos detalhar estes conceitos.
  
  \end{itemize}
  
- \begin{defi}
-  Dada um função $f: \R \rightarrow \R$. Dizemos que $f$ é uma \textbf{função par} se, para todo $x \in R$,
-  \[f(-x)= f(x) \ .\]
-  Dizemos que $f$ é uma \textbf{função ímpar} se, para todo $x \in R$,
-  \[f(-x)= - f(x) \ .\]
- \end{defi}
- 
- \begin{exem}
-  \begin{enumerate}[a)]
-   \item a função $f(x)= x$ é uma função ímpar;
-   \[f(-x)= -x= -f(x) \]
-   \item a função $f(x)= x^2$ é uma função par;
-   \[f(-x)= (-x)^2= x^2 = f(x) \]
-   \item a função $f(x)= x^3$ é uma função ímpar.
-   \[f(-x)= (-x)^3= -x^3= -f(x)\]
-  \end{enumerate}
-
- \end{exem}
-
-
 
   \subsection{Função modular}
   
@@ -617,6 +692,87 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
   \end{figure}
   
   Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante "dentro" do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante "fora" do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
+  
+  \section{Título a definir}
+  
+   \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  Dados $A, B \subset \R$ e uma função $f: A \rightarrow B$. 
+  
+  Dizemos que $f$ é uma \textbf{função crescente} se, para todo $x, y \in A$,
+  \[ x < y \Rightarrow f(x) < f(y) \ .\]
+  Dizemos que $f$ é uma \textbf{função descrescente} se, para todo $x, y \in A$,
+  \[x < y \Rightarrow f(x) > f(y) \ .\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ \begin{exem}
+ Seja $f: \R \to \R$ uma função dada por $f(x)= ax + b$.
+ 
+ Quando $\destaque{a > 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
+ \[x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,\]
+  portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}. 
+
+ Quando $\destaque{a < 0}$, dados $x_1 < x_2 \in dom(f)$, temos que:
+ \[x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,\]
+ portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
+ 
+ Observe que no caso destas funções de 1º grau esta propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
+ \end{exem}
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  Dada um função $f: \R \rightarrow \R$. 
+  
+  Dizemos que $f$ é uma \textbf{função par} se, para todo $x \in R$,
+  \[f(-x)= f(x) \ .\]
+  Dizemos que $f$ é uma \textbf{função ímpar} se, para todo $x \in R$,
+  \[f(-x)= - f(x) \ .\]
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ 
+ \begin{exem}
+  \begin{enumerate}[a)]
+   \item a função $f(x)= x$ é uma função ímpar;
+   \[f(-x)= -x= -f(x) \]
+   \item a função $f(x)= x^2$ é uma função par;
+   \[f(-x)= (-x)^2= x^2 = f(x) \]
+   \item a função $f(x)= x^3$ é uma função ímpar.
+   \[f(-x)= (-x)^3= -x^3= -f(x)\]
+  \end{enumerate}
+
+ \end{exem}
+  
+  \subsection{Função inversa}
+
+Considere uma função $f: A \rightarrow B$. Se existir uma função $g: B \rightarrow A$ tal que:
+\[(g \circ f)(x)= x, \forall x \in A\]
+\[ \text {e}\]
+\[(f \circ g)(x)= x, \forall x \in B\]
+então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g= f^{-1}$.
+
+\begin{exem}
+ A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
+ \[h(x)= (f \circ g)(x)= f(g(x))= (x-2) + 2= x-2+2= x \Rightarrow (f \circ g)(x)= Id(x)\]
+ \[\text{e}\]
+ \[(g \circ f)(x)= g(f(x))= (x+2) - 2= x+2-2= x \Rightarrow (g \circ f)(x)= Id(x) ,\]
+ logo $g= f^{-1}$ é a função inversa de $f$.
+
+ \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{../Topicos/Figuras/funcao_composta.pdf}}
+    \caption{Composta das funções $f$ e $g$}
+  \end{figure}
+
+\end{exem}
+  
   
   \section{Trigonometria}
 
