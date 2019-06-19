@@ -578,7 +578,7 @@ Logo o gráfico da função $Id$ é:
  São funções $f: \R \rightarrow \R$ dadas por:
  \[f(x)= ax^2 + bx + c\]
 
- Os zeros ou raízes das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
+ Os \textbf{zeros} ou \textbf{raízes} das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
  \[\destaque{\Delta= b^2 - 4*a*c}\]
  Se $\destaque{\Delta < 0}$ a função $f$ não possui raízes reais;
 
@@ -622,7 +622,7 @@ Logo o gráfico da função $Id$ é:
  São funções $f: \R \rightarrow \R$ dadas por:
  \[f(x)= ax^3 + bx^2 + cx + d .\]
  
- As raízes ou zeros das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
+ As \textbf{raízes} ou \textbf{zeros} das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
  \begin{enumerate}[(I)]
   \item 3 raízes reais distintas;
   \item 1 raiz real e duas raízes complexas;
@@ -695,6 +695,69 @@ Logo o gráfico da função $Id$ é:
   
   Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante "dentro" do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante "fora" do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
   
+  \subsection{Mais algumas funções interessantes}
+  
+  \textbf{Função raíz quadrada}
+  
+  É a função $f: \R_{+} \to \R_{+}$ dada por $f(x)= \sqrt{x}$, cujo gráfico é:
+  
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{../Topicos/Figuras/funcaoraizquadrada.pdf}}
+    \caption{Função raíz quadrada}
+  \end{figure}
+  
+  Note que neste caso o domínio da função são apenas os números reais positivos, já que não existe raíz quadrada de número negativo.
+  
+  \newpage
+  \textbf{Função raíz cúbica}
+  
+  É a função $f: \R \to \R$ dada por $f(x)= \sqrt[3]{x}$, cujo gráfico é:
+  
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{../Topicos/Figuras/funcaoraizcubica.pdf}}
+    \caption{Função raíz cúbica}
+  \end{figure} 
+  
+  \textbf{Função recíproca}
+  
+  É a função $f: \R \setminus \{0\} \to \R$ dada por $f(x)= \frac{1}{x}$, cujo gráfico é:
+  
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{../Topicos/Figuras/funcaoreciproca.pdf}}
+    \caption{Função recíproca}
+  \end{figure}
+  
+  Neste caso o domínio da função é o conjunto $\R \setminus \{0\}$, pois não existe divisão por $0$ (zero).
+  
+  \newpage
+
+  \textbf{Função floor}
+  
+  É a função $f: \R \to \R$ dada por $f(x)= \lfloor {x} \rfloor$, cujo gráfico é:
+  
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{../Topicos/Figuras/funcaofloor.pdf}}
+    \caption{Função floor}
+  \end{figure}
+  
+  Esta função aplicada em um número $x$ tem como imagem a parte inteira do número $x$.
+  
+  \textbf{Função ceil}
+  
+  É a função $f: \R \to \R$ dada por $f(x)= \lceil {x} \rceil$, cujo gráfico é:
+  
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{../Topicos/Figuras/funcaoceil.pdf}}
+    \caption{Função ceil}
+  \end{figure}
+  
+  Esta função aplicada em um número $x$ tem como imagem o menor inteiro maior ou igual a $x$.
+  
   \section{Algumas propriedades das funções}
   
    \vskip0.3cm
@@ -703,10 +766,12 @@ Logo o gráfico da função $Id$ é:
  \begin{center}
   Dados $A, B \subset \R$ e uma função $f: A \rightarrow B$. 
   
-  Dizemos que $f$ é uma \textbf{função crescente} se, para todo $x, y \in A$,
+  Dizemos que $f$ é uma \textbf{função crescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
   \[ x < y \Rightarrow f(x) < f(y) \ .\]
-  Dizemos que $f$ é uma \textbf{função descrescente} se, para todo $x, y \in A$,
+  Dizemos que $f$ é uma \textbf{função descrescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
   \[x < y \Rightarrow f(x) > f(y) \ .\]
+  Dizemos que $f$ é uma \textbf{função constante} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
+  \[x \neq y \Rightarrow f(x) = f(y) \ .\]
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -722,8 +787,48 @@ Logo o gráfico da função $Id$ é:
  \[x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,\]
  portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
  
- Observe que no caso destas funções de 1º grau esta propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
+ Observe que no caso das funções de 1º grau a propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
  \end{exem}
+ 
+ \begin{exem}
+ Vamos retomar alguns dos nossos exemplos de funções para classificar como crescente, descrescente e constante. Para isso considere $x_1= -2$ e $x_2= 1$, neste caso, $x_1 < x_2$. 
+  \begin{enumerate}[a)]
+   \item Sendo $f(x)= \frac{1}{2}x + 1,5$, temos que 
+   \[f(x_1)= f(-2)= \frac{1}{2}\cdot (-2) + 1,5= -1 + 1,5= 0,5\]
+   \[f(x_2)= f(1)= \frac{1}{2} \cdot 1+\frac{3}{2}= \frac{4}{2}= 2\]
+   logo $f(x_1)= 0,5 < 2= f(x_2)$. Portanto $f$ é crescente.
+   \item Sendo $f(x)= -2x + 2$, temos que
+   \[f(x_1)= f(-2)= -2 \cdot (-2) + 2= 4 + 2= 6\]
+   \[f(x_2)= f(1)= -2 \cdot 1 + 2= 0\]
+   logo $f(x_1)= 6 > 0 = f(x_2)$. Portanto $f$ é decrescente.
+   \item Sendo $f(x)= 2$, temos que 
+   \[f(x_1)= f(-2)= 2\]
+   \[f(x_2)= f(1)= 2\]
+   logo $f(x_1)= 2 = 2= f(x_2)$. Portanto $f$ é constante.
+  \end{enumerate}
+  Como já mostramos acima que para as funções lineares esta propriedade é global, para fazer esta classificação é suficiente testar dois valores de $x$ como fizemos acima.
+
+ \end{exem}
+ 
+ \begin{exem}
+  Considere a função $f(x)= |x|$. Lembramos que esta função é definida por partes, por isso faremos a análise de crescimento e decrescimento em cada uma destas partes.
+  
+  Caso 1: Se $x < 0$, temos que $f(x)= -x$, logo se $x_1 < x_2$,
+  \[x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,\]
+  por exemplo, sendo $x_1= -3$ e $x_2= -2$ temos que $x_1 < x_2$,
+  \[f(x_1)= f(-3)= -(-3)= 3 > 2= -(-2)= f(-2)= f(x_2) \ .\]
+  
+  Portanto se $x < 0$ temos que $f$ é decrescente.
+  
+  Caso 2: Se $x \geq 0$, temos que $f(x)= x$, logo se $x_1 < x_2$
+  \[x_1 < x_2 \Rightarrow  f(x_1) < f(x_2) \ ,\]
+  por exemplo, sendo $x_1= 2$ e $x_2= 3$ temos que $x_1 < x_2$,
+  \[f(x_1)= 2 > 3= f(x_2) \ .\]
+  
+  Portanto se $x \geq 0$ temos que $f$ é crescente.
+ \end{exem}
+
+
  
  \vskip0.3cm
  \colorbox{azul}{
@@ -742,23 +847,51 @@ Logo o gráfico da função $Id$ é:
  
  \begin{exem}
   \begin{enumerate}[a)]
-   \item a função $f(x)= x$ é uma função ímpar;
+   \item A função $f(x)= x$ é uma função ímpar;
    \[f(-x)= -x= -f(x) \]
-   \item a função $f(x)= x^2$ é uma função par;
+   \item A função $f(x)= x^2$ é uma função par;
    \[f(-x)= (-x)^2= x^2 = f(x) \]
-   \item a função $f(x)= x^3$ é uma função ímpar.
+   \item A função $f(x)= x^3$ é uma função ímpar.
    \[f(-x)= (-x)^3= -x^3= -f(x)\]
   \end{enumerate}
-
  \end{exem}
+ 
+ \begin{exem}
+  Vamos analisar a paridade de função modular $f(x)= |x|$.
+  
+  Caso 1: Se $x < 0$,
+  \[f(x)= |x|= -x= f(-(x))= f(-x)\]
+  por exemplo, $x= -2$, neste caso,
+  \[f(x)= f(-2)= |-2|= -(-2)= 2= f(2)= f(-(-2))= f(-x) \ ;\]
+  
+  Caso 2: Se $x \geq 0$,
+  \[f(x)= |x|= x= -(-x)= |-x|= f(-x)\]
+  por exemplo, $x= 2$, neste caso,
+  \[f(x)= f(2)= |2|= 2= -(-2)= |-2|= f(-2)= f(-x) \ .\]
+  
+  Portanto $f$ é uma função par.
+ \end{exem}
+  
   
   \subsection{Função inversa}
 
-Considere uma função $f: A \rightarrow B$. Se existir uma função $g: B \rightarrow A$ tal que:
-\[(g \circ f)(x)= x, \forall x \in A\]
-\[ \text {e}\]
-\[(f \circ g)(x)= x, \forall x \in B\]
-então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g= f^{-1}$.
+ Considere uma função $f: A \rightarrow B$, para $A, B \subset \R$. Se existir uma função $g: B \rightarrow A$ tal que:
+ \[(g \circ f)(x)= x, \forall x \in A \ \ \ \text {e} \ \ \
+ (f \circ g)(x)= x, \forall x \in B\]
+ dizemos que $f$ é inversível e que $g$ é a inversa de $f$. Denotamos por $g= f^{-1}$.
+ 
+ Ficamos com a seguinte pergunta: Quando existe $f^{-1}$? E a resposta é:
+ 
+ \vskip0.3cm
+ 
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ Uma função $f: A \to B$ é inversível se, e somente se, $f$ for bijetora, ou seja, injetora e sobrejetora.
+ \end{center}
+ \end{minipage}}
+
+ \vskip0.3cm
 
 \begin{exem}
  A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
@@ -774,8 +907,83 @@ então dizemos que $f$ é inversível e que $g$ é a inversa de $f$, ou seja, $g
   \end{figure}
 
 \end{exem}
+
+\newpage
+ \section{Mudando os gráficos das funções}
+ 
+ \subsection{Translação do gráfico das funções}
+ 
+ Dados $A, B \subset \R$ e uma função $f(x): A \to B$, definimos a função translação de $f$ no eixo $y$, pela função $g(x): A \to B$, dada por \destaque{$g(x)= f(x) + c$}, onde $c \in \R$ é uma constante.
+ 
+ \begin{exem}
+  Considere a função $f(x): \R \to \R$, dada por $f(x)= x^2$. Defina as seguintes funções $g: \R \to \R$ dada por $g(x)= f(x) + 2= x^2 + 2$, e $h: \R \to \R$ dada por $h(x)= f(x) - 2= x^2 - 2$, observe na seguinte figura como estas translações alteram o gráfico da função $f$, note a função $g$ carregou o gráfico da $f$ duas unidades "para cima" no eixo $y$, já a função $h$ carregou o gráfico da $f$ duas unidades "para baixo" no eixo $y$.
   
+ \begin{figure}[H]
+   \fbox{\subfigure[Gráficos das funções $f$ e $g$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/translacaomais2.pdf}}}
+   \fbox{\subfigure[Gráficos das funções $f$ e $h$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/translacaomenos2.pdf}}}
+\caption{Translação no eixo $y$}
+  \end{figure}
   
+ \end{exem}
+
+  Dados $A, B \subset \R$ e uma função $f(x): A \to B$, definimos a função translação de $f$ no eixo $x$, pela função $g(x): A \to B$, dada por \destaque{$g(x)= f(x + c)$}, onde $c \in \R$ é uma constante.
+ 
+ \begin{exem}
+  Considere a função $f(x): \R \to \R$, dada por $f(x)= x^2$. Defina as seguintes funções $g: \R \to \R$ dada por $g(x)= f(x + 2)= (x+2)^2$, e $h: \R \to \R$ dada por $h(x)= f(x-2)= (x-2)^2$, observe na seguinte figura como estas translações alteram o gráfico da função $f$, note a função $g$ carregou o gráfico da $f$ duas unidades "para à esquerda" no eixo $x$, já a função $h$ carregou o gráfico da $f$ duas unidades "para à direita" no eixo $x$.
+  
+ \begin{figure}[H]
+   \fbox{\subfigure[Gráficos das funções $f$ e $g$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/translacaoXmais2.pdf}}}
+   \fbox{\subfigure[Gráficos das funções $f$ e $h$]{\includegraphics[width=7cm,height=6cm]{../Topicos/Figuras/translacaoXmenos2.pdf}}}
+\caption{Translação no eixo $x$}
+  \end{figure}
+  
+ \end{exem}
+ 
+ \subsection{Reflexão do gráfico das funções}
+ 
+ Dados $A, B \subset \R$ e uma função $f(x): A \to B$, definimos a função reflexão de $f$ no eixo $x$, pela função $g(x): A \to B$, dada por \destaque{$g(x)= -f(x)$}.
+ 
+ \begin{exem}
+  Considere a função $f(x): \R \to \R$, dada por $f(x)= x^2$. Defina a função $g: \R \to \R$ dada por $g(x)=-f(x)= -x^2$, note que $g$ é por definição a reflexão da função $f$ em torno do eixo $x$, como pode ser visto pela figura:
+  
+\begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[width=7cm]{../Topicos/Figuras/reflexaoemX.pdf}}
+   \caption{Reflexão no eixo $x$}
+  \end{figure}
+  
+ \end{exem}
+
+ 
+ Dados $A, B \subset \R$ e uma função $f(x): A \to B$, definimos a função reflexão de $f$ no eixo $y$, pela função $g(x): A \to B$, dada por \destaque{$g(x)= f(-x)$}.
+ 
+ \begin{exem}
+  Considere a função $f(x): \R \to \R$, dada por $f(x)= x^3$. Defina a função $g: \R \to \R$ dada por $g(x)=f(-x)= (-x)^3$, note que $g$ é por definição a reflexão da função $f$ em torno do eixo $y$, como pode ser visto pela figura:
+  
+\begin{figure}[H]
+   \centering
+   \fbox{\includegraphics[width=7cm]{../Topicos/Figuras/reflexaoemY.pdf}}
+   \caption{Reflexão no eixo $y$}
+  \end{figure}
+  
+ \end{exem}
+ 
+ Resumindo, dados $A, B \subset \R$, uma função $f(x): A \to B$, e uma constante $c \in \R$ obtemos as seguintes funções $g: A \to B$:
+  \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|} \hline
+ \rowcolor{cinza}
+  Mudança & Função \\\hline
+  Translação no eixo $y$ & $g(x)= f(x)+ c$ \\\hline
+  Translação no eixo $y$ & $g(x)= f(x)- c$ \\\hline
+  Translação no eixo $x$ & $g(x)= f(x+ c)$ \\\hline
+  Translação no eixo $x$ & $g(x)= f(x- c)$ \\\hline
+  Reflexão no eixo $x$ & $g(x)= -f(x)$ \\\hline
+  Reflexão no eixo $y$ & $g(x)= f(-x)$ \\\hline
+ \end{tabular}
+\end{table}
+ 
+  \newpage
   \section{Trigonometria}
 
  \subsection{Triângulo retângulo}
