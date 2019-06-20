@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="8.129226145755071cm"
+     height="6.446280991735537cm"
+     viewBox="0 0 539 427"
+     >
+<title>
+
+</title>
+<g stroke-linejoin="miter" stroke-dashoffset="0.0000" stroke-dasharray="none" stroke-width="1.0000" stroke-miterlimit="10.000" stroke-linecap="square">
+<clipPath id="clip50fa5b29-81d6-4b67-82f4-3ce7f4c01d25">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 38.190 0.0000 L 38.190 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<clipPath id="clip6edab782-bf6a-43b6-bba3-383ae86420d8">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 38.190 0.0000 L 38.190 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<clipPath id="clip54db53e3-7d91-41f3-8139-550fc765e95b">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 104.74 0.0000 L 104.74 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+<clipPath id="clipd5723918-84a2-41be-bc35-116b3637df0a">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 171.29 0.0000 L 171.29 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip8da9dc92-516b-4c8f-bec0-4ffb71484ee8">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 304.39 0.0000 L 304.39 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clipb555a686-7339-4d34-bbae-be3afe124f7d">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 370.94 0.0000 L 370.94 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clip94e9c621-de72-4f77-bf65-e223418f6a35">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 437.49 0.0000 L 437.49 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clip56a463ed-80e6-4930-84a7-763fed886f90">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 504.04 0.0000 L 504.04 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clip95740736-e3f7-45cf-b4d7-2a4c3909e948">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 11.570 0.0000 L 11.570 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<clipPath id="clipbbe677a0-d85d-415c-8f17-060bea55b079">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 24.880 0.0000 L 24.880 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+<clipPath id="clipfc78d8b3-01b1-4c0f-ac65-1e3f39c6197a">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 51.500 0.0000 L 51.500 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clipd7b7e14c-ab3d-4fb9-b047-07f392da965a">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 64.810 0.0000 L 64.810 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clipef0aba13-491c-4bdd-a8a9-af1ced3f74a2">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 78.120 0.0000 L 78.120 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clip823fe019-8270-49e0-aef1-8312b521bf30">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 91.430 0.0000 L 91.430 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clipe4f547cb-8f56-4a53-969e-bea33b774ee8">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 118.05 0.0000 L 118.05 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+<clipPath id="clip0a2170c6-2a36-4fb6-8721-fddece30fece">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip16)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 131.36 0.0000 L 131.36 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip16 -->
+<clipPath id="clipd9274ca2-e9a8-4073-a2d8-e62284fefd07">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip17)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 144.67 0.0000 L 144.67 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip17 -->
+<clipPath id="clip5bb69f56-5552-4591-b12f-06a1143ddb23">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip18)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 157.98 0.0000 L 157.98 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip18 -->
+<clipPath id="clip15024a2d-88c3-4609-8379-20cab651a254">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip19)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 184.60 0.0000 L 184.60 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip19 -->
+<clipPath id="clip3ea126e3-e86a-45a7-9945-360e798bfe21">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip20)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 197.91 0.0000 L 197.91 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip20 -->
+<clipPath id="clip0e352263-8791-4d8e-a246-64bcd3318d66">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip21)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 211.22 0.0000 L 211.22 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip21 -->
+<clipPath id="clip2e0e559e-6d27-464b-a8e6-95805793c892">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip22)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 224.53 0.0000 L 224.53 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip22 -->
+<clipPath id="clip8e866e4e-5faa-4af3-bb92-c3e952a38890">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip23)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 251.15 0.0000 L 251.15 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip23 -->
+<clipPath id="clip41993bb5-7e48-4d9e-839f-b7ccd062c5cd">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip24)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 264.46 0.0000 L 264.46 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip24 -->
+<clipPath id="clip6cb5851e-c727-4e1f-9b3f-90dabce9fd01">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip25)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 277.77 0.0000 L 277.77 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip25 -->
+<clipPath id="clip18dffa04-fa7f-493d-a4c4-3b8bd3912c90">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip26)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 291.08 0.0000 L 291.08 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip26 -->
+<clipPath id="clip5a17f78b-0876-4f07-8436-4ad4a2559966">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip27)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 317.70 0.0000 L 317.70 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip27 -->
+<clipPath id="clip7c311f97-9c00-4de2-874f-9082ff7016cc">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip28)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 331.01 0.0000 L 331.01 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip28 -->
+<clipPath id="clip9285c0be-8614-421e-a372-0d3621e153a0">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip29)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 344.32 0.0000 L 344.32 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip29 -->
+<clipPath id="clip2f06d2c4-797d-4b9a-9c88-416cdfd4cc2a">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip30)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 357.63 0.0000 L 357.63 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip30 -->
+<clipPath id="clip3c257c2b-a935-499b-8627-ce8f08ee70be">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip31)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 384.25 0.0000 L 384.25 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip31 -->
+<clipPath id="clip933376db-97a8-4cc1-afa0-d5df38875b0b">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip32)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 397.56 0.0000 L 397.56 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip32 -->
+<clipPath id="clip4a32f7db-250b-4a64-b8e5-479d1334baf8">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip33)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 410.87 0.0000 L 410.87 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip33 -->
+<clipPath id="clipa0f5286f-4c20-43c6-8659-f29d7a0b060f">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip34)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 424.18 0.0000 L 424.18 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip34 -->
+<clipPath id="clip1d41106e-f6a1-40d0-97c8-81576e3ceb8f">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip35)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 450.80 0.0000 L 450.80 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip35 -->
+<clipPath id="clip4181aa75-30e8-4368-a232-8ee70ec4fbe7">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip36)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 464.11 0.0000 L 464.11 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip36 -->
+<clipPath id="clipd179b2ea-18f0-4905-8af1-538c13814390">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip37)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 477.42 0.0000 L 477.42 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip37 -->
+<clipPath id="clip23556011-d263-4645-84b1-2aab5c72c96d">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip38)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 490.73 0.0000 L 490.73 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip38 -->
+<clipPath id="clipd8cc3d05-e348-4d9c-9cdc-6fbef6b01df8">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip39)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 517.35 0.0000 L 517.35 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip39 -->
+<clipPath id="clip3ad87768-0ec5-4cb2-b755-440bfa4e81ef">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip40)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 530.66 0.0000 L 530.66 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip40 -->
+<clipPath id="clipc8ea38a9-f3e6-4d21-b608-f1e7bd6b67e7">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip41)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 6.1640 L 541.00 6.1640"/>
+</g> <!-- drawing style -->
+</g> <!-- clip41 -->
+<clipPath id="clipaa6da8ab-004e-49b0-99d6-36e215de0535">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip42)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 6.1640 L 541.00 6.1640"/>
+</g> <!-- drawing style -->
+</g> <!-- clip42 -->
+<clipPath id="clip15d1918d-e2b7-4728-bbdc-9ef2834e0a72">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip43)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 72.714 L 541.00 72.714"/>
+</g> <!-- drawing style -->
+</g> <!-- clip43 -->
+<clipPath id="clipca8cdcd7-26be-424d-876b-2ace1f839070">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip44)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 139.26 L 541.00 139.26"/>
+</g> <!-- drawing style -->
+</g> <!-- clip44 -->
+<clipPath id="clip5eae748c-efe3-48ce-b837-4dac2b94693d">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip45)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 205.81 L 541.00 205.81"/>
+</g> <!-- drawing style -->
+</g> <!-- clip45 -->
+<clipPath id="clipcd03ea98-f2b7-4659-837b-9eef8ded03ff">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip46)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 272.36 L 541.00 272.36"/>
+</g> <!-- drawing style -->
+</g> <!-- clip46 -->
+<clipPath id="clipe32ed989-9996-42e2-9dc5-c39ad7d1a3df">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip47)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity="1.0000" stroke="#c0c0c0">
+  <path d="M 0.0000 405.46 L 541.00 405.46"/>
+</g> <!-- drawing style -->
+</g> <!-- clip47 -->
+<clipPath id="clip6af456ef-0205-481d-b754-fef8be647d6b">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip48)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 6.1640 L 541.00 6.1640"/>
+</g> <!-- drawing style -->
+</g> <!-- clip48 -->
+<clipPath id="clipd098ecdc-2c6b-4cc2-bece-368d332e431e">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip49)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 19.474 L 541.00 19.474"/>
+</g> <!-- drawing style -->
+</g> <!-- clip49 -->
+<clipPath id="clip3bcc4dd8-837e-4d0c-9b4a-7eb30b2ca994">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip50)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 32.784 L 541.00 32.784"/>
+</g> <!-- drawing style -->
+</g> <!-- clip50 -->
+<clipPath id="clip570ff202-8fcd-490b-8397-876ae5de0589">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip51)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 46.094 L 541.00 46.094"/>
+</g> <!-- drawing style -->
+</g> <!-- clip51 -->
+<clipPath id="clipbd97ecf4-1d1d-4bd7-b8b5-40ac2a41b970">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip52)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 59.404 L 541.00 59.404"/>
+</g> <!-- drawing style -->
+</g> <!-- clip52 -->
+<clipPath id="clip1978273b-3995-43fd-8986-44cdd7e9c3ae">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip53)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 86.024 L 541.00 86.024"/>
+</g> <!-- drawing style -->
+</g> <!-- clip53 -->
+<clipPath id="clipa386e37a-340c-4b5e-8936-860f81feb8f4">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip54)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 99.334 L 541.00 99.334"/>
+</g> <!-- drawing style -->
+</g> <!-- clip54 -->
+<clipPath id="clip15e93397-99d7-4991-b39e-1306fbb1a503">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip55)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 112.64 L 541.00 112.64"/>
+</g> <!-- drawing style -->
+</g> <!-- clip55 -->
+<clipPath id="clip8bd2e626-c60c-4393-9e1c-2330558d53ed">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip56)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 125.95 L 541.00 125.95"/>
+</g> <!-- drawing style -->
+</g> <!-- clip56 -->
+<clipPath id="clipf6df8efd-7b43-4830-a6db-f0abec257571">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip57)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 152.57 L 541.00 152.57"/>
+</g> <!-- drawing style -->
+</g> <!-- clip57 -->
+<clipPath id="clip88426549-b64a-489c-b8a9-07d8dff0d278">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip58)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 165.88 L 541.00 165.88"/>
+</g> <!-- drawing style -->
+</g> <!-- clip58 -->
+<clipPath id="clip3b8246e5-7066-4f04-ae89-d847f1c66421">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip59)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 179.19 L 541.00 179.19"/>
+</g> <!-- drawing style -->
+</g> <!-- clip59 -->
+<clipPath id="clipaa8aa8c3-a2f6-4a65-9392-3006354cecd6">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip60)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 192.50 L 541.00 192.50"/>
+</g> <!-- drawing style -->
+</g> <!-- clip60 -->
+<clipPath id="clip8774afc5-64e7-4b8b-91af-c1ed99263edc">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip61)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 219.12 L 541.00 219.12"/>
+</g> <!-- drawing style -->
+</g> <!-- clip61 -->
+<clipPath id="clipc92483ca-2698-45a1-9ac7-2372b1f30391">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip62)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 232.43 L 541.00 232.43"/>
+</g> <!-- drawing style -->
+</g> <!-- clip62 -->
+<clipPath id="clipe788f518-85a8-4224-95f4-37de81ea1153">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip63)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 245.74 L 541.00 245.74"/>
+</g> <!-- drawing style -->
+</g> <!-- clip63 -->
+<clipPath id="clip0bc4b106-03aa-406c-9242-12f71fc5da34">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip64)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 259.05 L 541.00 259.05"/>
+</g> <!-- drawing style -->
+</g> <!-- clip64 -->
+<clipPath id="clipebcb1468-35f7-4d78-a450-2926715accc3">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip65)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 285.67 L 541.00 285.67"/>
+</g> <!-- drawing style -->
+</g> <!-- clip65 -->
+<clipPath id="clip6efb3208-4150-40ac-8892-79c2b8926449">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip66)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 298.98 L 541.00 298.98"/>
+</g> <!-- drawing style -->
+</g> <!-- clip66 -->
+<clipPath id="clipcfdfaa85-20f0-4a31-a55b-df5e2acb3c58">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip67)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 312.29 L 541.00 312.29"/>
+</g> <!-- drawing style -->
+</g> <!-- clip67 -->
+<clipPath id="clip49c8f5ba-a4a8-49ed-9cb2-69976007a2ce">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip68)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 325.60 L 541.00 325.60"/>
+</g> <!-- drawing style -->
+</g> <!-- clip68 -->
+<clipPath id="clipe3a0c595-891c-458e-9119-0569b05efee5">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip69)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 352.22 L 541.00 352.22"/>
+</g> <!-- drawing style -->
+</g> <!-- clip69 -->
+<clipPath id="clip28dc9ab4-817f-402a-bd3f-9f9ee293efe2">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip70)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 365.53 L 541.00 365.53"/>
+</g> <!-- drawing style -->
+</g> <!-- clip70 -->
+<clipPath id="clipe937c609-36f9-44a8-878b-a77e1bc10608">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip71)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 378.84 L 541.00 378.84"/>
+</g> <!-- drawing style -->
+</g> <!-- clip71 -->
+<clipPath id="clipab2dcbac-8ed7-4e67-9c49-8eae3434d645">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip72)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 392.15 L 541.00 392.15"/>
+</g> <!-- drawing style -->
+</g> <!-- clip72 -->
+<clipPath id="clip2b52c3e8-cd89-41a1-af78-5c5a29177850">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip73)">
+<g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-opacity=".23529" stroke="#c0c0c0">
+  <path d="M 0.0000 418.77 L 541.00 418.77"/>
+</g> <!-- drawing style -->
+</g> <!-- clip73 -->
+<clipPath id="clip2e9faed2-d5f3-40e5-9cee-3c1491cb64ea">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip74)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 237.84 2.0000 L 237.84 429.00"/>
+</g> <!-- drawing style -->
+</g> <!-- clip74 -->
+<clipPath id="clip0a1ac1cf-f567-4c4e-bf39-5f57a1ced910">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip75)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 237.84 1.0000 L 233.84 5.0000"/>
+</g> <!-- drawing style -->
+</g> <!-- clip75 -->
+<clipPath id="clipb2782157-d50f-4cde-a06f-e23c6d22129a">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip76)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 237.84 1.0000 L 241.84 5.0000"/>
+</g> <!-- drawing style -->
+</g> <!-- clip76 -->
+<clipPath id="clipeed8e457-c78f-4099-91c4-6b3db41f419e">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip77)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 529.78 325.25 L 526.62 329.50 L 529.95 334.00 L 528.25 334.00 L 525.70 330.56 L 523.16 334.00 L 521.47 334.00 L 524.86 329.42 L 521.75 325.25 L 523.45 325.25 L 525.77 328.36 L 528.09 325.25 L 529.78 325.25 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip77 -->
+<clipPath id="clip4d84d6ce-0435-48d9-863f-e7c11d44575d">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip78)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 0.0000 338.91 L 539.00 338.91"/>
+</g> <!-- drawing style -->
+</g> <!-- clip78 -->
+<clipPath id="clip351df9a7-5c46-4376-9883-39240b3c6f02">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip79)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 540.00 338.91 L 536.00 334.91"/>
+</g> <!-- drawing style -->
+</g> <!-- clip79 -->
+<clipPath id="clip60a5bdde-70cc-47af-b5d9-a35f9f1a9853">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip80)">
+<g stroke-linecap="butt" fill="none" stroke-opacity="1.0000" stroke="#000000">
+  <path d="M 540.00 338.91 L 536.00 342.91"/>
+</g> <!-- drawing style -->
+</g> <!-- clip80 -->
+<clipPath id="clipb8ed90b8-f047-4b6d-9666-536505f5fca1">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip81)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 33.594 350.30 L 38.422 350.30 L 38.422 351.14 L 33.594 351.14 L 33.594 350.30 z M 43.875 349.28 Q 44.719 349.47 45.195 350.04 Q 45.672 350.61 45.672 351.45 Q 45.672 352.75 44.781 353.46 Q 43.891 354.17 42.250 354.17 Q 41.703 354.17 41.117 354.06 Q 40.531 353.95 39.922 353.73 L 39.922 352.59 Q 40.406 352.88 40.992 353.02 Q 41.578 353.17 42.219 353.17 Q 43.328 353.17 43.914 352.73 Q 44.500 352.30 44.500 351.45 Q 44.500 350.69 43.953 350.25 Q 43.406 349.81 42.453 349.81 L 41.422 349.81 L 41.422 348.84 L 42.500 348.84 Q 43.359 348.84 43.828 348.49 Q 44.297 348.14 44.297 347.48 Q 44.297 346.81 43.820 346.45 Q 43.344 346.09 42.453 346.09 Q 41.953 346.09 41.398 346.20 Q 40.844 346.30 40.172 346.52 L 40.172 345.47 Q 40.859 345.28 41.445 345.19 Q 42.031 345.09 42.547 345.09 Q 43.906 345.09 44.688 345.70 Q 45.469 346.31 45.469 347.36 Q 45.469 348.09 45.055 348.59 Q 44.641 349.09 43.875 349.28 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip81 -->
+<clipPath id="clipdd92cb8c-4a8d-4f2b-a7cd-449df1aa7ba3">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip82)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 99.594 350.30 L 104.42 350.30 L 104.42 351.14 L 99.594 351.14 L 99.594 350.30 z M 107.30 353.00 L 111.44 353.00 L 111.44 354.00 L 105.88 354.00 L 105.88 353.00 Q 106.55 352.31 107.71 351.13 Q 108.88 349.95 109.17 349.61 Q 109.75 348.98 109.98 348.54 Q 110.20 348.09 110.20 347.67 Q 110.20 346.97 109.71 346.53 Q 109.22 346.09 108.44 346.09 Q 107.88 346.09 107.26 346.28 Q 106.64 346.47 105.94 346.88 L 105.94 345.67 Q 106.66 345.39 107.27 345.24 Q 107.89 345.09 108.41 345.09 Q 109.77 345.09 110.58 345.77 Q 111.39 346.45 111.39 347.59 Q 111.39 348.12 111.19 348.61 Q 110.98 349.09 110.45 349.75 Q 110.30 349.92 109.52 350.73 Q 108.73 351.55 107.30 353.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip82 -->
+<clipPath id="clip9b1d3675-3807-4acf-a712-ade9c25055e5">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip83)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 166.59 350.30 L 171.42 350.30 L 171.42 351.14 L 166.59 351.14 L 166.59 350.30 z M 173.48 353.00 L 175.42 353.00 L 175.42 346.33 L 173.31 346.75 L 173.31 345.67 L 175.41 345.25 L 176.59 345.25 L 176.59 353.00 L 178.53 353.00 L 178.53 354.00 L 173.48 354.00 L 173.48 353.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip83 -->
+<clipPath id="clip10bd9de8-66af-489d-a420-47ff576b82dc">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip84)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 303.48 353.00 L 305.42 353.00 L 305.42 346.33 L 303.31 346.75 L 303.31 345.67 L 305.41 345.25 L 306.59 345.25 L 306.59 353.00 L 308.53 353.00 L 308.53 354.00 L 303.48 354.00 L 303.48 353.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip84 -->
+<clipPath id="clip745845cb-8fba-4938-b614-8a4c6c812608">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip85)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 370.30 353.00 L 374.44 353.00 L 374.44 354.00 L 368.88 354.00 L 368.88 353.00 Q 369.55 352.31 370.71 351.13 Q 371.88 349.95 372.17 349.61 Q 372.75 348.98 372.98 348.54 Q 373.20 348.09 373.20 347.67 Q 373.20 346.97 372.71 346.53 Q 372.22 346.09 371.44 346.09 Q 370.88 346.09 370.26 346.28 Q 369.64 346.47 368.94 346.88 L 368.94 345.67 Q 369.66 345.39 370.27 345.24 Q 370.89 345.09 371.41 345.09 Q 372.77 345.09 373.58 345.77 Q 374.39 346.45 374.39 347.59 Q 374.39 348.12 374.19 348.61 Q 373.98 349.09 373.45 349.75 Q 373.30 349.92 372.52 350.73 Q 371.73 351.55 370.30 353.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip85 -->
+<clipPath id="clip1ea6783f-6ea4-479d-bb0e-d9200d442e00">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip86)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 439.88 349.28 Q 440.72 349.47 441.20 350.04 Q 441.67 350.61 441.67 351.45 Q 441.67 352.75 440.78 353.46 Q 439.89 354.17 438.25 354.17 Q 437.70 354.17 437.12 354.06 Q 436.53 353.95 435.92 353.73 L 435.92 352.59 Q 436.41 352.88 436.99 353.02 Q 437.58 353.17 438.22 353.17 Q 439.33 353.17 439.91 352.73 Q 440.50 352.30 440.50 351.45 Q 440.50 350.69 439.95 350.25 Q 439.41 349.81 438.45 349.81 L 437.42 349.81 L 437.42 348.84 L 438.50 348.84 Q 439.36 348.84 439.83 348.49 Q 440.30 348.14 440.30 347.48 Q 440.30 346.81 439.82 346.45 Q 439.34 346.09 438.45 346.09 Q 437.95 346.09 437.40 346.20 Q 436.84 346.30 436.17 346.52 L 436.17 345.47 Q 436.86 345.28 437.45 345.19 Q 438.03 345.09 438.55 345.09 Q 439.91 345.09 440.69 345.70 Q 441.47 346.31 441.47 347.36 Q 441.47 348.09 441.05 348.59 Q 440.64 349.09 439.88 349.28 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip86 -->
+<clipPath id="clip6878d82e-64e5-4b06-9626-d22feb8c448f">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip87)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 506.53 346.28 L 503.55 350.95 L 506.53 350.95 L 506.53 346.28 z M 506.22 345.25 L 507.72 345.25 L 507.72 350.95 L 508.97 350.95 L 508.97 351.94 L 507.72 351.94 L 507.72 354.00 L 506.53 354.00 L 506.53 351.94 L 502.59 351.94 L 502.59 350.80 L 506.22 345.25 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip87 -->
+<clipPath id="clipe1d9a545-8f0f-42e9-a256-1a697e2f69eb">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip88)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 247.16 19.812 Q 246.55 21.375 245.97 21.852 Q 245.39 22.328 244.42 22.328 L 243.27 22.328 L 243.27 21.125 L 244.11 21.125 Q 244.70 21.125 245.03 20.844 Q 245.36 20.562 245.77 19.516 L 246.02 18.859 L 242.48 10.250 L 244.00 10.250 L 246.73 17.094 L 249.47 10.250 L 251.00 10.250 L 247.16 19.812 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip88 -->
+<clipPath id="clip2e7371db-a4a0-4c5c-85f2-267aaa4f1c5c">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip89)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 217.59 406.30 L 222.42 406.30 L 222.42 407.14 L 217.59 407.14 L 217.59 406.30 z M 224.48 409.00 L 226.42 409.00 L 226.42 402.33 L 224.31 402.75 L 224.31 401.67 L 226.41 401.25 L 227.59 401.25 L 227.59 409.00 L 229.53 409.00 L 229.53 410.00 L 224.48 410.00 L 224.48 409.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip89 -->
+<clipPath id="clipfa88ebef-ee06-48fa-aa1d-df81972104ce">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip90)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 224.48 276.00 L 226.42 276.00 L 226.42 269.33 L 224.31 269.75 L 224.31 268.67 L 226.41 268.25 L 227.59 268.25 L 227.59 276.00 L 229.53 276.00 L 229.53 277.00 L 224.48 277.00 L 224.48 276.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip90 -->
+<clipPath id="clip1ea4c647-91a4-4b1b-8631-ac7634dc63ff">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip91)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 225.30 209.00 L 229.44 209.00 L 229.44 210.00 L 223.88 210.00 L 223.88 209.00 Q 224.55 208.31 225.71 207.13 Q 226.88 205.95 227.17 205.61 Q 227.75 204.98 227.98 204.54 Q 228.20 204.09 228.20 203.67 Q 228.20 202.97 227.71 202.53 Q 227.22 202.09 226.44 202.09 Q 225.88 202.09 225.26 202.28 Q 224.64 202.47 223.94 202.88 L 223.94 201.67 Q 224.66 201.39 225.27 201.24 Q 225.89 201.09 226.41 201.09 Q 227.77 201.09 228.58 201.77 Q 229.39 202.45 229.39 203.59 Q 229.39 204.12 229.19 204.61 Q 228.98 205.09 228.45 205.75 Q 228.30 205.92 227.52 206.73 Q 226.73 207.55 225.30 209.00 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip91 -->
+<clipPath id="clip61cceb24-8f13-4a5b-b7ce-12cb828ee0ee">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip92)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 227.88 139.28 Q 228.72 139.47 229.20 140.04 Q 229.67 140.61 229.67 141.45 Q 229.67 142.75 228.78 143.46 Q 227.89 144.17 226.25 144.17 Q 225.70 144.17 225.12 144.06 Q 224.53 143.95 223.92 143.73 L 223.92 142.59 Q 224.41 142.88 224.99 143.02 Q 225.58 143.17 226.22 143.17 Q 227.33 143.17 227.91 142.73 Q 228.50 142.30 228.50 141.45 Q 228.50 140.69 227.95 140.25 Q 227.41 139.81 226.45 139.81 L 225.42 139.81 L 225.42 138.84 L 226.50 138.84 Q 227.36 138.84 227.83 138.49 Q 228.30 138.14 228.30 137.48 Q 228.30 136.81 227.82 136.45 Q 227.34 136.09 226.45 136.09 Q 225.95 136.09 225.40 136.20 Q 224.84 136.30 224.17 136.52 L 224.17 135.47 Q 224.86 135.28 225.45 135.19 Q 226.03 135.09 226.55 135.09 Q 227.91 135.09 228.69 135.70 Q 229.47 136.31 229.47 137.36 Q 229.47 138.09 229.05 138.59 Q 228.64 139.09 227.88 139.28 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip92 -->
+<clipPath id="clipb6f640a1-c99f-4e79-8e4a-6a79b3055fdd">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip93)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 227.53 69.281 L 224.55 73.953 L 227.53 73.953 L 227.53 69.281 z M 227.22 68.250 L 228.72 68.250 L 228.72 73.953 L 229.97 73.953 L 229.97 74.938 L 228.72 74.938 L 228.72 77.000 L 227.53 77.000 L 227.53 74.938 L 223.59 74.938 L 223.59 73.797 L 227.22 68.250 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip93 -->
+<clipPath id="clip8a4c15e4-9e9c-40b8-b1de-9f6bc0af3793">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip94)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 226.81 346.03 Q 225.91 346.03 225.45 346.93 Q 224.98 347.83 224.98 349.64 Q 224.98 351.44 225.45 352.34 Q 225.91 353.23 226.81 353.23 Q 227.73 353.23 228.20 352.34 Q 228.66 351.44 228.66 349.64 Q 228.66 347.83 228.20 346.93 Q 227.73 346.03 226.81 346.03 z M 226.81 345.09 Q 228.28 345.09 229.06 346.26 Q 229.84 347.42 229.84 349.64 Q 229.84 351.84 229.06 353.01 Q 228.28 354.17 226.81 354.17 Q 225.34 354.17 224.57 353.01 Q 223.80 351.84 223.80 349.64 Q 223.80 347.42 224.57 346.26 Q 225.34 345.09 226.81 345.09 z"/>
+</g> <!-- drawing style -->
+</g> <!-- clip94 -->
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clip7a0262fc-02b3-4d56-a35e-927e10f7f030">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip95)">
+<g stroke-linejoin="round" stroke-width="2.5000" stroke-linecap="round" fill="none" stroke-opacity=".69804" stroke="#000000">
+  <path d="M 0.0000 333.33 L 4.2266 333.07 L 8.4531 332.81 L 12.680 332.54 L 16.906 332.25 L 21.133 331.95 L 25.359 331.64 L 29.586 331.31 L 33.812 330.97 L 38.039 330.61 L 42.266 330.23 L 46.492 329.84 L 50.719 329.44 L 54.945 329.01 L 59.172 328.56 L 63.398 328.10 L 67.625 327.61 L 71.852 327.10 L 76.078 326.57 L 80.305 326.01 L 84.531 325.43 L 88.758 324.83 L 92.984 324.19 L 97.211 323.53 L 101.44 322.84 L 105.66 322.12 L 109.89 321.36 L 114.12 320.57 L 118.34 319.74 L 122.57 318.88 L 126.80 317.98 L 131.02 317.04 L 135.25 316.05 L 139.48 315.02 L 143.70 313.95 L 147.93 312.83 L 152.16 311.65 L 156.38 310.42 L 160.61 309.14 L 164.84 307.80 L 169.06 306.40 L 173.29 304.94 L 177.52 303.41 L 181.74 301.81 L 185.97 300.14 L 190.20 298.40 L 194.42 296.57 L 198.65 294.67 L 202.88 292.68 L 207.10 290.60 L 211.33 288.42 L 215.55 286.15 L 219.78 283.77 L 224.01 281.29 L 228.23 278.70 L 232.46 275.99 L 236.69 273.16 L 240.91 270.20 L 245.14 267.11 L 249.37 263.87 L 253.59 260.50 L 257.82 256.97 L 262.05 253.28 L 266.27 249.43 L 270.50 245.40 L 274.73 241.19 L 278.95 236.79 L 283.18 232.20 L 287.41 227.39 L 291.63 222.37 L 295.86 217.13 L 300.09 211.65 L 304.31 205.92 L 308.54 199.94 L 312.77 193.68 L 316.99 187.15 L 321.22 180.31 L 325.45 173.18 L 329.67 165.72 L 333.90 157.92 L 338.12 149.78 L 342.35 141.27 L 346.58 132.37 L 350.80 123.08 L 355.03 113.36 L 357.14 108.34 L 359.26 103.21 L 361.37 97.965 L 363.48 92.603 L 365.60 87.122 L 367.71 81.518 L 369.82 75.790 L 371.94 69.934 L 374.05 63.948 L 376.16 57.829 L 378.28 51.573 L 380.39 45.178 L 382.50 38.641 L 384.62 31.959 L 386.73 25.128 L 388.84 18.144 L 390.96 11.006 L 393.07 3.7082 L 395.18 -3.7517 L 397.30 -11.378"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip95 -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 8.0000, 304.25)">
+<clipPath id="clip0d83807c-e3ea-42ee-b647-d19000658b3c">
+  <path d="M -42.105 -1601.3 L -42.105 656.58 L 2805.3 656.58 L 2805.3 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip96)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 36.703 -40.000 L 36.703 -40.000 L 30.703 -8.2969 Q 29.797 -2.0938 27.094 5.9062 Q 26.094 8.7969 25.094 10.797 Q 21.594 18.203 16.406 20.000 Q 15.094 20.500 13.797 20.500 Q 8.7969 20.500 6.4062 17.094 Q 5.2969 15.594 5.2969 13.594 Q 5.2969 9.5938 8.7031 8.0938 Q 9.7031 7.5938 10.797 7.5938 Q 13.703 7.5938 14.406 10.094 Q 14.500 10.594 14.500 11.094 Q 14.500 14.500 11.500 15.906 Q 10.406 16.406 9.0000 16.500 Q 10.906 18.297 13.797 18.297 Q 18.203 18.297 20.703 8.5000 Q 21.203 6.2031 21.906 2.5000 L 22.500 -.50000 L 30.000 -40.000 L 23.406 -40.000 Q 20.906 -40.000 20.703 -40.797 L 20.594 -40.797 L 20.594 -41.203 Q 20.594 -42.906 22.297 -43.094 L 22.297 -43.094 L 23.594 -43.094 L 30.500 -43.094 Q 32.906 -55.594 33.797 -58.797 Q 36.797 -68.797 44.406 -70.297 Q 45.500 -70.500 46.500 -70.500 Q 51.703 -70.500 54.094 -67.094 L 54.094 -67.094 Q 55.203 -65.594 55.203 -63.594 Q 55.203 -59.594 51.797 -58.094 Q 50.797 -57.594 49.703 -57.594 Q 46.797 -57.594 46.094 -60.094 Q 46.000 -60.594 46.000 -61.094 Q 46.000 -64.203 48.797 -65.703 Q 49.906 -66.406 51.406 -66.500 Q 49.500 -68.297 46.500 -68.297 Q 43.406 -68.297 41.797 -64.906 Q 41.094 -63.500 39.406 -54.500 L 37.297 -43.094 L 45.594 -43.094 Q 48.094 -43.094 48.297 -42.000 Q 48.297 -40.203 46.703 -40.000 L 46.594 -40.000 L 45.297 -40.000 L 36.703 -40.000 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip96 -->
+</g> <!-- transform -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 19.347, 304.25)">
+<clipPath id="clipb66c66bf-535b-47d3-9262-3d5345f25f5e">
+  <path d="M -101.83 -1601.3 L -101.83 656.58 L 2745.5 656.58 L 2745.5 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip97)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 33.094 24.000 L 33.094 24.000 Q 33.094 25.000 32.094 25.000 Q 30.906 25.000 26.797 20.906 Q 20.594 14.703 16.500 6.2031 Q 9.9062 -7.4062 9.9062 -25.000 Q 9.9062 -41.906 16.203 -55.500 Q 21.406 -66.594 29.406 -73.297 Q 31.500 -75.000 32.094 -75.000 Q 33.094 -75.000 33.094 -74.000 Q 33.094 -73.500 31.797 -72.297 Q 15.703 -55.906 15.703 -25.000 Q 15.703 5.7969 31.406 21.797 Q 33.094 23.500 33.094 24.000 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip97 -->
+</g> <!-- transform -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 26.736, 304.25)">
+<clipPath id="clip7c752e37-23ac-41cc-9c3a-3f439edbfae3">
+  <path d="M -140.72 -1601.3 L -140.72 656.58 L 2706.7 656.58 L 2706.7 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip98)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 33.406 -30.203 L 30.000 -16.500 Q 28.297 -9.7031 28.297 -7.7031 Q 28.297 -2.5000 32.000 -1.4062 Q 32.797 -1.0938 33.797 -1.0938 Q 38.797 -1.0938 42.906 -6.0938 Q 45.594 -9.2969 47.094 -14.203 Q 47.406 -15.297 48.406 -15.297 Q 49.594 -15.297 49.594 -14.297 Q 49.594 -11.797 46.500 -7.0938 Q 41.094 1.0938 33.594 1.0938 Q 26.797 1.0938 23.703 -4.5938 Q 23.094 -5.5000 22.797 -6.5000 Q 20.406 -1.7031 16.203 .20312 Q 14.297 1.0938 12.297 1.0938 Q 6.2969 1.0938 3.9062 -2.4062 Q 2.9062 -3.7031 2.9062 -5.5000 Q 2.9062 -9.2031 6.0938 -10.703 Q 7.2031 -11.297 8.4062 -11.297 Q 11.406 -11.297 12.000 -8.7969 Q 12.094 -8.2969 12.094 -7.7969 Q 12.094 -4.4062 8.7031 -2.7969 Q 8.0938 -2.5000 7.4062 -2.4062 Q 9.5000 -1.0938 12.406 -1.0938 Q 17.703 -1.0938 20.797 -8.2031 Q 21.406 -9.7031 21.906 -11.500 Q 27.297 -31.906 27.297 -35.297 Q 26.703 -41.500 21.906 -42.000 Q 16.703 -42.000 12.406 -36.703 L 12.406 -36.594 Q 12.406 -36.500 12.297 -36.500 Q 10.797 -34.500 9.5938 -31.906 Q 9.0938 -30.703 8.7031 -29.500 L 8.5000 -28.906 Q 8.2969 -27.797 7.2031 -27.797 Q 6.0000 -27.797 6.0000 -28.797 Q 6.0000 -31.297 9.2031 -36.000 Q 14.594 -44.203 22.094 -44.203 Q 29.797 -44.203 32.906 -36.594 Q 36.094 -42.797 41.406 -44.000 Q 42.406 -44.203 43.406 -44.203 Q 49.297 -44.203 51.703 -40.906 Q 52.703 -39.500 52.703 -37.594 Q 52.703 -33.500 49.000 -32.094 Q 48.094 -31.797 47.297 -31.797 Q 44.203 -31.797 43.594 -34.500 Q 43.500 -34.906 43.500 -35.297 Q 43.500 -38.297 46.406 -40.000 Q 47.297 -40.500 48.297 -40.703 Q 46.203 -42.000 43.297 -42.000 Q 36.500 -42.000 33.703 -31.406 Q 33.500 -30.797 33.406 -30.203 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip98 -->
+</g> <!-- transform -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 37.595, 304.25)">
+<clipPath id="clip358c77b2-d5d1-47e1-a7a3-b8b21790287b">
+  <path d="M -197.87 -1601.3 L -197.87 656.58 L 2649.5 656.58 L 2649.5 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip99)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 28.906 -25.000 L 28.906 -25.000 Q 28.906 -8.0938 22.594 5.5000 Q 17.406 16.594 9.4062 23.297 Q 7.2969 25.000 6.7031 25.000 Q 5.7031 25.000 5.7031 24.000 Q 5.7031 23.500 7.0000 22.297 Q 23.094 5.9062 23.094 -25.000 Q 23.094 -55.500 8.0938 -71.203 L 7.5938 -71.703 Q 5.7031 -73.500 5.7031 -74.000 Q 5.7031 -75.000 6.7031 -75.000 Q 7.9062 -75.000 12.000 -70.906 Q 18.203 -64.703 22.297 -56.203 Q 28.906 -42.594 28.906 -25.000 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip99 -->
+</g> <!-- transform -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 55.540, 304.25)">
+<clipPath id="clip4c51c710-50f3-46a7-a300-fb4ad74c3860">
+  <path d="M -292.31 -1601.3 L -292.31 656.58 L 2555.1 656.58 L 2555.1 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip100)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 68.703 -32.703 L 9.0000 -32.703 Q 5.7969 -32.703 5.5938 -34.703 Q 5.5938 -36.703 8.9062 -36.703 L 68.797 -36.703 Q 72.000 -36.703 72.094 -34.703 Q 72.094 -32.703 68.703 -32.703 z M 68.797 -13.297 L 8.9062 -13.297 Q 5.7031 -13.297 5.5938 -15.297 Q 5.5938 -17.297 9.0000 -17.297 L 68.703 -17.297 Q 71.906 -17.297 72.094 -15.297 Q 72.094 -13.297 68.797 -13.297 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip100 -->
+</g> <!-- transform -->
+<g transform="matrix(.19000, 0.0000, 0.0000, .19000, 80.873, 304.25)">
+<clipPath id="clipe83f662d-dbdf-4482-8a1d-4db2822600bf">
+  <path d="M -425.65 -1601.3 L -425.65 656.58 L 2421.7 656.58 L 2421.7 -1601.3 z"/>
+</clipPath>
+<g clip-path="url(#clip101)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 44.906 -17.406 L 44.906 -17.406 L 42.094 -0.0000 L 5.0000 -0.0000 Q 5.0000 -2.5000 5.5938 -3.2031 L 6.0938 -3.7031 L 25.297 -25.094 Q 35.797 -36.906 35.797 -47.203 Q 35.797 -56.094 30.406 -60.703 L 30.297 -60.797 L 30.203 -60.797 Q 27.000 -63.500 22.406 -63.500 Q 15.203 -63.500 10.906 -57.297 Q 9.7031 -55.500 8.9062 -53.297 Q 9.2031 -53.406 10.203 -53.406 Q 14.203 -53.406 15.297 -49.797 L 15.297 -49.703 Q 15.500 -49.000 15.500 -48.203 Q 15.500 -44.203 11.703 -43.094 Q 10.906 -42.906 10.297 -42.906 Q 6.5938 -42.906 5.4062 -46.000 Q 5.0000 -47.094 5.0000 -48.500 Q 5.0000 -56.203 10.906 -61.703 Q 16.203 -66.594 23.703 -66.594 Q 34.703 -66.594 40.797 -59.203 Q 44.297 -54.906 44.797 -49.000 Q 44.906 -48.094 44.906 -47.203 Q 44.906 -39.906 39.406 -33.297 Q 36.500 -29.906 30.406 -24.297 L 24.297 -18.906 L 23.297 -18.000 L 12.703 -7.7031 L 30.703 -7.7031 Q 39.500 -7.7031 40.203 -8.5000 Q 41.203 -9.9062 42.406 -17.406 L 44.906 -17.406 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip101 -->
+</g> <!-- transform -->
+<g transform="matrix(.13300, 0.0000, 0.0000, .13300, 90.373, 296.41)">
+<clipPath id="clip09830893-0257-4581-bfac-202689100310">
+  <path d="M -679.50 -2228.6 L -679.50 996.95 L 3388.2 996.95 L 3388.2 -2228.6 z"/>
+</clipPath>
+<g clip-path="url(#clip102)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 33.406 -30.203 L 30.000 -16.500 Q 28.297 -9.7031 28.297 -7.7031 Q 28.297 -2.5000 32.000 -1.4062 Q 32.797 -1.0938 33.797 -1.0938 Q 38.797 -1.0938 42.906 -6.0938 Q 45.594 -9.2969 47.094 -14.203 Q 47.406 -15.297 48.406 -15.297 Q 49.594 -15.297 49.594 -14.297 Q 49.594 -11.797 46.500 -7.0938 Q 41.094 1.0938 33.594 1.0938 Q 26.797 1.0938 23.703 -4.5938 Q 23.094 -5.5000 22.797 -6.5000 Q 20.406 -1.7031 16.203 .20312 Q 14.297 1.0938 12.297 1.0938 Q 6.2969 1.0938 3.9062 -2.4062 Q 2.9062 -3.7031 2.9062 -5.5000 Q 2.9062 -9.2031 6.0938 -10.703 Q 7.2031 -11.297 8.4062 -11.297 Q 11.406 -11.297 12.000 -8.7969 Q 12.094 -8.2969 12.094 -7.7969 Q 12.094 -4.4062 8.7031 -2.7969 Q 8.0938 -2.5000 7.4062 -2.4062 Q 9.5000 -1.0938 12.406 -1.0938 Q 17.703 -1.0938 20.797 -8.2031 Q 21.406 -9.7031 21.906 -11.500 Q 27.297 -31.906 27.297 -35.297 Q 26.703 -41.500 21.906 -42.000 Q 16.703 -42.000 12.406 -36.703 L 12.406 -36.594 Q 12.406 -36.500 12.297 -36.500 Q 10.797 -34.500 9.5938 -31.906 Q 9.0938 -30.703 8.7031 -29.500 L 8.5000 -28.906 Q 8.2969 -27.797 7.2031 -27.797 Q 6.0000 -27.797 6.0000 -28.797 Q 6.0000 -31.297 9.2031 -36.000 Q 14.594 -44.203 22.094 -44.203 Q 29.797 -44.203 32.906 -36.594 Q 36.094 -42.797 41.406 -44.000 Q 42.406 -44.203 43.406 -44.203 Q 49.297 -44.203 51.703 -40.906 Q 52.703 -39.500 52.703 -37.594 Q 52.703 -33.500 49.000 -32.094 Q 48.094 -31.797 47.297 -31.797 Q 44.203 -31.797 43.594 -34.500 Q 43.500 -34.906 43.500 -35.297 Q 43.500 -38.297 46.406 -40.000 Q 47.297 -40.500 48.297 -40.703 Q 46.203 -42.000 43.297 -42.000 Q 36.500 -42.000 33.703 -31.406 Q 33.500 -30.797 33.406 -30.203 z"/>
+<title>Função f</title>
+<desc>f(x) = 2^x</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip102 -->
+</g> <!-- transform -->
+</g><!-- layer0 -->
+<g id="layer1">
+<clipPath id="clipfe17f14e-633b-4dc0-a673-cd7080b52044">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip103)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 109.74 322.28 C 109.74 325.04 107.50 327.28 104.74 327.28 C 101.98 327.28 99.740 325.04 99.740 322.28 C 99.740 319.52 101.98 317.28 104.74 317.28 C 107.50 317.28 109.74 319.52 109.74 322.28 z"/>
+<title>Lista l1</title>
+<desc>Lista l1: Sequência((t, f(t)), t, -2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip103 -->
+<clipPath id="clip5afb23d7-1e15-44b0-a00d-fdc45ab97238">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip104)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 176.29 305.64 C 176.29 308.40 174.05 310.64 171.29 310.64 C 168.53 310.64 166.29 308.40 166.29 305.64 C 166.29 302.88 168.53 300.64 171.29 300.64 C 174.05 300.64 176.29 302.88 176.29 305.64 z"/>
+<title>Lista l1</title>
+<desc>Lista l1: Sequência((t, f(t)), t, -2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip104 -->
+<clipPath id="clipe3c6425f-432c-4257-a68c-d56467cf6e4d">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip105)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 242.84 272.36 C 242.84 275.13 240.60 277.36 237.84 277.36 C 235.08 277.36 232.84 275.13 232.84 272.36 C 232.84 269.60 235.08 267.36 237.84 267.36 C 240.60 267.36 242.84 269.60 242.84 272.36 z"/>
+<title>Lista l1</title>
+<desc>Lista l1: Sequência((t, f(t)), t, -2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip105 -->
+<clipPath id="clip0c977dec-a61b-4c73-98d7-6c5e7981b9bd">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip106)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 309.39 205.81 C 309.39 208.58 307.15 210.81 304.39 210.81 C 301.63 210.81 299.39 208.58 299.39 205.81 C 299.39 203.05 301.63 200.81 304.39 200.81 C 307.15 200.81 309.39 203.05 309.39 205.81 z"/>
+<title>Lista l1</title>
+<desc>Lista l1: Sequência((t, f(t)), t, -2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip106 -->
+<clipPath id="clip54e39142-0ef3-4d8c-be0a-d91177690f8c">
+  <path d="M 0.0000 0.0000 L 0.0000 429.00 L 541.00 429.00 L 541.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip107)">
+<g fill-opacity="1.0000" fill-rule="nonzero" stroke="none" fill="#000000">
+  <path d="M 375.94 72.714 C 375.94 75.475 373.70 77.714 370.94 77.714 C 368.18 77.714 365.94 75.475 365.94 72.714 C 365.94 69.953 368.18 67.714 370.94 67.714 C 373.70 67.714 375.94 69.953 375.94 72.714 z"/>
+<title>Lista l1</title>
+<desc>Lista l1: Sequência((t, f(t)), t, -2, 2)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip107 -->
+</g><!-- layer1 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->
