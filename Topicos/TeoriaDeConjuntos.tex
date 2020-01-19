@@ -143,10 +143,13 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \vskip0.4cm
 
- \item Produto cartesiano:
- $A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \}$
+ \item Produto cartesiano: Dados dois conjuntos $A$ e $B$ o produto cartesiano de $A$ por $B$ é o conjunto dos pares ordenados, cuja primeira entrada é um elemento de $A$ e a segunda coordenada é um elemento $B$. Este conjunto é denotado por:
+ \[A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \} \ .\]
+ Assim por exemplo, se considerarmos $A= \{1, 2, 3\}$ e $B= \{a, b, c\}$ teremos pela definição que
+ \[A \times B= \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3, c)\} \ .\]
 
  O produto cartesiano de dois conjuntos pode ser representado usando eixos coordenados, como mostra o exemplo abaixo. Esta representação é particularmente útil para representar os gráficos de funções de $\R$ para $\R$.
+\end{itemize}
 
  \begin{exem}
   Dados os conjuntos $A= \{1, 2, 3, 4, 5 \}$ e $B=\{ 2, 3, 4, 6\}$, podemos representá-los através do seguinte diagrama de Venn-Euler:
@@ -205,7 +208,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \end{exem}
 
- \vskip0.4cm
+\section{Cardinalidade de conjuntos}
 
  A \textbf{cardinalidade} de um conjunto $A$ qualquer, é o número de elementos deste conjunto. Denotada por: $n(A)$, $|A|$ ou $\# A$.
 
@@ -223,10 +226,56 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \vskip0.3cm
 
  Esta fórmula irá nos ajudar a resolver muitos problemas de teoria de conjuntos.
+ 
+ \section{Conjunto das partes}
+ 
+ Dado um conjunto $A$ o conjunto das partes de $A$ denotado por $\mathcal{P}(A)$ é o conjunto de todos os subconjuntos de $A$, ou seja,
+ \[\mathcal{P}(A)= \{X \mid X \text{ é um subconjunto de } A\} \ .\]
+ 
+ Dado um conjunto $A$ qualquer, precisamos ficar atentos a duas coisas:
+ \begin{itemize}
+ \item O conjunto $\emptyset$ sempre está no conjunto das partes de $A$, pois $\emptyset \subset A$;
+ \item O conjunto $A$ sempre está no conjunto das partes de $A$, pois $A \subset A$.
+ \end{itemize}
+ Portanto, $\emptyset \in \mathcal{P}(A)$ e $A \in \mathcal{P}(A)$.
+ 
+ \begin{exem}
+ Se considerarmos o conjunto $A= \{a, b, c\}$, teremos pela definição acima que o conjuntos das partes de $A$ é:
+ \[\mathcal{P}(A)= \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \} \ .\] 
+ \end{exem}
+ 
+ E como sabemos se este conjunto acima contém de fato todos os subconjuntos do conjunto $A$? Bom para conseguirmos verificar isso vamos precisar utilizar a seguinte propriedade do conjunto das partes.
+ 
+ \begin{prop}
+  Se o conjunto $A$ possui $n$ elementos, então $\mathcal{P}(A)$ possui $2^n$ elementos. Ou seja:
+  \[\# A= n \ \ \Rightarrow \ \ \# \mathcal{P}(A)= 2^n \ .\] 
+\end{prop}
+
+ \begin{dem}
+ Nesta demonstração utilizaremos o Príncipio Fundamental da Contagem para contar quantos subconjuntos um conjunto $A$ com $n$ elementos possui. 
+
+ Para começar considere um subconjunto $B$ qualquer de $A$. Observe que para cada um dos $n$ elementos de $A$, só existem duas possibilidades:
+ \begin{itemize}
+ \item Ou o elemento pertence ao subconjunto $B$;
+ \item Ou o elemento não pertence ao subconjunto $B$.
+ \end{itemize}
+
+ Logo, pelo Príncipio Fundamental da Contagem, nós podemos montar o conjunto $B$ de 
+ \[\underbrace{2 \cdot 2 \cdot 2 \cdots 2}_{n-vezes}= 2^n\]
+ maneiras diferentes.
+
+ E portanto, há $2^n$ subconjuntos de $A$ em $\mathcal{P}(A)$.
+ \end{dem}
+
+ Em nosso exemplo anterior temos que $\# A= 3$, logo aplicando esta propriedade obtemos que $\# \mathcal{P}(A)= 2^3= 8$, que é exatamente a quantidade de elementos que listamos no conjunto $\mathcal{P}(A)$, podemos com isso concluir que estes são todos os subconjuntos do conjunto $A$ que existem, portanto o conjunto $\mathcal{P}(A)$ está completo.
+ 
+
 
  \newpage
+ \section{Propriedades das operações entre conjuntos}
 
  Dada uma família $\mathcal{A}$ de conjuntos, ou seja, dado um conjunto $\mathcal{A}$ de conjuntos, temos:
+ \begin{itemize}
  \item União de todos os conjuntos que são elementos de $\mathcal{A}$:
  $$\bigcup_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para algum } A \in \mathcal{A}\}$$
  \item Interseção de todos os conjuntos que são elementos de $\mathcal{A}$:
