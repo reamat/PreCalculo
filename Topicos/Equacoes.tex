@@ -322,6 +322,139 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
    2x= -3 -4 \\
    x= \frac{-7}{2}
   \end{eqnarray*}
-
-
  \end{exem}
+ 
+ \section{Equações modulares}
+ 
+   \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As equações modulares são equações que apresentam expressões algébricas dentro de um módulo.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Antes de começarmos a ver exemplos destas equações lembremos que para um número real $x$ qualquer:
+ 
+ \[
+|x|= \begin{cases}
+      -x, \ \ \text{se} \ \ x<0 \\
+      x, \ \ \text{se} \ \ x \geq 0 \ .
+     \end{cases}
+\]
+
+Além disso o módulo de um número real possui algumas propriedades listadas na proposição \autoref{prop.modulo} que serão necessárias para a resolução de equações modulares.
+
+\begin{exem} Expressões modulares:
+ \begin{enumerate}
+  \item $\dfrac{|x|}{x}$
+  
+  Precisamos analisar separadamente o casos em que $x<0$ e $x>0$, note que o caso em que $x=0$ a expressão não está definida, pois não existe divisão por $0$ (zero), por isso não precisamos nos preocupar com este caso.
+  
+  \begin{itemize}
+   \item Caso $x> 0$, temos pela definição de módulo que, $|x|= x$, de modo que
+   \[\frac{|x|}{x}=\frac{x}{x}= 1\]
+   \item Caso $x< 0$, temos pela definição de módulo que, $|x|= -x$, de modo que
+   \[\frac{|x|}{x}=\frac{-x}{x}= -1\]
+  \end{itemize}
+  
+ Portanto,
+ 
+  \[ \frac{|x|}{x} = \begin{cases}
+      x= -1, \ \ \text{se} \ \ x< 0 \\
+      x= 1, \ \ \text{se } \ \ x> 0 \ .
+     \end{cases}
+  \]
+ 
+ 
+ \item $|-5x^5|$
+ \[|-5x^5|= |-5|\cdot |x^5|= 5 \cdot |x^5|\]
+ Observe que neste caso o expoente de $x$ é um número ímpar, e no item seguinte um número par, por isso temos essa diferença sútil na resposta.
+ 
+ \item $|-5x^4|$
+ \[|-5x^4|= |-5|\cdot |x^4|= 5 \cdot x^4\]
+ 
+ \item $\left|\dfrac{2xy}{4xy^3}\right|$
+ \[\left| \frac{2x^2y}{4xy^3}\right| = \left|\frac{x}{2y^2}\right|= \frac{|x|}{|2y^2|}= \frac{|x|}{|2| \cdot |y^2|}= \frac{|x|}{2 \cdot y^2}\]
+ 
+ \item $\frac{|-6x|}{5} - \left|\frac{-3x}{2}\right|$
+ 
+ \begin{eqnarray*}
+  \frac{|-6x|}{5} - \left|\frac{-3x}{2}\right| &=& 
+ \frac{|-6|\cdot |x|}{5} - \frac{|-3| \cdot |x|}{|2|} \\
+ &=& \frac{6 \cdot |x|}{5} - \frac{ 3 \cdot |x|}{2} \\
+ &=& \frac{12 \cdot |x|}{10} - \frac{15 \cdot |x|}{10} \\
+ &=& \frac{12|x| - 15|x|}{10} \\
+ &=& \frac{-3|x|}{10}
+ \end{eqnarray*}
+
+ \item $|x-2| + |x+4|$
+ 
+ Para simplificar esta expressão, primeiro precisamos usar duas vezes a definição de módulo:
+ 
+ \[ |x-2| = \begin{cases}
+      -(x-2), \ \ \text{se} \ \ (x-2)< 0 \\
+      x-2, \ \ \text{se } \ \ (x-2) \geq 0 
+     \end{cases}
+     \Rightarrow
+     |x-2| = \begin{cases}
+      -x + 2, \ \ \text{se} \ \ x < 2 \\
+      x-2, \ \ \text{se } \ \ x \geq 2 
+     \end{cases}
+  \]
+ 
+ \[ |x+4| = \begin{cases}
+      -(x+4), \ \ \text{se} \ \ (x+4)< 0 \\
+      x+4, \ \ \text{se } \ \ (x+4) \geq 0 
+     \end{cases}
+     \Rightarrow
+     |x+4| = \begin{cases}
+      -x - 4, \ \ \text{se} \ \ x < -4 \\
+      x + 4, \ \ \text{se } \ \ x \geq -4 
+     \end{cases}
+  \]
+  
+  Observe que $|x-2|$ muda de sinal quando $x=2$, e que $|x+4|$ muda de sinal quando $x=-4$, logo esta soma de módulos tem uma definição particular para cada um dos intervalos $(-\infty, -4)$, $[-4, 2)$ e $[2, \infty)$. Para facilitar a compreensão organizamos na tabela abaixo a soma em cada caso.
+  
+   \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+  Expressão & $(-\infty, -4)$ & $[-4, 2)$ & $[2, \infty)$  \\\hline
+  $|x-2|$ & $-x+2$ &  $-x+2$ & $x-2$ \\\hline
+  $|x+4|$ & $-x-4$ &  $x+4$ & $x+4$ \\\hline
+  $|x-2| + |x+4|$ & $-x+2-x-4$ & $-x+2+x+4$ & $x-2+x+4$ \\\hline
+ \end{tabular}
+\end{table}
+
+ Portanto, temos que
+ 
+  \[ |x-2| + |x+4| = \begin{cases}
+      -2x-2, \ \ \text{se} \ \ x < -4 \\
+      6, \ \ \text{se } \ \ -4 \leq x < 2 \\
+      2x + 2, \ \ \text{se} \ \ x \geq 2 \ .
+     \end{cases}
+  \]
+ 
+\end{enumerate}
+\end{exem}
+
+Vejamos então alguns exemplos de equações modulares resolvidas.
+
+\begin{exem} Equações modulares:
+ \begin{enumerate}
+  \item $|x|= 10$
+  
+  Neste caso temos:
+  \[
+  \begin{cases}
+      x= -10 \ \ \text{se} \ \ x<0 \\
+      x= 10 \ \ \text{se } \ \ x \geq 0 \ .
+     \end{cases}
+  \]
+ \end{enumerate}
+
+\end{exem}
+
+
