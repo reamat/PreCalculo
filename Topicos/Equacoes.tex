@@ -440,21 +440,148 @@ Além disso o módulo de um número real possui algumas propriedades listadas na
 \end{enumerate}
 \end{exem}
 
+\newpage
 Vejamos então alguns exemplos de equações modulares resolvidas.
 
 \begin{exem} Equações modulares:
  \begin{enumerate}
   \item $|x|= 10$
   
-  Neste caso temos:
+  Pela definição de módulo temos:
   \[
   \begin{cases}
-      x= -10 \ \ \text{se} \ \ x<0 \\
-      x= 10 \ \ \text{se } \ \ x \geq 0 \ .
+      -x= 10, \ \ \text{se} \ \ x<0 \\
+      x= 10, \ \ \text{se } \ \ x \geq 0 \ .
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      x= -10, \ \ \text{se} \ \ x<0 \\
+      x= 10, \ \ \text{se } \ \ x \geq 0 \ .
      \end{cases}
   \]
- \end{enumerate}
-
+  
+ \item $|2x-2|= 10$
+ 
+  Pela definição de módulo temos:
+  \[
+  \begin{cases}
+      -(2x-2)= 10, \ \ \text{se} \ \ (2x-2)<0 \\
+      2x-2= 10, \ \ \text{se } \ \ (2x-2) \geq 0
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      -2x + 2= 10, \ \ \text{se} \ \ x< 1 \\
+      2x - 2= 10, \ \ \text{se } \ \ x \geq 1
+     \end{cases}
+     \]
+     \[
+     \Rightarrow
+     \begin{cases}
+      -2x= 8, \ \ \text{se} \ \ x< 1 \\
+       2x= 12, \ \ \text{se } \ \ x \geq 1
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      x= -4, \ \ \text{se} \ \ x< 1 \\
+      x= 6, \ \ \text{se } \ \ x \geq 1 \ .
+     \end{cases}
+  \]
+  
+  \item $|2x^2 - 72|= 26$
+  
+  Novamente aplicando a definição de módulo temos
+    \[
+    \begin{cases}
+      -(2x^2-72)= 26, \ \ \text{se} \ \ (2x^2-72)<0 \\
+      2x^2- 72= 26, \ \ \text{se } \ \ (2x^2-72) \geq 0
+     \end{cases}
+     \]
+     
+     Como $2x^2- 72= 0 \Leftrightarrow 2x^2= 72 \Leftrightarrow x^2= 36 \Leftrightarrow |x|= 6$ e a equação do 2º grau $2x^2- 72= 0$ tem $a> 0$, fazendo o estudo de sinal desta equação obtemos os três seguintes casos:
+     \[
+     \begin{cases}
+      2x^2- 72 \geq 0, \ \ \text{se} \ \ x \leq -6 \\
+      2x^2- 72 < 0, \ \ \text{se} \ \ -6 < x < 6 \\
+      2x^2- 72 \geq 0, \ \ \text{se} \ \ x \geq 6 \\
+     \end{cases}
+     \]
+     Com isso temos que a equação inicial deve ser dividida nos seguintes casos:
+     \[
+     \Rightarrow
+      \begin{cases}
+       2x^2- 72= 26, \ \ \text{se } \ \ x \leq -6 \\
+      -(2x^2-72)= 26, \ \ \text{se} \ \ -6 < x < 6\\
+       2x^2- 72= 26, \ \ \text{se } \ \ x \geq 6 \\
+     \end{cases}
+     \]
+     temos portanto duas equações para resolver, façamos elas separadamente:
+     \[2x^2- 72= 26 \Leftrightarrow 2x^2= 98 \Leftrightarrow x^2= 49 \Leftrightarrow x= \pm 7\]
+     note que $-7 < -6$ e $7 > 6$ logo $x=-7$ e $x=7$ são soluções desta equação, agora vejamos o outro caso,
+     \[-(2x^2-72)= 26 \Leftrightarrow -2x^2 + 72= 26 \Leftrightarrow -2x^2= -46 \Leftrightarrow x^2= 23 \Leftrightarrow x= \pm \sqrt{23} \approx \pm 4,78\]
+     note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ são soluções desta equação. Portanto o conjunto solução da nossa é equação modular é:
+     \[S= \{-7, -\sqrt{23}, \sqrt{23}, 7\} \ .\]
+     
+     \item \colorbox{yellow}{Contra-exemplo:} $|x-4|=-2$
+     
+     Pela definição de módulo temos:
+     \[
+    \begin{cases}
+      -(x-4)= -2, \ \ \text{se} \ \ (x-4) < 0 \\
+        x-4 = -2, \ \ \text{se } \ \ (x-4) \geq 0
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      -x+4= -2, \ \ \text{se} \ \ x < 4 \\
+       x-4= -2, \ \ \text{se } \ \ x \geq 4
+     \end{cases}
+     \]
+     \[
+     \begin{cases}
+      -x= -2-4, \ \ \text{se} \ \ x < 4 \\
+       x= -2+4, \ \ \text{se } \ \ x \geq 4
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      x= 6, \ \ \text{se} \ \ x < 4 \\
+      x= 2, \ \ \text{se } \ \ x \geq 4
+     \end{cases}
+     \]
+ Observe que em nenhum dos dois casos o $x$ encontrado pertence ao intervalo onde a solução deveria estar, pois $6$ não é menor que $4$ e $2$ não é maior ou igual a $4$, além disso,
+ \[x=6 \Rightarrow |6-4|= |2|= 2 \neq -2\]
+ \[x=2 \Rightarrow |2-4|= |-2|= 2 \neq -2\]
+ logo esta equação NÃO tem solução!
+ 
+ Mas isso já era de se esperar, pois lembra que $|x|\geq 0$ para qualquer $x \in \R$, por propriedade do módulo, logo $|x-4| \geq 0$ como $-2< 0$ então não existe $x \in \R$ tal que $|x-4|= -2$. Portanto, já sabíamos pela propriedade de módulo que esta equação não tinha solução.
+        
+\end{enumerate}
 \end{exem}
+
+ Vamos agora, sistematizar o que acabamos de ver nos exemplos acima de forma a facilitar a aplicação desta teoria na resolução de equações modulares gerais. Para tal consideremos uma equação modular na forma geral
+ \[|A|= B\]
+ em que $A$ e $B$ são expressões algébricas. Pela definição de módulo temos que
+ \[ |A|= \begin{cases}
+          -A, \ \text{se} \ \ A < 0 \\ 
+           A, \ \text{se} \ \ A \geq 0           
+         \end{cases}
+ \]
+ logo as soluções da equação modular devem satisfazer
+ \[A= B \ \ \ \text{ou} \ \ \ -A= B \ .\]
+ Além disso, lembremos que por propriedade de módulo $|A|\geq 0$, então para ser uma solução da equação a variável $x$ deve também satisfazer esta propriedade. Mas como vimos no contra-exemplo acima nem toda variável satifaz
+ \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (|A|\geq 0) \ . \]
+ Note que, como nossa equação é $|A|= B$, logo garantir $|A|\geq 0$ é equivalente a garantir $B \geq 0$, donde obtemos que as equações com $B < 0$ não possuem solução.
+ 
+ Resumindo temos que,
+ 
+  \vskip0.3cm
+ \colorbox{rosa}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+   uma variável $x$ é solução da equação modular $|A|= B$ se ela satisfizer:
+ \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (B \geq 0) \ . \] 
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ 
 
 
