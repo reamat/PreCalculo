@@ -8,7 +8,7 @@
  \end{center}
  \end{minipage}}
  \vskip0.3cm
- 
+
  Como por exemplo:
 
  \begin{eqnarray*}
@@ -90,8 +90,8 @@
      \item $\sqrt{x}= x^{\frac{1}{2}}$
      \item $\sqrt{x^4}= (x^4)^{\frac{1}{2}}= x^{\frac{4}{2}}= x^2$
      \item $\sqrt[3]{8x^6}= \sqrt[3]{8} \cdot \sqrt[3]{x^6}= 2 x^{\frac{6}{3}}= 2x^2$
-     \item $\sqrt{\frac{2x^2}{16}}= \frac{\sqrt{2x^2}}{\sqrt{16}}= \frac{|x|\sqrt{2}}{4}$
-     \item $\sqrt{x^2}= |x|$
+     \item $\sqrt{\frac{2x^2}{16}}= \frac{\sqrt{2x^2}}{\sqrt{16}}= \frac{\abs{x}\sqrt{2}}{4}$
+     \item $\sqrt{x^2}= \abs{x}$
     \end{itemize}
 
  \vskip0.3cm
@@ -112,10 +112,10 @@
   \item Cubo perfeito (+): $(a+b)^3= a^3 + 3a^2b + 3ab^2 + b^3$
   \item Cubo perfeito (-): $(a-b)^3= a^3 - 3a^2b + 3ab^2 - b^3$
  \end{itemize}
- 
+
  \newpage
  \section{Polinômios}
- 
+
   \vskip0.3cm
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
@@ -126,20 +126,20 @@
  \end{center}
  \end{minipage}}
  \vskip0.3cm
- 
+
  \begin{obs}
  Os termos polinômio e função polinomial serão considerados como sinônimos e utilizados sem distinção no decorrer deste texto.
  \end{obs}
- 
+
  Uma função polinomial de grau $0$ é uma função constante; uma função polinomial de grau $1$ é uma função linear (ou, função afim); uma função polinomial de grau $2$ é uma função quadrática.
- 
+
  Por simplicidade, a partir de agora iremos considerar nossos polinômios sobre $\R$, porém esta teoria pode ser estendida sem muita dificuldade para o corpo dos números complexos.
- 
+
  \begin{defi}
  Dados um número real $k$ e o polinômio $p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0$, chama-se \emph{valor numérico de $p$ em $k$} ao valor:
  \[p(k)= a_nk^n + a_{n-1}k^{n-1}+ \ldots + a_1k+ a_0 \ .\]
  \end{defi}
- 
+
 \begin{exem}
 Por exemplo, se considerarmos o polinômio $p(x)= x^2 + 7x+10$, temos os seguintes valores numéricos para $p$:
 \begin{eqnarray*}
@@ -149,79 +149,79 @@ p(-4)&=& (-4)^2 + 7(-4) +10= -2\\
 p(-2)&=& (-2)^2 + 7(-2) +10= 0\\
 p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
 \end{eqnarray*}
-\end{exem} 
- 
+\end{exem}
+
  \begin{defi}
  Em particular, se $k$ é um número real tal que $p(k)= 0$, dizemos que $k$ é uma \emph{raiz} ou \emph{um zero} de $p$.
  \end{defi}
- 
+
  \begin{exem}
  Portanto no exemplo anterior temos que $k_1= -5$ e $k_2=-2$ são raízes do polinômio $p(x)= x^2 + 7x+10$.
  \end{exem}
- 
+
   \begin{defi}
   O polinômio nulo (ou identicamente nulo) é um polinômio da forma $p(x)= 0x^n +0x^{n-1}+ \ldots + 0x+ 0$, ou simplesmente, $p(x)= 0$. Por convenção, o grau deste polinômio será indefinido.
  \end{defi}
- 
- 
+
+
   \begin{teo}
   Sejam $p$ e $q$ dois polinômios em $K$, dados por:
   \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i\]
   \[q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i\]
   temos que $p=q \Leftrightarrow a_i= b_i$, para todo $i \in \{0, 1, 2, \cdots, n\}$.
  \end{teo}
- 
+
  \begin{dem}
  Para todo $x \in \R$, temos:
  \[a_i= b_i \Leftrightarrow a_i - b_i=0 \Leftrightarrow (a_i - b_i)x^i=0 \Leftrightarrow \sum_{i=0}^{n}(a_i - b_i)x^i= 0 \Leftrightarrow\]
  \[ \sum_{i=0}^{n}a_i x^i - \sum_{i=0}^{n}b_i x^i = 0 \Leftrightarrow \sum_{i=0}^{n}a_i x^i = \sum_{i=0}^{n}b_i x^i \Leftrightarrow p(x)= q(x)\]
 
  \end{dem}
- 
-  Este Teorema mostra que, quando escrevemos um polinômio $p$ na forma 
+
+  Este Teorema mostra que, quando escrevemos um polinômio $p$ na forma
  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
- com $a_i \in K$, então os números $a_0, \ldots, a_n$ são determinados de modo único. 
- 
- Dados dois polinômios 
+ com $a_i \in K$, então os números $a_0, \ldots, a_n$ são determinados de modo único.
+
+ Dados dois polinômios
  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i\]
   \[q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i\]
   chama-se \emph{soma} de $p$ com $q$ o polinômio
   \[(p+q)(x)= (a_n+ b_n)x^n + (a_{n-1}+b_{n-1})x^{n-1}+ \ldots + (a_1+b_1)x+ (a_0+b_0)= \sum_{i=0}^{n} (a_i+b_i)x^i \ .\]
-  
+
   \begin{teo}
   Se $p$, $q$ e $p+q$ são polinômios não nulos, então o grau do polinômio $p+q$ é menor ou igual ao maior dos números $gr(p)$ e $gr(q)$;
   \[gr(p+q) \leq \text{máx}\{gr(p), gr(q)\} \ .\]
   \end{teo}
-  
+
   \begin{teo}
   Se $p$, $q$ e $p \cdot q$ são polinômios não nulos, então o grau do polinômio $p \cdot q$ é igual a soma dos graus de $p$ e $q$;
   \[gr(p \cdot q) = gr(p) + gr(q) \ .\]
   \end{teo}
-  
+
   Para funções polinomiais o \emph{Teorema Fundamental da Álgebra} garante a existência de zeros.
-  
+
   \begin{teo}[Teorema Fundamental da Álgebra]
   Seja $p \in \C[x]$ um polinômio não constante. Então existe um número complexo $z_0$ tal que $p(z_0)=0$.
   \end{teo}
-  
+
   \begin{dem}
   A demonstração deste resultado pode ser encontrada em livros de Cálculo de uma variável complexa ou Análise Complexa como por exemplo página 119 do (SOARES, 2009).
   \end{dem}
-  
+
   Como consequência direta do Teorema Fundamental da Álgebra temos o seguinte teorema.
-  
+
   \begin{teo}
   Todo polinômio de grau $n \geq 1$ possui pelo menos uma raiz real ou complexa.
   \end{teo}
-  
+
  Observe que estes resultados garantem que todo polinômio possui pelo menos uma raiz complexa, como vamos focar nossos estudos em polinômios sobre $\R$, podemos neste caso ter polinômios que não possuem raízes reais. Ainda sobre as raízes de um polinômio vale destacar o seguinte teorema.
- 
+
  \begin{teo}
   Seja $p$ um polinômio não nulo em $K$, escrito na forma
   \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
-   então $p$ tem no máximo $n$ raízes em $K$. 
+   então $p$ tem no máximo $n$ raízes em $K$.
  \end{teo}
- 
+
  \begin{teo}
   Sejam $p(x)$, $g(x)$ polinômios sobre o corpo $K$, i.e., polinômios em $K[x]$, e suponhamos que $gr(g) \geq 0$. Então, existem polinômios $q(x)$ e $r(x)$ tais que
   \[p(x)= q(x)g(x) + r(x) \ , \]
@@ -233,7 +233,7 @@ p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
  \end{dem}
 
 
- 
+
  \begin{exem}
   Como um exemplo para a divisão de polinômios, façamos a divisão do polinômio $p_1(x)=x^3-4x^2+x+6$ pelo binômio $g_1(x)=x+1$:
 
@@ -241,22 +241,21 @@ p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
  \centering
  \includegraphics[width=8cm]{../Topicos/Figuras/polinomiosdivisao.pdf}
  \end{figure}
- 
+
  note que o quociente da divisão é $q_1(x)= x^2 - 5x + 6$, e o resto desta divisão é $r(x)=0$ (zero). Como o resto é zero concluímos que $p_1(x)$ é divisível por $g_1(x)$. Portanto $p_1(x)= q_1(x)g_1(x)$, ou seja, $x^3-4x^2+x+6= (x^2-5x+6)(x+1)$.
  \end{exem}
- 
+
  Como consequência do teorema anterior, temos o seguinte corolário, que nos garante que no exemplo anterior $-1$ é uma raiz do polinômio $p_1(x)$.
- 
+
  \begin{cor}
- Seja $p$ um polinômio não-nulo sobre $K$. Seja $\alpha \in K$ tal que $p(\alpha)=0$. Então, existe um polinômio $q(x)$ sobre $K$ tal que 
+ Seja $p$ um polinômio não-nulo sobre $K$. Seja $\alpha \in K$ tal que $p(\alpha)=0$. Então, existe um polinômio $q(x)$ sobre $K$ tal que
  \[p(x)= (x - \alpha)q(x) \ .\]
  \end{cor}
- 
+
  Como consequência deste Corolário, todo polinômio de grau $n \geq 1$ pode ser escrito como produto de $n$ fatores de grau $1$.
- 
+
  \begin{teo}[Teorema da Decomposição]
   Todo polinômio $p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0$, com $a_n \neq 0$, pode ser escrito de forma fatorada
   \[p(x)= a_n(x - r_1)(x - r_2) \ldots (x - r_n)\]
-  onde $r_1, r_2, \cdots, r_n$ são as raízes do polinômio.  
+  onde $r_1, r_2, \cdots, r_n$ são as raízes do polinômio.
  \end{teo}
-

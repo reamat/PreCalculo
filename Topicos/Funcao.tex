@@ -348,7 +348,7 @@ As funções são classificadas em:
     \item Injetora
 
     Tome $x_1, x_2 \in \R_{+}$, tais que $f(x_1) = f(x_2)$ logo,
-    \[f(x_1) = f(x_2) \Rightarrow x_1^2= x_2^2 \Rightarrow \sqrt{x_1^2}= \sqrt{x_2^2} \Rightarrow |x_1|= |x_2| \Rightarrow x_1= x_2, \]
+    \[f(x_1) = f(x_2) \Rightarrow x_1^2= x_2^2 \Rightarrow \sqrt{x_1^2}= \sqrt{x_2^2} \Rightarrow \abs{x_1}= \abs{x_2} \Rightarrow x_1= x_2, \]
     pois $x_1, x_2 \geqslant 0$. Portanto $f$ é injetora.
 
    \end{itemize}
@@ -648,9 +648,9 @@ Logo o gráfico da função $Id$ é:
 
   \subsection{Função modular}
 
-  Considere a função $f: \R \rightarrow \R$, dada por $f(x)= |x|$, pela definição de módulo temos que $f$ é uma função definida por partes, da seguinte forma:
+  Considere a função $f: \R \rightarrow \R$, dada por $f(x)= \abs{x}$, pela definição de módulo temos que $f$ é uma função definida por partes, da seguinte forma:
 
-  \[f(x)= |x| = \begin{cases}
+  \[f(x)= \abs{x} = \begin{cases}
                  x, \text{ se } x \geq 0 \\
                  -x, \text{ se } x < 0
                 \end{cases} \ .\]
@@ -665,7 +665,7 @@ Logo o gráfico da função $Id$ é:
 
   Note que $f$ é decrescente no intervalo $]-\infty, 0[$, e crescente no intervalo $]0, \infty[$, e admite um mínimo em $x=0$.
 
-  Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= |x+1|$, observe que:
+  Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= \abs{x+1}$, observe que:
   \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
   com isso podemos reescrever a função $f_1$ sem os módulos da seguinte forma:
 
@@ -675,7 +675,7 @@ Logo o gráfico da função $Id$ é:
                 \end{cases} \ .\]
   Com isso a função modular pode ser vista como uma função linear por partes.
 
-  Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= |x+1|+2$, temos que:
+  Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= \abs{x+1}+2$, temos que:
   \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
   com isso podemos reescrever a função $f_2$ sem os módulos da seguinte forma:
 
@@ -811,7 +811,7 @@ Logo o gráfico da função $Id$ é:
  \end{exem}
 
  \begin{exem}
-  Considere a função $f(x)= |x|$. Lembramos que esta função é definida por partes, por isso faremos a análise de crescimento e decrescimento em cada uma destas partes.
+  Considere a função $f(x)= \abs{x}$. Lembramos que esta função é definida por partes, por isso faremos a análise de crescimento e decrescimento em cada uma destas partes.
 
   Caso 1: Se $x < 0$, temos que $f(x)= -x$, logo se $x_1 < x_2$,
   \[x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,\]
@@ -857,17 +857,17 @@ Logo o gráfico da função $Id$ é:
  \end{exem}
 
  \begin{exem}
-  Vamos analisar a paridade de função modular $f(x)= |x|$.
+  Vamos analisar a paridade de função modular $f(x)= \abs{x}$.
 
   Caso 1: Se $x < 0$,
-  \[f(x)= |x|= -x= f(-(x))= f(-x)\]
+  \[f(x)= \abs{x}= -x= f(-(x))= f(-x)\]
   por exemplo, $x= -2$, neste caso,
-  \[f(x)= f(-2)= |-2|= -(-2)= 2= f(2)= f(-(-2))= f(-x) \ ;\]
+  \[f(x)= f(-2)= \abs{-2}= -(-2)= 2= f(2)= f(-(-2))= f(-x) \ ;\]
 
   Caso 2: Se $x \geq 0$,
-  \[f(x)= |x|= x= -(-x)= |-x|= f(-x)\]
+  \[f(x)= \abs{x}= x= -(-x)= \abs{-x}= f(-x)\]
   por exemplo, $x= 2$, neste caso,
-  \[f(x)= f(2)= |2|= 2= -(-2)= |-2|= f(-2)= f(-x) \ .\]
+  \[f(x)= f(2)= \abs{2}= 2= -(-2)= \abs{-2}= f(-2)= f(-x) \ .\]
 
   Portanto $f$ é uma função par.
  \end{exem}

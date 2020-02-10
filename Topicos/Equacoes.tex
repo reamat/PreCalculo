@@ -323,9 +323,9 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
    x= \frac{-7}{2}
   \end{eqnarray*}
  \end{exem}
- 
+
  \section{Equações modulares}
- 
+
    \vskip0.3cm
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
@@ -334,109 +334,109 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
  \end{center}
  \end{minipage}}
  \vskip0.3cm
- 
+
  Antes de começarmos a ver exemplos destas equações lembremos que para um número real $x$ qualquer:
- 
+
  \[
-|x|= \begin{cases}
+\abs{x}= \begin{cases}
       -x, \ \ \text{se} \ \ x<0 \\
       x, \ \ \text{se} \ \ x \geq 0 \ .
      \end{cases}
 \]
 
-Além disso o módulo de um número real possui algumas propriedades listadas na proposição \autoref{prop.modulo} que serão necessárias para a resolução de equações modulares.
+Além disso o módulo de um número real possui algumas propriedades listadas na \autoref{prop.modulo} que serão necessárias para a resolução de equações modulares.
 
 \begin{exem} Expressões modulares:
  \begin{enumerate}
-  \item $\dfrac{|x|}{x}$
-  
+  \item $\dfrac{\abs{x}}{x}$
+
   Precisamos analisar separadamente o casos em que $x<0$ e $x>0$, note que o caso em que $x=0$ a expressão não está definida, pois não existe divisão por $0$ (zero), por isso não precisamos nos preocupar com este caso.
-  
+
   \begin{itemize}
-   \item Caso $x> 0$, temos pela definição de módulo que, $|x|= x$, de modo que
-   \[\frac{|x|}{x}=\frac{x}{x}= 1\]
-   \item Caso $x< 0$, temos pela definição de módulo que, $|x|= -x$, de modo que
-   \[\frac{|x|}{x}=\frac{-x}{x}= -1\]
+   \item Caso $x> 0$, temos pela definição de módulo que, $\abs{x}= x$, de modo que
+   \[\frac{\abs{x}}{x}=\frac{x}{x}= 1\]
+   \item Caso $x< 0$, temos pela definição de módulo que, $\abs{x}= -x$, de modo que
+   \[\frac{\abs{x}}{x}=\frac{-x}{x}= -1\]
   \end{itemize}
-  
+
  Portanto,
- 
-  \[ \frac{|x|}{x} = \begin{cases}
+
+  \[ \frac{\abs{x}}{x} = \begin{cases}
       x= -1, \ \ \text{se} \ \ x< 0 \\
       x= 1, \ \ \text{se } \ \ x> 0 \ .
      \end{cases}
   \]
- 
- 
- \item $|-5x^5|$
- \[|-5x^5|= |-5|\cdot |x^5|= 5 \cdot |x^5|\]
+
+
+ \item $\abs{-5x^5}$
+ \[\abs{-5x^5}= \abs{-5}\cdot \abs{x^5}= 5 \cdot \abs{x^5}\]
  Observe que neste caso o expoente de $x$ é um número ímpar, e no item seguinte um número par, por isso temos essa diferença sútil na resposta.
- 
- \item $|-5x^4|$
- \[|-5x^4|= |-5|\cdot |x^4|= 5 \cdot x^4\]
- 
- \item $\left|\dfrac{2xy}{4xy^3}\right|$
- \[\left| \frac{2x^2y}{4xy^3}\right| = \left|\frac{x}{2y^2}\right|= \frac{|x|}{|2y^2|}= \frac{|x|}{|2| \cdot |y^2|}= \frac{|x|}{2 \cdot y^2}\]
- 
- \item $\frac{|-6x|}{5} - \left|\frac{-3x}{2}\right|$
- 
+
+ \item $\abs{-5x^4}$
+ \[\abs{-5x^4}= \abs{-5}\cdot \abs{x^4}= 5 \cdot x^4\]
+
+ \item $\abs{\dfrac{2xy}{4xy^3}}$
+ \[\abs{\frac{2x^2y}{4xy^3}} = \abs{\frac{x}{2y^2}}= \frac{\abs{x}}{\abs{2y^2}}= \frac{\abs{x}}{\abs{2} \cdot \abs{y^2}}= \frac{\abs{x}}{2 \cdot y^2}\]
+
+ \item $\frac{\abs{-6x}}{5} - \abs{\frac{-3x}{2}}$
+
  \begin{eqnarray*}
-  \frac{|-6x|}{5} - \left|\frac{-3x}{2}\right| &=& 
- \frac{|-6|\cdot |x|}{5} - \frac{|-3| \cdot |x|}{|2|} \\
- &=& \frac{6 \cdot |x|}{5} - \frac{ 3 \cdot |x|}{2} \\
- &=& \frac{12 \cdot |x|}{10} - \frac{15 \cdot |x|}{10} \\
- &=& \frac{12|x| - 15|x|}{10} \\
- &=& \frac{-3|x|}{10}
+  \frac{\abs{-6x}}{5} - \abs{\frac{-3x}{2}} &=&
+ \frac{\abs{-6}\cdot \abs{x}}{5} - \frac{\abs{-3} \cdot \abs{x}}{\abs{2}} \\
+ &=& \frac{6 \cdot \abs{x}}{5} - \frac{ 3 \cdot \abs{x}}{2} \\
+ &=& \frac{12 \cdot \abs{x}}{10} - \frac{15 \cdot \abs{x}}{10} \\
+ &=& \frac{12\abs{x} - 15\abs{x}}{10} \\
+ &=& \frac{-3\abs{x}}{10}
  \end{eqnarray*}
 
- \item $|x-2| + |x+4|$
- 
+ \item $\abs{x-2} + \abs{x+4}$
+
  Para simplificar esta expressão, primeiro precisamos usar duas vezes a definição de módulo:
- 
- \[ |x-2| = \begin{cases}
+
+ \[ \abs{x-2} = \begin{cases}
       -(x-2), \ \ \text{se} \ \ (x-2)< 0 \\
-      x-2, \ \ \text{se } \ \ (x-2) \geq 0 
+      x-2, \ \ \text{se } \ \ (x-2) \geq 0
      \end{cases}
      \Rightarrow
-     |x-2| = \begin{cases}
+     \abs{x-2} = \begin{cases}
       -x + 2, \ \ \text{se} \ \ x < 2 \\
-      x-2, \ \ \text{se } \ \ x \geq 2 
+      x-2, \ \ \text{se } \ \ x \geq 2
      \end{cases}
   \]
- 
- \[ |x+4| = \begin{cases}
+
+ \[ \abs{x+4} = \begin{cases}
       -(x+4), \ \ \text{se} \ \ (x+4)< 0 \\
-      x+4, \ \ \text{se } \ \ (x+4) \geq 0 
+      x+4, \ \ \text{se } \ \ (x+4) \geq 0
      \end{cases}
      \Rightarrow
-     |x+4| = \begin{cases}
+     \abs{x+4} = \begin{cases}
       -x - 4, \ \ \text{se} \ \ x < -4 \\
-      x + 4, \ \ \text{se } \ \ x \geq -4 
+      x + 4, \ \ \text{se } \ \ x \geq -4
      \end{cases}
   \]
-  
-  Observe que $|x-2|$ muda de sinal quando $x=2$, e que $|x+4|$ muda de sinal quando $x=-4$, logo esta soma de módulos tem uma definição particular para cada um dos intervalos $(-\infty, -4)$, $[-4, 2)$ e $[2, \infty)$. Para facilitar a compreensão organizamos na tabela abaixo a soma em cada caso.
-  
+
+  Observe que $\abs{x-2}$ muda de sinal quando $x=2$, e que $\abs{x+4}$ muda de sinal quando $x=-4$, logo esta soma de módulos tem uma definição particular para cada um dos intervalos $(-\infty, -4)$, $[-4, 2)$ e $[2, \infty)$. Para facilitar a compreensão organizamos na tabela abaixo a soma em cada caso.
+
    \begin{table}[H]
  \centering
  \begin{tabular}{|c|c|c|c|} \hline
  \rowcolor{cinza}
   Expressão & $(-\infty, -4)$ & $[-4, 2)$ & $[2, \infty)$  \\\hline
-  $|x-2|$ & $-x+2$ &  $-x+2$ & $x-2$ \\\hline
-  $|x+4|$ & $-x-4$ &  $x+4$ & $x+4$ \\\hline
-  $|x-2| + |x+4|$ & $-x+2-x-4$ & $-x+2+x+4$ & $x-2+x+4$ \\\hline
+  $\abs{x-2}$ & $-x+2$ &  $-x+2$ & $x-2$ \\\hline
+  $\abs{x+4}$ & $-x-4$ &  $x+4$ & $x+4$ \\\hline
+  $\abs{x-2} + \abs{x+4}$ & $-x+2-x-4$ & $-x+2+x+4$ & $x-2+x+4$ \\\hline
  \end{tabular}
 \end{table}
 
  Portanto, temos que
- 
-  \[ |x-2| + |x+4| = \begin{cases}
+
+  \[ \abs{x-2} + \abs{x+4} = \begin{cases}
       -2x-2, \ \ \text{se} \ \ x < -4 \\
       6, \ \ \text{se } \ \ -4 \leq x < 2 \\
       2x + 2, \ \ \text{se} \ \ x \geq 2 \ .
      \end{cases}
   \]
- 
+
 \end{enumerate}
 \end{exem}
 
@@ -445,8 +445,8 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
 
 \begin{exem} Equações modulares:
  \begin{enumerate}
-  \item $|x|= 10$
-  
+  \item $\abs{x}= 10$
+
   Pela definição de módulo temos:
   \[
   \begin{cases}
@@ -459,9 +459,9 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
       x= 10, \ \ \text{se } \ \ x \geq 0 \ .
      \end{cases}
   \]
-  
- \item $|2x-2|= 10$
- 
+
+ \item $\abs{2x-2}= 10$
+
   Pela definição de módulo temos:
   \[
   \begin{cases}
@@ -486,9 +486,9 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
       x= 6, \ \ \text{se } \ \ x \geq 1 \ .
      \end{cases}
   \]
-  
-  \item $|2x^2 - 72|= 26$
-  
+
+  \item $\abs{2x^2 - 72}= 26$
+
   Novamente aplicando a definição de módulo temos
     \[
     \begin{cases}
@@ -496,8 +496,8 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
       2x^2- 72= 26, \ \ \text{se } \ \ (2x^2-72) \geq 0
      \end{cases}
      \]
-     
-     Como $2x^2- 72= 0 \Leftrightarrow 2x^2= 72 \Leftrightarrow x^2= 36 \Leftrightarrow |x|= 6$ e a equação do 2º grau $2x^2- 72= 0$ tem $a> 0$, fazendo o estudo de sinal desta equação obtemos os três seguintes casos:
+
+     Como $2x^2- 72= 0 \Leftrightarrow 2x^2= 72 \Leftrightarrow x^2= 36 \Leftrightarrow \abs{x}= 6$ e a equação do 2º grau $2x^2- 72= 0$ tem $a> 0$, fazendo o estudo de sinal desta equação obtemos os três seguintes casos:
      \[
      \begin{cases}
       2x^2- 72 \geq 0, \ \ \text{se} \ \ x \leq -6 \\
@@ -520,9 +520,9 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      \[-(2x^2-72)= 26 \Leftrightarrow -2x^2 + 72= 26 \Leftrightarrow -2x^2= -46 \Leftrightarrow x^2= 23 \Leftrightarrow x= \pm \sqrt{23} \approx \pm 4,78\]
      note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ são soluções desta equação. Portanto o conjunto solução da nossa é equação modular é:
      \[S= \{-7, -\sqrt{23}, \sqrt{23}, 7\} \ .\]
-     
-     \item \colorbox{yellow}{Contra-exemplo:} $|x-4|=-2$
-     
+
+     \item \colorbox{yellow}{Contra-exemplo:} $\abs{x-4}=-2$
+
      Pela definição de módulo temos:
      \[
     \begin{cases}
@@ -547,41 +547,37 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      \end{cases}
      \]
  Observe que em nenhum dos dois casos o $x$ encontrado pertence ao intervalo onde a solução deveria estar, pois $6$ não é menor que $4$ e $2$ não é maior ou igual a $4$, além disso,
- \[x=6 \Rightarrow |6-4|= |2|= 2 \neq -2\]
- \[x=2 \Rightarrow |2-4|= |-2|= 2 \neq -2\]
+ \[x=6 \Rightarrow \abs{6-4}= \abs{2}= 2 \neq -2\]
+ \[x=2 \Rightarrow \abs{2-4}= \abs{-2}= 2 \neq -2\]
  logo esta equação NÃO tem solução!
- 
- Mas isso já era de se esperar, pois lembra que $|x|\geq 0$ para qualquer $x \in \R$, por propriedade do módulo, logo $|x-4| \geq 0$ como $-2< 0$ então não existe $x \in \R$ tal que $|x-4|= -2$. Portanto, já sabíamos pela propriedade de módulo que esta equação não tinha solução.
-        
+
+ Mas isso já era de se esperar, pois lembra que $\abs{x}\geq 0$ para qualquer $x \in \R$, por propriedade do módulo, logo $\abs{x-4} \geq 0$ como $-2< 0$ então não existe $x \in \R$ tal que $\abs{x-4}= -2$. Portanto, já sabíamos pela propriedade de módulo que esta equação não tinha solução.
+
 \end{enumerate}
 \end{exem}
 
  Vamos agora, sistematizar o que acabamos de ver nos exemplos acima de forma a facilitar a aplicação desta teoria na resolução de equações modulares gerais. Para tal consideremos uma equação modular na forma geral
- \[|A|= B\]
+ \[\abs{A}= B\]
  em que $A$ e $B$ são expressões algébricas. Pela definição de módulo temos que
- \[ |A|= \begin{cases}
-          -A, \ \text{se} \ \ A < 0 \\ 
-           A, \ \text{se} \ \ A \geq 0           
+ \[ \abs{A}= \begin{cases}
+          -A, \ \text{se} \ \ A < 0 \\
+           A, \ \text{se} \ \ A \geq 0
          \end{cases}
  \]
  logo as soluções da equação modular devem satisfazer
  \[A= B \ \ \ \text{ou} \ \ \ -A= B \ .\]
- Além disso, lembremos que por propriedade de módulo $|A|\geq 0$, então para ser uma solução da equação a variável $x$ deve também satisfazer esta propriedade. Mas como vimos no contra-exemplo acima nem toda variável satifaz
- \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (|A|\geq 0) \ . \]
- Note que, como nossa equação é $|A|= B$, logo garantir $|A|\geq 0$ é equivalente a garantir $B \geq 0$, donde obtemos que as equações com $B < 0$ não possuem solução.
- 
+ Além disso, lembremos que por propriedade de módulo $\abs{A}\geq 0$, então para ser uma solução da equação a variável $x$ deve também satisfazer esta propriedade. Mas como vimos no contra-exemplo acima nem toda variável satifaz
+ \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (\abs{A}\geq 0) \ . \]
+ Note que, como nossa equação é $\abs{A}= B$, logo garantir $\abs{A}\geq 0$ é equivalente a garantir $B \geq 0$, donde obtemos que as equações com $B < 0$ não possuem solução.
+
  Resumindo temos que,
- 
+
   \vskip0.3cm
  \colorbox{rosa}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
-   uma variável $x$ é solução da equação modular $|A|= B$ se ela satisfizer:
- \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (B \geq 0) \ . \] 
+   uma variável $x$ é solução da equação modular $\abs{A}= B$ se ela satisfizer:
+ \[(A= B \ \ \ \text{ou} \ \ \ -A= B) \ \ \ \text{e} \ \ \ (B \geq 0) \ . \]
  \end{center}
  \end{minipage}}
  \vskip0.3cm
- 
- 
-
-

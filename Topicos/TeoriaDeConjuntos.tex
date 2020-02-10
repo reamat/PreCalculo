@@ -226,33 +226,33 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \vskip0.3cm
 
  Esta fórmula irá nos ajudar a resolver muitos problemas de teoria de conjuntos.
- 
+
  \section{Conjunto das partes}
- 
+
  Dado um conjunto $A$ o conjunto das partes de $A$ denotado por $\mathcal{P}(A)$ é o conjunto de todos os subconjuntos de $A$, ou seja,
  \[\mathcal{P}(A)= \{X \mid X \text{ é um subconjunto de } A\} \ .\]
- 
+
  Dado um conjunto $A$ qualquer, precisamos ficar atentos a duas coisas:
  \begin{itemize}
  \item O conjunto $\emptyset$ sempre está no conjunto das partes de $A$, pois $\emptyset \subset A$;
  \item O conjunto $A$ sempre está no conjunto das partes de $A$, pois $A \subset A$.
  \end{itemize}
  Portanto, $\emptyset \in \mathcal{P}(A)$ e $A \in \mathcal{P}(A)$.
- 
+
  \begin{exem}
  Se considerarmos o conjunto $A= \{a, b, c\}$, teremos pela definição acima que o conjuntos das partes de $A$ é:
- \[\mathcal{P}(A)= \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \} \ .\] 
+ \[\mathcal{P}(A)= \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \} \ .\]
  \end{exem}
- 
+
  E como sabemos se este conjunto acima contém de fato todos os subconjuntos do conjunto $A$? Bom para conseguirmos verificar isso vamos precisar utilizar a seguinte propriedade do conjunto das partes.
- 
+
  \begin{prop}
   Se o conjunto $A$ possui $n$ elementos, então $\mathcal{P}(A)$ possui $2^n$ elementos. Ou seja:
-  \[\# A= n \ \ \Rightarrow \ \ \# \mathcal{P}(A)= 2^n \ .\] 
+  \[\# A= n \ \ \Rightarrow \ \ \# \mathcal{P}(A)= 2^n \ .\]
 \end{prop}
 
  \begin{dem}
- Nesta demonstração utilizaremos o Príncipio Fundamental da Contagem para contar quantos subconjuntos um conjunto $A$ com $n$ elementos possui. 
+ Nesta demonstração utilizaremos o Príncipio Fundamental da Contagem para contar quantos subconjuntos um conjunto $A$ com $n$ elementos possui.
 
  Para começar considere um subconjunto $B$ qualquer de $A$. Observe que para cada um dos $n$ elementos de $A$, só existem duas possibilidades:
  \begin{itemize}
@@ -260,7 +260,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \item Ou o elemento não pertence ao subconjunto $B$.
  \end{itemize}
 
- Logo, pelo Príncipio Fundamental da Contagem, nós podemos montar o conjunto $B$ de 
+ Logo, pelo Príncipio Fundamental da Contagem, nós podemos montar o conjunto $B$ de
  \[\underbrace{2 \cdot 2 \cdot 2 \cdots 2}_{n-vezes}= 2^n\]
  maneiras diferentes.
 
@@ -268,7 +268,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \end{dem}
 
  Em nosso exemplo anterior temos que $\# A= 3$, logo aplicando esta propriedade obtemos que $\# \mathcal{P}(A)= 2^3= 8$, que é exatamente a quantidade de elementos que listamos no conjunto $\mathcal{P}(A)$, podemos com isso concluir que estes são todos os subconjuntos do conjunto $A$ que existem, portanto o conjunto $\mathcal{P}(A)$ está completo.
- 
+
 
 
  \newpage
