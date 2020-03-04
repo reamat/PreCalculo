@@ -1,4 +1,4 @@
-\chapter{Operações Algébricas}
+\chapter{Expressões algébricas (melhorar)}
 
    \vskip0.3cm
  \colorbox{azul}{
@@ -25,6 +25,8 @@
  Nestas expressões as letras que aparecem são chamadas de \textbf{variáveis}, e os números que aparecem multiplicando uma letra são chamados de \textbf{coeficientes}.
 
  As expressões algébricas são utilizadas dentre outras coisas, para descrever uma situação problema na qual não conhecemos todos os valores envolvidos, representar uma fórmula, ou expressar uma equação. Devido a sua importância nas exatas precisamos compreender como se comportam as operações presentes nas expressões algébricas, em outras palavras, como fazer contas com letras.
+
+\section{Operações Algébricas}
 
  \vskip0.3cm
 
@@ -113,8 +115,110 @@
   \item Cubo perfeito (-): $(a-b)^3= a^3 - 3a^2b + 3ab^2 - b^3$
  \end{itemize}
 
- \newpage
- \section{Polinômios}
+ 
+ %\section{Expressões algébricas com frações (fazer)}
+ 
+ \section{Expressões algébricas com módulos}% (fazer)}
+ 
+ \begin{exem} Expressões modulares:
+ \begin{enumerate}
+  \item $\dfrac{\abs{x}}{x}$
+
+  Precisamos analisar separadamente o casos em que $x<0$ e $x>0$, note que o caso em que $x=0$ a expressão não está definida, pois não existe divisão por $0$ (zero), por isso não precisamos nos preocupar com este caso.
+
+  \begin{itemize}
+   \item Caso $x> 0$, temos pela definição de módulo que, $\abs{x}= x$, de modo que
+   \[\frac{\abs{x}}{x}=\frac{x}{x}= 1\]
+   \item Caso $x< 0$, temos pela definição de módulo que, $\abs{x}= -x$, de modo que
+   \[\frac{\abs{x}}{x}=\frac{-x}{x}= -1\]
+  \end{itemize}
+
+ Portanto,
+
+  \[ \frac{\abs{x}}{x} = \begin{cases}
+      x= -1, \ \ \text{se} \ \ x< 0 \\
+      x= 1, \ \ \text{se } \ \ x> 0 \ .
+     \end{cases}
+  \]
+
+
+ \item $\abs{-5x^5}$
+ \[\abs{-5x^5}= \abs{-5}\cdot \abs{x^5}= 5 \cdot \abs{x^5}\]
+ Observe que neste caso o expoente de $x$ é um número ímpar, e no item seguinte um número par, por isso temos essa diferença sútil na resposta.
+
+ \item $\abs{-5x^4}$
+ \[\abs{-5x^4}= \abs{-5}\cdot \abs{x^4}= 5 \cdot x^4\]
+
+ \item $\abs{\dfrac{2xy}{4xy^3}}$
+ \[\abs{\frac{2x^2y}{4xy^3}} = \abs{\frac{x}{2y^2}}= \frac{\abs{x}}{\abs{2y^2}}= \frac{\abs{x}}{\abs{2} \cdot \abs{y^2}}= \frac{\abs{x}}{2 \cdot y^2}\]
+
+ \item $\frac{\abs{-6x}}{5} - \abs{\frac{-3x}{2}}$
+
+ \begin{eqnarray*}
+  \frac{\abs{-6x}}{5} - \abs{\frac{-3x}{2}} &=&
+ \frac{\abs{-6}\cdot \abs{x}}{5} - \frac{\abs{-3} \cdot \abs{x}}{\abs{2}} \\
+ &=& \frac{6 \cdot \abs{x}}{5} - \frac{ 3 \cdot \abs{x}}{2} \\
+ &=& \frac{12 \cdot \abs{x}}{10} - \frac{15 \cdot \abs{x}}{10} \\
+ &=& \frac{12\abs{x} - 15\abs{x}}{10} \\
+ &=& \frac{-3\abs{x}}{10}
+ \end{eqnarray*}
+ 
+\end{enumerate}
+\end{exem}
+
+ \begin{exem}
+  $\abs{x-2} + \abs{x+4}$ \label{eqmodulo}
+
+ Para simplificar esta expressão, primeiro precisamos usar duas vezes a definição de módulo:
+
+ \[ \abs{x-2} = \begin{cases}
+      -(x-2), \ \ \text{se} \ \ (x-2)< 0 \\
+      x-2, \ \ \text{se } \ \ (x-2) \geq 0
+     \end{cases}
+     \Rightarrow
+     \abs{x-2} = \begin{cases}
+      -x + 2, \ \ \text{se} \ \ x < 2 \\
+      x-2, \ \ \text{se } \ \ x \geq 2
+     \end{cases}
+  \]
+
+ \[ \abs{x+4} = \begin{cases}
+      -(x+4), \ \ \text{se} \ \ (x+4)< 0 \\
+      x+4, \ \ \text{se } \ \ (x+4) \geq 0
+     \end{cases}
+     \Rightarrow
+     \abs{x+4} = \begin{cases}
+      -x - 4, \ \ \text{se} \ \ x < -4 \\
+      x + 4, \ \ \text{se } \ \ x \geq -4
+     \end{cases}
+  \]
+
+  Observe que $\abs{x-2}$ muda de sinal quando $x=2$, e que $\abs{x+4}$ muda de sinal quando $x=-4$, logo esta soma de módulos tem uma definição particular para cada um dos intervalos $(-\infty, -4)$, $[-4, 2)$ e $[2, \infty)$. Para facilitar a compreensão organizamos na tabela abaixo a soma em cada caso.
+
+   \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|c|} \hline
+ \rowcolor{cinza}
+  Expressão & $(-\infty, -4)$ & $[-4, 2)$ & $[2, \infty)$  \\\hline
+  $\abs{x-2}$ & $-x+2$ &  $-x+2$ & $x-2$ \\\hline
+  $\abs{x+4}$ & $-x-4$ &  $x+4$ & $x+4$ \\\hline
+  $\abs{x-2} + \abs{x+4}$ & $-x+2-x-4$ & $-x+2+x+4$ & $x-2+x+4$ \\\hline
+ \end{tabular}
+\end{table}
+
+ Portanto, temos que
+
+  \[ \abs{x-2} + \abs{x+4} = \begin{cases}
+      -2x-2, \ \ \text{se} \ \ x < -4 \\
+      6, \ \ \text{se } \ \ -4 \leq x < 2 \\
+      2x + 2, \ \ \text{se} \ \ x \geq 2 \ .
+     \end{cases}
+  \]
+ \end{exem}
+ 
+ %\section{Expressões algébricas com raízes (fazer)}
+ 
+ \chapter{Polinômios}
 
   \vskip0.3cm
  \colorbox{azul}{
