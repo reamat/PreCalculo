@@ -139,7 +139,7 @@ Priorize cálculos em:
 
  \section{Operações em \texorpdfstring{$\Q$}{Q}}
 
- As operações no conjunto dos números Racionais envolvem em particular as operações com frações que possuem algumas particularidades por isso façamos uma rápida retomada destas operações.
+ As operações no conjunto dos números racionais envolvem em particular as operações com frações que possuem algumas particularidades por isso façamos uma rápida retomada destas operações.
 
  \vskip0.3cm
 
@@ -321,7 +321,7 @@ Priorize cálculos em:
 
  \begin{exem}
  Observe que neste caso o expoente é um número natural, e portanto positivo, como por exemplo:
- 
+
  \begin{enumerate}[a)]
   \item $2^3= 2 \cdot 2 \cdot 2= 8$;
   \item $-2^3= -(2 \cdot 2 \cdot 2)= -8$
@@ -337,9 +337,9 @@ Priorize cálculos em:
   \item $\dfrac{7^3}{10}=  \dfrac{7 \cdot 7 \cdot 7}{10}= \dfrac{343}{10}=34,3$;
   \item $\left(\dfrac{7}{10}\right)^3= \dfrac{7^3}{10^3}= \dfrac{343}{1000}= 0,343$.
   \end{enumerate}
-  
+
  \end{exem}
- 
+
  Por enquanto temos definido somente potência com expoente sendo um número natural maior que zero. Definiremos potências com outros expoentes fazendo-as recair neste caso.
 
  \section{Potência com expoente inteiro}
@@ -359,7 +359,7 @@ Priorize cálculos em:
 
  \begin{exem}
  Vejamos agora alguns exemplos em que o expoente é um número inteiro negativo. Os casos em que o expoente é um número inteiro positivo foram exemplificados anteriormente.
- 
+
  \begin{enumerate}[a)]
   \item $2^{-1}= \dfrac{1}{2^{1}}= \dfrac{1}{2}$;
   \item $2^{-3}= \dfrac{1}{2^3}= \dfrac{1}{8}$;
@@ -374,55 +374,55 @@ Priorize cálculos em:
  \end{enumerate}
 
  \end{exem}
- 
+
  Note que em todos os exemplos acima o que fizemos foi ``inverter'' a fração, e com isso deixamos os expoentes positivos, e então basta aplicar a definição de potência para o caso do expoente ser um número natural.
 
   Dados $a, b \in \R$, $m, n \in \N^{*}$, decorrem diretamente da definição de potência as seguintes propriedades:
  \begin{enumerate}[P1)]
  \item $a^m \cdot a^n= a^{m + n}$;
  \[a^m \cdot a^n = \underbrace{a \cdot a \cdots a}_{m \text{- termos}}\cdot \underbrace{a \cdot a \cdots a}_{n \text{- termos}}= \underbrace{a \cdot a \cdots a}_{(m+n) \text{- termos}}= a^{m + n} \]
- 
+
  \item $(a^m)^n= a^{m \cdot n}$;
  \[(a^m)^n= \underbrace{a^m \cdot a^m \cdots a^m}_{n \text{- termos}}= \underbrace{\underbrace{a \cdot a \cdots a}_{m \text{- termos}} \cdot \underbrace{a \cdot a \cdots a}_{m \text{- termos}} \cdots \underbrace{a \cdot a \cdots a}_{m \text{- termos}}}_{n \text{- termos}}= \underbrace{a \cdot a \cdots a}_{(m \cdot n) \text{- termos}}= a^{m \cdot n}\]
- 
+
  \item $(a \cdot b)^n= a^n \cdot b^n$;
  \[(a \cdot b)^n= \underbrace{(a \cdot b) \cdot (a\cdot b) \cdots (a \cdot b)}_{n \text{- termos}}= \underbrace{(a \cdot a \cdots a)}_{n \text{- termos}} \cdot \underbrace{(b \cdot b \cdots b)}_{n \text{- termos}}= a^n \cdot b^n\]
- 
+
  \item $\left(\dfrac{a}{b}\right)^n= \dfrac{a^n}{b^n}$, para $b \neq 0$;
- \[\left(\dfrac{a}{b}\right)^n= 
+ \[\left(\dfrac{a}{b}\right)^n=
  \underbrace{\left(\dfrac{a}{b}\right) \cdot \left(\dfrac{a}{b}\right) \cdots \left(\dfrac{a}{b}\right)}_{n \text{- termos}}= \dfrac{\overbrace{a \cdot a \cdots a}^{n \text{- termos}}}{\underbrace{b \cdot b \cdots b}_{n \text{- termos}}}= \dfrac{a^n}{b^n}\]
- 
+
  \item $a^m \div a^n= a^{m - n}$, para $a \neq 0$;
  \[a^m \div a^n= \dfrac{a^m}{a^n}= \dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}} = a^{m - n}\]
 
  Para justificar esta última passagem precisamos analisar 3 casos separadamente, façamos isso:
- 
+
  Caso 1: Se $m=n$ então $a^m= a^n$ aí por um lado teremos que $\dfrac{a^m}{a^n}= \dfrac{a^m}{a^m}= 1$ e por outro lado $\dfrac{a^m}{a^n}= \dfrac{a^m}{a^m}= a^{m-m}= a^{0}$ donde obtemos que $a^{0}= 1$.
- 
+
  Caso 2: Se $m > n$ então $m - n> 0$ e também temos que,
- \[\dfrac{a^m}{a^n}= \dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}}= 
- \dfrac{\overbrace{a \cdot a \cdots a}^{n \text{- termos}} \cdot \overbrace{a \cdot a \cdots a}^{(m-n) \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}}= 
- \frac{\overbrace{a \cdot a \cdots a}^{n \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}} \cdot \overbrace{a \cdot a \cdots a}^{(m-n) \text{- termos}} = 
+ \[\dfrac{a^m}{a^n}= \dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}}=
+ \dfrac{\overbrace{a \cdot a \cdots a}^{n \text{- termos}} \cdot \overbrace{a \cdot a \cdots a}^{(m-n) \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}}=
+ \frac{\overbrace{a \cdot a \cdots a}^{n \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}} \cdot \overbrace{a \cdot a \cdots a}^{(m-n) \text{- termos}} =
  1 \cdot \underbrace{a \cdot a \cdots a}_{(m-n) \text{- termos}}= a^{m-n} \ .\]
- 
+
  Caso 3: Se $m < n$ então $m - n< 0$ e também temos que,
  \begin{eqnarray*}
-  \dfrac{a^m}{a^n} &=& 
+  \dfrac{a^m}{a^n} &=&
  \dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{n \text{- termos}}}=
  \dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{m \text{- termos}} \cdot \underbrace{a \cdot a \cdots a}_{(n-m) \text{- termos}}} \\
  & = &\dfrac{\overbrace{a \cdot a \cdots a}^{m \text{- termos}}}{\underbrace{a \cdot a \cdots a}_{m \text{- termos}}} \cdot \dfrac{1}{\underbrace{a \cdot a \cdots a}_{(n-m) \text{- termos}}}=
  1 \cdot \dfrac{1}{\underbrace{a \cdot a \cdots a}_{(n-m) \text{- termos}}}= \dfrac{1}{a^{n-m}}= a^{-(n-m)}= a^{m-n} \ .
  \end{eqnarray*}
- 
- 
+
+
  \item $a^{-n}= \dfrac{1}{a^n}$, para $(a \neq 0)$;
  \[a^{-n}= a^{0-n}= \dfrac{a^0}{a^n}= \dfrac{1}{a^n} \ .\]
- 
+
  \item $\left(\dfrac{a}{b} \right)^{-n}= \left(\dfrac{b}{a} \right)^{n}$, para $a \neq 0$ e $b \neq 0$;
  \[\left(\dfrac{a}{b} \right)^{-n}= \dfrac{a^{-n}}{b^{-n}}= a^{-n} \cdot \dfrac{1}{b^{-n}}= \dfrac{1}{a^n} \cdot b^{n}= \dfrac{b^n}{a^n}= \left(\dfrac{b}{a}\right)^n \ .\]
- 
+
  \end{enumerate}
- 
+
    \vskip0.3cm
 
  \colorbox{amarelo}{
@@ -436,7 +436,7 @@ Priorize cálculos em:
  \end{minipage}}
 
 \vskip0.3cm
- 
+
  \begin{exem} Vejamos agora alguns exemplos de aplicação direta das propriedades de potência dadas acima.
   \begin{enumerate}[P1)]
    \item $7^2 \cdot 7^3= (7 \cdot 7) \cdot (7 \cdot 7 \cdot 7)= 7^{2+3}= 7^5 $;
@@ -444,14 +444,14 @@ Priorize cálculos em:
    \item $(7 \cdot 10)^5= (7 \cdot 10) \cdot (7 \cdot 10) \cdot (7 \cdot 10) \cdot (7 \cdot 10) \cdot (7 \cdot 10)= (7 \cdot 7 \cdot 7 \cdot 7 \cdot 7) \cdot (10 \cdot 10 \cdot 10 \cdot 10 \cdot 10)= 7^5 \cdot 10^5$;
    \item $\left(\dfrac{13}{9}\right)^4= \left(\dfrac{13}{9}\right) \cdot \left(\dfrac{13}{9}\right) \cdot \left(\dfrac{13}{9}\right) \cdot \left(\dfrac{13}{9}\right)= \dfrac{13 \cdot 13 \cdot 13 \cdot 13}{9 \cdot 9 \cdot 9 \cdot 9}= \dfrac{13^4}{9^4}$;
    \item Caso 1: $\dfrac{100^3}{100^3}= 100^{3-3}= 100^0= 1$;
-   
+
    Caso 2: $\dfrac{48^{70}}{48^{69}}= 48^{70-69}= 48^{1}= 48$;
-   
+
    Caso 3: $\dfrac{10^4}{10^7}= 10^{4-7}= 10^{-3} =\dfrac{1}{10^{3}}$;
-   
+
    \item $10^{-3}= \dfrac{1}{10^3}$;
    \item $\left(\dfrac{12}{20}\right)^{-7}=\left(\dfrac{20}{12}\right)^{7}$.
-   
+
   \end{enumerate}
 
  \end{exem}
@@ -491,7 +491,7 @@ Priorize cálculos em:
  \item $(\sqrt[n]{a})^m= \sqrt[n]{a^m}$;
  \item $\sqrt[p]{\sqrt[n]{a}}= \sqrt[p \cdot n]{a}$.
  \end{enumerate}
- 
+
  \begin{exem} Vejamos agora alguns exemplos de aplicação direta das propriedades de raízes dadas acima.
   \begin{enumerate}[R1)]
    \item $\sqrt[4]{7^3}= \sqrt[4 \cdot 2]{7^{3\cdot 2}}$;
