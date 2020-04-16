@@ -58,7 +58,7 @@
 %\usepackage{showframe} %REMOVA
 \fancyhead{}
 %Esquerda do Cabeçalho
- %\lhead{\includegraphics[width=5cm]{../Topicos/Figuras/LOGO_1.pdf}}
+ %\lhead{\includegraphics[width=5cm]{Capitulos/Figuras/LOGO_1.pdf}}
  %Centro do Cabeçalho
  \chead{}
  %Direita do Cabeçalho
@@ -113,7 +113,7 @@
 \newcommand{\heart}{\ensuremath\varheartsuit} %test coração
 
 %opening
- \title{Apostila de Pré-Cálculo \\ \includegraphics[width=7cm]{../Topicos/Figuras/circunftangentes.pdf} }
+ \title{Apostila de Pré-Cálculo \\ \includegraphics[width=7cm]{Capitulos/Figuras/circunftangentes.pdf} }
  \author{\textbf{Francieli Triches} \\
  \textbf{frantriches@gmail.com} \\ \\ \\
   Esta apostila está licenciada sob uma licença \\
@@ -130,72 +130,72 @@
 %\listoftables
 
 \newpage
-\input{Introducao.tex} 
-\input{ProgramaCurso.tex}
-\input{../Topicos/SoPraGarantir.tex}
+% \include{Introducao}
+\include{ProgramaCurso}
+\include{Capitulos/SoPraGarantir}
 
-\input{../Topicos/TeoriaDeConjuntos.tex}
+\include{Capitulos/TeoriaDeConjuntos}
 
-\input{../Topicos/Conjuntosnumericos.tex}
+\include{Capitulos/Conjuntosnumericos}
 
-\input{../Topicos/Divisibilidade.tex}
+\include{Capitulos/Divisibilidade}
 
-\input{../Topicos/OperacoesPropriedades.tex}
+\include{Capitulos/OperacoesPropriedades}
 
-\input{../Topicos/ExpressoesAlgebricas.tex}
+\include{Capitulos/ExpressoesAlgebricas}
 
-\input{../Topicos/Equacoes.tex}
+\include{Capitulos/Equacoes}
 
-\input{../Topicos/Funcao.tex}
+\include{Capitulos/Funcao}
 
 
 
 % Algumas coisas que tinha escrito e que não estão na ementa
 
-%\input{../Topicos/Trigonometria.tex}
-%\input{../Topicos/QC_Trigonometria.tex}
-%\input{../Topicos/QC_TeoriaDeConjuntos.tex}
-%\input{../Topicos/QC_Conjuntosnumericos.tex}
-%\input{../Topicos/QC_Divisibilidade.tex}
-%\input{../Topicos/QC_OperacoesPropriedades.tex}
-%\input{../Topicos/QC_Equacoes.tex}
-%\input{../Topicos/QC_Funcao.tex}
+%\include{Capitulos/Trigonometria}
+%\include{Capitulos/QC_Trigonometria}
+%\include{Capitulos/QC_TeoriaDeConjuntos}
+%\include{Capitulos/QC_Conjuntosnumericos}
+%\include{Capitulos/QC_Divisibilidade}
+%\include{Capitulos/QC_OperacoesPropriedades}
+%\include{Capitulos/QC_Equacoes}
+%\include{Capitulos/QC_Funcao}
 
-%\input{../Topicos/Logica.tex}
-%\input{../Topicos/QC_Logica.tex}
+%\include{Capitulos/Logica}
+%\include{Capitulos/QC_Logica}
 
-%\input{../Topicos/regra_de_tres.tex}
-%\input{../Topicos/QC_regra_de_tres.tex}
+%\include{Capitulos/regra_de_tres}
+%\include{Capitulos/QC_regra_de_tres}
 
-%\input{../Topicos/SistemasDeMedida.tex}
-%\input{../Topicos/QC_SistemasDeMedida.tex}
+%\include{Capitulos/SistemasDeMedida}
+%\include{Capitulos/QC_SistemasDeMedida}
 
-%\input{../Topicos/SistemaLinear.tex}
-%\input{../Topicos/QC_SistemaLinear.tex}
+%\include{Capitulos/SistemaLinear}
+%\include{Capitulos/QC_SistemaLinear}
 
-%\input{../Topicos/Matrizes.tex} está em branco....
-%\input{../Topicos/QC_Matrizes.tex}
+%\include{Capitulos/Matrizes} está em branco....
+%\include{Capitulos/QC_Matrizes}
 
-%\input{../Topicos/Geometria.tex}
-%\input{../Topicos/QC_Geometria.tex}
+%\include{Capitulos/Geometria}
+%\include{Capitulos/QC_Geometria}
 
-%\input{../Topicos/AnaliseCombinatoria.tex}
-%\input{../Topicos/QC_AnaliseCombinatoria.tex}
+%\include{Capitulos/AnaliseCombinatoria}
+%\include{Capitulos/QC_AnaliseCombinatoria}
 
-%\input{../Topicos/MtmFinanceira.tex}
-%\input{../Topicos/QC_MtmFinanceira.tex}
+%\include{Capitulos/MtmFinanceira}
+%\include{Capitulos/QC_MtmFinanceira}
 
-%\input{../Topicos/PAePG.tex}
-%\input{../Topicos/QC_PAePG.tex}
+%\include{Capitulos/PAePG}
+%\include{Capitulos/QC_PAePG}
 
-%\input{../Topicos/Estatistica.tex} em processo de escrita
-%\input{../Topicos/QC_Estatistica.tex}
+%\include{Capitulos/Estatistica} em processo de escrita
+%\include{Capitulos/QC_Estatistica}
 
-%\input{../Topicos/NumerosComplexos.tex}
-%\input{../Topicos/QC_NumerosComplexos.tex}
+%\include{Capitulos/NumerosComplexos}
+%\include{Capitulos/QC_NumerosComplexos}
 
 \newpage
-\input{../Topicos/Referencias.tex}
+\include{Capitulos/Referencias}
 \end{document}
 
 
@@ -222,7 +222,7 @@ Comandos que estou usando:
  F & V & F & V \\ \hline
  \end{tabular}
  \end{table}
- 
+
  Para fazer hiperlink dentro do texto
  \label{...}
  \autoref{...}
