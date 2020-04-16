@@ -44,6 +44,9 @@
     allcolors = {blue}
 }
 
+% Evita páginas em branco entre os capítulos
+\let\cleardoublepage\clearpage
+
 \newshadetheorem{defic}{Definição}
 \definecolor{shadethmcolor}{HTML}{AAAAFF}
 \definecolor{shaderulecolor}{HTML}{FFFFFF}
@@ -120,83 +123,81 @@
  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Atribuição-Compartilha Igual 4.0 Internacional}.}
 
 % Para compilar só um capítulo, coloque o nome dele neste comando
-%\includeonly{Capitulos/Divisibilidade}
+% \includeonly{Capitulos/Divisibilidade}
 
 \begin{document}
-\pagestyle{fancy}
+\frontmatter
+	\pagestyle{fancy}
+	\maketitle
+	\tableofcontents
+	\listoffigures
+	%\listoftables
 
-\maketitle
+\mainmatter
+  \part{Aritmética Básica}
+    % \include{Introducao}
+    \include{Capitulos/TeoriaDeConjuntos}
+    \include{Capitulos/Conjuntosnumericos}
+    \include{Capitulos/Divisibilidade}
+    \include{Capitulos/OperacoesPropriedades}
+    \include{Capitulos/ExpressoesAlgebricas}
+    \include{Capitulos/Equacoes}
+  \part{Funções Reais}
+    \include{Capitulos/Funcao}
 
-\tableofcontents
-\listoffigures
-%\listoftables
+    % Algumas coisas que tinha escrito e que não estão na ementa
 
-% \include{Introducao}
+    %\include{Capitulos/Trigonometria}
+    %\include{Capitulos/QC_Trigonometria}
+    %\include{Capitulos/QC_TeoriaDeConjuntos}
+    %\include{Capitulos/QC_Conjuntosnumericos}
+    %\include{Capitulos/QC_Divisibilidade}
+    %\include{Capitulos/QC_OperacoesPropriedades}
+    %\include{Capitulos/QC_Equacoes}
+    %\include{Capitulos/QC_Funcao}
 
-\include{Capitulos/ProgramaCurso}
-\include{Capitulos/SoPraGarantir}
+    %\include{Capitulos/Logica}
+    %\include{Capitulos/QC_Logica}
 
-\include{Capitulos/TeoriaDeConjuntos}
+    %\include{Capitulos/regra_de_tres}
+    %\include{Capitulos/QC_regra_de_tres}
 
-\include{Capitulos/Conjuntosnumericos}
+    %\include{Capitulos/SistemasDeMedida}
+    %\include{Capitulos/QC_SistemasDeMedida}
 
-\include{Capitulos/Divisibilidade}
+    %\include{Capitulos/SistemaLinear}
+    %\include{Capitulos/QC_SistemaLinear}
 
-\include{Capitulos/OperacoesPropriedades}
+    %\include{Capitulos/Matrizes} está em branco....
+    %\include{Capitulos/QC_Matrizes}
 
-\include{Capitulos/ExpressoesAlgebricas}
+    %\include{Capitulos/Geometria}
+    %\include{Capitulos/QC_Geometria}
 
-\include{Capitulos/Equacoes}
+    %\include{Capitulos/AnaliseCombinatoria}
+    %\include{Capitulos/QC_AnaliseCombinatoria}
 
-\include{Capitulos/Funcao}
+    %\include{Capitulos/MtmFinanceira}
+    %\include{Capitulos/QC_MtmFinanceira}
 
+    %\include{Capitulos/PAePG}
+    %\include{Capitulos/QC_PAePG}
 
+    %\include{Capitulos/Estatistica} em processo de escrita
+    %\include{Capitulos/QC_Estatistica}
 
-% Algumas coisas que tinha escrito e que não estão na ementa
+    %\include{Capitulos/NumerosComplexos}
+    %\include{Capitulos/QC_NumerosComplexos}
+  \part{Apêndices}
+    \appendix
+    \include{Capitulos/ProgramaCurso}
+    \include{Capitulos/Tabuada}
+    \include{Capitulos/RegrasDivisibilidade}
+    \include{Capitulos/Simbolos}
 
-%\include{Capitulos/Trigonometria}
-%\include{Capitulos/QC_Trigonometria}
-%\include{Capitulos/QC_TeoriaDeConjuntos}
-%\include{Capitulos/QC_Conjuntosnumericos}
-%\include{Capitulos/QC_Divisibilidade}
-%\include{Capitulos/QC_OperacoesPropriedades}
-%\include{Capitulos/QC_Equacoes}
-%\include{Capitulos/QC_Funcao}
-
-%\include{Capitulos/Logica}
-%\include{Capitulos/QC_Logica}
-
-%\include{Capitulos/regra_de_tres}
-%\include{Capitulos/QC_regra_de_tres}
-
-%\include{Capitulos/SistemasDeMedida}
-%\include{Capitulos/QC_SistemasDeMedida}
-
-%\include{Capitulos/SistemaLinear}
-%\include{Capitulos/QC_SistemaLinear}
-
-%\include{Capitulos/Matrizes} está em branco....
-%\include{Capitulos/QC_Matrizes}
-
-%\include{Capitulos/Geometria}
-%\include{Capitulos/QC_Geometria}
-
-%\include{Capitulos/AnaliseCombinatoria}
-%\include{Capitulos/QC_AnaliseCombinatoria}
-
-%\include{Capitulos/MtmFinanceira}
-%\include{Capitulos/QC_MtmFinanceira}
-
-%\include{Capitulos/PAePG}
-%\include{Capitulos/QC_PAePG}
-
-%\include{Capitulos/Estatistica} em processo de escrita
-%\include{Capitulos/QC_Estatistica}
-
-%\include{Capitulos/NumerosComplexos}
-%\include{Capitulos/QC_NumerosComplexos}
-
-\include{Capitulos/Referencias}
+\backmatter
+  \include{Capitulos/Referencias}
+  %\printindex % Índice remissivo
 \end{document}
 
 
