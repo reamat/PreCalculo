@@ -822,7 +822,11 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
   \end{eqnarray*}
  \end{exem}
 
- %\chapter{Inequações}
+ \chapter{Inequações}
+ 
+ As resoluções das inequações utilizam as propriedades de ordem dos números reais listadas na \autoref{prop.ordem}, por isso sugiro ao leitor relembrar estas propriedades antes de iniciar a leitura deste capítulo.
+ 
+ 
  %\section{Inequações de 1º grau (fazer)}
  %\section{Inequações de 2º grau (fazer)}
  %\section{Inequações exponenciais (fazer)}
@@ -883,7 +887,23 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
 
 \begin{exem} Equações com módulo:
  \begin{enumerate}
-  \item $\abs{x}= 10$
+  \item Suponha que $a> 0$. Resolva a equação $\abs{x}= a$
+
+  Pela definição de módulo temos:
+  \[
+  \begin{cases}
+      -x= a, \ \ \text{se} \ \ x<0 \\
+      x= a, \ \ \text{se } \ \ x \geq 0 \ .
+     \end{cases}
+     \Rightarrow
+     \begin{cases}
+      x= -a, \ \ \text{se} \ \ x<0 \\
+      x= a, \ \ \text{se } \ \ x \geq 0 \ .
+     \end{cases}
+  \] 
+ Portanto o conjunto solução desta equação é $S= \left\{-a, a \right\}$.
+ 
+  \item Caso particular: $\abs{x}= 10$
 
   Pela definição de módulo temos:
   \[
@@ -897,6 +917,7 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
       x= 10, \ \ \text{se } \ \ x \geq 0 \ .
      \end{cases}
   \]
+ Portanto o conjunto solução desta equação é $S= \left\{-10, 10 \right\}$.
 
  \item $\abs{2x-2}= 10$
 
@@ -924,6 +945,7 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
       x= 6, \ \ \text{se } \ \ x \geq 1 \ .
      \end{cases}
   \]
+  Portanto o conjunto solução desta equação é $S= \left\{-4, 6 \right\}$.  
 
   \item $\abs{2x^2 - 72}= 26$
 
@@ -959,7 +981,7 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ são soluções desta equação. Portanto o conjunto solução da nossa é equação modular é:
      \[S= \{-7, -\sqrt{23}, \sqrt{23}, 7\} \ .\]
 
-     \item \colorbox{yellow}{Contra-exemplo:} $\abs{x-4}=-2$
+     \item \colorbox{yellow}{Atenção!} $\abs{x-4}=-2$
 
      Pela definição de módulo temos:
      \[
@@ -1062,15 +1084,58 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
 
  \section{Inequações modulares}% (fazer)}
 
- \begin{exem}
+ Nesta seção iremos usar as propriedades da ordem do conjunto dos números reais e também as propriedades de módulo de um número real. Neste momento já supomos que o leitor está bem familiarizado com as estas propriedades, mas na dúvida você pode consultar as propriedades que estão listadas nas \autoref{prop.ordem} e \autoref{prop.modulo}.
+ 
+ \begin{exem} Vejamos agora alguns exemplos de inequações modulares.
   \begin{enumerate}
+   \item Suponha que $a> 0$. Resolva a inequação $\abs{x} < a$.
+   \[\abs{x} < a \Leftrightarrow \abs{x}^2 < a^2 \Leftrightarrow x^2 < a^2\]
+   mas,
+   \[x^2 < a^2 \Leftrightarrow x^2 - a^2 < 0 \Leftrightarrow (x-a)(x+a) < 0 \ .\]
+   Vamos então analisar quando $(x-a)(x+a) < 0$. Lembremos que produto de dois números é negativo quando um deles for negativo e o outro positivo, com isso a inequação $(x-a)(x+a) < 0$ é satisfeita em duas situações:\\
+   Caso 1: $x-a<0$ e $x+a>0$
+   \[x-a<0 \Rightarrow x< a\]
+   e 
+   \[x+a>0 \Rightarrow x>-a \Rightarrow -a< x\]
+  Fazendo a interseção dos conjuntos $A_1= \left\{ x \in \R \mid x<a \right\}$ e $B_1= \left\{ x \in \R \mid -a<x \right\}$, obtemos $A_1 \cap B_1= \left\{ x \in \R \mid -a< x <a \right\}$. O conjunto $A_1 \cap B_1$ é o conjunto solução da inequação neste caso.
 
-   \item $\abs{x} \leq 5$
+   
+   Caso 2: $x-a>0$ e $x+a<0$
+   \[x-a> 0 \Rightarrow x> a\]
+   e
+   \[x+a< 0 \Rightarrow x<-a\]
+   Fazendo a interseção dos conjuntos $A_2= \left\{ x \in \R \mid x> a \right\}$ e $B_2= \left\{ x \in \R \mid x<-a \right\}$, obtemos $A_2 \cap B_2= \emptyset$. Portanto neste caso a inequação não possui solução.
+  
+  Portanto $\abs{x} < a \Leftrightarrow -a< x <a$.
+   
+   \item Caso particular: $\abs{x} \leq 5$
    \[\abs{x} \leq 5 \Leftrightarrow -5 \leq x \leq 5\]
    logo, o conjunto solução desta inequação é:
    \[S= [-5, 5] \ . \]
 
-   \item $\abs{x} \geq 5$
+   \item Suponha que $a> 0$. Resolva a inequação $\abs{x} > a$.
+   \[\abs{x} > a \Leftrightarrow \abs{x}^2 > a^2 \Leftrightarrow x^2 > a^2\]
+   mas,
+   \[x^2 > a^2 \Leftrightarrow x^2 - a^2 > 0 \Leftrightarrow (x-a)(x+a) > 0 \ .\]
+   Vamos então analisar quando $(x-a)(x+a) > 0$. Lembremos que produto de dois números é positivo quando eles tem o mesmo sinal, com isso a inequação $(x-a)(x+a) > 0$ é satisfeita em duas situações:\\
+   Caso 1: $x-a< 0$ e $x+a< 0$
+   \[x-a< 0 \Rightarrow x< a\]
+   e 
+   \[x+a< 0 \Rightarrow x< -a \ .\]
+  Fazendo a interseção dos conjuntos $A_1= \left\{ x \in \R \mid x<a \right\}$ e $B_1= \left\{ x \in \R \mid x< -a \right\}$, obtemos $A_1 \cap B_1= \left\{ x \in \R \mid x< -a \right\}$. O conjunto $A_1 \cap B_1$ é o conjunto solução da inequação neste caso.
+ 
+   
+   Caso 2: $x-a> 0$ e $x+a> 0$
+   \[x-a> 0 \Rightarrow x> a\]
+   e
+   \[x+a> 0 \Rightarrow x> -a \]
+   Fazendo a interseção dos conjuntos $A_2= \left\{ x \in \R \mid x> a \right\}$ e $B_2= \left\{ x \in \R \mid x> -a \right\}$, obtemos $A_2 \cap B_2= \left\{ x \in \R \mid x> a \right\}$. O conjunto $A_2 \cap B_2$ é o conjunto solução da inequação neste caso.
+   
+   Agora fazendo $S= (A_1 \cap B_1) \cup (A_2 \cap B_2)$ obtemos que $S= \left\{ x \in \R \mid x<-a \text{ ou } x> a \right\}$ é o conjunto solução da inequação $\abs{x} > a$.
+  
+  Portanto $\abs{x} > a \Leftrightarrow x<-a \text{ ou } x> a$.
+   
+   \item Caso particular: $\abs{x} \geq 5$
    \[\abs{x} \geq 5 \Leftrightarrow x \leq -5 \ \ \text{ ou } \ \ x \geq 5\]
    logo, o conjunto solução desta inequação é:
    \[S= (-\infty, -5] \cup [5, \infty) \ . \]

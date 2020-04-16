@@ -113,7 +113,7 @@ Números decimais com infinitas casas decimais que não sejam dízimas periódic
 
 O conjunto dos números reais nada mais é do que a união dos números racionais com os números irracionais, $\R= \Q \cup \I$, no qual as operações soma, subtração, multiplicação e divisão estão bem definidas.
 
-\subsection{Relação de Ordem e a Reta Real}
+\subsection{Relação de Ordem, Reta Real e o Valor absoluto}
 
 Do nosso dia-a-dia sabemos que como a matemática Wang Zhenyi nasceu em 1768 e a matemática Hertha Ayrton nasceu em 1854, então Wang é mais velha que Hertha, pois 1768 é anterior a 1854, ou podemos pensar também que 1768 é  menor que 1854, aqui estamos usando a relação de ordem dos números naturais para poder determinar quem nasceu primeiro e portanto é a mais velha, com esta relação de ordem das datas podemos construir uma cronologia dos acontecimentos históricos, que pode ser representada em uma reta cronológica.
 
@@ -130,12 +130,29 @@ Esta relação de ordem que usamos nos dois exemplos acima é apenas uma aplica�
 
 Note que dizer que $a$ é menor que $b$ ($a < b$) é equivalente a dizer que $b$ é maior que $a$ ($b > a$), o que também usamos no nosso dia-a-dia sem maiores problemas.
 
-O conjunto dos números reais é um exemplo de um conjunto totalmente ordenado, com a ordenação dada por ($\leq$) pois, dados $x$, $y$, e $z \in \R$, temos que:
+O conjunto dos números reais é um exemplo de um conjunto totalmente ordenado, com a ordenação dada por ($\leq$) pois, quaisquer $x$, $y$, e $z \in \R$, satisfazem as seguintes condições:
 \begin{itemize}
 \item se $x \leq y$ e $y \leq x$ então $x= y$;
 \item se $x \leq y$ e $y \leq z$ então $x \leq z$;
-\item $x \leq y$ ou $y \leq x$.
+\item \textit{Tricotomia:} $x<y$ ou $x=y$ ou $x>y$.
 \end{itemize}
+
+Esta relação de ordem em $\R$ possui as seguintes propriedades.
+
+\begin{prop} [Propriedades da relação de ordem] \label{prop.ordem} Dados $x, y, z \text{ e } w \in \R$ temos que:
+\begin{enumerate}
+\item Se $x \leq y$ e $z \leq w$ então $x+z \leq y+w$. De fato,
+\[x+z \leq y+z \ \ \  \text{ e } \ \ \ y+z \leq y+w \Rightarrow x+z \leq y+w \ .\]
+\item Se $0 \leq x \leq y$ e $0 \leq z \leq w$ então $0 \leq xz \leq yw$. De fato,
+\[xz \leq yz \ \ \  \text{ e } \ \ \  zy \leq wy \Rightarrow xz \leq wy \ .\]
+\item $x < y \Leftrightarrow x+z < y+z$;
+\item $z>0 \Leftrightarrow z^{-1}>0$;
+\item $z>0 \Leftrightarrow -z> 0$;
+\item $z>0 \text{ e } x<y \Leftrightarrow xz<yz$;
+\item $z<0 \text{ e } x<y \Leftrightarrow xz>yz$;
+\item $0<x<y \Rightarrow 0< \dfrac{1}{y} < \dfrac{1}{x}$.
+\end{enumerate}
+\end{prop}
 
 Este conceito de ordem dos números reais nos permite representá-los como pontos sobre uma reta orientada, chamada \textbf{reta real}, assim como representamos os anos em uma reta cronológica, e as temperaturas aparecem em ordem em um termômetro.
 
@@ -175,18 +192,63 @@ Generalizando esta ideia temos pela definição que:
 O valor absoluto ou módulo de um número real conta com as seguintes propridades.
 
 \begin{prop}[Propriedades do módulo]
- Para $a$ e $b$ números reais quaisquer, são válidas as seguintes propriedades: \label{prop.modulo}
+ Para quaisquer $x, y \in \R$, são válidas as seguintes propriedades: \label{prop.modulo}
 \begin{enumerate}
- \item $\abs{a} \geq 0$;
- \item $\abs{a}= 0 \Leftrightarrow a= 0$;
- \item $\abs{a} \geq a$;
- \item $\abs{-a}= \abs{a}$;
- \item $\abs{a \cdot b}= \abs{a} \cdot \abs{b}$;
- \item $\abs{\frac{a}{b}}= \frac{\abs{a}}{\abs{b}}$;
- \item $\abs{a^n}= \abs{a}^n$, se $n$ é par;
- \item $\abs{a+b}\leq \abs{a}+\abs{b}$, desigualdade triangular;
- \item $\abs{a - b} \geq \abs{a} - \abs{b}$;
- \item $\abs{\abs{a} - \abs{b}} \leq \abs{a} - \abs{b}$;
+ \item $\abs{x} \geq 0$;
+ \item $\abs{x}= 0 \Leftrightarrow x= 0$;
+ \item $x \leq \abs{x}$;  
+ \item $-x \leq \abs{x}$;
+ \item $\abs{-x}= \abs{x}$;
+ \item $\abs{x}^2= x^2$, de fato,\\ 
+ se $x \geq 0$, pela definição do módulo temos que $\abs{x}= x$ e daí $\abs{x}^2= x^2$, \\
+ se $x < 0$, pela definição do módulo temos que $\abs{x}= -x$ e daí $\abs{x}^2=(-x)^2= x^2$.\\
+ Portanto, para todo $x \in \R$, $\abs{x}^2= x^2$.
+ 
+ \item $\abs{x^n}= \abs{x}^n$, se $n$ é par, de fato, \\
+ se $x \geq 0$, pela definição do módulo temos que $\abs{x}= x$ e daí $\abs{x}^n= x^n$, \\
+ se $x < 0$, pela definição do módulo temos que $\abs{x}= -x$ e daí $\abs{x}^n= (-x)^n= x^n$.\\
+ Portanto, para todo $x \in \R$, $\abs{x}^n= x^n$.
+
+ \item $\abs{x \cdot y}= \abs{x} \cdot \abs{y}$, de fato, \\
+ \[\abs{x \cdot y}^2= (x \cdot y)^2= x^2 \cdot y^2= \abs{x}^2 \cdot \abs{y}^2= (\abs{x} \cdot \abs{y})^2 \ .\]
+ Como $\abs{x \cdot y} \geqslant 0$ e $\abs{x} \cdot \abs{y} \geqslant 0$ resulta
+ \[\abs{x \cdot y}= \abs{x} \cdot \abs{y} \ . \] 
+ 
+ \item $\abs{\dfrac{x}{y}}= \dfrac{\abs{x}}{\abs{y}}$, para $y \neq 0$, de fato, \\
+ \[\abs{\dfrac{x}{y}}^2= \left(\dfrac{x}{y} \right)^2= \dfrac{x^2}{y^2}= \dfrac{\abs{x}^2}{\abs{y}^2}= \left( \dfrac{\abs{x}}{\abs{y}} \right)^2 \ . \]
+ Como $\abs{\dfrac{x}{y}} \geq 0$ e $\dfrac{\abs{x}}{\abs{y}} \geq 0$ resulta que
+ \[\abs{\dfrac{x}{y}}= \dfrac{\abs{x}}{\abs{y}} \ .\]
+ 
+ \item Desigualdade triangular: $\abs{x+y}\leq \abs{x}+\abs{y}$, de fato, \\
+ se $x + y \geqslant 0$, pela definição de módulo, $\abs{x+y}= x+y \leq \abs{x} + \abs{y}$; \\ 
+ se $x + y < 0$, pela definição de módulo, $\abs{x+y}= -(x+y)= -x-y \leq \abs{x} + \abs{y}$. \\
+ Logo, para quaisquer $x, y \in \R$ temos que
+ \[\abs{x+y} \leq \abs{x}+\abs{y} \ .\] 
+ 
+ \item $\abs{x-y} \leq \abs{x} + \abs{y}$, de fato \\
+ Note que $x-y= x+ (-y)$, logo $\abs{x-y}= \abs{x+ (-y)}$ aplicando a desigualdade trinagular temos,
+ \[\abs{x-y}= \abs{x+ (-y)} \leq \abs{x} + \abs{-y}= \abs{x} + \abs{y} \ .\]
+ 
+ \item $\abs{\abs{x} - \abs{y}} \leq \abs{x - y}$, para mostrar esta desigualdade vamos fazer por partes.
+ \begin{itemize}
+ \item $\abs{x} - \abs{y} \leq \abs{x - y}$, \\
+ de fato, pela desigualdade triangular temos que
+ \[\abs{z+y} \leq \abs{z} + \abs{y}\]
+ subtraíndo $\abs{y}$ a ambos os termos temos,
+ \[\abs{z+y} - \abs{y} \leq \abs{z}\]
+ fazendo $x= z+y$ temos que $z=x-y$ substituindo estes valores na equação acima obtemos
+ \[\abs{x} - \abs{y} \leq \abs{x-y} \ . \]
+ \item $\abs{y} - \abs{x} \leq \abs{x - y}$, \\
+ de fato, pela desigualdade triangular temos que
+ \[\abs{x+z} \leq \abs{x} + \abs{z}\]
+ subtraíndo $\abs{x}$ a ambos os termos temos,
+ \[\abs{x+z} - \abs{x} \leq \abs{z}\]
+ fazendo $y= x+z$ temos que $z=y-x$ substituindo estes valores na equação acima obtemos
+ \[\abs{y} - \abs{x} \leq \abs{y-x}= \abs{x-y} \ . \] 
+ \end{itemize}
+ 
+ Portanto, 
+ \[ \abs{\abs{x} - \abs{y}} = \pm (\abs{x} - \abs{y}) \leq \abs{x-y} \ .\]
 
 \end{enumerate}
 \end{prop}
