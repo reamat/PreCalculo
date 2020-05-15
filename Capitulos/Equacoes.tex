@@ -654,7 +654,7 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
 
  O caso mais simples de equações exponencias são as equações do tipo
  \[\destaque{a^{x}= b} ,\]
- para $a > 0 \text{ e } a \neq 1 \in \R$. Note que com esta restrição de $a$ teremos sempre $b > 0 \in \R$ e ainda que esta equação está definida para todo $x \in \R$.
+ para $a > 0 \text{ e } a \neq 1 \in \R$. Note que com esta restrição de $a$ teremos sempre $b > 0$ e $b \in \R$ e ainda que esta equação está definida para todo $x \in \R$.
 
  Deste caso mais simples decorre que as equações exponenciais de base $a$ estão definidas apenas para $a > 0 \text{ e } a \neq 1 \in \R$. A resolução das equações $a^x= b$ pelo método da redução a uma base comum consiste em escrever $b$ como uma potência de $a$, ou seja, $b= a^k$  para algum $k \in \R$, e portanto $a^{x}= b= a^{k} \Rightarrow x= k$.
 
@@ -1139,15 +1139,218 @@ Resolva as seguintes equações do 2º grau completas.
 
  As resoluções das inequações utilizam as propriedades de ordem dos números reais listadas na \autoref{prop.ordem}, por isso sugiro ao leitor relembrar estas propriedades antes de iniciar a leitura deste capítulo.
 
+ \section{Inequações de 1º grau (fazer)}
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As inequações do 1º grau possuem uma das seguintes formas gerais
+ \begin{eqnarray*}
+ ax+b \leq 0 \\
+ ax+b < 0 \\
+ ax+b \geq 0 \\
+ ax+b >0 
+ \end{eqnarray*}  
+ para certos $a, b \in \R$ dados, com $a \neq 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+  
+ A principal diferença entre as equações de 1º grau e as inequações de 1º grau é que a equação possui uma única solução equanto que a inequação possui infinitas soluções, que formam um intervalo real.
+ 
+ \begin{exem} 
+ $4x + 8 > 0$:
+ 
+ \[4x + 8 > 0 \Leftrightarrow 4x > -8 \Leftrightarrow x > \frac{-8}{4} \Leftrightarrow x > -2 \ ,\]
+ portanto o conjunto solução desta inequação pode ser representado pelo intervalo $\left(-2, \infty \right)$ ou pelo conjunto $S=\{x \in \R \mid x > -2\}$. 
+ 
+ Esta inequação tem o sinal ($>$) de maior, que representa uma desigualdade estrita, por este motivo $-2$ não faz parte do conjunto solução, portanto na representação em termos de intervalo temos um intervalo aberto em $-2$.
+ \end{exem}
+ 
+ \begin{exem} 
+ $-x-3 \leq -4$:
+ \[-x-3 \leq -4 \Leftrightarrow -x \leq -4 + 3 \Leftrightarrow -x \leq -1 \Leftrightarrow -x \leq -1 \ \ \cdot (-1) \Leftrightarrow x \geq 1 \]
+ como o $x$ estava negativo tivemos que multiplicar a inequação toda por $-1$. Mas precisamos cuidar porque quando multiplicamos uma inequação por um número negativo mudamos a desigualdade. Por isso obtemos como solução $x \geq 1$.
+ 
+  O conjunto solução desta inequação pode ser representado pelo intervalo $\left[1, \infty \right)$ ou pelo conjunto $S=\{x \in \R \mid x \geq 1\}$. 
+  
+  Esta inequação tem o sinal ($\leq$) de menor ou igual, logo vale também a igualdade, por este motivo $1$ faz parte do conjunto solução, portanto na representação em termos de intervalo temos um intervalo fechado em $1$.
+ \end{exem}
+ 
+ \begin{exem} 
+ $3x+2 \geq 5x-2$
+ \begin{eqnarray*}
+ 3x+2 & \geq & 5x-2 \\
+ 3x - 5x & \geq & -2-2 \\
+ -2x & \geq & -4 \ \ \cdot (-1) \\
+ 2x & \leq & 4 \\
+ x & \leq & \frac{4}{2} \\
+ x & \leq & 2
+ \end{eqnarray*}
+ Conjunto solução $S=\{x \in \R \mid x \leq 2\}$.
+ \end{exem}
+ 
+  \begin{exem} 
+  $5x +1 > 3x - 5$
+  \begin{eqnarray*}
+  5x +1 &>& 3x - 5 \\
+  5x - 3x &>& -5 - 1 \\
+  2x &>& -6 \\
+  x &>& \frac{-6}{2} \\
+  x &>& -3
+  \end{eqnarray*}
+  Conjunto solução $S=\{x \in \R \mid x > -3\}$.
+ \end{exem}
+ 
+  \begin{exem} 
+  $-5 \leq 2x - 1 \leq 4$
+    
+   \begin{equation*}
+   \begin{gathered}
+   -5  \leq  2x - 1  \leq  4 \\
+  -5 + 1 \leq  2x  \leq 4 + 1 \\
+  -4 \leq  2x  \leq 5 \\
+   \dfrac{-4}{2} \leq  x  \leq \dfrac{5}{2} \\
+  -2 \leq  x   \leq \dfrac{5}{2} \\
+   \end{gathered}
+   \end{equation*}
+      
+  Conjunto solução $S=\{x \in \R \mid -2 \leq x \leq \dfrac{5}{2} \}$.
+ \end{exem}
+ 
+ \begin{exem} 
+ $3x - \dfrac{1}{3} < \dfrac{1}{2}$
+ 
+ \begin{eqnarray*}
+  3x - \dfrac{1}{3} &<& \dfrac{1}{2} \\
+  3x  &<& \dfrac{1}{2} + \dfrac{1}{3} \\
+  3x  &<& \dfrac{3 + 2}{6} \\
+  x  &<& \dfrac{\frac{5}{6}}{3} \\
+  x  &<& \dfrac{5}{6 \cdot 3} \\
+  x  &<& \dfrac{5}{18} \\
+  \end{eqnarray*}
+  
+  Conjunto solução $S=\{x \in \R \mid x < \dfrac{5}{18} \}$.
+ \end{exem}
+ 
+  \begin{exem} 
+ $\dfrac{x}{4} + \dfrac{1}{3} \geqslant \dfrac{5}{3}$
+ \begin{eqnarray*}
+  \dfrac{x}{4} + \dfrac{1}{3} & \geqslant & \dfrac{5}{3} \\
+  \dfrac{x}{4} & \geqslant & \dfrac{5}{3} - \dfrac{1}{3} \\
+  x & \geqslant & \dfrac{4}{3} \cdot 4 \\
+  x & \geqslant & \dfrac{16}{3}
+  \end{eqnarray*}
+  Conjunto solução $S=\{x \in \R \mid x \geqslant \dfrac{16}{3} \}$.
+ \end{exem}
+ 
+ \begin{exem}
+ $\dfrac{3x+2}{2} - 3 \geqslant \dfrac{1}{4} - 2x$ 
+ \begin{eqnarray*}
+  \dfrac{3x+2}{2} - 3 &\geqslant & \dfrac{1}{4} - 2x \\
+  \dfrac{2(3x+2)}{4} - \dfrac{12}{4} &\geqslant & \dfrac{1}{4} - \dfrac{8x}{4} \\
+  \dfrac{6x+4}{4} + \dfrac{8x}{4} &\geqslant & \dfrac{1}{4} + \dfrac{12}{4} \\
+  \dfrac{14x+4}{4}  &\geqslant & \dfrac{13}{4} \\
+  14x  &\geqslant & 13 - 4\\
+  x  &\geqslant & \dfrac{9}{14}\\
+  \end{eqnarray*}
+  Conjunto solução $S=\{x \in \R \mid x \geqslant \dfrac{9}{14} \}$.
+ \end{exem}
+ 
+\begin{exem}
+$\dfrac{1-2x}{3} + \dfrac{x-2}{6} > \dfrac{x+3}{2} - 1$
+\end{exem}
 
- %\section{Inequações de 1º grau (fazer)}
- %\section{Inequações de 2º grau (fazer)}
- %\section{Inequações exponenciais (fazer)}
+\begin{exem}
+$-6 \leqslant -2(x-3) \leqslant 3$
+\end{exem} 
+
+\begin{exem}
+$-5 \leqslant \dfrac{-3x + 5}{4} \leqslant 4$
+\end{exem}
+ 
+ \section{Inequações de 2º grau (fazer)}
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As inequações do 2º grau possuem uma das seguintes formas gerais
+ \begin{eqnarray*}
+ ax^2 + bx + c \leq 0 \\
+ ax^2 + bx + c < 0 \\
+ ax^2 + bx + c \geq 0 \\
+ ax^2 + bx + c >0 
+ \end{eqnarray*}  
+ para certos $a, b, c \in \R$ dados, com $a \neq 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+  
+ A principal diferença entre as equações de 2º grau e as inequações de 2º grau é que a equação, quando possui solução tem uma ou duas soluções, equanto que a inequação quando possui solução possui infinitas soluções, que representam um intervalo real ou a união de dois intervalos reais. 
+ 
+ \section{Inequações exponenciais (fazer)}
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  Uma inequação exponencial é uma inequação na qual a incógnita aparece no expoente.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm 
+ 
+ Para resolver estas inequações precisamos conhecer as propriedades de potência, bem como resoluções de inequações de 1º e 2º graus, dentre outros conteúdos. 
+ 
+  Lembremos que, o caso mais simples de equações exponencias são do tipo
+ \[\destaque{a^{x}= b} ,\]
+ para $a \in \R$ satisfazendo $a > 0$ e $a \neq 1$, $b \in \R$ com $b > 0$ e $x \in \R$ qualquer. Nesta situação sendo $m \in \R$ tal que $b= a^{m}$, temos que:
+
+ \[ \destaque {a^{x}= a^{m} \Rightarrow x= m }\ .\]
+ 
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  Sendo $x \in \R$, $a \in \R$ satisfazendo $a > 0$ e $a \neq 1$, e $b \in \R$ satisfazendo $b > 0$, temos então as seguintes possíveis inequações exponenciais:
+ \begin{eqnarray*}
+ a^x \leq b \\
+ a^x < b \\
+ a^x \geq b \\
+ a^x > b 
+ \end{eqnarray*} 
+ nas quais é possível escrever $b=a^m$ para algum $m \in \R$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm 
+ 
+ A resolução das inequações exponenciais se dividem em dois casos, a depender do valor da base $a$, são eles:
+ 
+ Caso 1: $0 < a < 1$ temos que,
+  \begin{eqnarray*}
+ a^x \leq a^m \Rightarrow x \geq m\\
+ a^x < a^m \Rightarrow x > m \\
+ a^x \geq a^m \Rightarrow x \leq m\\
+ a^x > a^m \Rightarrow x < m
+ \end{eqnarray*}
+ ou seja, nesta situação ocorre uma inversão da desigualdade.
+ 
+ Caso 2: $a > 1$ temos que,
+  \begin{eqnarray*}
+ a^x \leq a^m \Rightarrow x \leq m \\
+ a^x < a^m \Rightarrow x < m \\
+ a^x \geq a^m \Rightarrow x \geq m \\
+ a^x > a^m \Rightarrow x > m
+ \end{eqnarray*}
+ ou seja, neste caso a desigualdade se mantém.
+ 
+  
 
  \chapter{Equações e inequações}
 
- %\section{Equações com fração (fazer)}
- \section{Inequações com fração}% (fazer)}
+ \section{Equações com fração (fazer)}
+ \section{Inequações com fração (fazer)}
 
  \begin{exem}
   $4 - \dfrac{x^2+x+4}{x+1} \leq 0$
@@ -1174,7 +1377,7 @@ Resolva as seguintes equações do 2º grau completas.
  \end{exem}
 
 
- \section{Equações com módulo}% (fazendo)}
+ \section{Equações com módulo (fazendo)}
 
    \vskip0.3cm
  \colorbox{azul}{
@@ -1198,9 +1401,8 @@ Além disso o módulo de um número real possui algumas propriedades listadas na
 
 Vejamos então alguns exemplos de equações modulares resolvidas.
 
-\begin{exem} Equações com módulo:
- \begin{enumerate}
-  \item Suponha que $a> 0$. Resolva a equação $\abs{x}= a$
+\begin{exem} 
+  Suponha que $a> 0$. Resolva a equação $\abs{x}= a$
 
   Pela definição de módulo temos:
   \[
@@ -1215,8 +1417,10 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      \end{cases}
   \]
  Portanto o conjunto solução desta equação é $S= \left\{-a, a \right\}$.
+\end{exem}
 
-  \item Caso particular: $\abs{x}= 10$
+\begin{exem}
+  Caso particular: $\abs{x}= 10$
 
   Pela definição de módulo temos:
   \[
@@ -1231,8 +1435,10 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      \end{cases}
   \]
  Portanto o conjunto solução desta equação é $S= \left\{-10, 10 \right\}$.
+\end{exem}
 
- \item $\abs{2x-2}= 10$
+\begin{exem}
+ $\abs{2x-2}= 10$
 
   Pela definição de módulo temos:
   \[
@@ -1259,8 +1465,10 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
      \end{cases}
   \]
   Portanto o conjunto solução desta equação é $S= \left\{-4, 6 \right\}$.
-
-  \item $\abs{2x^2 - 72}= 26$
+ \end{exem}
+ 
+ \begin{exem}
+  $\abs{2x^2 - 72}= 26$
 
   Novamente aplicando a definição de módulo temos
     \[
@@ -1300,8 +1508,10 @@ Vejamos então alguns exemplos de equações modulares resolvidas.
 
 note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ são soluções desta equação. Portanto o conjunto solução da nossa é equação modular é:
      \[S= \{-7, -\sqrt{23}, \sqrt{23}, 7\} \ .\]
+\end{exem}
 
-     \item \colorbox{yellow}{Atenção!} $\abs{x-4}=-2$
+\begin{exem}
+ \colorbox{yellow}{Atenção!} $\abs{x-4}=-2$
 
      Pela definição de módulo temos:
      \[
@@ -1332,8 +1542,6 @@ note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ s
  logo esta equação NÃO tem solução!
 
  Mas isso já era de se esperar, pois lembra que $\abs{x}\geq 0$ para qualquer $x \in \R$, por propriedade do módulo, logo $\abs{x-4} \geq 0$ como $-2< 0$ então não existe $x \in \R$ tal que $\abs{x-4}= -2$. Portanto, já sabíamos pela propriedade de módulo que esta equação não tinha solução.
-
-\end{enumerate}
 \end{exem}
 
  Vamos agora, sistematizar o que acabamos de ver nos exemplos acima de forma a facilitar a aplicação desta teoria na resolução de equações modulares gerais. Para tal consideremos uma equação modular na forma geral
@@ -1402,13 +1610,14 @@ note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ s
  \end{exem}
 
 
- \section{Inequações modulares}% (fazer)}
+ \section{Inequações modulares (fazendo)}
 
  Nesta seção iremos usar as propriedades da ordem do conjunto dos números reais e também as propriedades de módulo de um número real. Neste momento já supomos que o leitor está bem familiarizado com as estas propriedades, mas na dúvida você pode consultar as propriedades que estão listadas nas \autoref{prop.ordem} e \autoref{prop.modulo}.
 
- \begin{exem} Vejamos agora alguns exemplos de inequações modulares.
-  \begin{enumerate}
-   \item Suponha que $a> 0$. Resolva a inequação $\abs{x} < a$.
+Vejamos agora alguns exemplos de inequações modulares.
+
+ \begin{exem} 
+  Suponha que $a> 0$. Resolva a inequação $\abs{x} < a$.
    \[\abs{x} < a \Leftrightarrow \abs{x}^2 < a^2 \Leftrightarrow x^2 < a^2\]
    mas,
    \[x^2 < a^2 \Leftrightarrow x^2 - a^2 < 0 \Leftrightarrow (x-a)(x+a) < 0 \ .\]
@@ -1427,13 +1636,17 @@ note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ s
    Fazendo a interseção dos conjuntos $A_2= \left\{ x \in \R \mid x> a \right\}$ e $B_2= \left\{ x \in \R \mid x<-a \right\}$, obtemos $A_2 \cap B_2= \emptyset$. Portanto neste caso a inequação não possui solução.
 
   Portanto $\abs{x} < a \Leftrightarrow -a< x <a$.
-
-   \item Caso particular: $\abs{x} \leq 5$
+  \end{exem}
+  
+\begin{exem}
+   Caso particular: $\abs{x} \leq 5$
    \[\abs{x} \leq 5 \Leftrightarrow -5 \leq x \leq 5\]
    logo, o conjunto solução desta inequação é:
    \[S= [-5, 5] \ . \]
+\end{exem}
 
-   \item Suponha que $a> 0$. Resolva a inequação $\abs{x} > a$.
+\begin{exem}
+   Suponha que $a> 0$. Resolva a inequação $\abs{x} > a$.
    \[\abs{x} > a \Leftrightarrow \abs{x}^2 > a^2 \Leftrightarrow x^2 > a^2\]
    mas,
    \[x^2 > a^2 \Leftrightarrow x^2 - a^2 > 0 \Leftrightarrow (x-a)(x+a) > 0 \ .\]
@@ -1454,17 +1667,16 @@ note que $-6< -\sqrt{23} < \sqrt{23} < 6$, logo $x=-\sqrt{23}$ e $x=\sqrt{23}$ s
    Agora fazendo $S= (A_1 \cap B_1) \cup (A_2 \cap B_2)$ obtemos que $S= \left\{ x \in \R \mid x<-a \text{ ou } x> a \right\}$ é o conjunto solução da inequação $\abs{x} > a$.
 
   Portanto $\abs{x} > a \Leftrightarrow x<-a \text{ ou } x> a$.
+\end{exem}
 
-   \item Caso particular: $\abs{x} \geq 5$
+\begin{exem}
+   Caso particular: $\abs{x} \geq 5$
    \[\abs{x} \geq 5 \Leftrightarrow x \leq -5 \ \ \text{ ou } \ \ x \geq 5\]
    logo, o conjunto solução desta inequação é:
    \[S= (-\infty, -5] \cup [5, \infty) \ . \]
-
-  \end{enumerate}
-
  \end{exem}
 
 
-% \section{Equações com raízes (fazer)}
+ \section{Equações com raízes (fazer)}
 
-% \section{Inequações com raízes (fazer)}
+ \section{Inequações com raízes (fazer)}
