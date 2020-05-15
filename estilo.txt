@@ -23,3 +23,6 @@ Comandos que estou usando:
  Para fazer hiperlink dentro do texto
  \label{...}
  \autoref{...}
+ 
+ \begin{exer}
+ \end{exer}
