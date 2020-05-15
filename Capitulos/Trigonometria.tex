@@ -1,7 +1,7 @@
-\chapter{Trigonometria}
+ \chapter{Trigonometria}
 
-\section{Triângulo retângulo}
-%
+ \section{Triângulo retângulo}
+
   Considere o triângulo retângulo, (triângulo que possui um de seus ângulos internos medindo $90 \degree$), como na figura abaixo:
   \begin{figure}[H]
    \centering
@@ -22,7 +22,7 @@
 
  \vskip0.3cm
 
- Este é um resultado importante, já que com ele é possível encontrar o valor de um dos lados do triângulo, nos casos em que não temos todos os lados dados, normalmente é utilizado para encontrar o valor da altura de um triângulo.
+ Este é um resultado importante, já que com ele é possível encontrar o valor de um dos lados do triângulo, nos casos em que não temos todos os lados dados.
 
  Para este triângulo, as funções seno, cosseno e tangente são dadas pelas seguintes razões trigonométricas, nesta ordem:
 
@@ -33,8 +33,8 @@
  \begin{center}
  \textbf{Funções trigonométricas}
   \begin{eqnarray*}
-   \sen(\alpha)= \frac{c}{a}= \frac{CO}{HI} \; \ \
-   \cos(\alpha)= \frac{b}{a}= \frac{CA}{HI} \; \ \
+   \sen(\alpha)= \frac{c}{a}= \frac{CO}{HI} \ ; \ \
+   \cos(\alpha)= \frac{b}{a}= \frac{CA}{HI} \ ; \ \
    \tan(\alpha)= \frac{c}{b}= \frac{CO}{CA}.
  \end{eqnarray*}
  \end{center}
@@ -42,7 +42,7 @@
 
  \vskip0.3cm
 
- Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. Porém estas funções estão definidas para qualquer número real, mas para nosso estudo é suficiente conhecer seus valores para os ângulos $0 \degree \leqslant \alpha \leqslant 360 \degree$.
+ Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. Porém estas funções estão definidas para qualquer número real, mas para um primeiro estudo é suficiente conhecer seus valores para os ângulos $0 \degree \leqslant \alpha \leqslant 360 \degree$.
 
  Destacamos aqui os valores do seno, cosseno e tangente dos \emph{ângulos notáveis} que são os mais utilizados:
 
@@ -58,7 +58,7 @@
 \end{table}
  Na próxima seção veremos como utilizar estes valores para calcular seno, cosseno e tangente de ângulos maiores que $90 \degree$.
 
-\section{Círculo Trigonométrico}
+\section{Círculo trigonométrico}
 
  No plano cartesiano, consideremos um círculo de centro na origem e raio $1$, neste círculo representamos as imagens das funções trigonométricas aplicadas à  $0 \degree \leqslant \alpha \leqslant 360 \degree$. Como mostra a seguinte figura:
  \begin{figure}[H]
@@ -145,19 +145,63 @@
  \fim
   \end{exem}
 
+ \newpage
+
+ \section{Identidades trigonométricas}
+
+ \textbf{Identidades de quociente}
+
+ \[\tan(x)= \dfrac{\sen(x)}{\cos(x)} \qquad \cotan(x)= \dfrac{\cos(x)}{\sen(x)}\]
+
+ \vskip0.5cm
+ \textbf{Identidades recíprocas}
+
+ \[\sec(x)= \dfrac{1}{\cos(x)} \qquad
+   \csc(x)= \dfrac{1}{\sen(x)} \qquad
+   \cotan(x)= \dfrac{1}{\tan(x)}\]
+
+ \vskip0.5cm
+ \textbf{Identidades pitagóricas}
+
+ \[\sen^2(x) + \cos^2(x)= 1 \qquad
+   \tan^2(x)+ 1= \sec^2(x) \qquad
+   \cotan^2(x)+1=\cosec^2(x)\]
+
+ \vskip0.5cm
+ \textbf{Identidades associadas à paridade}
+
+ \[\sen(-x)= -\sen(x) \qquad \cos(-x)= \cos(x) \qquad \tan(-x)=-\tan(x)\]
+
+ \vskip0.5cm
+ \textbf{Identidades de arcos complementares}
+
+ \[\sen \left(\frac{\pi}{2} - x \right)= \cos(x) \qquad
+   \cos \left(\frac{\pi}{2} - x \right)= \sen(x)\]
+
+ \[\tan \left(\frac{\pi}{2} - x \right)= \cotan(x) \qquad
+   \cotan \left(\frac{\pi}{2} - x \right)= \tan(x)\]
+
+ \[\cosec \left(\frac{\pi}{2} - x \right)= \sec(x) \qquad
+   \sec \left(\frac{\pi}{2} - x \right)= \cosec(x)\]
 
 
- \section{Relações trigonométricas}
+\vskip0.5cm
+ \textbf{Fórmulas de adição e subtração}
 
- Só a critério de conhecimento, segue uma lista de algumas relações trigonométricas que são interessantes pela grande quantidade de aplicações:
-
+ Seno
  \begin{eqnarray*}
-  \tan(x)&=&\frac{\sen(x)}{\cos(x)} \\
-  \sen^2(x) + \cos^2(x)&=&1 \\
   \sen(a+b)&=&\sen(a)\cdot \cos(b)+\sen(b)\cdot \cos(a) \\
-  \sen(a-b)&=&\sen(a)\cdot \cos(b)-\sen(b)\cdot \cos(a) \\
+  \sen(a-b)&=&\sen(a)\cdot \cos(b)-\sen(b)\cdot \cos(a)
+ \end{eqnarray*}
+
+ Cosseno
+ \begin{eqnarray*}
   \cos(a+b)&=&\cos(a)\cdot \cos(b)-\sen(a)\cdot \sen(b) \\
-  \cos(a-b)&=&\cos(a)\cdot \cos(b)+\sen(a)\cdot \sen(b) \\
+  \cos(a-b)&=&\cos(a)\cdot \cos(b)+\sen(a)\cdot \sen(b)
+ \end{eqnarray*}
+
+ Tangente
+ \begin{eqnarray*}
   \tan(a+b)&=& \frac{\tan(a)+\tan(b)}{1-\tan(a)\cdot \tan(b)} \\
   \tan(a-b)&=& \frac{\tan(a)-\tan(b)}{1-\tan(a)\cdot \tan(b)}
  \end{eqnarray*}
@@ -247,3 +291,133 @@ Gabarito: 1 d); 2 c); 3 c); 4 d).
  \[S= (6-2)\cdot 180= 4 \cdot 180= 720 \degree\]
  portanto, cada ângulo interno $\alpha$ do hexágono mede:
  \[\alpha= \frac{720}{6}= 120 \degree .\]
+
+  \chapter{Funções trigonométricas}
+
+  As funções trigonométricas fazem parte do grupo de funções periódicas, que são as funções que satisfazem a seguinte definição.
+
+  \begin{defi}
+   Uma função $f: \R \rightarrow \R$ é denominada \textbf{periódica} quando existe um número real positivo $P$ tal que
+   \[f(x + P)= f(x)\]
+   para todo $x$ no domínio da $f$. O menor número real positivo $P$ que satisfaz esta propriedade é denominado período de $f$.
+  \end{defi}
+
+  Vamos definir as funções trigonométricas no maior subconjunto real possível, e estudar o comportamento de seus gráficos.
+
+  \todo{ períodos, amplitude, intervalo de bijetividade, função inversa}
+
+  \begin{itemize}
+  \item Função Seno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= \sen (x)$, cujo gráfico é:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/sen.pdf}}
+    \caption{Gráfico da função $f(x)= \sen(x)$}
+  \end{figure}
+
+  \item Função Cosseno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= \cos(x)$, cujo gráfico é:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/cos.pdf}}
+    \caption{Gráfico da função $f(x)= \cos(x)$}
+  \end{figure}
+
+  Geométricamente podemos observar que o comportamento do gráfico das funções seno o cosseno no intervalo $[0, 2\pi]$ se repete em cada intervalo de comprimento $2\pi$. Isso pode ser visualizado também olhando para o círculo trigonométrico, por exemplo quando estamos olhando para um ângulo $\theta= 4\pi + \frac{\pi}{4}$ estamos apenas dando duas voltas no círculo trigonométrico e andando mais $\frac{\pi}{4}$, por isso:
+  \[\sen(4\pi + \frac{\pi}{4})= \sen(\frac{\pi}{4}) \ ,\]
+  \[\cos(4\pi + \frac{\pi}{4})= \cos(\frac{\pi}{4}) \ , \]
+  funções com esta propriedade de repetição de comportamento são denominadas funções periódicas, e o intervalo que se repete é chamado de período.
+
+  Por interpretação do círculo trigonométrico vemos que, para todo $x \in \R$:
+  \[\sen(x + 2 \pi)= \sen(x) \ ,\]
+  \[\cos(x + 2\pi)= \cos(x) \ , \]
+  logo as funções seno e cosseno são de fato funções períodicas de período $2\pi$.
+
+  \item Função Tangente: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= \tan(x)$, cujo gráfico é:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/tan.pdf}}
+    \caption{Gráfico da função $f(x)= \tan (x)$}
+  \end{figure}
+
+  Lembramos que $\tan(x)= \frac{\sen(x)}{\cos(x)}$, logo podemos entender o domínio da função tangente como o conjunto dos $x \in \R$ tais que $\cos(x) \neq 0$.
+
+  Note que o comportamento do gráfico da função tangente no intervalo $]-\frac{\pi}{2}, \frac{\pi}{2}[$ se repete indefinadamente, e ainda
+  \[\tan(x)= \tan(x + \pi)\]
+  donde concluímos que a função tangente é uma função períodica de período $\pi$.
+
+  \item Função Cossecante: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= \csc(x)$, o gráfico desta função é:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/csc.pdf}}
+    \caption{Gráfico da função $f(x)= \csc(x)$}
+  \end{figure}
+
+  Como $\csc(x)= \dfrac{1}{\sen(x)}$ o domínio da função cossecante é exatamente o conjunto dos $x \in \R$ tais que $\sen(x) \neq 0$.
+
+  Ao observar o gráfico da função cossecante notamos que o gráfico da função no intervalo $]0, \pi[ \cup ] \pi, 2 \pi[$ se repete indefinidamente, e ainda
+  \[\csc(x + 2\pi)= \csc(x) \ , \]
+  logo esta é uma função periódica, com período $2\pi$.
+
+  \item Função Secante: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= \sec(x)$, com gráfico dado por:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/sec.pdf}}
+    \caption{Gráfico da função $f(x)= \sec(x)$}
+  \end{figure}
+
+  Como $\sec(x)= \dfrac{1}{\cos (x)}$ o domínio da função secante é o conjunto dos $x \in \R$ tais que $\cos(x) \neq 0$.
+
+  Ao observar o gráfico da função secante notamos que o intervalo que se repete neste caso é $]\frac{-\pi}{2}, \frac{\pi}{2}[ \cup ] \frac{\pi}{2}, \frac{3\pi}{2}[$, e ainda que
+  \[\sec(x + 2\pi)= \sec(x) \ ,\]
+  logo esta é uma função periódica com período $2\pi$.
+
+  \item Função Cotangente: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= \cotan(x)$, cujo gráfico é:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/cot.pdf}}
+    \caption{Gráfico da função $f(x)= \cotan(x)$}
+  \end{figure}
+
+  Lembramos que $\cotan(x)= \dfrac{\cos(x)}{\sen(x)}$ logo o domínio da função cotangente é o conjunto dos $x \in \R$ tais que $\sen(x) \neq 0$.
+
+  Já no gráfico da função cotangente vemos a repetição do comportamento do intervalo $]0, \pi[$, e temos que
+  \[\cotan(x + \pi)= \cotan(x)\]
+  portanto esta é uma função periódica de período $\pi$.
+
+  \textbf{Funções Inversas}
+
+  As funções trigonométricas admitem inversas quando restringimos seus domínios a um único período da função, assim temos por exemplo as seguintes funções:
+
+  \item Função Arco Seno: $f: [-1, 1] \rightarrow [\frac{-\pi}{2}, \frac{\pi}{2}]$ dada por $f(x)= \arcsen(x)$, que também denotamos por $\sen^{-1}(x)= \arcsen(x)$, neste caso o gráfico será:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=5cm]{Capitulos/Figuras/arcsen.pdf}}
+    \caption{Gráfico da função $f(x)= \arcsen(x)$}
+  \end{figure}
+
+
+  \item Função Arco Cosseno: $f: [-1, 1] \rightarrow [0, \pi]$ dada por $f(x)= \arccos(x)$, que também denotamos por $\cos^{-1}(x)= \arccos (x)$, neste caso temos o seguinte gráfico:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=5cm]{Capitulos/Figuras/arccos.pdf}}
+    \caption{Gráfico da função $f(x)= \arccos(x)$}
+  \end{figure}
+
+
+  \item Função Arco Tangente: $f: \R \rightarrow ]\frac{-\pi}{2}, \frac{\pi}{2}[$, dada por $f(x)= \arctan(x)$ que também denotamos por $\tan^{-1}(x)= \arctan (x)$, neste caso o gráfico será:
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/arctan.pdf}}
+    \caption{Gráfico da função $f(x)= \arctan(x)$}
+  \end{figure}
+
+
+  \end{itemize}

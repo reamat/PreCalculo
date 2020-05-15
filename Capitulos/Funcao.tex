@@ -983,896 +983,249 @@ Logo o gráfico da função $Id$ é:
  \end{tabular}
 \end{table}
 
-  \newpage
-  \section{Trigonometria}
-
- \subsection{Triângulo retângulo}
-
-  Considere o triângulo retângulo, (triângulo que possui um de seus ângulos internos medindo $90 \degree$), como na figura abaixo:
-  \begin{figure}[H]
-   \centering
-   \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/triangulo_retangulo.pdf}}
-   \caption{Triângulo retângulo}
-  \end{figure}
- para este triângulo temos que é válido o seguinte teorema:
-
- \vskip0.3cm
-
-\colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- \textbf{Teorema de Pitágoras}
-  \[a^2= b^2 + c^2.\]
- \end{center}
- \end{minipage}}
-
- \vskip0.3cm
-
- Este é um resultado importante, já que com ele é possível encontrar o valor de um dos lados do triângulo, nos casos em que não temos todos os lados dados.
-
- Para este triângulo, as funções seno, cosseno e tangente são dadas pelas seguintes razões trigonométricas, nesta ordem:
-
- \vskip0.3cm
-
-\colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- \textbf{Funções trigonométricas}
-  \begin{eqnarray*}
-   \sen(\alpha)= \frac{c}{a}= \frac{CO}{HI} \ ; \ \
-   \cos(\alpha)= \frac{b}{a}= \frac{CA}{HI} \ ; \ \
-   \tan(\alpha)= \frac{c}{b}= \frac{CO}{CA}.
- \end{eqnarray*}
- \end{center}
- \end{minipage}}
-
- \vskip0.3cm
-
- Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. Porém estas funções estão definidas para qualquer número real, mas para um primeiro estudo é suficiente conhecer seus valores para os ângulos $0 \degree \leqslant \alpha \leqslant 360 \degree$.
-
- Destacamos aqui os valores do seno, cosseno e tangente dos \emph{ângulos notáveis} que são os mais utilizados:
-
- \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|c|c|c|} \hline
- \rowcolor{cinza}
-               & $0 \degree$  & $30 \degree$  & $45 \degree$  & $60 \degree$ & $90 \degree$  \\\hline
-  $\pmb{\sen}$ & $0$ &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ \\\hline
-  $\pmb{\cos}$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ \\\hline
-  $\pmb{\tan}$ & $0$ & $\frac{\sqrt{3}}{3}$ & $1$ & $\sqrt{3}$ & $\nexists$ \\\hline
- \end{tabular}
-\end{table}
- Na próxima seção veremos como utilizar estes valores para calcular seno, cosseno e tangente de ângulos maiores que $90 \degree$.
-
-\subsection{Círculo trigonométrico}
-
- No plano cartesiano, consideremos um círculo de centro na origem e raio $1$, neste círculo representamos as imagens das funções trigonométricas aplicadas à  $0 \degree \leqslant \alpha \leqslant 360 \degree$. Como mostra a seguinte figura:
- \begin{figure}[H]
-   \centering
-   \fbox{\includegraphics[width=9cm]{Capitulos/Figuras/circulo_trigonometrico.pdf}}
-   \caption{Círculo trigonométrico}
-  \end{figure}
-
-  A partir do círculo trigonométrico concluímos que:
-
-  \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|c|} \hline
- \rowcolor{cinza}
-               &  $120\degree$  & $135\degree$  &  $150\degree$ \\\hline
-  $\pmb{\sen}$ & $\sen(60\degree)$ &$\sen(45\degree)$ & $\sen(30\degree)$  \\\hline
-  $\pmb{\cos}$ & $-\cos(60\degree)$ &$-\cos(45\degree)$ & $-\cos(30\degree)$  \\\hline
-  $\pmb{\tan}$ & $-\tan(60\degree)$ &$-\tan(45\degree)$ & $-\tan(30\degree)$  \\\hline
- \end{tabular}
-\end{table}
-
- \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|c|} \hline
- \rowcolor{cinza}
-                & $210\degree$ & $225\degree$  & $240\degree$  \\\hline
-  $\pmb{\sen}$ &  $-\sen(30\degree)$ & $-\sen(45\degree)$ & $-\sen(60\degree)$  \\\hline
-  $\pmb{\cos}$ &  $-\cos(30\degree)$ & $-\cos(45\degree)$ & $-\cos(60\degree)$  \\\hline
-  $\pmb{\tan}$ &  $\tan(30\degree)$ & $\tan(45\degree)$ & $\tan(60\degree)$   \\\hline
- \end{tabular}
-\end{table}
-
- \begin{table}[h]
- \centering
- \begin{tabular}{|c|c|c|c|} \hline
- \rowcolor{cinza}
-               & $300\degree$ & $315\degree$ & $330\degree$ \\\hline
-  $\pmb{\sen}$ & $\sen(60\degree)$ & $\sen(45\degree)$ & $\sen(30\degree)$ \\\hline
-  $\pmb{\cos}$ & $\cos(60\degree)$ & $\cos(45\degree)$ & $\cos(30\degree)$  \\\hline
-  $\pmb{\tan}$ & $-\tan(60\degree)$ & $-\tan(45\degree)$ & $-\tan(30\degree)$  \\\hline
- \end{tabular}
-\end{table}
-
-
-  Os ângulos podem também ser representados em radianos, respeitando a seguinte relação:
-
-  \[\destaque{\pi \text{ radianos}= 180 \degree}\]
-
-  Usando esta relação podemos transformar graus para radianos e radianos para graus, vamos ver dois exemplos:
-
-  \begin{exem}
-   Qual a medida em graus do ângulo que mede $\frac{\pi}{4} rad$?
-
-   \underline{Resolução:}
-
-   Sabemos que $\pi rad= 180\degree$, portanto usando a regra de 3 abaixo conseguimos encontrar o valor em graus deste ângulo:
-   \begin{eqnarray*}
-  \text{Graus} & & \text{Radianos} \\
-   180 & = & \pi\\
-  x & = & \frac{\pi}{4}
- \end{eqnarray*}
- usando a propriedade da proporcionalidade, ou seja, multiplicando cruzado temos:
-
- $180 \cdot \frac{\pi}{4}= \pi \cdot x \Rightarrow \pi \cdot x= \frac{180 \pi}{4} \Rightarrow x= \frac{45 \pi}{\pi} \Rightarrow x= 45\degree$.
-
- \fim
-  \end{exem}
-
-  \begin{exem}
-   Qual a medida em radianos do ângulo que mede $30\degree$?
-
-   \underline{Resolução:}
-
-   Sabemos que $\pi rad= 180\degree$, portanto usando a regra de 3 abaixo conseguimos encontrar o valor em graus deste ângulo:
-   \begin{eqnarray*}
-  \text{Graus} & & \text{Radianos} \\
-   180 & = & \pi\\
-  30 & = & x
- \end{eqnarray*}
- usando a propriedade da proporcionalidade, ou seja, multiplicando cruzado temos:
-
- $180 \cdot x= \pi \cdot 30 \Rightarrow x= \frac{30 \pi}{180} \Rightarrow x= \frac{\pi}{6} rad$.
-
- \fim
-  \end{exem}
-
- \newpage
-
- \subsection{Identidades trigonométricas}
-
- \textbf{Identidades de quociente}
-
- \[\tan(x)= \dfrac{\sen(x)}{\cos(x)} \qquad \cotan(x)= \dfrac{\cos(x)}{\sen(x)}\]
-
- \vskip0.5cm
- \textbf{Identidades recíprocas}
-
- \[\sec(x)= \dfrac{1}{\cos(x)} \qquad
-   \csc(x)= \dfrac{1}{\sen(x)} \qquad
-   \cotan(x)= \dfrac{1}{\tan(x)}\]
-
- \vskip0.5cm
- \textbf{Identidades pitagóricas}
-
- \[\sen^2(x) + \cos^2(x)= 1 \qquad
-   \tan^2(x)+ 1= \sec^2(x) \qquad
-   \cotan^2(x)+1=\cosec^2(x)\]
-
- \vskip0.5cm
- \textbf{Identidades associadas à paridade}
-
- \[\sen(-x)= -\sen(x) \qquad \cos(-x)= \cos(x) \qquad \tan(-x)=-\tan(x)\]
-
- \vskip0.5cm
- \textbf{Identidades de arcos complementares}
-
- \[\sen \left(\frac{\pi}{2} - x \right)= \cos(x) \qquad
-   \cos \left(\frac{\pi}{2} - x \right)= \sen(x)\]
-
- \[\tan \left(\frac{\pi}{2} - x \right)= \cotan(x) \qquad
-   \cotan \left(\frac{\pi}{2} - x \right)= \tan(x)\]
-
- \[\cosec \left(\frac{\pi}{2} - x \right)= \sec(x) \qquad
-   \sec \left(\frac{\pi}{2} - x \right)= \cosec(x)\]
-
-
-\vskip0.5cm
- \textbf{Fórmulas de adição e subtração}
-
- Seno
- \begin{eqnarray*}
-  \sen(a+b)&=&\sen(a)\cdot \cos(b)+\sen(b)\cdot \cos(a) \\
-  \sen(a-b)&=&\sen(a)\cdot \cos(b)-\sen(b)\cdot \cos(a)
- \end{eqnarray*}
-
- Cosseno
- \begin{eqnarray*}
-  \cos(a+b)&=&\cos(a)\cdot \cos(b)-\sen(a)\cdot \sen(b) \\
-  \cos(a-b)&=&\cos(a)\cdot \cos(b)+\sen(a)\cdot \sen(b)
- \end{eqnarray*}
-
- Tangente
- \begin{eqnarray*}
-  \tan(a+b)&=& \frac{\tan(a)+\tan(b)}{1-\tan(a)\cdot \tan(b)} \\
-  \tan(a-b)&=& \frac{\tan(a)-\tan(b)}{1-\tan(a)\cdot \tan(b)}
- \end{eqnarray*}
-
-
-  \section{Funções trigonométricas}
-
-  As funções trigonométricas fazem parte do grupo de funções periódicas, que são as funções que satisfazem a seguinte definição.
-
-  \begin{defi}
-   Uma função $f: \R \rightarrow \R$ é denominada \textbf{periódica} quando existe um número real positivo $P$ tal que
-   \[f(x + P)= f(x)\]
-   para todo $x$ no domínio da $f$. O menor número real positivo $P$ que satisfaz esta propriedade é denominado período de $f$.
-  \end{defi}
-
-  Vamos definir as funções trigonométricas no maior subconjunto real possível, e estudar o comportamento de seus gráficos.
-
-  \todo{ períodos, amplitude, intervalo de bijetividade, função inversa}
-
-  \begin{itemize}
-  \item Função Seno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= \sen (x)$, cujo gráfico é:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/sen.pdf}}
-    \caption{Gráfico da função $f(x)= \sen(x)$}
-  \end{figure}
-
-  \item Função Cosseno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= \cos(x)$, cujo gráfico é:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/cos.pdf}}
-    \caption{Gráfico da função $f(x)= \cos(x)$}
-  \end{figure}
-
-  Geométricamente podemos observar que o comportamento do gráfico das funções seno o cosseno no intervalo $[0, 2\pi]$ se repete em cada intervalo de comprimento $2\pi$. Isso pode ser visualizado também olhando para o círculo trigonométrico, por exemplo quando estamos olhando para um ângulo $\theta= 4\pi + \frac{\pi}{4}$ estamos apenas dando duas voltas no círculo trigonométrico e andando mais $\frac{\pi}{4}$, por isso:
-  \[\sen(4\pi + \frac{\pi}{4})= \sen(\frac{\pi}{4}) \ ,\]
-  \[\cos(4\pi + \frac{\pi}{4})= \cos(\frac{\pi}{4}) \ , \]
-  funções com esta propriedade de repetição de comportamento são denominadas funções periódicas, e o intervalo que se repete é chamado de período.
-
-  Por interpretação do círculo trigonométrico vemos que, para todo $x \in \R$:
-  \[\sen(x + 2 \pi)= \sen(x) \ ,\]
-  \[\cos(x + 2\pi)= \cos(x) \ , \]
-  logo as funções seno e cosseno são de fato funções períodicas de período $2\pi$.
-
-  \item Função Tangente: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= \tan(x)$, cujo gráfico é:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/tan.pdf}}
-    \caption{Gráfico da função $f(x)= \tan (x)$}
-  \end{figure}
-
-  Lembramos que $\tan(x)= \frac{\sen(x)}{\cos(x)}$, logo podemos entender o domínio da função tangente como o conjunto dos $x \in \R$ tais que $\cos(x) \neq 0$.
-
-  Note que o comportamento do gráfico da função tangente no intervalo $]-\frac{\pi}{2}, \frac{\pi}{2}[$ se repete indefinadamente, e ainda
-  \[\tan(x)= \tan(x + \pi)\]
-  donde concluímos que a função tangente é uma função períodica de período $\pi$.
-
-  \item Função Cossecante: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= \csc(x)$, o gráfico desta função é:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/csc.pdf}}
-    \caption{Gráfico da função $f(x)= \csc(x)$}
-  \end{figure}
-
-  Como $\csc(x)= \dfrac{1}{\sen(x)}$ o domínio da função cossecante é exatamente o conjunto dos $x \in \R$ tais que $\sen(x) \neq 0$.
-
-  Ao observar o gráfico da função cossecante notamos que o gráfico da função no intervalo $]0, \pi[ \cup ] \pi, 2 \pi[$ se repete indefinidamente, e ainda
-  \[\csc(x + 2\pi)= \csc(x) \ , \]
-  logo esta é uma função periódica, com período $2\pi$.
-
-  \item Função Secante: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= \sec(x)$, com gráfico dado por:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/sec.pdf}}
-    \caption{Gráfico da função $f(x)= \sec(x)$}
-  \end{figure}
-
-  Como $\sec(x)= \dfrac{1}{\cos (x)}$ o domínio da função secante é o conjunto dos $x \in \R$ tais que $\cos(x) \neq 0$.
-
-  Ao observar o gráfico da função secante notamos que o intervalo que se repete neste caso é $]\frac{-\pi}{2}, \frac{\pi}{2}[ \cup ] \frac{\pi}{2}, \frac{3\pi}{2}[$, e ainda que
-  \[\sec(x + 2\pi)= \sec(x) \ ,\]
-  logo esta é uma função periódica com período $2\pi$.
-
-  \item Função Cotangente: $f: \R \setminus \{ k\pi | k \in \Z\} \rightarrow \R$ dada por $f(x)= \cotan(x)$, cujo gráfico é:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/cot.pdf}}
-    \caption{Gráfico da função $f(x)= \cotan(x)$}
-  \end{figure}
-
-  Lembramos que $\cotan(x)= \dfrac{\cos(x)}{\sen(x)}$ logo o domínio da função cotangente é o conjunto dos $x \in \R$ tais que $\sen(x) \neq 0$.
-
-  Já no gráfico da função cotangente vemos a repetição do comportamento do intervalo $]0, \pi[$, e temos que
-  \[\cotan(x + \pi)= \cotan(x)\]
-  portanto esta é uma função periódica de período $\pi$.
-
-  \textbf{Funções Inversas}
-
-  As funções trigonométricas admitem inversas quando restringimos seus domínios a um único período da função, assim temos por exemplo as seguintes funções:
-
-  \item Função Arco Seno: $f: [-1, 1] \rightarrow [\frac{-\pi}{2}, \frac{\pi}{2}]$ dada por $f(x)= \arcsen(x)$, que também denotamos por $\sen^{-1}(x)= \arcsen(x)$, neste caso o gráfico será:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=5cm]{Capitulos/Figuras/arcsen.pdf}}
-    \caption{Gráfico da função $f(x)= \arcsen(x)$}
-  \end{figure}
-
-
-  \item Função Arco Cosseno: $f: [-1, 1] \rightarrow [0, \pi]$ dada por $f(x)= \arccos(x)$, que também denotamos por $\cos^{-1}(x)= \arccos (x)$, neste caso temos o seguinte gráfico:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=5cm]{Capitulos/Figuras/arccos.pdf}}
-    \caption{Gráfico da função $f(x)= \arccos(x)$}
-  \end{figure}
-
-
-  \item Função Arco Tangente: $f: \R \rightarrow ]\frac{-\pi}{2}, \frac{\pi}{2}[$, dada por $f(x)= \arctan(x)$ que também denotamos por $\tan^{-1}(x)= \arctan (x)$, neste caso o gráfico será:
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=10cm]{Capitulos/Figuras/arctan.pdf}}
-    \caption{Gráfico da função $f(x)= \arctan(x)$}
-  \end{figure}
-
-
-  \end{itemize}
-
-
-  \newpage
- \section{Funções exponenciais}
-
-  \colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- São funções $f: \R \rightarrow \R_{+}^{*} $ tais que:
- \[f(x) = a^x\]
- onde é dado $a \in \R_{+}$ satisfazendo $0 < a$ e $a \neq 1$. Estas funções são chamadas funções exponenciais de base $a$.
- \end{center}
- \end{minipage}}
- \vskip0.3cm
-
- Observe que:
- \begin{itemize}
-  \item exigimos que a constante $a$ fosse positiva para garantir que a função estivesse definida para todo $x$ real (lembre-se que, por exemplo, $\sqrt{a}= a^{\frac{1}{2}}$ não está definida para $a$ negativo);
-  \item excluímos $a=1$, pois $1^x=1$ para todo $x$ real, de modo que $f(x)= 1^x$ é uma função constante.
- \end{itemize}
-
- \begin{exem}\label{ex:exp-2}
-  Considere a função $f: \R \rightarrow \R_{+}^{*} $ dada por,
-  \[f(x) = 2^x \ , \]
-  vamos determinar alguns pontos do gráfico da função $f$.
-
-  \begin{table}[H]
-  \centering
-  \begin{tabular}{|c|c|c|} \hline
-  \rowcolor{cinza}
-  $x$ & $f(x) = 2^x$ & $y$ \\ \hline
-  $-2$ & $f(-2)= 2^{-2}= \dfrac{1}{2^2}$ & $\dfrac{1}{4}$ \\ \hline
-  $-1$ & $f(-1)= 2^{-1}= \dfrac{1}{2^1}$ & $\dfrac{1}{2}$ \\ \hline
-  $0$ & $f(0)= 2^{0}$ & $1$ \\ \hline
-  $1$ & $f(1)= 2^{1}$ & $2$ \\ \hline
-  $2$ & $f(2)= 2^{2}$ & $4$ \\ \hline
-  \end{tabular}
-  \end{table}
-
-  Marcando estes pontos no plano cartesiano e ligando obtemos o seguinte gráfico para esta função.
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/f(x)=2^x.pdf}}
-    \caption{Gráficos da função $f(x)=2^x$}
-  \end{figure}
-
-  Observe que neste caso a função é crescente, veremos que sempre que $1< a$ a função exponencial $f(x)=a^x$ será crescente e seu gráfico será parecido com este.
-
- \end{exem}
-
-
-  \begin{exem}\label{ex:exp-1/2}
-  Considere a função $f: \R \rightarrow \R_{+}^{*} $ dada por,
-  \[f(x) = \left(\dfrac{1}{2}\right)^x \ , \]
-  vamos determinar alguns pontos do gráfico da função $f$.
-
-  \begin{table}[H]
-  \centering
-  \begin{tabular}{|c|c|c|} \hline
-  \rowcolor{cinza}
-  $x$ & $f(x) = \left(\dfrac{1}{2}\right)^x$ & $y$ \\ \hline
-  $-2$ & $f(-2)= \left(\dfrac{1}{2}\right)^{-2}= 2^2$ & $4$ \\ \hline
-  $-1$ & $f(-1)= \left(\dfrac{1}{2}\right)^{-1}= 2^1$ & $2$ \\ \hline
-  $0$ & $f(0)= \left(\dfrac{1}{2}\right)^{0}$ & $1$ \\ \hline
-  $1$ & $f(1)= \left(\dfrac{1}{2}\right)^{1}$ & $\dfrac{1}{2}$ \\ \hline
-  $2$ & $f(2)= \left(\dfrac{1}{2}\right)^{2}$ & $\dfrac{1}{4}$ \\ \hline
-  \end{tabular}
-  \end{table}
-
-  Marcando estes pontos no plano cartesiano e ligando obtemos o seguinte gráfico para esta função.
-
-  \begin{figure}[H]
-  \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/f(x)=0_5^x.pdf}}
-    \caption{Gráficos da função $f(x)=\left(\dfrac{1}{2}\right)^x$}
-  \end{figure}
-
-  Observe que neste caso a função é decrescente, veremos que sempre que $0< a < 1$ a função exponencial $f(x)=a^x$ será decrescente e seu gráfico será parecido com este.
-
- \end{exem}
-
- Para facilitar a comparação dos gráficos das funções dos dois últimos exemplos observe o plano cartesiano abaixo no qual temos os dois gráficos, note que eles são simétricos em relação ao eixo $y$.
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{Capitulos/Figuras/comparandoexponenciais.pdf}}
-    \caption{Comparando gráficos de funções exponenciais}
-  \end{figure}
-
-
-  \begin{exem} \label{ex:exp-e}
-  Um caso especial de função exponencial é quando $a= e$, assim $f: \mathbb{R} \rightarrow \R_{+}^{*} $ será dada por:
-  \[f(x) = e^x\]
-  como $e= 2,7182818 \cdots$ decorre que $1 < e$ logo esta função é uma função crescente, e seu gráfico é:
-
-  \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/f(x)=e^x.pdf}}
-    \caption{Gráficos da função $f(x)= e^x$}
-  \end{figure}
-  \end{exem}
-
- \textbf{Propriedades:} Sejam $a, b \in \R_{+}^{*} \setminus \{1\}$ e $x, y \in \R$, nestas condições as seguintes propriedades são satisfeitas:
- \begin{enumerate}
-  \item $a^x a^y= a^{x+y}$;
-  \item $(a^x)^y= a^{xy}$;
-  \item $(ab)^x= a^x b^x$;
-  \item Se $0 < a < 1$ e $x < y$, então $a^x > a^y$, logo a função $f(x)= a^x$ é decrescente.
-  \item Se $1 < a$ e $x < y$, então $a^x > a^y$, logo a função $f(x)= a^x$ é crescente.
- \end{enumerate}
-
- De (4) obtemos que $f(x)= a^x$, $a > 1$, é estritamente crescente em $\R$. De (5) obtemos que $f(x)= a^x$, $0 < a < 1$, é estritamente decrescente em $\R$. Portanto $\forall a > 0$ e $a \neq 1$ temos que a função exponencial $f(x)= a^x$ é bijetora.
-
- Além destas são válidas aqui também todas as propriedades de potências que já são conhecidas do leitor.
-
-
- \section{Funções logarítmicas}
-
- \colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- São funções $f: \mathbb{R_{+}^{*}} \rightarrow \mathbb{R} $ tais que:
- \[f(x) = \log_{a}(x)\]
- onde é dado $a \in \mathbb{R}$ satisfazendo $0 < a$ e $a \neq 1$. Estas funções são denominadas funções logarítmicas de base $a$.
- \end{center}
- \end{minipage}}
-
- \vskip0.3cm
-
-
- Observemos que dado um número real $a> 0$ e $a \neq 1$, para cada $y>0$ existe um único número real $x$ tal que $a^x= y$, já que como visto anteriormente a função exponencial $f(x)= a^x$ é bijetiva. Podemos assim definir o logaritmo de $y$ na base $a$ como sendo o número real $x$ tal que $a^x= y$. Simbolicamente,
- \[\destaque{\log_a(y)= x  \Leftrightarrow a^x= y}.\]
-
- Portanto, as funções logarítmica e exponencial são inversas uma da outra.
-
- \begin{exem} \label{ex:log-2}
-  Considere a função $h: \mathbb{R_{+}^{*}} \rightarrow \mathbb{R} $ tais que:
- \[h(x) = \log_{2}(x) \ .\]
- Vamos encontrar alguns pontos do gráfico da função $h$.
-
-  \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|c|} \hline
- \rowcolor{cinza}
- $x$ & $h(x) = \log_{2}(x)$ & $y$ \\ \hline
- $\dfrac{1}{8}$ & $h\left(\dfrac{1}{8}\right)= \log_{2}\left(\dfrac{1}{8}\right)$ & $-3$ \\ \hline
- $\dfrac{1}{4}$ & $h\left(\dfrac{1}{4}\right)= \log_{2}\left(\dfrac{1}{4}\right)$ & $-2$ \\ \hline
- $\dfrac{1}{2}$ & $h\left(\dfrac{1}{2}\right)= \log_{2}\left(\dfrac{1}{2}\right)$ & $-1$ \\ \hline
- $1$ & $h(1)= \log_{2}(1)$ & $0$ \\ \hline
- $2$ & $h(2)= \log_{2}(2)$ & $1$ \\ \hline
- $4$ & $h(4)= \log_{2}(4)$ & $2$ \\ \hline
- $8$ & $h(8)= \log_{2}(8)$ & $3$ \\ \hline
- \end{tabular}
- \end{table}
-
- \[\log_{2}\left(\dfrac{1}{8}\right)= y \Leftrightarrow 2^y= \dfrac{1}{8} \Leftrightarrow 2^y= 2^{-3} \Leftrightarrow y=-3\]
- \[\log_{2}\left(\dfrac{1}{4}\right)= y \Leftrightarrow 2^y= \dfrac{1}{4} \Leftrightarrow 2^y= 2^{-2} \Leftrightarrow y=-2\]
- \[\log_{2}\left(\dfrac{1}{2}\right)= y \Leftrightarrow 2^y= \dfrac{1}{2} \Leftrightarrow 2^y= 2^{-1} \Leftrightarrow y=-1\]
- \[\log_{2}(1)= y \Leftrightarrow 2^y= 1 \Leftrightarrow 2^y= 2^0 \Leftrightarrow y=0\]
- \[\log_{2}(2)= y \Leftrightarrow 2^y= 2 \Leftrightarrow 2^y= 2^1 \Leftrightarrow y=1\]
- \[\log_{2}(4)= y \Leftrightarrow 2^y= 4 \Leftrightarrow 2^y= 2^2 \Leftrightarrow y=2\]
- \[\log_{2}(8)= y \Leftrightarrow 2^y= 8 \Leftrightarrow 2^y= 2^3 \Leftrightarrow y=3\]
-
- \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/h(x)=log_2.pdf}}
-    \caption{Gráficos da função $h(x)= \log_{2}(x)$}
-   \end{figure}
- Observe que a função $h(x)= \log_{2}(x)$ é estritamente crescente, veremos que sempre que $1< a$ a função $h(x)= \log_{a}(x)$ será estritamente crescente e seu gráfico será parecido com este.
- \end{exem}
-
- \begin{exem} \label{ex:log-1/2}
-    Considere a função $h: \mathbb{R_{+}^{*}} \rightarrow \mathbb{R} $ tais que:
- \[h(x) = \log_{\frac{1}{2}}(x) \ .\]
- Vamos encontrar alguns pontos do gráfico da função $h$.
-
-  \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|c|} \hline
- \rowcolor{cinza}
- $x$ & $h(x) = \log_{\frac{1}{2}}(x)$ & $y$ \\ \hline
- $\dfrac{1}{8}$ & $h\left(\dfrac{1}{8}\right)= \log_{\frac{1}{2}}\left(\dfrac{1}{8}\right)$ & $3$ \\ \hline
- $\dfrac{1}{4}$ & $h\left(\dfrac{1}{4}\right)= \log_{\frac{1}{2}}\left(\dfrac{1}{4}\right)$ & $2$ \\ \hline
- $\dfrac{1}{2}$ & $h\left(\dfrac{1}{2}\right)= \log_{\frac{1}{2}}\left(\dfrac{1}{2}\right)$ & $1$ \\ \hline
- $1$ & $h(1)= \log_{\frac{1}{2}}(1)$ & $0$ \\ \hline
- $2$ & $h(2)= \log_{\frac{1}{2}}(2)$ & $-1$ \\ \hline
- $4$ & $h(4)= \log_{\frac{1}{2}}(4)$ & $-2$ \\ \hline
- $8$ & $h(8)= \log_{\frac{1}{2}}(8)$ & $-3$ \\ \hline
- \end{tabular}
- \end{table}
-
- \[\log_{\frac{1}{2}}\left(\dfrac{1}{8}\right)= y \Leftrightarrow \left(\dfrac{1}{2}\right)^y= \dfrac{1}{8} \Leftrightarrow \left(\dfrac{1}{2}\right)^y= \left(\dfrac{1}{2}\right)^{3} \Leftrightarrow y=3\]
-
-
- \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/h(x)=log_12.pdf}}
-    \caption{Gráficos da função $h(x)= \log_{1/2}(x)$}
-   \end{figure}
- Observe que a função $h(x)= \log_{1/2}(x)$ é estritamente decrescente, veremos que sempre que $0< a< 1$ a função $h(x)= \log_{a}(x)$ será decrescente e seu gráfico será parecido com este.
- \end{exem}
-
- Para facilitar a comparação dos gráficos das funções dos dois últimos exemplos observe o plano cartesiano abaixo no qual temos os dois gráficos, note que eles são simétricos em relação ao eixo $x$.
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{Capitulos/Figuras/comparandologs.pdf}}
-    \caption{Comparando gráficos de funções logarítmicas}
-  \end{figure}
-
-
-  \begin{exem} \label{ex:log-e}
-   Um caso especial de função logarítmica é quando $a= e$, assim $h: \mathbb{R_{+}^{*}} \rightarrow \mathbb{R} $ será dada por:
-    \[h(x) = \log_{e}(x)= \ln(x)\]
-  esta função é chamada logaritmo neperiano, que é uma função crescente, e seu gráfico é:
-
-   \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=7cm]{Capitulos/Figuras/f(x)=ln(x).pdf}}
-    \caption{Gráficos da função $h(x)= \ln(x)$}
-   \end{figure}
-
- \end{exem}
-
-  \textbf{Propriedades:} Sejam $a, b \in \R_{+}^{*} \setminus \{1\}$, e $k$ uma constante real qualquer. Se $x, y \in \R_{+}^{*}$, então:
-
-  \begin{enumerate}
-  \item $\log_{a}(a)= 1$;
-  \item $\log_{a}(1)= 0$;
-   \item $\log_{a}(x \cdot y)=\log_{a}(x) + \log_{a}(y)$;
-   \item $\log_{a} \left(\frac{x}{y}\right)=\log_{a}(x) - \log_{a}(y)$;
-   \item $\log_{a}(x^{k})= k \log_{a}(x)$;
-   \item $\log_{a}(a^n)= n$;
-   \item (Mudança de base) \[\log_{a}(x)=\frac{\log_{b}(x)}{\log_{b}(a)};\]
-   \item Se $0 < a < 1$ e $x < y$, então $\log_{a}(x) > \log_{a}(y)$, logo a função $h(x)= \log_{a}(x)$ é decrescente;
-   \item Se $a> 1$ e $x < y$, então $\log_{a}(x) < \log_{a}(y)$, logo a função $h(x)= \log_{a}(x)$ é crescente.
-  \end{enumerate}
-
-  Vamos agora demonstrar algumas destas propriedades.
-
-  \textbf{Propriedade 1:} $\log_{a}(a)= 1$, note que:
-  \[\log_{a}(a)= y \Leftrightarrow a^y = a \Leftrightarrow a^y= a^1 \Leftrightarrow y=1\]
-  \fim
-
-  \textbf{Propriedade 2:} $\log_{a}(1)= 0$, note que:
-  \[\log_{a}(1)= y \Leftrightarrow a^y= 1 \Leftrightarrow a^y= a^0 \Leftrightarrow y=0\]
-  \fim
-
-  \textbf{Propriedade 3:} $\log_{a}(x \cdot y)=\log_{a}(x) + \log_{a}(y)$, para tal definimos:
-  \begin{eqnarray*}
-   a^b= x & \Leftrightarrow & b= \log_{a}(x) \\
-   a^c= y & \Leftrightarrow & c= \log_{a}(y) \\
-   a^{b+c}= z & \Leftrightarrow & b+c= \log_{a}(z)
-  \end{eqnarray*}
-  com isso obtemos que
-  \[x \cdot y= a^b \cdot a^c= a^{b+c}= z\]
-  portanto,
-  \[b+c= \log_{a}(z) \Rightarrow \log_{a}(x) + \log_{a}(y)= \log_{a}(x \cdot y)\]
-  \fim
-
-  \textbf{Propriedade 4:} $\log_{a} \left(\frac{x}{y}\right)=\log_{a}(x) - \log_{a}(y)$, para tal definimos:
-  \begin{eqnarray*}
-   a^b= x & \Leftrightarrow & b= \log_{a}(x) \\
-   a^c= y & \Leftrightarrow & c= \log_{a}(y) \\
-   a^{b-c}= z & \Leftrightarrow & b-c= \log_{a}(z)
-  \end{eqnarray*}
-  com isso obtemos que
-  \[\dfrac{x}{y}= \dfrac{a^b}{a^c}= a^{b-c}= z\]
-  portanto,
-  \[b-c= \log_{a}(z) \Rightarrow \log_{a}(x) - \log_{a}(y)= \log_{a}\left(\frac{x}{y}\right)\]
-  \fim
-
-  \textbf{Propriedade 5:} $\log_{a}(x^k)= k \log_{a}(x)$, note que,
-  \[\log_{a}(x^k)= \log_{a}\underbrace{(x \cdot x \cdots x)}_{k-vezes}= \underbrace{log_{a}(x) + log_{a}(x)+ \cdots + log_{a}(x)}_{k-vezes}= k \cdot log_{a}(x)\]
-  \fim
-
-  \textbf{Propriedade 6:} $\log_{a}(a^n)= n$, note que:
-  \[\log_{a}(a^n)= n \cdot \log_{a}(a)= n \cdot 1 = n\]
-  \fim
-
-  Anteriormente comentamos que a função exponencial de base $a$ tem como inversa a função logaritmo de base $a$, vamos agora retomar os exemplos que fizemos acima, para comparar os gráficos das exponenciais com seus respectivos logaritmos inversos. Vamos com isso observar que em todos os casos os gráficos são simétricos em relação ao gráfico da função identidade $Id(x)= x$.
-
-  \begin{enumerate}
-   \item Considere o \autoref{ex:exp-2} e o \autoref{ex:log-2}. Nestes exemplos apresentamos as funções $f(x)= 2^x$ e $h(x)= \log_{2}(x)$ respectivamente, cujos gráficos são simétricos em relação ao gráfico da função $Id$, como pode ser visto na figura abaixo, isso ocorre pois as funções $f$ e $h$ são inversas uma da outra.
-
-   \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=9cm]{Capitulos/Figuras/comparandobase2.pdf}}
-    \caption{Gráficos das funções exp e log de base $2$}
-   \end{figure}
-
-   \item Considere os exemplos \autoref{ex:exp-1/2} e \autoref{ex:log-1/2}, nestes exemplos apresentamos as funções $f(x)= \left(\frac{1}{2}\right)^x$ e $h(x)= \log_{\frac{1}{2}}(x)$ respectivamente, cujos gráficos são simétricos em relação ao gráfico da função $Id$, como pode ser visto na figura abaixo, isso ocorre pois as funções $f$ e $h$ são inversas uma da outra.
-
-   \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=9cm]{Capitulos/Figuras/comparandobase1-2.pdf}}
-    \caption{Gráficos das funções exp e log de base $\frac{1}{2}$}
-   \end{figure}
-
-   \item Considere os exemplos \autoref{ex:exp-e} e \autoref{ex:log-e}, nestes exemplos apresentamos as funções $f(x)= e^x$ e $h(x)= \ln(x)$ respectivamente, cujos gráficos são simétricos em relação ao gráfico da função $Id$, como pode ser visto na figura abaixo, isso ocorre pois as funções $f$ e $h$ são inversas uma da outra.
-
-   \begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=9cm]{Capitulos/Figuras/comparandobase-e.pdf}}
-    \caption{Gráficos das funções exp e log de base $e$}
-   \end{figure}
-
-  \end{enumerate}
-
-
-
-  \section{Exercícios}
-   \begin{exer}
-   (UFES) Uma fábrica de papel e celulose possui uma plantação de $100000$ pés de eucalipto em sua área de plantio comercial. A fábrica pretende explorar essa área, derrubando $2000$ pés de eucalipto por dia e, ao mesmo tempo, fazendo o plantio de $m$ pés de eucalipto por dia. Dessa forma, a fábrica espera contar com pelo menos $110000$ pés de eucalipto no prazo de $360$ dias. Para atingir esta meta, o valor mínimo de $m$ deverá ser:
-   \begin{enumerate}[a)]
-   \item $2025$
-   \item $2028$
-   \item $2026$
-   \item $2029$
-   \item $2027$
-   \end{enumerate}
-   \end{exer}
-
+ \section{Exercícios}
   \begin{exer}
-  Uma bolsa de valores tinha um preço de R\$ $42,00$ quando sofreu uma queda de R\$$2,50$ por dia, durante $5$ dias seguidos.
-   \begin{enumerate}[a)]
-   \item Qual é a função que representa a queda do valor dessa ação em função do dia?
-   \item Represente, no plano cartesiano, os pontos correspondentes a esses $5$ dias e o segmento de reta que passa por esses pontos.
-   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   Um táxi, realizando uma corrida, cobra uma taxa fixa denominada bandeira de R\$$3,50$ e R\$$0,80$ por quilômetro rodado.
-   Com base nesses dados, determine:
-   \begin{enumerate}[a)]
-   \item A função que representa o valor pago por uma corrida de $x$ quilômetros.
-   \item Quantos quilômetros foram rodados se a conta foi de R\$ $17,10$.
-   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   Para cercar um terreno, tem-se duas opções:
-   1ª) Taxa de entrega no local R\$ $100,00$ e R\$$12,00$ o metro linear de cerca.
-   2ª) Taxa de entrega no local R\$ $80,00$ e R\$ $15,00$ o metro linear de cerca.
-   \begin{enumerate}[a)]
-   \item Represente o custo de cada opção para $x$ metros de cerca.
-   \item Qual das duas opções é mais vantajosa para $140$m de perímetro.
-   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   No Brasil, o sistema de numeração de sapatos ou tênis é baseado na fórmula $N(p)= \frac{5p + 28}{4}$, que indica o valor aproximado do número do calçado $N$ em função do comprimento $p$, em centímetros do pé da pessoa. Determine o número do sapato ou tênis que uma pessoa deve comprar se, ao medir o comprimento de seu pé obteve:
-   \begin{enumerate}[a)]
-   \item $22,8$ cm
-   \item $24$ cm
-   \item $26,4$ cm
-   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (CONSULPLAN - 2010) Sejam os conjuntos $A = \{- 3, - 1, 1, 3, 5, 7\}$ e $B = \{- 4, -2, 0, 2, 4\}$. É correto afirmar:
-   \begin{enumerate}[a)]
-   \item $f(x) = x + 1$ é uma função de A em B.
-   \item $f(x) = 2x + 5$ é uma função de B em A.
-   \item $f(x) = 2x - 8$ é uma função de A em B.
-   \item $f(x) = x + 3$ é uma função de B em A.
-   \item $f(x) = x^2 + 2x - 3$ é uma função de B em A.
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (FEPESE - 2017) Uma empresa farmacêutica testou um novo remédio em um grupo de pessoas. Todas tomaram o remédio no mesmo dia, no mesmo momento. Duas pessoas apresentaram reação alérgica no mesmo dia da ingestão do remédio. De fato, a empresa verifica que o número de pacientes que apresentaram reação alérgica ao remédio é dado pela função $r(t) = a t + b$, onde $t$ é o tempo em dias a partir da ingestão do remédio, e $a= 1$ e $b$ são números reais. Se após $3$ dias cinco pessoas apresentaram reação alérgica, quantas pessoas apresentaram reação alérgica após $6$ dias?
+  (UFES) Uma fábrica de papel e celulose possui uma plantação de $100000$ pés de eucalipto em sua área de plantio comercial. A fábrica pretende explorar essa área, derrubando $2000$ pés de eucalipto por dia e, ao mesmo tempo, fazendo o plantio de $m$ pés de eucalipto por dia. Dessa forma, a fábrica espera contar com pelo menos $110000$ pés de eucalipto no prazo de $360$ dias. Para atingir esta meta, o valor mínimo de $m$ deverá ser:
   \begin{enumerate}[a)]
-   \item $14$.
-   \item $12$.
-   \item $10$.
-   \item $8$.
-   \item $6$.
+  \item $2025$
+  \item $2028$
+  \item $2026$
+  \item $2029$
+  \item $2027$
   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (FEPESE - 2017) Em um shopping, o estacionamento é gratuito pela primeira hora. A segunda hora (ou fração desta) custa R\$ 2,50. A terceira hora (ou fração) custa R\$ 2,75. A quarta hora (ou fração) custa R\$ 3,00 e assim sucessivamente.
-
-  O custo de deixar um carro neste estacionamento por 14 horas e meia é:
+  \end{exer}
+ 
+ \begin{exer}
+ Uma bolsa de valores tinha um preço de R\$ $42,00$ quando sofreu uma queda de R\$$2,50$ por dia, durante $5$ dias seguidos.
   \begin{enumerate}[a)]
-   \item Mais do que R\$ 90,00.
-   \item Mais do que R\$ 85,00 e menos que R\$ 90,00.
-   \item Mais do que R\$ 80,00 e menos que R\$ 85,00.
-   \item Mais do que R\$ 75,00 e menos que R\$ 80,00.
-   \item Menos que R\$ 75,00.
+  \item Qual é a função que representa a queda do valor dessa ação em função do dia?
+  \item Represente, no plano cartesiano, os pontos correspondentes a esses $5$ dias e o segmento de reta que passa por esses pontos.
   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (FEPESE - 2017) Uma função $f$ definida nos números reais é dita injetiva se $x \neq y$, então $f(x) \neq f(y)$.
-
-  Considere as afirmativas abaixo:
-  \begin{enumerate}[1.]
-  \item A função $f$:  dada por $f(x) = x^2$ é injetiva.
-
-  \item Se $f$ é uma função tal que $f(x) = f(y)$ implica que $x = y$, então, $f$ é injetiva.
-
-  \item A função $f$:  dada por $f(x) = -2x + 5$ é injetiva.
-  \end{enumerate}
-  Assinale a alternativa que indica todas as afirmativas corretas.
+  \end{exer}
+  
+  \begin{exer}
+  Um táxi, realizando uma corrida, cobra uma taxa fixa denominada bandeira de R\$$3,50$ e R\$$0,80$ por quilômetro rodado.
+  Com base nesses dados, determine:
   \begin{enumerate}[a)]
-  \item É correta apenas a afirmativa 3.
-  \item São corretas apenas as afirmativas 1 e 2.
-  \item São corretas apenas as afirmativas 1 e 3.
-  \item São corretas apenas as afirmativas 2 e 3.
-  \item São corretas as afirmativas 1, 2 e 3.
+  \item A função que representa o valor pago por uma corrida de $x$ quilômetros.
+  \item Quantos quilômetros foram rodados se a conta foi de R\$ $17,10$.
   \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (FEPESE - 2017) Denotamos por $\R$ o conjunto dos números reais. Convencionamos nesta questão que uma função $f : \R \rightarrow \R$ é crescente se $x < y$ implica que $f(x) < f(y)$.
-
-  Considere as afirmativas abaixo:
-  \begin{enumerate}[1.]
-  \item A função $f:\R \rightarrow \R$, dada por $f(x) = -2x + 25$ é crescente.
-  \item Se $f$ é tal que $f(x) \geqslant f(y)$ implica $x \geqslant y$ então f é crescente.
-  \item A função $f: \R \rightarrow \R$ dada por $f(x) = x^2$  é crescente.
+  \end{exer}
+  
+  \begin{exer}
+  Para cercar um terreno, tem-se duas opções:
+  1ª) Taxa de entrega no local R\$ $100,00$ e R\$$12,00$ o metro linear de cerca.
+  2ª) Taxa de entrega no local R\$ $80,00$ e R\$ $15,00$ o metro linear de cerca.
+  \begin{enumerate}[a)]
+  \item Represente o custo de cada opção para $x$ metros de cerca.
+  \item Qual das duas opções é mais vantajosa para $140$m de perímetro.
   \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  No Brasil, o sistema de numeração de sapatos ou tênis é baseado na fórmula $N(p)= \frac{5p + 28}{4}$, que indica o valor aproximado do número do calçado $N$ em função do comprimento $p$, em centímetros do pé da pessoa. Determine o número do sapato ou tênis que uma pessoa deve comprar se, ao medir o comprimento de seu pé obteve:
+  \begin{enumerate}[a)]
+  \item $22,8$ cm
+  \item $24$ cm
+  \item $26,4$ cm
+  \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (CONSULPLAN - 2010) Sejam os conjuntos $A = \{- 3, - 1, 1, 3, 5, 7\}$ e $B = \{- 4, -2, 0, 2, 4\}$. É correto afirmar:
+  \begin{enumerate}[a)]
+  \item $f(x) = x + 1$ é uma função de A em B.
+  \item $f(x) = 2x + 5$ é uma função de B em A.
+  \item $f(x) = 2x - 8$ é uma função de A em B.
+  \item $f(x) = x + 3$ é uma função de B em A.
+  \item $f(x) = x^2 + 2x - 3$ é uma função de B em A.
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (FEPESE - 2017) Uma empresa farmacêutica testou um novo remédio em um grupo de pessoas. Todas tomaram o remédio no mesmo dia, no mesmo momento. Duas pessoas apresentaram reação alérgica no mesmo dia da ingestão do remédio. De fato, a empresa verifica que o número de pacientes que apresentaram reação alérgica ao remédio é dado pela função $r(t) = a t + b$, onde $t$ é o tempo em dias a partir da ingestão do remédio, e $a= 1$ e $b$ são números reais. Se após $3$ dias cinco pessoas apresentaram reação alérgica, quantas pessoas apresentaram reação alérgica após $6$ dias?
+ \begin{enumerate}[a)]
+  \item $14$.
+  \item $12$.
+  \item $10$.
+  \item $8$.
+  \item $6$.
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (FEPESE - 2017) Em um shopping, o estacionamento é gratuito pela primeira hora. A segunda hora (ou fração desta) custa R\$ 2,50. A terceira hora (ou fração) custa R\$ 2,75. A quarta hora (ou fração) custa R\$ 3,00 e assim sucessivamente.
 
-  Assinale a alternativa que indica todas as afirmativas corretas.
+ O custo de deixar um carro neste estacionamento por 14 horas e meia é:
+ \begin{enumerate}[a)]
+  \item Mais do que R\$ 90,00.
+  \item Mais do que R\$ 85,00 e menos que R\$ 90,00.
+  \item Mais do que R\$ 80,00 e menos que R\$ 85,00.
+  \item Mais do que R\$ 75,00 e menos que R\$ 80,00.
+  \item Menos que R\$ 75,00.
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (FEPESE - 2017) Uma função $f$ definida nos números reais é dita injetiva se $x \neq y$, então $f(x) \neq f(y)$.
+
+Considere as afirmativas abaixo:
+\begin{enumerate}[1.]
+ \item A função $f$:  dada por $f(x) = x^2$ é injetiva.
+
+ \item Se $f$ é uma função tal que $f(x) = f(y)$ implica que $x = y$, então, $f$ é injetiva.
+
+ \item A função $f$:  dada por $f(x) = -2x + 5$ é injetiva.
+ \end{enumerate}
+ Assinale a alternativa que indica todas as afirmativas corretas.
+ \begin{enumerate}[a)]
+ \item É correta apenas a afirmativa 3.
+ \item São corretas apenas as afirmativas 1 e 2.
+ \item São corretas apenas as afirmativas 1 e 3.
+ \item São corretas apenas as afirmativas 2 e 3.
+ \item São corretas as afirmativas 1, 2 e 3.
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (FEPESE - 2017) Denotamos por $\R$ o conjunto dos números reais. Convencionamos nesta questão que uma função $f : \R \rightarrow \R$ é crescente se $x < y$ implica que $f(x) < f(y)$.
+
+Considere as afirmativas abaixo:
+\begin{enumerate}[1.]
+\item A função $f:\R \rightarrow \R$, dada por $f(x) = -2x + 25$ é crescente.
+\item Se $f$ é tal que $f(x) \geqslant f(y)$ implica $x \geqslant y$ então f é crescente.
+\item A função $f: \R \rightarrow \R$ dada por $f(x) = x^2$  é crescente.
+\end{enumerate}
+
+Assinale a alternativa que indica todas as afirmativas corretas.
+
+\begin{enumerate}[a)]
+ \item É correta apenas a afirmativa 1.
+ \item É correta apenas a afirmativa 2.
+ \item É correta apenas a afirmativa 3.
+ \item São corretas apenas as afirmativas 1 e 2.
+ \item São corretas apenas as afirmativas 2 e 3.
+\end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (FEPESE - 2010) Considere a função $f: \R \rightarrow \R$, definida por
+\[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
+Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
+\begin{enumerate}[a)]
+\item $\{x \in \R \mid x \neq 1\}$;
+\item $\{x \in \R \mid x < -1\} \cup \{x \in \R \mid x > 1\}$;
+\item $\{x \in \R \mid x \leqslant -1\} \cup \{x \in \R \mid x \geqslant 1\}$;
+\item $\{x \in \R \mid x > -1\} \cup \{x \in \R \mid x < 1\}$;
+\item $\{x \in \R \mid x \geqslant -1\} \cup \{x \in \R \mid x \leqslant 1\}$;
+\end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2009) Uma empresa de telefonia celular lançou o seguinte plano de pagamento: uma tarifa mensal fixa de R\$ 25,00 e R\$ 0,50 por minuto usado em ligações locais. Paulo, pensando em fazer este plano de pagamento, perguntou ao vendedor quanto pagaria em um mês que ele usasse o celular durante 2,5 horas com ligações locais. A resposta que o vendedor deu foi:
+ \begin{enumerate}[a)]
+  \item R\$ 100,00
+  \item R\$ 87,50
+  \item R\$ 69,00
+  \item R\$ 26,25
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2009) A turma de enfermagem resolveu guardar dinheiro para o pagamento da sua festa de formatura. Para isso, foi feita uma aplicação financeira que obedece a seguinte equação:
+  \[T = 4.000 + 150x ,\]
+  onde $T$ é o saldo total e $x$ é o tempo em meses. Sendo assim, o tempo para que o saldo total seja R\$ 10.000,00 será:
+  \begin{enumerate}[a)]
+  \item 32 meses
+  \item 50 meses
+  \item 60 meses
+  \item 40 meses
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2010) O valor total cobrado por um eletricista consiste em uma taxa fixa, que é de R\$ 35,00, mais uma quantia que depende da quantidade de fio utilizada por ele no serviço executado. Observando a tabela abaixo, que mostra alguns orçamentos feitos por este eletricista, pode-se afirmar que para um serviço que necessita de 21 metros de fio, o valor total do serviço executado por ele será de:
+
+  \begin{table}[H]
+  \centering
+ \begin{tabular}{|c|c|} \hline
+  \multicolumn{1}{|c|}{\textbf{Quantidade de fio
+(metros)}} & \multicolumn{1}{|c|}{\textbf{Valor total do serviço
+(R\$)}} \\ \hline
+ 6 & 53,00 \\ \hline
+ 8 & 59,00 \\ \hline
+ 12 & 71,00 \\ \hline
+ \end{tabular}
+\end{table}
 
   \begin{enumerate}[a)]
-  \item É correta apenas a afirmativa 1.
-  \item É correta apenas a afirmativa 2.
-  \item É correta apenas a afirmativa 3.
-  \item São corretas apenas as afirmativas 1 e 2.
-  \item São corretas apenas as afirmativas 2 e 3.
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (FEPESE - 2010) Considere a função $f: \R \rightarrow \R$, definida por
-  \[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
-  Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
+  \item R\$ 91,00
+  \item R\$ 90,00
+  \item R\$ 98,00
+  \item R\$ 94,00
+  \item R\$ 93,00
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2010) Uma empresa que faz fotocopia criou um plano para o pagamento das cópias. O plano consiste em uma taxa fixa (mensal) de R\$ 50,00 e mais R\$ 0,07 por cópia. O número mínimo de cópias que devem ser tiradas em um mês, por um só cliente, para que o preço total ultrapasse R\$ 99,00, é:
   \begin{enumerate}[a)]
-  \item $\{x \in \R \mid x \neq 1\}$;
-  \item $\{x \in \R \mid x < -1\} \cup \{x \in \R \mid x > 1\}$;
-  \item $\{x \in \R \mid x \leqslant -1\} \cup \{x \in \R \mid x \geqslant 1\}$;
-  \item $\{x \in \R \mid x > -1\} \cup \{x \in \R \mid x < 1\}$;
-  \item $\{x \in \R \mid x \geqslant -1\} \cup \{x \in \R \mid x \leqslant 1\}$;
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2009) Uma empresa de telefonia celular lançou o seguinte plano de pagamento: uma tarifa mensal fixa de R\$ 25,00 e R\$ 0,50 por minuto usado em ligações locais. Paulo, pensando em fazer este plano de pagamento, perguntou ao vendedor quanto pagaria em um mês que ele usasse o celular durante 2,5 horas com ligações locais. A resposta que o vendedor deu foi:
+  \item 701
+  \item 700
+  \item 710
+  \item 670
+  \item 680
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2010) Uma empresa de componentes eletrônicos tem, para um de seus componentes, um custo diário de produção dado por $C(x) = x^2 - 120x + 2500$, onde $C(x)$ é o custo em reais e $x$ é o número de unidades fabricadas. O número de componentes eletrônicos que devem ser produzidos diariamente para que o custo seja mínimo é:
+ \begin{enumerate}[a)]
+  \item 54
+  \item 122
+  \item 50
+  \item 60
+  \item 141
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2010) Uma corrida de táxi inclui uma taxa fixa, denominada bandeirada, e uma parcela que depende da distância percorrida. A bandeirada custa R\$ 5,30 e cada quilômetro rodado custa R\$ 1,20. A distância aproximada percorrida por um passageiro que pagou R\$ 25,30 foi de?
   \begin{enumerate}[a)]
-   \item R\$ 100,00
-   \item R\$ 87,50
-   \item R\$ 69,00
-   \item R\$ 26,25
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2009) A turma de enfermagem resolveu guardar dinheiro para o pagamento da sua festa de formatura. Para isso, foi feita uma aplicação financeira que obedece a seguinte equação:
-   \[T = 4.000 + 150x ,\]
-   onde $T$ é o saldo total e $x$ é o tempo em meses. Sendo assim, o tempo para que o saldo total seja R\$ 10.000,00 será:
-   \begin{enumerate}[a)]
-   \item 32 meses
-   \item 50 meses
-   \item 60 meses
-   \item 40 meses
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2010) O valor total cobrado por um eletricista consiste em uma taxa fixa, que é de R\$ 35,00, mais uma quantia que depende da quantidade de fio utilizada por ele no serviço executado. Observando a tabela abaixo, que mostra alguns orçamentos feitos por este eletricista, pode-se afirmar que para um serviço que necessita de 21 metros de fio, o valor total do serviço executado por ele será de:
-
-   \begin{table}[H]
-   \centering
-  \begin{tabular}{|c|c|} \hline
-   \multicolumn{1}{|c|}{\textbf{Quantidade de fio
-  (metros)}} & \multicolumn{1}{|c|}{\textbf{Valor total do serviço
-  (R\$)}} \\ \hline
-  6 & 53,00 \\ \hline
-  8 & 59,00 \\ \hline
-  12 & 71,00 \\ \hline
-  \end{tabular}
-  \end{table}
-
-   \begin{enumerate}[a)]
-   \item R\$ 91,00
-   \item R\$ 90,00
-   \item R\$ 98,00
-   \item R\$ 94,00
-   \item R\$ 93,00
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2010) Uma empresa que faz fotocopia criou um plano para o pagamento das cópias. O plano consiste em uma taxa fixa (mensal) de R\$ 50,00 e mais R\$ 0,07 por cópia. O número mínimo de cópias que devem ser tiradas em um mês, por um só cliente, para que o preço total ultrapasse R\$ 99,00, é:
-   \begin{enumerate}[a)]
-   \item 701
-   \item 700
-   \item 710
-   \item 670
-   \item 680
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2010) Uma empresa de componentes eletrônicos tem, para um de seus componentes, um custo diário de produção dado por $C(x) = x^2 - 120x + 2500$, onde $C(x)$ é o custo em reais e $x$ é o número de unidades fabricadas. O número de componentes eletrônicos que devem ser produzidos diariamente para que o custo seja mínimo é:
+  \item 20 km
+  \item 15 km
+  \item 16,6 km
+  \item 17,6 km
+  \item 20,6 km
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (Sociesc - 2008) Um reservatório esta sendo esvaziado para limpeza. O seu volume varia com o tempo de acordo com a função $V(t)= 120(20 - t)^2$, onde o volume é dado em litros e o tempo, em minutos. De acordo com esta lei, podemos afirmar que o tempo que o reservatório demora para ficar vazio e a quantidade de litros que são escoados nos primeiros 10 minutos são respectivamente:
   \begin{enumerate}[a)]
-   \item 54
-   \item 122
-   \item 50
-   \item 60
-   \item 141
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2010) Uma corrida de táxi inclui uma taxa fixa, denominada bandeirada, e uma parcela que depende da distância percorrida. A bandeirada custa R\$ 5,30 e cada quilômetro rodado custa R\$ 1,20. A distância aproximada percorrida por um passageiro que pagou R\$ 25,30 foi de?
-   \begin{enumerate}[a)]
-   \item 20 km
-   \item 15 km
-   \item 16,6 km
-   \item 17,6 km
-   \item 20,6 km
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (Sociesc - 2008) Um reservatório esta sendo esvaziado para limpeza. O seu volume varia com o tempo de acordo com a função $V(t)= 120(20 - t)^2$, onde o volume é dado em litros e o tempo, em minutos. De acordo com esta lei, podemos afirmar que o tempo que o reservatório demora para ficar vazio e a quantidade de litros que são escoados nos primeiros 10 minutos são respectivamente:
-   \begin{enumerate}[a)]
-   \item 22 horas e 36.000 litros
-   \item 20 horas e 36.000 litros
-   \item 20 horas e 30.000 litros
-   \item 22 horas e 30.000 litros
-  \end{enumerate}
-   \end{exer}
-
-   \begin{exer}
-   (UDESC/Fepese - 2009) Considere a função $f: \R \to \R$, definida por:
-  \[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
-  Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
-  \begin{enumerate}[a)]
-  \item $\{x \in \R \mid x \neq 1\}$
-  \item $\{x \in \R \mid x < -1\} \cup \{x \in \R \mid x>1\}$
-  \item $\{x \in \R \mid x \leq -1\} \cup \{x \in \R \mid x \geq 1\}$
-  \item $\{x \in \R \mid x > -1\} \cup \{x \in \R \mid x>1\}$
-  \item $\{x \in \R \mid x \geq -1\} \cup \{x \in \R \mid x\leq 1\}$
-  \end{enumerate}
-   \end{exer}
+  \item 22 horas e 36.000 litros
+  \item 20 horas e 36.000 litros
+  \item 20 horas e 30.000 litros
+  \item 22 horas e 30.000 litros
+ \end{enumerate}
+  \end{exer}
+  
+  \begin{exer}
+  (UDESC/Fepese - 2009) Considere a função $f: \R \to \R$, definida por:
+ \[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
+ Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
+ \begin{enumerate}[a)]
+ \item $\{x \in \R \mid x \neq 1\}$
+ \item $\{x \in \R \mid x < -1\} \cup \{x \in \R \mid x>1\}$
+ \item $\{x \in \R \mid x \leq -1\} \cup \{x \in \R \mid x \geq 1\}$
+ \item $\{x \in \R \mid x > -1\} \cup \{x \in \R \mid x>1\}$
+ \item $\{x \in \R \mid x \geq -1\} \cup \{x \in \R \mid x\leq 1\}$
+ \end{enumerate}
+  \end{exer}
+ 
+ 
+ Gabarito: 1 b); 2 a) $f(x)= 42 - 2,50 x$; 2 b) a cargo do leitor; 3 a) $f(x)= 3,50 + 0,80 x$; 3 b) $x= 17 Km$; 4 a) 1ª opção: $f(x)= 100 + 12x$, 2ª opção: $f(x)= 80+15x$; 4 b) 1ª opção; 5 a) $35,5$; 5 b) $37$; 5 c) $40$; 6 d); 7 d); 8 e); 9 d); 10 b); 11 b); 12 a); 13 d); 14 c); 15 a); 16 d); 17 c); 18 b); 19 b).
+  
 
 
-  Gabarito: 1 b); 2 a) $f(x)= 42 - 2,50 x$; 2 b) a cargo do leitor; 3 a) $f(x)= 3,50 + 0,80 x$; 3 b) $x= 17 Km$; 4 a) 1ª opção: $f(x)= 100 + 12x$, 2ª opção: $f(x)= 80+15x$; 4 b) 1ª opção; 5 a) $35,5$; 5 b) $37$; 5 c) $40$; 6 d); 7 d); 8 e); 9 d); 10 b); 11 b); 12 a); 13 d); 14 c); 15 a); 16 d); 17 c); 18 b); 19 b).
+ 
