@@ -2,7 +2,9 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
-\usepackage[brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
+\usepackage[english,brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{brazil}
 \usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
 \usepackage{color}    % Possibilita o uso de cores no documento
 \usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
@@ -142,12 +144,12 @@
     \include{Capitulos/OperacoesPropriedades}
     \include{Capitulos/ExpressoesAlgebricas}
     \include{Capitulos/Equacoes}
-    
+
   \part{Funções Reais}
     \include{Capitulos/Funcao}
     \include{Capitulos/Trigonometria}
-    \include{Capitulos/FuncaoExponencialLogaritmica}   
-    
+    \include{Capitulos/FuncaoExponencialLogaritmica}
+
   \part{Apêndices}
     \appendix
     \include{Capitulos/ProgramaCurso}
@@ -155,15 +157,18 @@
     \include{Capitulos/RegrasDivisibilidade}
     \include{Capitulos/Simbolos}
     \include{Capitulos/regra_de_tres}
-    \include{Capitulos/QC_regra_de_tres} 
+    \include{Capitulos/QC_regra_de_tres}
     \include{Capitulos/MtmFinanceira}
-    \include{Capitulos/QC_MtmFinanceira} 
+    \include{Capitulos/QC_MtmFinanceira}
     \include{Capitulos/SistemaLinear}
-    \include{Capitulos/QC_SistemaLinear} 
+    \include{Capitulos/QC_SistemaLinear}
     \include{Capitulos/Geometria}
     \include{Capitulos/QC_Geometria}
 
 \backmatter
-  \include{Capitulos/Referencias}
-  %\printindex % Índice remissivo
+    \nocite{*}
+    \bibliographystyle{bababbrv}
+    \bibliography{Apostila}
+    \addcontentsline{toc}{chapter}{Referências Bibliográficas}
+    % \printindex % Índice remissivo
 \end{document}

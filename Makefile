@@ -1,6 +1,6 @@
 pdf:
 	pdflatex Apostila
-	# bibtex Apostila
+	bibtex Apostila
 	pdflatex Apostila
 	pdflatex Apostila
 
