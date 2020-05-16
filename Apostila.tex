@@ -35,7 +35,7 @@
 \usepackage{subfigure}           %para colocar figuras lado a lado
 \usepackage{xcolor}
 \usepackage{colortbl}
-\usepackage{makeidx}
+\usepackage{makeidx}            % índice remissivo
 \usepackage[a4paper,margin=3cm,headsep=24pt,headheight=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{shadethm}
@@ -117,6 +117,8 @@
 \newcommand{\paralela}{\hspace{3pt}/\hspace{-2pt}/\hspace{3pt}}
 \newcommand{\heart}{\ensuremath\varheartsuit} %test coração
 
+\makeindex % índice remissivo
+
 %opening
  \title{Apostila de Pré-Cálculo \\ \includegraphics[width=7cm]{Capitulos/Figuras/circunftangentes.pdf} }
  \author{\textbf{Francieli Triches} \\
@@ -170,5 +172,5 @@
     \bibliographystyle{bababbrv}
     \bibliography{Apostila}
     \addcontentsline{toc}{chapter}{Referências Bibliográficas}
-    % \printindex % Índice remissivo
+    \printindex % Índice remissivo
 \end{document}

@@ -1,6 +1,7 @@
 pdf:
 	pdflatex Apostila
 	bibtex Apostila
+	makeindex Apostila
 	pdflatex Apostila
 	pdflatex Apostila
 

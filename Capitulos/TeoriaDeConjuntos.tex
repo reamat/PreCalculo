@@ -64,7 +64,7 @@ Notações:
 
 Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimos as seguintes operações entre estes conjuntos:
 \begin{itemize}
- \item União:
+ \item União:\index{Conjunto(s)!união de}
  $A \cup B=\{x \mid x \in A \text{ ou } x \in B\}.$
 
 \begin{center}
@@ -76,7 +76,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \vskip0.4cm
  \newpage
 
- \item Interseção:
+ \item Interseção:\index{Conjunto(s)!interseção de}
  $A \cap B=\{x \mid x \in A \text{ e } x \in B\}.$
 
 \begin{center}
@@ -87,7 +87,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \vskip0.4cm
 
- \item Diferença:
+ \item Diferença:\index{Conjunto(s)!diferença de}
 
  $A - B= \{x \mid x \in A \text{ e } x \notin B\}.$
 
@@ -107,7 +107,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \vskip0.4cm
 
- \item Complementares:
+ \item Complementares:\index{Conjunto(s)!complementar de}
 
  $\overline{A}= A^{C}= \{x \in U \mid x \notin A\}$
 
@@ -143,7 +143,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \vskip0.4cm
 
- \item Produto cartesiano: Dados dois conjuntos $A$ e $B$ o produto cartesiano de $A$ por $B$ é o conjunto dos pares ordenados, cuja primeira entrada é um elemento de $A$ e a segunda coordenada é um elemento $B$. Este conjunto é denotado por:
+ \item Produto cartesiano:\index{Conjunto(s)!produto cartesiano de} Dados dois conjuntos $A$ e $B$ o produto cartesiano de $A$ por $B$ é o conjunto dos pares ordenados, cuja primeira entrada é um elemento de $A$ e a segunda coordenada é um elemento $B$. Este conjunto é denotado por:
  \[A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \} \ .\]
  Assim por exemplo, se considerarmos $A= \{1, 2, 3\}$ e $B= \{a, b, c\}$ teremos pela definição que
  \[A \times B= \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3, c)\} \ .\]
@@ -152,7 +152,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 \end{itemize}
 
  \begin{exem}
-  Dados os conjuntos $A= \{1, 2, 3, 4, 5 \}$ e $B=\{ 2, 3, 4, 6\}$, podemos representá-los através do seguinte diagrama de Venn-Euler:
+  Dados os conjuntos $A= \{1, 2, 3, 4, 5 \}$ e $B=\{ 2, 3, 4, 6\}$, podemos representá-los através do seguinte diagrama de Venn-Euler:\index{Diagrama de Venn-Euler}
 
   \begin{center}
   \begin{venndiagram2sets}[labelOnlyA={1 5},labelOnlyB={6},labelAB={2  3  4}]
@@ -210,7 +210,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
 \section{Cardinalidade de conjuntos}
 
- A \textbf{cardinalidade} de um conjunto $A$ qualquer, é o número de elementos deste conjunto. Denotada por: $n(A)$, $|A|$ ou $\# A$.
+ A \textbf{cardinalidade}\index{Conjunto(s)!cardinalidade de}\index{Conjunto(s)!número de elementos de} de um conjunto $A$ qualquer, é o número de elementos deste conjunto. Denotada por: $n(A)$, $|A|$ ou $\# A$.
 
  Note que: $n(\emptyset)= \# \emptyset= 0$.
 
@@ -252,7 +252,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 \end{prop}
 
  \begin{dem}
- Nesta demonstração utilizaremos o Príncipio Fundamental da Contagem para contar quantos subconjuntos um conjunto $A$ com $n$ elementos possui.
+ Nesta demonstração utilizaremos o princípio fundamental da contagem\index{Princípio fundamental da contagem} para contar quantos subconjuntos um conjunto $A$ com $n$ elementos possui.
 
  Para começar considere um subconjunto $B$ qualquer de $A$. Observe que para cada um dos $n$ elementos de $A$, só existem duas possibilidades:
  \begin{itemize}
@@ -260,7 +260,7 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \item Ou o elemento não pertence ao subconjunto $B$.
  \end{itemize}
 
- Logo, pelo Príncipio Fundamental da Contagem, nós podemos montar o conjunto $B$ de
+ Logo, pelo príncipio fundamental da contagem, nós podemos montar o conjunto $B$ de
  \[\underbrace{2 \cdot 2 \cdot 2 \cdots 2}_{n-vezes}= 2^n\]
  maneiras diferentes.
 
@@ -273,6 +273,8 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \newpage
  \section{Propriedades das operações entre conjuntos}
+ \index{Conjunto(s)!propriedades das operações entre}
+ \index{Propriedades!das operações entre conjuntos}
 
  Dada uma família $\mathcal{A}$ de conjuntos, ou seja, dado um conjunto $\mathcal{A}$ de conjuntos, temos:
  \begin{itemize}
@@ -453,4 +455,3 @@ Sejam $A$, $B$ e $C$ conjunto arbitrários, temos que:
 
  Gabarito:
  1 a); 2 c); 3 a); 4 b); 5 a); 6 e); 7 c); 8 e); 9 b); 10 e); 11 d).
-
