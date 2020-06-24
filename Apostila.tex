@@ -52,10 +52,12 @@
 \newshadetheorem{defic}{Definição}
 \definecolor{shadethmcolor}{HTML}{AAAAFF}
 \definecolor{shaderulecolor}{HTML}{FFFFFF}
-\definecolor{rosa}{HTML}{ed82d5} %para fórmulas
+\definecolor{rosa}{HTML}{edaae5} %para fórmulas
 \definecolor{azul}{HTML}{aae5ed} %para definições
-\definecolor{amarelo}{HTML}{f4e649} %para observações importantes
-\definecolor{verde}{HTML}{a3ff87}
+\definecolor{amarelo}{HTML}{e5edaa} %para observações importantes
+\definecolor{yellow}{HTML}{e5edaa} %para observações importantes
+\definecolor{verde}{HTML}{c4edaa} %não estou usando
+
 \definecolor{cinza}{HTML}{c6c9c5} %para linhas das tabelas
 \setlength{\shadeboxrule}{.4pt}
 
@@ -133,13 +135,13 @@
 \frontmatter
 	\pagestyle{fancy}
 	\maketitle
+	\include{Capitulos/Introducao}
 	\tableofcontents
 	\listoffigures
 	%\listoftables
 
 \mainmatter
   \part{Aritmética Básica}
-    % \include{Introducao}
     \include{Capitulos/TeoriaDeConjuntos}
     \include{Capitulos/Conjuntosnumericos}
     \include{Capitulos/Divisibilidade}
