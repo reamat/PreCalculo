@@ -7,24 +7,11 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,12pt,portuguese]{book}
+\documentclass[12pt,portuguese]{book}
 
 \input preambulo.tex
 
-% Evita páginas em branco entre os capítulos
-\let\cleardoublepage\clearpage
-
-\newshadetheorem{defic}{Definição}
-\definecolor{shadethmcolor}{HTML}{AAAAFF}
-\definecolor{shaderulecolor}{HTML}{FFFFFF}
-\definecolor{rosa}{HTML}{edaae5} %para fórmulas
-\definecolor{azul}{HTML}{aae5ed} %para definições
-\definecolor{amarelo}{HTML}{e5edaa} %para observações importantes
-\definecolor{yellow}{HTML}{e5edaa} %para observações importantes
-\definecolor{verde}{HTML}{c4edaa} %não estou usando
-
-\definecolor{cinza}{HTML}{c6c9c5} %para linhas das tabelas
-\setlength{\shadeboxrule}{.4pt}
+\makeindex
 
 
 %\usepackage{showframe} %REMOVA
@@ -45,8 +32,6 @@
 \numberwithin{lema}{section} % Numerar lemas conforme seção
 %\numberwithin{section}{chapter} %Numerar seções conforme capítulo
 
-\makeindex % índice remissivo
-
 %opening
  \title{Apostila de Pré-Cálculo \\ \includegraphics[width=7cm]{Capitulos/Figuras/circunftangentes.pdf} }
  \author{\textbf{Francieli Triches} \\
@@ -66,11 +51,15 @@
   \include{licenca}
   \include{nota_organizadores}
 	\include{Capitulos/Introducao}
+\ifisbook
 	\tableofcontents
+\fi
+
 	\listoffigures
 	%\listoftables
 
 \mainmatter
+
   \part{Aritmética Básica}
     \include{Capitulos/TeoriaDeConjuntos}
     \include{Capitulos/Conjuntosnumericos}
@@ -99,10 +88,19 @@
     \include{Capitulos/Geometria}
     \include{Capitulos/QC_Geometria}
 
+%resposta dos exercícios
+%\ifisbook
+%\include{respostas}
+%\fi
+
 \backmatter
-    \nocite{*}
-    \bibliographystyle{bababbrv}
-    \bibliography{main}
-    \addcontentsline{toc}{chapter}{Referências Bibliográficas}
-    \printindex % Índice remissivo
+%references
+\nocite{*}
+\bibliographystyle{bababbrv}
+\bibliography{main}
+\addcontentsline{toc}{chapter}{Referências Bibliográficas}
+\ifisbook
+\printindex
+\fi
+
 \end{document}
