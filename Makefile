@@ -1,9 +1,9 @@
 pdf:
-	pdflatex Apostila
-	bibtex Apostila
-	makeindex Apostila
-	pdflatex Apostila
-	pdflatex Apostila
+	pdflatex main
+	bibtex main
+	makeindex main
+	pdflatex main
+	pdflatex main
 
 .PHONY: clean
 
