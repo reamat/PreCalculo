@@ -1,0 +1,128 @@
+%Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/ ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ATENÇÃO
+%
+% POR SEGURANÇA, NÃO EDITE ESTE ARQUIVO.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Predefinicoes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newif\ifisbook         % O layout será book?
+\newif\ifishtml        % O layout será html?
+
+\def\tfn{config.knd}     % Arquivo que guarda as definições do tipo de saída
+\def \tdata{}          % Definições do tipo de saída: book, slide ou html.
+
+\openin1=\tfn\relax    % Leitura das definições de saída
+\read1 to \tdata
+\closein1
+
+\tdata                 % Definições de saída
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Opcões de Linguagem
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{brazil}
+\usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
+\usepackage{color}    % Possibilita o uso de cores no documento
+\usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
+\usepackage{listings}
+
+% Alguns pacotes adicionais (ADICIONE/REMOVA DE ACORDO COM A SUA NECESSIDADE)
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{textcomp}
+\usepackage{gensymb} %usar comando \degree
+\usepackage{venndiagram}
+\usepackage{tikz}               % para criar desenhos legais
+\usetikzlibrary{fit,shapes.geometric,arrows} %pra fazer os diagramas de funções
+\usepackage{verbatim}
+\usepackage[normalem]{ulem}     %para riscar palavra usando \sout
+\usepackage{float}
+\usepackage{multirow}           % para tabelas, basicamente essencial
+\usepackage{multicol}
+\usepackage{cite}               % usado para citações
+\usepackage{enumerate}          % para fazer listas com tipos diferentes de itens (a, i, 1,...)
+\usepackage{calrsfs}
+\usepackage[all]{xy}
+\usepackage{graphicx,txfonts}   %test for heart
+\usepackage[pdftex]{hyperref}   %usado para incluir links no texto
+\usepackage{subfigure}           %para colocar figuras lado a lado
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{makeidx}            % índice remissivo
+\usepackage{fancyhdr}
+\usepackage{shadethm}
+\usepackage{indentfirst}
+\usepackage{bm}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {blue}
+}
+
+
+
+\newcommand{\fim}{\hfill {$\Box$}}
+\newcommand{\destaque}[1]{\colorbox{rosa}{$\displaystyle #1$}}
+\newcommand{\iu}{{i\mkern1mu}} %unidade imaginária
+\newcommand{\todo}[1]{{\color{red}\textbf{Observação}: Em uma versão futura deste material, também será explicado sobre: #1}}
+\newcommand{\sen}{\operatorname{sen}}
+\newcommand{\cotan}{\operatorname{cot}}
+\newcommand{\cosec}{\operatorname{csc}}
+\newcommand{\arcsen}{\operatorname{arcsen}}
+\newcommand*\abs[1]{\left|#1\right|}
+
+\newcommand{\exemautorefname}{Exemplo}
+\newcommand*{\propautorefname}{Proposição}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand{\paralela}{\hspace{3pt}/\hspace{-2pt}/\hspace{3pt}}
+\newcommand{\heart}{\ensuremath\varheartsuit} %test coração
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% + INTRUCOES PARA O FORMATO LIVRO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifisbook
+\input preambulo_book.tex
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% + INTRUCOES PARA O FORMATO HTML
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifishtml
+\input preambulo_html.tex
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

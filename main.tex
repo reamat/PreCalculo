@@ -8,52 +8,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,12pt,portuguese]{book}
-\usepackage[utf8]{inputenc}
 
-\usepackage[T1]{fontenc}
-\usepackage[english,brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
-\usepackage[fixlanguage]{babelbib}
-\selectbiblanguage{brazil}
-\usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
-\usepackage{color}    % Possibilita o uso de cores no documento
-\usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
-\usepackage{listings}
-
-% Alguns pacotes adicionais (ADICIONE/REMOVA DE ACORDO COM A SUA NECESSIDADE)
-\usepackage{microtype} 			% para melhorias de justificação
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{textcomp}
-\usepackage{gensymb} %usar comando \degree
-\usepackage{venndiagram}
-\usepackage{tikz}               % para criar desenhos legais
-\usetikzlibrary{fit,shapes.geometric,arrows} %pra fazer os diagramas de funções
-\usepackage{verbatim}
-\usepackage[normalem]{ulem}     %para riscar palavra usando \sout
-\usepackage{float}
-\usepackage{multirow}           % para tabelas, basicamente essencial
-\usepackage{multicol}
-\usepackage{cite}               % usado para citações
-\usepackage{enumerate}          % para fazer listas com tipos diferentes de itens (a, i, 1,...)
-\usepackage{calrsfs}
-\usepackage[all]{xy}
-\usepackage{graphicx,txfonts}   %test for heart
-\usepackage[pdftex]{hyperref}   %usado para incluir links no texto
-\usepackage{subfigure}           %para colocar figuras lado a lado
-\usepackage{xcolor}
-\usepackage{colortbl}
-\usepackage{makeidx}            % índice remissivo
-\usepackage[a4paper,margin=3cm,headsep=24pt,headheight=2cm]{geometry}
-\usepackage{fancyhdr}
-\usepackage{shadethm}
-\usepackage{indentfirst}
-\usepackage{bm}
-\hypersetup{
-    colorlinks = true,
-    allcolors = {blue}
-}
+\input preambulo.tex
 
 % Evita páginas em branco entre os capítulos
 \let\cleardoublepage\clearpage
@@ -81,35 +37,6 @@
  \rhead{APOSTILA DE PRÉ-CÁLCULO \\ FRANCIELI TRICHES}
  %\renewcommand{\headrulewidth}{1pt}
 
-% Alguns estilos para ambientes matemáticos (ADICIONE/REMOVA/MODIFIQUE DE ACORDO COM A SUA VONTADE)
-\theoremstyle{definition}
-%\newtheorem{exem}{Exemplo}
-\newtheorem{obs}{Observação}
-
-\theoremstyle{plain}
-\newtheorem{defi}{Definição}[section]
-\newtheorem{teo}{Teorema}[section]
-\newtheorem{lema}{Lema}[section]
-\newtheorem{cor}{Corolário}[section]
-\newtheorem{prop}{Proposição}[section]
-\newtheorem{afir}{Afirmação}[section]
-\newtheorem{exem}{Exemplo}[section]
-\newtheorem{exer}{Exercício}[section]
-%\newtheorem*{dem}{Demonstração}[section]
-\newenvironment{dem}[1][\textbf{Demonstração:} \ ]{\textbf{#1}}{\hfill\rule{2mm}{2mm}}
-\newcommand{\fim}{\hfill {$\Box$}}
-\newcommand{\destaque}[1]{\colorbox{rosa}{$\displaystyle #1$}}
-\newcommand{\iu}{{i\mkern1mu}} %unidade imaginária
-\newcommand{\todo}[1]{{\color{red}\textbf{Observação}: Em uma versão futura deste material, também será explicado sobre: #1}}
-\newcommand{\sen}{\operatorname{sen}}
-\newcommand{\cotan}{\operatorname{cot}}
-\newcommand{\cosec}{\operatorname{csc}}
-\newcommand{\arcsen}{\operatorname{arcsen}}
-\newcommand*\abs[1]{\left|#1\right|}
-
-\newcommand{\exemautorefname}{Exemplo}
-\newcommand*{\propautorefname}{Proposição}
-
 \numberwithin{defi}{section} % Numerar equações conforme seção
 %\numberwithin{equation}{section} % Numerar equações conforme seção
 \numberwithin{cor}{section} % Numerar corolários conforme seção
@@ -117,16 +44,6 @@
 \numberwithin{prop}{section} % Numerar proposição conforme seção
 \numberwithin{lema}{section} % Numerar lemas conforme seção
 %\numberwithin{section}{chapter} %Numerar seções conforme capítulo
-
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\I}{\mathbb{I}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
-
-\newcommand{\paralela}{\hspace{3pt}/\hspace{-2pt}/\hspace{3pt}}
-\newcommand{\heart}{\ensuremath\varheartsuit} %test coração
 
 \makeindex % índice remissivo
 
