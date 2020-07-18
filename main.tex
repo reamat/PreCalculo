@@ -39,7 +39,8 @@
 	\include{Capitulos/Introducao}
 
 \ifisbook
-	\tableofcontents
+\tableofcontents
+\addcontentsline{toc}{chapter}{Sumário}
 \fi
 
 	\listoffigures
@@ -86,7 +87,16 @@
 \bibliographystyle{bababbrv}
 \bibliography{main}
 \addcontentsline{toc}{chapter}{Referências Bibliográficas}
+%\fancyhead[RE]{Pré-cálculo}
+%\fancyhead[LO]{REFERÊNCIAS BIBLIOGRÁFICAS}
+%\fancyhead[LE,RO]{\thepage}
+
 \ifisbook
+\clearpage
+\addcontentsline{toc}{chapter}{Índice Remissivo}
+%\fancyhead[RE]{Pré-cálculo}
+%\fancyhead[LO]{ÍNDICE REMISSIVO}
+%\fancyhead[LE,RO]{\thepage}
 \printindex
 \fi
 
