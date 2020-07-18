@@ -13,20 +13,25 @@
 
 \makeindex
 
-%opening
- \title{Apostila de Pré-Cálculo \\ \includegraphics[width=7cm]{Capitulos/Figuras/circunftangentes.pdf} }
- \author{\textbf{Francieli Triches} \\
- \textbf{frantriches@gmail.com} \\ \\ \\
-  Esta apostila está licenciada sob uma licença \\
- \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Atribuição-Compartilha Igual 4.0 Internacional}.}
-
-% Para compilar só um capítulo, coloque o nome dele neste comando
-% \includeonly{Capitulos/Divisibilidade}
-
 \begin{document}
+
 \frontmatter
-	\pagestyle{fancy}
+
+\title{Pré-cálculo\\\small{Um Livro Colaborativo}}
+\author{}
+\date{\today}
+\ifishtml
+\else
+\addcontentsline{toc}{chapter}{Capa}
+\fi
+
+%	\pagestyle{fancy}
+\ifishtml
+\else
+\AddToShipoutPicture*{\BackgroundPic}
+\fi
 	\maketitle
+
   \include{organizadores}
   \include{colaboradores}
   \include{licenca}

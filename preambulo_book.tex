@@ -1,6 +1,6 @@
 %Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/ ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-\usepackage[a4paper,margin=3cm,headsep=24pt,headheight=2cm]{geometry}
+\usepackage[a4paper,headheight=15.4pt]{geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ATENÇÃO
@@ -40,6 +40,19 @@
 
 \definecolor{cinza}{HTML}{c6c9c5} %para linhas das tabelas
 \setlength{\shadeboxrule}{.4pt}
+
+%%%% titlepage figure %%%%
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{./rosto/capa.pdf}%
+\vfill
+}}}
+
 
 
 
