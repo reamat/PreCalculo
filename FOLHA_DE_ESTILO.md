@@ -72,7 +72,7 @@ A inclusão de uma figura no código LaTex deve ser feita da seguinte forma:
 
 Não insira figuras dentro de outros ambientes como, por exemplo, `ex`, `teo`, `sol` e outros.
 
-Sempre que possível, forneça o código fonte da figura armazenando-o na pasta `cap_foo/figs/figfoo`. Nesta mesma pasta, crie um arquivo README.md com uma descrição da figura e a linceça da mesma, a qual deve ser compatível com a CC-BY-SA 3.0.
+Sempre que possível, forneça o código fonte da figura armazenando-o na pasta `cap_foo/figs/figfoo`. Nesta mesma pasta, crie um arquivo README.md com uma descrição da figura e a linceça da mesma, a qual deve ser compatível com a CC-BY-SA 4.0.
 
 ### Equações e símbolos matemáticos
 
