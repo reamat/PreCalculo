@@ -1,0 +1,84 @@
+%Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional. Para ver uma cópia desta licença, visite ttps://creativecommons.org/licenses/by-sa/4.0/ ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ATENÇÃO
+%
+% POR SEGURANÇA, NÃO EDITE ESTE ARQUIVO.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  ambientes 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \theoremstyle{plain}          %   bold title, italic body
+  \newtheorem{teo}{Teorema}[section]
+  \newtheorem{lema}{Lema}[section]
+  \newtheorem{prop}{Proposição}[section]
+  \newtheorem{cor}{Corolário}[section]
+  \newtheorem{defi}{Definição}[section]
+  \newtheorem{afir}{Afirmação}[section]
+  \newtheorem{exem}{Exemplo}[section]
+  %\newtheorem{exer}{Exercício}[section]
+  %\newtheorem*{dem}{Demonstração}[section]
+  \newenvironment{dem}[1][\textbf{Demonstração:} \ ]{\textbf{#1}}{\hfill\rule{2mm}{2mm}}
+  \theoremstyle{remark}           % italic title, romman body
+  \theoremstyle{definition}       % italic title, romman body
+  \newtheorem{obs}{Observação}
+  %\newtheorem{exem}{Exemplo}
+
+\newshadetheorem{defic}{Definição}
+\definecolor{shadethmcolor}{HTML}{AAAAFF}
+\definecolor{shaderulecolor}{HTML}{FFFFFF}
+\definecolor{rosa}{HTML}{edaae5} %para fórmulas
+\definecolor{azul}{HTML}{aae5ed} %para definições
+\definecolor{amarelo}{HTML}{e5edaa} %para observações importantes
+\definecolor{yellow}{HTML}{e5edaa} %para observações importantes
+\definecolor{verde}{HTML}{c4edaa} %não estou usando
+
+\definecolor{cinza}{HTML}{c6c9c5} %para linhas das tabelas
+\setlength{\shadeboxrule}{.4pt}
+
+%\renewcommand\qedsymbol{$\blacksquare$}
+\renewenvironment{proof}
+{{\bfseries\upshape Demonstração.}}
+{
+  \begin{flushright}
+    $\blacksquare$
+  \end{flushright}
+}
+
+\newenvironment{sol}
+{{\bfseries Solução.}}
+{
+  \begin{flushright}
+    $\Diamond$
+  \end{flushright}
+}
+
+\newtheorem{exer}{E}[section]
+\newenvironment{resp}
+{{\bfseries Resposta.}}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exercícios Resolvidos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{exeresol}{ER}[section]
+\newenvironment{resol}
+{{\bfseries Solução.}}
+{
+  \begin{flushright}
+    $\Diamond$
+  \end{flushright}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DESCONTINUADO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{Exercise}{E}[section]
+\newenvironment{Answer}{{\bfseries \tiny Resposta.}}{}
+
+\usepackage{minitoc}
