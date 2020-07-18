@@ -32,16 +32,24 @@
 
 
 \usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{Pré-cálculo}
+\fancyhead[LO]{\rightmark}
+\fancyhead[LE,RO]{\thepage}
+
+%license footnote
+\cfoot{\tiny{Licença \href{https://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA-4.0}. Contato: \url{reamat@ufrgs.br}}}
 
 \usepackage[fixlanguage]{babelbib}
 \selectbiblanguage{brazil}
 \usepackage{color}    % Possibilita o uso de cores no documento
-\usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
 
 % Alguns pacotes adicionais (ADICIONE/REMOVA DE ACORDO COM A SUA NECESSIDADE)
 \usepackage{microtype} 			% para melhorias de justificação
 
 % Evita páginas em branco entre os capítulos
+%%%% no blank pages between chapters %%%%
 \let\cleardoublepage\clearpage
 
 %%%% ams-latex %%%%
