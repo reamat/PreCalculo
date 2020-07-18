@@ -26,54 +26,81 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Opcões de Linguagem
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage[english,brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english,brazil]{babel} %fazemos com que o compilador traduza expressões como “table of contents”
+
+
+\usepackage{fancyhdr}
+
 \usepackage[fixlanguage]{babelbib}
 \selectbiblanguage{brazil}
-\usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
 \usepackage{color}    % Possibilita o uso de cores no documento
 \usepackage{pdfpages} % Possibilita a inclusão da ficha catalográfica
-\usepackage{listings}
 
 % Alguns pacotes adicionais (ADICIONE/REMOVA DE ACORDO COM A SUA NECESSIDADE)
 \usepackage{microtype} 			% para melhorias de justificação
+
+% Evita páginas em branco entre os capítulos
+\let\cleardoublepage\clearpage
+
+%%%% ams-latex %%%%
 \usepackage{amsmath}
-\usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{amsfonts}
+
+%%%% graphics %%%%
+\usepackage{txfonts}   %test for heart
+\usepackage{graphicx} % Possibilita o uso de figuras e gráficos (suporta os formatos EPS, PDF, JPG e PNG)
+%\usepackage{caption}
+
+%%%% links %%%%
+\usepackage[pdftex, colorlinks=true, allcolors=blue]{hyperref}   %usado para incluir links no texto
+
+%%%% code insert (verbatim) %%%%
+\usepackage{verbatim}
+\usepackage{listings}
+
+%%%% indent first line %%%%
+\usepackage{indentfirst}
+
+
+%%%% citation %%%%
+\usepackage{cite}               % usado para citações
+
+%%%% lists %%%%
+\usepackage{enumerate}          % para fazer listas com tipos diferentes de itens (a, i, 1,...)
+
+%%%% index %%%%
+\usepackage{makeidx}            % índice remissivo
+
+
+%%%% miscellaneous %%%%
+\usepackage{multicol}
+\usepackage{multirow}           % para tabelas, basicamente essencial
+\usepackage[normalem]{ulem}     %para riscar palavra usando \sout
+\usepackage{calrsfs}
+\usepackage[all]{xy}
+\usepackage{subfigure}           %para colocar figuras lado a lado
+\usepackage{xcolor}
+\usepackage{tikz}               % para criar desenhos legais
+\usetikzlibrary{fit,shapes.geometric,arrows} %pra fazer os diagramas de funções
+
 \usepackage{textcomp}
 \usepackage{gensymb} %usar comando \degree
 \usepackage{venndiagram}
-\usepackage{tikz}               % para criar desenhos legais
-\usetikzlibrary{fit,shapes.geometric,arrows} %pra fazer os diagramas de funções
-\usepackage{verbatim}
-\usepackage[normalem]{ulem}     %para riscar palavra usando \sout
-\usepackage{float}
-\usepackage{multirow}           % para tabelas, basicamente essencial
-\usepackage{multicol}
-\usepackage{cite}               % usado para citações
-\usepackage{enumerate}          % para fazer listas com tipos diferentes de itens (a, i, 1,...)
-\usepackage{calrsfs}
-\usepackage[all]{xy}
-\usepackage{graphicx,txfonts}   %test for heart
-\usepackage[pdftex]{hyperref}   %usado para incluir links no texto
-\usepackage{subfigure}           %para colocar figuras lado a lado
-\usepackage{xcolor}
+
 \usepackage{colortbl}
-\usepackage{makeidx}            % índice remissivo
-\usepackage{fancyhdr}
 \usepackage{shadethm}
-\usepackage{indentfirst}
 \usepackage{bm}
 
-\hypersetup{
-    colorlinks = true,
-    allcolors = {blue}
-}
+\usepackage{float}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS E NOVOS COMANDOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\fim}{\hfill {$\Box$}}
 \newcommand{\destaque}[1]{\colorbox{rosa}{$\displaystyle #1$}}
