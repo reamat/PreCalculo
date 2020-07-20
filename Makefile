@@ -72,4 +72,4 @@ clean:
 	      *.idx *.ilg *.ind *.blg *.backup \
 	      *.4tc *.lg *.tmp *.xref *.png *.html \
 	      *.4ct *.css *.idv *.maf *.mtc *.mtc0 \
-	      *.xml
+	      *.xml *.lof
