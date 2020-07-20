@@ -11,7 +11,9 @@ A notação $x \in A$ (lê-se ``$x$ pertence a $A$'') significa que $x$ é um el
 Dados os elementos $a, e, i, o, u$ indica-se com $\{a, e, i, o, u\}$ o conjunto que é formado por estes elementos. Assim, por exemplo, $V= \{a, e, i, o, u\}$ é o conjunto das vogais do alfabeto português, quando representamos um conjunto desta forma dizemos que estamos representando o conjunto por enumeração de seus elementos.
 
 Assim se denotarmos por $U$ o conjunto formado pelas letras do alfabeto português, como toda vogal é uma letra do alfabeto português, podemos representar o conjunto $V$ da seguinte forma:
-\[V= \{x \in U \mid x \text{ é uma vogal}\}\]
+\begin{equation}
+V= \{x \in U \mid x \text{ é uma vogal}\}
+\end{equation}
 aqui $x$ representa um elemento qualquer do conjunto $U$.
 
 Esta segunda forma que usamos para descrever o conjunto $V$ é uma forma usual de descrever conjuntos na matemática, perceba que nela começamos pensando em um conjunto ``grande'' $U$ (que chamamos de conjunto universo) e em uma propriedade $P$ bem particular que alguns elementos deste conjunto satisfaziam, e assim obtemos o conjunto $V$.
@@ -146,9 +148,13 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \vskip0.4cm
 
  \item Produto cartesiano:\index{Conjunto(s)!produto cartesiano de} Dados dois conjuntos $A$ e $B$ o produto cartesiano de $A$ por $B$ é o conjunto dos pares ordenados, cuja primeira entrada é um elemento de $A$ e a segunda coordenada é um elemento $B$. Este conjunto é denotado por:
- \[A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \} \ .\]
+\begin{equation}
+A \times B= \{(a, b) \mid a \in A \text{ e } b \in B \} \ .
+\end{equation}
  Assim por exemplo, se considerarmos $A= \{1, 2, 3\}$ e $B= \{a, b, c\}$ teremos pela definição que
- \[A \times B= \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3, c)\} \ .\]
+\begin{equation}
+A \times B= \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3, c)\} \ .
+\end{equation}
 
  O produto cartesiano de dois conjuntos pode ser representado usando eixos coordenados, como mostra o exemplo abaixo. Esta representação é particularmente útil para representar os gráficos de funções de $\R$ para $\R$.
 \end{itemize}
@@ -222,7 +228,9 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \begin{minipage}{0.9\linewidth}
  \begin{center}
  A cardinalidade da união destes dois conjuntos é dada por:
-  \[\#(A \cup B)= \# A + \# B - \#(A \cap B) .\]
+\begin{equation}
+\#(A \cup B)= \# A + \# B - \#(A \cap B) .
+\end{equation}
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -232,7 +240,9 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \section{Conjunto das partes}
 
  Dado um conjunto $A$ o conjunto das partes de $A$ denotado por $\mathcal{P}(A)$ é o conjunto de todos os subconjuntos de $A$, ou seja,
- \[\mathcal{P}(A)= \{X \mid X \text{ é um subconjunto de } A\} \ .\]
+\begin{equation}
+\mathcal{P}(A)= \{X \mid X \text{ é um subconjunto de } A\} \ .
+\end{equation}
 
  Dado um conjunto $A$ qualquer, precisamos ficar atentos a duas coisas:
  \begin{itemize}
@@ -243,14 +253,18 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
 
  \begin{exem}
  Se considerarmos o conjunto $A= \{a, b, c\}$, teremos pela definição acima que o conjuntos das partes de $A$ é:
- \[\mathcal{P}(A)= \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \} \ .\]
+\begin{equation}
+\mathcal{P}(A)= \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \} \ .
+\end{equation}
  \end{exem}
 
  E como sabemos se este conjunto acima contém de fato todos os subconjuntos do conjunto $A$? Bom para conseguirmos verificar isso vamos precisar utilizar a seguinte propriedade do conjunto das partes.
 
  \begin{prop}
   Se o conjunto $A$ possui $n$ elementos, então $\mathcal{P}(A)$ possui $2^n$ elementos. Ou seja:
-  \[\# A= n \ \ \Rightarrow \ \ \# \mathcal{P}(A)= 2^n \ .\]
+\begin{equation}
+\# A= n \ \ \Rightarrow \ \ \# \mathcal{P}(A)= 2^n \ .
+\end{equation}
 \end{prop}
 
  \begin{dem}
@@ -263,7 +277,9 @@ Dados $A$ e $B$ conjuntos arbitrários dentro do conjunto universo $U$, definimo
  \end{itemize}
 
  Logo, pelo príncipio fundamental da contagem, nós podemos montar o conjunto $B$ de
- \[\underbrace{2 \cdot 2 \cdot 2 \cdots 2}_{n-vezes}= 2^n\]
+\begin{equation}
+\underbrace{2 \cdot 2 \cdot 2 \cdots 2}_{n-vezes}= 2^n
+\end{equation}
  maneiras diferentes.
 
  E portanto, há $2^n$ subconjuntos de $A$ em $\mathcal{P}(A)$.
@@ -349,8 +365,12 @@ Sejam $A$, $B$ e $C$ conjunto arbitrários, temos que:
 
 \begin{exer}
  (Quadrix - 2014)  Considere os conjuntos:
-      \[F = \{2, 5, 6, 9,10 \}\]
-      \[G = \{3, 4, 7, 8, 12\}\]
+\begin{equation}
+F = \{2, 5, 6, 9,10 \}
+\end{equation}
+\begin{equation}
+G = \{3, 4, 7, 8, 12\}
+\end{equation}
  Sabe-se que o conjunto $H$ é formado por uma operação realizada entre os conjuntos $F$ e $G$. Assinale a alternativa que  contém a operação realizada entre os conjuntos $F$ e $G$, que tem como resultado o conjunto $H$, sendo que $H = \varnothing$.
  \begin{enumerate}[a)]
   \item $H= (F \cup G)$;
@@ -375,7 +395,9 @@ Sejam $A$, $B$ e $C$ conjunto arbitrários, temos que:
 
 \begin{exer}
 (QUADRIX - 2012) Considere os conjuntos:
-  \[ A = \{ x \in \R \mid - 3 < x < 4 \} \ \ \text{ e } \ \ B = \{ x \in \R \mid - 2 < x < 5 \}.\]
+\begin{equation}
+ A = \{ x \in \R \mid - 3 < x < 4 \} \ \ \text{ e } \ \ B = \{ x \in \R \mid - 2 < x < 5 \}.
+\end{equation}
  O conjunto $B - A$ possui quantos números inteiros?
  \begin{multicols}{5}
  \begin{enumerate}[a)]

@@ -120,11 +120,15 @@
 \newpage
 
 Usamos normalmente a seguinte notação:
-\[f: A \rightarrow B\]
+\begin{equation}
+f: A \rightarrow B
+\end{equation}
 que se lê: $f$ é uma função de $A$ em $B$.
 
 A função $f$ transforma $x \in A$ em $y \in B$. Denotamos isso da seguinte forma:
-\[f(x) = y .\]
+\begin{equation}
+f(x) = y .
+\end{equation}
 
 Simplificando as notações podemos representar as duas informações acima da seguinte forma:
 \begin{eqnarray*}
@@ -133,12 +137,16 @@ Simplificando as notações podemos representar as duas informações acima da s
 \end{eqnarray*}
 
 Dada uma função $f: A \rightarrow B$, o conjunto $A$ chama-se \textbf{domínio} da função $f$ e o conjunto $B$ chama-se \textbf{contradomínio} da função $f$.  Para cada $x \in A$, o elemento $f(x)= y \in B$ chama-se imagem de $x$ pela função $f$. Assim o conjunto \textbf{imagem} da função $f$ é dado por:
-\[Im(f)= \{ y \in B \mid y = f(x) \text{ para algum } x \in A\} .\]
+\begin{equation}
+Im(f)= \{ y \in B \mid y = f(x) \text{ para algum } x \in A\} .
+\end{equation}
 
 No nosso contexto, o domínio de uma função é um subconjunto dos números reais nos quais faz sentido aplicar a regra da função, e o contradomínio é o conjunto $\mathbb{R}$, ou um subconjunto de $\mathbb{R}$ que contenha o conjunto $Im(f)$.
 
 E o \textbf{gráfico} da função é dado por:
-\[Gr(f) = \{ (x, y) \in A \times B \mid x \in A, y = f(x) \in B\} .\]
+\begin{equation}
+Gr(f) = \{ (x, y) \in A \times B \mid x \in A, y = f(x) \in B\} .
+\end{equation}
 
 \begin{exem}
  Considere os conjuntos $A= \{1, 2, 3\}$ e $B= \{a, b, c, d\}$ e a regra de relação entre estes dois conjuntos dada pelo diagrama abaixo:
@@ -185,9 +193,13 @@ As funções são classificadas em:
  \item \textbf{Injetora}
 
  Uma função $f: A \rightarrow B$ é injetiva, ou injetora quando:
- \[ x_1 \neq x_2 \in A \Rightarrow f(x_1) \neq f(x_2) \in B ,\]
+\begin{equation}
+ x_1 \neq x_2 \in A \Rightarrow f(x_1) \neq f(x_2) \in B ,
+\end{equation}
  ou equivalentemente usando a contrapositiva:
- \[f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .\]
+\begin{equation}
+f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
+\end{equation}
  Ou seja, quando cada elemento da $Im(f)$ recebe um único elemento de $A= Dom(f)$, neste caso pode ocorrer de alguns elementos de $B$ não serem imagem de nenhum elemento de $A$ pela função $f$.
 
  \item \textbf{Sobrejetora}
@@ -289,7 +301,9 @@ As funções são classificadas em:
     \item Injetora
 
      Note que $ \forall x \in \mathbb{R} \Rightarrow -x \in \mathbb{R}$ e que
-    \[f(-x)= (-x)^2 = (-x)*(-x) = (x)*(x) = x^2 = f(x)\]
+\begin{equation}
+f(-x)= (-x)^2 = (-x)*(-x) = (x)*(x) = x^2 = f(x)
+\end{equation}
     o que mostra que $f$ não é injetora.
 
    \end{itemize}
@@ -308,7 +322,9 @@ As funções são classificadas em:
     \item Injetora
 
     Tome $x_1=x_2 \in \mathbb{R_{+}}$ qualquer, como
-    \[x_1=x_2 \Rightarrow x_1^2=x_2^2 \Rightarrow f(x_1)=f(x_2)\]
+\begin{equation}
+x_1=x_2 \Rightarrow x_1^2=x_2^2 \Rightarrow f(x_1)=f(x_2)
+\end{equation}
     logo $f$ é injetora.
 
    \end{itemize}
@@ -323,13 +339,17 @@ As funções são classificadas em:
     \item Sobrejetora
 
     Tome $y \in \mathbb{R_{+}}$ qualquer, como $y \geq 0$ existe $x \in \mathbb{R}$ tal que
-    \[x = \sqrt{y} \Rightarrow x^2 = (\sqrt{y})^2 \Rightarrow x^2 = y \Rightarrow f(x) = y \]
+\begin{equation}
+x = \sqrt{y} \Rightarrow x^2 = (\sqrt{y})^2 \Rightarrow x^2 = y \Rightarrow f(x) = y 
+\end{equation}
     portanto $f$ é sobrejetora.
     \fim
     \item Injetora
 
     Note que $ \forall x \in \mathbb{R} \Rightarrow -x \in \mathbb{R}$ e que
-    \[f(-x)= (-x)^2 = (-x)*(-x) = (x)*(x) = x^2 = f(x)\]
+\begin{equation}
+f(-x)= (-x)^2 = (-x)*(-x) = (x)*(x) = x^2 = f(x)
+\end{equation}
     o que mostra que $f$ não é injetora.
 
    \end{itemize}
@@ -344,13 +364,17 @@ As funções são classificadas em:
     \item Sobrejetora
 
     Tome $y \in \mathbb{R_{+}}$ qualquer, como $y \geq 0$ existe $x \in \mathbb{R}$ tal que
-    \[x = \sqrt{y} \Rightarrow x^2 = (\sqrt{y})^2 \Rightarrow x^2 = y \Rightarrow f(x) = y\]
+\begin{equation}
+x = \sqrt{y} \Rightarrow x^2 = (\sqrt{y})^2 \Rightarrow x^2 = y \Rightarrow f(x) = y
+\end{equation}
     portanto $f$ é sobrejetora.
     \fim
     \item Injetora
 
     Tome $x_1, x_2 \in \R_{+}$, tais que $f(x_1) = f(x_2)$ logo,
-    \[f(x_1) = f(x_2) \Rightarrow x_1^2= x_2^2 \Rightarrow \sqrt{x_1^2}= \sqrt{x_2^2} \Rightarrow \abs{x_1}= \abs{x_2} \Rightarrow x_1= x_2, \]
+\begin{equation}
+f(x_1) = f(x_2) \Rightarrow x_1^2= x_2^2 \Rightarrow \sqrt{x_1^2}= \sqrt{x_2^2} \Rightarrow \abs{x_1}= \abs{x_2} \Rightarrow x_1= x_2, 
+\end{equation}
     pois $x_1, x_2 \geqslant 0$. Portanto $f$ é injetora.
 
    \end{itemize}
@@ -362,18 +386,34 @@ As funções são classificadas em:
 
 \subsection{Operações com funções}
 Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, se $A \cap B \neq \emptyset$, então $\forall x \in A \cap B$, definimos as seguintes operações entre estas funções:
-\[(f + g)(x)= f(x) + g(x); \]
-\[(f - g)(x)= f(x) - g(x); \]
-\[(f \cdot g)(x)= f(x) \cdot g(x); \]
-\[ \left( \frac{f}{g} \right) (x)= \frac{f(x)}{g(x)} ;\]
-\[(k \cdot f)(x)= k \cdot f(x), \text{ para } k \text{ constante} ,\]
+\begin{equation}
+(f + g)(x)= f(x) + g(x); 
+\end{equation}
+\begin{equation}
+(f - g)(x)= f(x) - g(x); 
+\end{equation}
+\begin{equation}
+(f \cdot g)(x)= f(x) \cdot g(x); 
+\end{equation}
+\begin{equation}
+ \left( \frac{f}{g} \right) (x)= \frac{f(x)}{g(x)} ;
+\end{equation}
+\begin{equation}
+(k \cdot f)(x)= k \cdot f(x), \text{ para } k \text{ constante} ,
+\end{equation}
 
 note que:
-\[dom(f+g)= dom(f-g)= dom(f \cdot g)= dom(k \cdot f)= A \cap B ,\]
-\[ dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}. \]
+\begin{equation}
+dom(f+g)= dom(f-g)= dom(f \cdot g)= dom(k \cdot f)= A \cap B ,
+\end{equation}
+\begin{equation}
+ dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}. 
+\end{equation}
 
 Além destas operações, é possível também definir a composição de funções. Para isso consideremos duas funções $f: A \rightarrow B$ e $g: C \rightarrow D$, com $A, B, C \text{ e } D \subset \R$, e tais que $Im(f) \subset C$ , assim a função composta $g \circ f: A \rightarrow D$ é definida por:
-\[(g \circ f)(x)= g(f(x)). \]
+\begin{equation}
+(g \circ f)(x)= g(f(x)). 
+\end{equation}
 
 \section{Tipos de funções}
 
@@ -449,7 +489,9 @@ Logo o gráfico da função $Id$ é:
  \begin{minipage}{0.9\linewidth}
  \begin{center}
  As funções $f: \R \to \R$ com a seguinte regra geral:
- \[f(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n\]
+\begin{equation}
+f(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n
+\end{equation}
  para $\{a_0, a_1, a_2, a_3, \ldots a_n\} \in \R$ e $n \in \N$, tais que $a_n \neq 0$ são denominadas \\ \textbf{funções polinomiais de grau $n$}.
  \end{center}
  \end{minipage}}
@@ -462,7 +504,9 @@ Logo o gráfico da função $Id$ é:
  \item Funções do 1º grau, ou funções afim
 
  São funções $f: \R \rightarrow \R$ dadas por:
- \[f(x)= ax + b \ , \]
+\begin{equation}
+f(x)= ax + b \ , 
+\end{equation}
 
  para certos $a, b \in \R$ com $a \neq 0$. Note que um caso particular e já conhecido de função de 1º grau é a função identidade, $f(x)= x$, a qual possui $a=1$ e $b=0$.
 
@@ -480,8 +524,12 @@ Logo o gráfico da função $Id$ é:
    \fbox{\subfigure[$g(x)= x-1$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=x-1}}}
   \end{figure}
   Note que o que muda na definição destas funções é apenas o coeficiente $b$. Fazendo uma análise comparativa dos gráficos destas funções notamos que os ângulos que as retas formam com o eixo $x$ é o mesmo, portanto as retas são paralelas, porém o ponto de interseção das retas com o eixo $y$, que são os pontos $(0, f(0))$, $(0, g(0))$ muda, ou seja, $f(0) \neq g(0)$. De fato:
-  \[f(0)= 0 + 2= 2\]
-  \[g(0)= 0 -1 = -1 \ .\]
+\begin{equation}
+f(0)= 0 + 2= 2
+\end{equation}
+\begin{equation}
+g(0)= 0 -1 = -1 \ .
+\end{equation}
   No caso geral em que $f(x)=ax+b$, teremos que $f(0)=a0 + b= b$, portanto o gráfico de $f$ irá intersectar o eixo $y$ no ponto $(0,b)$. O coeficiente $b$ é chamado de \textbf{coeficiente linear} da reta/função linear.
 
   Consideremos as funções $f, g: \R \to \R$ dadas por:
@@ -501,7 +549,9 @@ Logo o gráfico da função $Id$ é:
  \begin{minipage}{0.9\linewidth}
  \begin{center}
  O gráfico de uma função linear $f: \R \to \R$ dada por:
- \[f(x) = ax + b\]
+\begin{equation}
+f(x) = ax + b
+\end{equation}
  é uma reta com coeficiente angular $a$ e cuja interseção com o eixo $y$ ocorre no ponto $(0, b)$.
  \end{center}
  \end{minipage}}
@@ -520,7 +570,9 @@ Logo o gráfico da função $Id$ é:
   \end{figure}
 
   o coeficiente angular da reta que passa por estes dois pontos é dado por:
-  \[a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1} \ .\]
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1} \ .
+\end{equation}
 
   De fato, dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, podemos encontrar a função $f(x)= ax+b$, cujo gráfico passa por estes dois pontos lembrando que ambos devem satisfazer a equação da função assim obtemos:
   \[ \begin{cases}
@@ -528,7 +580,9 @@ Logo o gráfico da função $Id$ é:
    y_1= ax_1 + b
   \end{cases} \]
   logo $y_0 - ax_0= b$, substituindo na segunda equação decorre que:
-  \[y_1= ax_1 + y_0 - ax_0 \Rightarrow y_1 - y_0= a(x_1 - x_0) \Rightarrow a= \frac{y_1 - y_0}{x_1 - x_0} \ . \]
+\begin{equation}
+y_1= ax_1 + y_0 - ax_0 \Rightarrow y_1 - y_0= a(x_1 - x_0) \Rightarrow a= \frac{y_1 - y_0}{x_1 - x_0} \ . 
+\end{equation}
 
   Este sistema linear sempre pode ser usado para encontrar a regra da função linear que passa por dois pontos dados.
 
@@ -537,9 +591,13 @@ Logo o gráfico da função $Id$ é:
   Vamos determinar o coeficiente angular da reta que passa pelos pontos:
    \begin{enumerate}[a)]
     \item $P_0=(0,2)$ e $P_1=(-2,0)$
-    \[a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{0 - 2}{-2 - 0}= \frac{-2}{-2}= 1\]
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{0 - 2}{-2 - 0}= \frac{-2}{-2}= 1
+\end{equation}
     \item $P_0=(1,2)$ e $P_1=(-1,-2)$
-    \[a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{-2 - 2}{-1 - 1}= \frac{-4}{-2}= 2\]
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{-2 - 2}{-1 - 1}= \frac{-4}{-2}= 2
+\end{equation}
    \end{enumerate}
 
   \end{exem}
@@ -578,7 +636,9 @@ Logo o gráfico da função $Id$ é:
  \item Funções do 2º grau ou função quadrática
 
  São funções $f: \R \rightarrow \R$ dadas por:
- \[f(x)= ax^2 + bx + c\]
+\begin{equation}
+f(x)= ax^2 + bx + c
+\end{equation}
 
  Os \textbf{zeros} ou \textbf{raízes} das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
  
@@ -624,7 +684,9 @@ Logo o gráfico da função $Id$ é:
  \item Funções do 3º grau ou funções cúbicas
 
  São funções $f: \R \rightarrow \R$ dadas por:
- \[f(x)= ax^3 + bx^2 + cx + d .\]
+\begin{equation}
+f(x)= ax^3 + bx^2 + cx + d .
+\end{equation}
 
  As \textbf{raízes} ou \textbf{zeros} das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
  \begin{enumerate}[(I)]
@@ -670,7 +732,9 @@ Logo o gráfico da função $Id$ é:
   Note que $f$ é decrescente no intervalo $]-\infty, 0[$, e crescente no intervalo $]0, \infty[$, e admite um mínimo em $x=0$.
 
   Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= \abs{x+1}$, observe que:
-  \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
+\begin{equation}
+x+1 \geq 0 \Leftrightarrow  x \geq -1
+\end{equation}
   com isso podemos reescrever a função $f_1$ sem os módulos da seguinte forma:
 
   \[f_1(x)= \begin{cases}
@@ -680,7 +744,9 @@ Logo o gráfico da função $Id$ é:
   Com isso a função modular pode ser vista como uma função linear por partes.
 
   Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= \abs{x+1}+2$, temos que:
-  \[x+1 \geq 0 \Leftrightarrow  x \geq -1\]
+\begin{equation}
+x+1 \geq 0 \Leftrightarrow  x \geq -1
+\end{equation}
   com isso podemos reescrever a função $f_2$ sem os módulos da seguinte forma:
 
   \[f_2(x)= \begin{cases}
@@ -771,11 +837,17 @@ Logo o gráfico da função $Id$ é:
   Dados $A, B \subset \R$ e uma função $f: A \rightarrow B$.
 
   Dizemos que $f$ é uma \textbf{função crescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-  \[ x < y \Rightarrow f(x) < f(y) \ .\]
+\begin{equation}
+ x < y \Rightarrow f(x) < f(y) \ .
+\end{equation}
   Dizemos que $f$ é uma \textbf{função decrescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-  \[x < y \Rightarrow f(x) > f(y) \ .\]
+\begin{equation}
+x < y \Rightarrow f(x) > f(y) \ .
+\end{equation}
   Dizemos que $f$ é uma \textbf{função constante} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-  \[x \neq y \Rightarrow f(x) = f(y) \ .\]
+\begin{equation}
+x \neq y \Rightarrow f(x) = f(y) \ .
+\end{equation}
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -784,11 +856,15 @@ Logo o gráfico da função $Id$ é:
  Seja $f: \R \to \R$ uma função dada por $f(x)= ax + b$.
 
  Quando {a > 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
- \[x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,\]
+\begin{equation}
+x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,
+\end{equation}
   portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}.
 
  Quando \destaque{a < 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
- \[x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,\]
+\begin{equation}
+x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,
+\end{equation}
  portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
 
  Observe que no caso das funções de 1º grau a propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
@@ -798,16 +874,28 @@ Logo o gráfico da função $Id$ é:
  Vamos retomar alguns dos nossos exemplos de funções para classificar como crescente, decrescente e constante. Para isso considere $x_1= -2$ e $x_2= 1$, neste caso, $x_1 < x_2$.
   \begin{enumerate}[a)]
    \item Sendo $f(x)= \frac{1}{2}x + 1,5$, temos que
-   \[f(x_1)= f(-2)= \frac{1}{2}\cdot (-2) + 1,5= -1 + 1,5= 0,5\]
-   \[f(x_2)= f(1)= \frac{1}{2} \cdot 1+\frac{3}{2}= \frac{4}{2}= 2\]
+\begin{equation}
+f(x_1)= f(-2)= \frac{1}{2}\cdot (-2) + 1,5= -1 + 1,5= 0,5
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= \frac{1}{2} \cdot 1+\frac{3}{2}= \frac{4}{2}= 2
+\end{equation}
    logo $f(x_1)= 0,5 < 2= f(x_2)$. Portanto $f$ é crescente.
    \item Sendo $f(x)= -2x + 2$, temos que
-   \[f(x_1)= f(-2)= -2 \cdot (-2) + 2= 4 + 2= 6\]
-   \[f(x_2)= f(1)= -2 \cdot 1 + 2= 0\]
+\begin{equation}
+f(x_1)= f(-2)= -2 \cdot (-2) + 2= 4 + 2= 6
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= -2 \cdot 1 + 2= 0
+\end{equation}
    logo $f(x_1)= 6 > 0 = f(x_2)$. Portanto $f$ é decrescente.
    \item Sendo $f(x)= 2$, temos que
-   \[f(x_1)= f(-2)= 2\]
-   \[f(x_2)= f(1)= 2\]
+\begin{equation}
+f(x_1)= f(-2)= 2
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= 2
+\end{equation}
    logo $f(x_1)= 2 = 2= f(x_2)$. Portanto $f$ é constante.
   \end{enumerate}
   Como já mostramos acima que para as funções lineares esta propriedade é global, para fazer esta classificação é suficiente testar dois valores de $x$ como fizemos acima.
@@ -818,16 +906,24 @@ Logo o gráfico da função $Id$ é:
   Considere a função $f(x)= \abs{x}$. Lembramos que esta função é definida por partes, por isso faremos a análise de crescimento e decrescimento em cada uma destas partes.
 
   Caso 1: Se $x < 0$, temos que $f(x)= -x$, logo se $x_1 < x_2$,
-  \[x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,\]
+\begin{equation}
+x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,
+\end{equation}
   por exemplo, sendo $x_1= -3$ e $x_2= -2$ temos que $x_1 < x_2$,
-  \[f(x_1)= f(-3)= -(-3)= 3 > 2= -(-2)= f(-2)= f(x_2) \ .\]
+\begin{equation}
+f(x_1)= f(-3)= -(-3)= 3 > 2= -(-2)= f(-2)= f(x_2) \ .
+\end{equation}
 
   Portanto se $x < 0$ temos que $f$ é decrescente.
 
   Caso 2: Se $x \geq 0$, temos que $f(x)= x$, logo se $x_1 < x_2$
-  \[x_1 < x_2 \Rightarrow  f(x_1) < f(x_2) \ ,\]
+\begin{equation}
+x_1 < x_2 \Rightarrow  f(x_1) < f(x_2) \ ,
+\end{equation}
   por exemplo, sendo $x_1= 2$ e $x_2= 3$ temos que $x_1 < x_2$,
-  \[f(x_1)= 2 > 3= f(x_2) \ .\]
+\begin{equation}
+f(x_1)= 2 > 3= f(x_2) \ .
+\end{equation}
 
   Portanto se $x \geq 0$ temos que $f$ é crescente.
  \end{exem}
@@ -841,9 +937,13 @@ Logo o gráfico da função $Id$ é:
   Dada um função $f: \R \rightarrow \R$.
 
   Dizemos que $f$ é uma \textbf{função par} se, para todo $x \in R$,
-  \[f(-x)= f(x) \ .\]
+\begin{equation}
+f(-x)= f(x) \ .
+\end{equation}
   Dizemos que $f$ é uma \textbf{função ímpar} se, para todo $x \in R$,
-  \[f(-x)= - f(x) \ .\]
+\begin{equation}
+f(-x)= - f(x) \ .
+\end{equation}
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -852,11 +952,17 @@ Logo o gráfico da função $Id$ é:
  \begin{exem}
   \begin{enumerate}[a)]
    \item A função $f(x)= x$ é uma função ímpar;
-   \[f(-x)= -x= -f(x) \]
+\begin{equation}
+f(-x)= -x= -f(x) 
+\end{equation}
    \item A função $f(x)= x^2$ é uma função par;
-   \[f(-x)= (-x)^2= x^2 = f(x) \]
+\begin{equation}
+f(-x)= (-x)^2= x^2 = f(x) 
+\end{equation}
    \item A função $f(x)= x^3$ é uma função ímpar.
-   \[f(-x)= (-x)^3= -x^3= -f(x)\]
+\begin{equation}
+f(-x)= (-x)^3= -x^3= -f(x)
+\end{equation}
   \end{enumerate}
  \end{exem}
 
@@ -864,14 +970,22 @@ Logo o gráfico da função $Id$ é:
   Vamos analisar a paridade de função modular $f(x)= \abs{x}$.
 
   Caso 1: Se $x < 0$,
-  \[f(x)= \abs{x}= -x= f(-(x))= f(-x)\]
+\begin{equation}
+f(x)= \abs{x}= -x= f(-(x))= f(-x)
+\end{equation}
   por exemplo, $x= -2$, neste caso,
-  \[f(x)= f(-2)= \abs{-2}= -(-2)= 2= f(2)= f(-(-2))= f(-x) \ ;\]
+\begin{equation}
+f(x)= f(-2)= \abs{-2}= -(-2)= 2= f(2)= f(-(-2))= f(-x) \ ;
+\end{equation}
 
   Caso 2: Se $x \geq 0$,
-  \[f(x)= \abs{x}= x= -(-x)= \abs{-x}= f(-x)\]
+\begin{equation}
+f(x)= \abs{x}= x= -(-x)= \abs{-x}= f(-x)
+\end{equation}
   por exemplo, $x= 2$, neste caso,
-  \[f(x)= f(2)= \abs{2}= 2= -(-2)= \abs{-2}= f(-2)= f(-x) \ .\]
+\begin{equation}
+f(x)= f(2)= \abs{2}= 2= -(-2)= \abs{-2}= f(-2)= f(-x) \ .
+\end{equation}
 
   Portanto $f$ é uma função par.
  \end{exem}
@@ -899,9 +1013,15 @@ Logo o gráfico da função $Id$ é:
 
 \begin{exem}
  A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
- \[h(x)= (f \circ g)(x)= f(g(x))= (x-2) + 2= x-2+2= x \Rightarrow (f \circ g)(x)= Id(x)\]
- \[\text{e}\]
- \[(g \circ f)(x)= g(f(x))= (x+2) - 2= x+2-2= x \Rightarrow (g \circ f)(x)= Id(x) ,\]
+\begin{equation}
+h(x)= (f \circ g)(x)= f(g(x))= (x-2) + 2= x-2+2= x \Rightarrow (f \circ g)(x)= Id(x)
+\end{equation}
+\begin{equation}
+\text{e}
+\end{equation}
+\begin{equation}
+(g \circ f)(x)= g(f(x))= (x+2) - 2= x+2-2= x \Rightarrow (g \circ f)(x)= Id(x) ,
+\end{equation}
  logo $g= f^{-1}$ é a função inversa de $f$.
 
  \begin{figure}[H]
@@ -1114,7 +1234,9 @@ Assinale a alternativa que indica todas as afirmativas corretas.
   
   \begin{exer}
   (FEPESE - 2010) Considere a função $f: \R \rightarrow \R$, definida por
-\[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
+\begin{equation}
+f(x)= \frac{1}{\sqrt{x^2 - 1}}
+\end{equation}
 Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
 \begin{enumerate}[a)]
 \item $\{x \in \R \mid x \neq 1\}$;
@@ -1137,7 +1259,9 @@ Assinale a alternativa que indica \textbf{corretamente} o domínio dessa funçã
   
   \begin{exer}
   (Sociesc - 2009) A turma de enfermagem resolveu guardar dinheiro para o pagamento da sua festa de formatura. Para isso, foi feita uma aplicação financeira que obedece a seguinte equação:
-  \[T = 4.000 + 150x ,\]
+\begin{equation}
+T = 4.000 + 150x ,
+\end{equation}
   onde $T$ é o saldo total e $x$ é o tempo em meses. Sendo assim, o tempo para que o saldo total seja R\$ 10.000,00 será:
   \begin{enumerate}[a)]
   \item 32 meses
@@ -1216,7 +1340,9 @@ Assinale a alternativa que indica \textbf{corretamente} o domínio dessa funçã
   
   \begin{exer}
   (UDESC/Fepese - 2009) Considere a função $f: \R \to \R$, definida por:
- \[f(x)= \frac{1}{\sqrt{x^2 - 1}}\]
+\begin{equation}
+f(x)= \frac{1}{\sqrt{x^2 - 1}}
+\end{equation}
  Assinale a alternativa que indica \textbf{corretamente} o domínio dessa função.
  \begin{enumerate}[a)]
  \item $\{x \in \R \mid x \neq 1\}$

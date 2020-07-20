@@ -115,35 +115,55 @@
   \item Fator em comum: $x^2 + x= x(x + 1)$; $4x^2 + 6= 2(2x^2 + 3)$
   \item Agrupamento: $ax + bx + ay + by= (a+b)x+(a+b)y= (a+b)(x+y)$
   \item Trinômio quadrado perfeito (+): 
-  \[(x + y)^2= (x+y) \cdot (x+y)= x^2 + xy + yx + y^2= x^2 + 2xy + y^2\]
+\begin{equation}
+(x + y)^2= (x+y) \cdot (x+y)= x^2 + xy + yx + y^2= x^2 + 2xy + y^2
+\end{equation}
   \item Trinômio quadrado perfeito (-): 
-  \[(x - y)^2= (x - y) \cdot (x - y)= x^2 - xy - yx + y^2 = x^2 - 2xy + y^2\]
+\begin{equation}
+(x - y)^2= (x - y) \cdot (x - y)= x^2 - xy - yx + y^2 = x^2 - 2xy + y^2
+\end{equation}
   \item Diferença de dois quadrados: 
-  \[(x + y) \cdot (x - y)= x^2 - xy + yx - y^2 = x^2 - y^2\]
+\begin{equation}
+(x + y) \cdot (x - y)= x^2 - xy + yx - y^2 = x^2 - y^2
+\end{equation}
   \item Cubo perfeito (+): 
-  \[(x+y)^3= (x+y)^2 \cdot (x+y)= (x^2 + 2xy + y^2) \cdot (x+y)  =x^3 + 3x^2y + 3xy^2 + y^3\]
+\begin{equation}
+(x+y)^3= (x+y)^2 \cdot (x+y)= (x^2 + 2xy + y^2) \cdot (x+y)  =x^3 + 3x^2y + 3xy^2 + y^3
+\end{equation}
   \item Cubo perfeito (-): 
-  \[(x-y)^3= (x-y)^2 \cdot (x-y)= (x^2 - 2xy + y^2) \cdot (x-y)= x^3 - 3x^2y + 3xy^2 - y^3\]
+\begin{equation}
+(x-y)^3= (x-y)^2 \cdot (x-y)= (x^2 - 2xy + y^2) \cdot (x-y)= x^3 - 3x^2y + 3xy^2 - y^3
+\end{equation}
   \item Diferença de dois cubos:
-  \[x^3 - y^3= (x-y) \cdot (x^2 + xy + y^2)\]
+\begin{equation}
+x^3 - y^3= (x-y) \cdot (x^2 + xy + y^2)
+\end{equation}
  \end{itemize}
  
  \section{Binômio de Newton}
  
  As expressões $(x + y)^2$ e $(x + y)^3$ para $x, y \in \R$,podem ser generalizadas para $(x + y)^n$ com $n \in \N$, esta generalização é dada pelo Binômio de Newton, da seguinte forma:
  
- \[(x + y)^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} y^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{k} y^{n-k} \]
+\begin{equation}
+(x + y)^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} y^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{k} y^{n-k} 
+\end{equation}
  
- \[(x - y)^n= (x +(-y))^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-y)^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-1)^{k}y^{k}= \sum^{n}_{k=0} (-1)^{k} \binom{n}{k} \cdot x^{n-k} y^{k}\]
+\begin{equation}
+(x - y)^n= (x +(-y))^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-y)^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-1)^{k}y^{k}= \sum^{n}_{k=0} (-1)^{k} \binom{n}{k} \cdot x^{n-k} y^{k}
+\end{equation}
  
  Os coeficientes $\binom{n}{k}$ são chamados coeficientes binomiais e são definidos por:
  
- \[\binom{n}{k}= \frac{n!}{k!(n-k)!}\]
+\begin{equation}
+\binom{n}{k}= \frac{n!}{k!(n-k)!}
+\end{equation}
 
  para $n, k \in \N$ com $k \leq n$. 
  
  Vale lembrar que por definição o fatorial de $n$ é dado por:
- \[n!= n \cdot (n-1) \cdot (n-2) \cdots 2 \cdot 1 \ .\]
+\begin{equation}
+n!= n \cdot (n-1) \cdot (n-2) \cdots 2 \cdot 1 \ .
+\end{equation}
 
  
  \section{Expressões algébricas com frações}
@@ -151,12 +171,16 @@
  Expressões algébricas com frações:
  \begin{exem}    
   $\dfrac{6x^7 x^6}{3x^3x^8}$
-\[\dfrac{6x^7 x^6}{3x^3x^8}= \dfrac{6x^{7+6}}{3x^{3+8}}= \dfrac{6x^{13}}{3x^{11}}= 2x^{13-11}= 2x^2 \ ;\]
+\begin{equation}
+\dfrac{6x^7 x^6}{3x^3x^8}= \dfrac{6x^{7+6}}{3x^{3+8}}= \dfrac{6x^{13}}{3x^{11}}= 2x^{13-11}= 2x^2 \ ;
+\end{equation}
  \end{exem}
  
  \begin{exem}
   $\dfrac{4x^0y^5z^3}{12z^3y^4x^3}$
-  \[\dfrac{4x^0y^5z^3}{12z^3y^4x^3}= \dfrac{4x^0y^5z^3}{12x^3y^4z^3}= \dfrac{4}{12} \cdot \dfrac{x^0}{x^3} \cdot \dfrac{y^5}{y^4} \cdot \dfrac{z^3}{z^3}= \dfrac{1}{4} \cdot \dfrac{1}{x^3} \cdot y \cdot 1=\dfrac{y}{3x^3} \ ;\]
+\begin{equation}
+\dfrac{4x^0y^5z^3}{12z^3y^4x^3}= \dfrac{4x^0y^5z^3}{12x^3y^4z^3}= \dfrac{4}{12} \cdot \dfrac{x^0}{x^3} \cdot \dfrac{y^5}{y^4} \cdot \dfrac{z^3}{z^3}= \dfrac{1}{4} \cdot \dfrac{1}{x^3} \cdot y \cdot 1=\dfrac{y}{3x^3} \ ;
+\end{equation}
   \end{exem}
  
  \begin{exem}
@@ -165,12 +189,16 @@
  
  \begin{exem}
   $\left(\dfrac{4x^3y^2}{3z^3}\right) \cdot \left(\dfrac{z}{2x^2y} \right)^3$
-  \[\left(\dfrac{4x^3y^2}{3z^3}\right) \cdot \left(\dfrac{z}{2x^2y} \right)^3 = \left(\dfrac{4x^3y^2}{3z^3}\right) \cdot \left(\dfrac{z^3}{2^3(x^2)^3y^3} \right)= \dfrac{4x^3y^2z^3}{3z^38x^6y^3}= \dfrac{1}{6x^3y} \ ;\]
+\begin{equation}
+\left(\dfrac{4x^3y^2}{3z^3}\right) \cdot \left(\dfrac{z}{2x^2y} \right)^3 = \left(\dfrac{4x^3y^2}{3z^3}\right) \cdot \left(\dfrac{z^3}{2^3(x^2)^3y^3} \right)= \dfrac{4x^3y^2z^3}{3z^38x^6y^3}= \dfrac{1}{6x^3y} \ ;
+\end{equation}
   \end{exem}
  
  \begin{exem}
  $\dfrac{x^2 - 4}{x^4 - 2x^3}$
-  \[\dfrac{x^2 - 4}{x^4 - 2x^3}= \dfrac{(x+2) \cdot (x-2)}{x^3 \cdot (x - 2)}= \dfrac{x+2}{x^3} \ ; \]
+\begin{equation}
+\dfrac{x^2 - 4}{x^4 - 2x^3}= \dfrac{(x+2) \cdot (x-2)}{x^3 \cdot (x - 2)}= \dfrac{x+2}{x^3} \ ; 
+\end{equation}
   \end{exem}
  
  \begin{exem}
@@ -222,9 +250,13 @@
 
   \begin{itemize}
    \item Caso $x> 0$, temos pela definição de módulo que, $\abs{x}= x$, de modo que
-   \[\dfrac{\abs{x}}{x}=\dfrac{x}{x}= 1\]
+\begin{equation}
+\dfrac{\abs{x}}{x}=\dfrac{x}{x}= 1
+\end{equation}
    \item Caso $x< 0$, temos pela definição de módulo que, $\abs{x}= -x$, de modo que
-   \[\dfrac{\abs{x}}{x}=\dfrac{-x}{x}= -1\]
+\begin{equation}
+\dfrac{\abs{x}}{x}=\dfrac{-x}{x}= -1
+\end{equation}
   \end{itemize}
 
  Portanto,
@@ -238,18 +270,24 @@
  
  \begin{exem}
   $\abs{-5x^5}$
- \[\abs{-5x^5}= \abs{-5}\cdot \abs{x^5}= 5 \cdot \abs{x^5}\]
+\begin{equation}
+\abs{-5x^5}= \abs{-5}\cdot \abs{x^5}= 5 \cdot \abs{x^5}
+\end{equation}
  Observe que neste caso o expoente de $x$ é um número ímpar, e no item seguinte um número par, por isso temos essa diferença sútil na resposta.
  \end{exem}
  
  \begin{exem}
   $\abs{-5x^4}$
- \[\abs{-5x^4}= \abs{-5}\cdot \abs{x^4}= 5 \cdot x^4\]
+\begin{equation}
+\abs{-5x^4}= \abs{-5}\cdot \abs{x^4}= 5 \cdot x^4
+\end{equation}
  \end{exem}
  
  \begin{exem}
   $\abs{\dfrac{2x^2y}{4xy^3}}$
- \[\abs{\dfrac{2x^2y}{4xy^3}} = \abs{\dfrac{x}{2y^2}}= \dfrac{\abs{x}}{\abs{2y^2}}= \dfrac{\abs{x}}{\abs{2} \cdot \abs{y^2}}= \frac{\abs{x}}{2 \cdot y^2}\]
+\begin{equation}
+\abs{\dfrac{2x^2y}{4xy^3}} = \abs{\dfrac{x}{2y^2}}= \dfrac{\abs{x}}{\abs{2y^2}}= \dfrac{\abs{x}}{\abs{2} \cdot \abs{y^2}}= \frac{\abs{x}}{2 \cdot y^2}
+\end{equation}
  \end{exem}
  
  \begin{exem}
@@ -323,37 +361,51 @@
  
  \begin{exem}   
    $x^{\frac{5}{7}} \cdot x^{\frac{10}{7}} \cdot x^{\frac{6}{7}}$
-   \[x^{\frac{5}{7}} \cdot x^{\frac{10}{7}} \cdot x^{\frac{6}{7}}= x^{\frac{5+10+6}{7}}= x^{\frac{21}{7}}= x^3 \ ;\]
+\begin{equation}
+x^{\frac{5}{7}} \cdot x^{\frac{10}{7}} \cdot x^{\frac{6}{7}}= x^{\frac{5+10+6}{7}}= x^{\frac{21}{7}}= x^3 \ ;
+\end{equation}
     \end{exem}
  
  \begin{exem}
    $\dfrac{\sqrt[5]{x^2}}{x} \cdot \dfrac{\sqrt[5]{x^3}}{y^2} \cdot y^{\frac{3}{2}}$
-   \[\dfrac{\sqrt[5]{x^2}}{x} \cdot \dfrac{\sqrt[5]{x^3}}{y^2} \cdot y^{\frac{3}{2}}= \dfrac{\sqrt[5]{x^{2+3}}}{x} \cdot y^{\frac{3}{2} - 2}= \dfrac{x}{x} \cdot y^{\frac{-1}{2}}= \dfrac{1}{\sqrt{y}}= \dfrac{1}{\sqrt{y}} \cdot \dfrac{\sqrt{y}}{\sqrt{y}}= \dfrac{\sqrt{y}}{y} \ ;\]
+\begin{equation}
+\dfrac{\sqrt[5]{x^2}}{x} \cdot \dfrac{\sqrt[5]{x^3}}{y^2} \cdot y^{\frac{3}{2}}= \dfrac{\sqrt[5]{x^{2+3}}}{x} \cdot y^{\frac{3}{2} - 2}= \dfrac{x}{x} \cdot y^{\frac{-1}{2}}= \dfrac{1}{\sqrt{y}}= \dfrac{1}{\sqrt{y}} \cdot \dfrac{\sqrt{y}}{\sqrt{y}}= \dfrac{\sqrt{y}}{y} \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
     $\sqrt{x^5} \cdot \sqrt[3]{x}$
-   \[\sqrt{x^5} \cdot \sqrt[3]{x}= x^{\frac{5}{2}} \cdot x^{\frac{1}{3}}= x^{\frac{15+2}{6}} = x^{\frac{17}{6}} = \sqrt[6]{x^{6+6+5}}= \sqrt[6]{x^6 x^6 x^5} =  x^2 \cdot \sqrt[6]{x^5} \ ;\]
+\begin{equation}
+\sqrt{x^5} \cdot \sqrt[3]{x}= x^{\frac{5}{2}} \cdot x^{\frac{1}{3}}= x^{\frac{15+2}{6}} = x^{\frac{17}{6}} = \sqrt[6]{x^{6+6+5}}= \sqrt[6]{x^6 x^6 x^5} =  x^2 \cdot \sqrt[6]{x^5} \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
    $\sqrt{\sqrt[3]{x^{10}}}$
-   \[\sqrt{\sqrt[3]{x^{10}}}= (x^{\frac{10}{3}})^{\frac{1}{2}}= x^{\frac{5}{3}}= \sqrt[3]{x^5}= \sqrt[3]{x^3 \cdot x^2}= x \sqrt[3]{x^2} \ ;\]
+\begin{equation}
+\sqrt{\sqrt[3]{x^{10}}}= (x^{\frac{10}{3}})^{\frac{1}{2}}= x^{\frac{5}{3}}= \sqrt[3]{x^5}= \sqrt[3]{x^3 \cdot x^2}= x \sqrt[3]{x^2} \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
     $(\sqrt{x} + 2) \cdot (\sqrt{x} - 2)$
-   \[(\sqrt{x} + 2) \cdot (\sqrt{x} - 2)= (\sqrt{x})^2 - 4= x-4 \ ;\]
+\begin{equation}
+(\sqrt{x} + 2) \cdot (\sqrt{x} - 2)= (\sqrt{x})^2 - 4= x-4 \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
   $(\sqrt[3]{x} - 2) \cdot (\sqrt[3]{x^2} + 2 \sqrt[3]{x} + 4)$
-   \[(\sqrt[3]{x} - 2) \cdot (\sqrt[3]{x^2} + 2 \sqrt[3]{x} + 4)= \sqrt[3]{x^3} + 2\sqrt[3]{x^2} + 4 \sqrt[3]{x} - 2\sqrt[3]{x^2}- 4 \sqrt[3]{x} - 8= x - 8 \ ;\]
+\begin{equation}
+(\sqrt[3]{x} - 2) \cdot (\sqrt[3]{x^2} + 2 \sqrt[3]{x} + 4)= \sqrt[3]{x^3} + 2\sqrt[3]{x^2} + 4 \sqrt[3]{x} - 2\sqrt[3]{x^2}- 4 \sqrt[3]{x} - 8= x - 8 \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
   $\dfrac{125^{\frac{1}{3}}}{\sqrt{2x}} \cdot \sqrt{\dfrac{x}{98}}$
-   \[\dfrac{125^{\frac{1}{3}}}{\sqrt{2x}} \cdot \sqrt{\dfrac{x}{98}}= \sqrt[3]{125} \cdot \sqrt{\dfrac{x}{98 \cdot 2x}}= \sqrt[3]{5^3} \cdot \sqrt{\dfrac{x}{196x}}= 5 \cdot \dfrac{1}{\sqrt{196}}= \dfrac{5}{14} \ ;\]
+\begin{equation}
+\dfrac{125^{\frac{1}{3}}}{\sqrt{2x}} \cdot \sqrt{\dfrac{x}{98}}= \sqrt[3]{125} \cdot \sqrt{\dfrac{x}{98 \cdot 2x}}= \sqrt[3]{5^3} \cdot \sqrt{\dfrac{x}{196x}}= 5 \cdot \dfrac{1}{\sqrt{196}}= \dfrac{5}{14} \ ;
+\end{equation}
    \end{exem}
  
  \begin{exem}
@@ -376,7 +428,9 @@
  \begin{minipage}{0.9\linewidth}
  \begin{center}
   Seja $K= \R \text{ ou } \C$. Um polinômio $p$ na incógnita $x$ e com coeficientes em $K$ (simbolicamente, $p \in K[x]$) é uma expressão da forma
-  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i ,\]
+\begin{equation}
+p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i ,
+\end{equation}
   em que os coeficientes $a_n, \ldots, a_0 \in K$, $a_n \neq 0$ e $n \in \N$. O número natural $n$ é chamado de grau do polinômio $p$, e escreve-se $gr(p)= n$. O termo $a_0$ é denominado termo constante de $p$.
  \end{center}
  \end{minipage}}
@@ -392,7 +446,9 @@
 
  \begin{defi}
  Dados um número real $k$ e o polinômio $p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0$, chama-se \emph{valor numérico de $p$ em $k$} ao valor:
- \[p(k)= a_nk^n + a_{n-1}k^{n-1}+ \ldots + a_1k+ a_0 \ .\]
+\begin{equation}
+p(k)= a_nk^n + a_{n-1}k^{n-1}+ \ldots + a_1k+ a_0 \ .
+\end{equation}
  \end{defi}
 
 \begin{exem}
@@ -421,36 +477,56 @@ p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
 
   \begin{teo}
   Sejam $p$ e $q$ dois polinômios em $K$, dados por:
-  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i\]
-  \[q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i\]
+\begin{equation}
+p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i
+\end{equation}
+\begin{equation}
+q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i
+\end{equation}
   temos que $p=q \Leftrightarrow a_i= b_i$, para todo $i \in \{0, 1, 2, \cdots, n\}$.
  \end{teo}
 
  \begin{dem}
  Para todo $x \in \R$, temos:
- \[a_i= b_i \Leftrightarrow a_i - b_i=0 \Leftrightarrow (a_i - b_i)x^i=0 \Leftrightarrow \sum_{i=0}^{n}(a_i - b_i)x^i= 0 \Leftrightarrow\]
- \[ \sum_{i=0}^{n}a_i x^i - \sum_{i=0}^{n}b_i x^i = 0 \Leftrightarrow \sum_{i=0}^{n}a_i x^i = \sum_{i=0}^{n}b_i x^i \Leftrightarrow p(x)= q(x)\]
+\begin{equation}
+a_i= b_i \Leftrightarrow a_i - b_i=0 \Leftrightarrow (a_i - b_i)x^i=0 \Leftrightarrow \sum_{i=0}^{n}(a_i - b_i)x^i= 0 \Leftrightarrow
+\end{equation}
+\begin{equation}
+ \sum_{i=0}^{n}a_i x^i - \sum_{i=0}^{n}b_i x^i = 0 \Leftrightarrow \sum_{i=0}^{n}a_i x^i = \sum_{i=0}^{n}b_i x^i \Leftrightarrow p(x)= q(x)
+\end{equation}
 
  \end{dem}
 
   Este Teorema mostra que, quando escrevemos um polinômio $p$ na forma
- \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
+\begin{equation}
+p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0
+\end{equation}
  com $a_i \in K$, então os números $a_0, \ldots, a_n$ são determinados de modo único.
 
  Dados dois polinômios
- \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i\]
-  \[q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i\]
+\begin{equation}
+p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0= \sum_{i=0}^{n} a_ix^i
+\end{equation}
+\begin{equation}
+q(x)= b_nx^n + b_{n-1}x^{n-1}+ \ldots + b_1x+ b_0= \sum_{i=0}^{n} b_ix^i
+\end{equation}
   chama-se \emph{soma} de $p$ com $q$ o polinômio
-  \[(p+q)(x)= (a_n+ b_n)x^n + (a_{n-1}+b_{n-1})x^{n-1}+ \ldots + (a_1+b_1)x+ (a_0+b_0)= \sum_{i=0}^{n} (a_i+b_i)x^i \ .\]
+\begin{equation}
+(p+q)(x)= (a_n+ b_n)x^n + (a_{n-1}+b_{n-1})x^{n-1}+ \ldots + (a_1+b_1)x+ (a_0+b_0)= \sum_{i=0}^{n} (a_i+b_i)x^i \ .
+\end{equation}
 
   \begin{teo}
   Se $p$, $q$ e $p+q$ são polinômios não nulos, então o grau do polinômio $p+q$ é menor ou igual ao maior dos números $gr(p)$ e $gr(q)$;
-  \[gr(p+q) \leq \text{máx}\{gr(p), gr(q)\} \ .\]
+\begin{equation}
+gr(p+q) \leq \text{máx}\{gr(p), gr(q)\} \ .
+\end{equation}
   \end{teo}
 
   \begin{teo}
   Se $p$, $q$ e $p \cdot q$ são polinômios não nulos, então o grau do polinômio $p \cdot q$ é igual a soma dos graus de $p$ e $q$;
-  \[gr(p \cdot q) = gr(p) + gr(q) \ .\]
+\begin{equation}
+gr(p \cdot q) = gr(p) + gr(q) \ .
+\end{equation}
   \end{teo}
 
   Para funções polinomiais o \emph{Teorema Fundamental da Álgebra} garante a existência de zeros.
@@ -473,13 +549,17 @@ p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
 
  \begin{teo}
   Seja $p$ um polinômio não nulo em $K$, escrito na forma
-  \[p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0\]
+\begin{equation}
+p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0
+\end{equation}
    então $p$ tem no máximo $n$ raízes em $K$.
  \end{teo}
 
  \begin{teo}
   Sejam $p(x)$, $g(x)$ polinômios sobre o corpo $K$, i.e., polinômios em $K[x]$, e suponhamos que $gr(g) \geq 0$. Então, existem polinômios $q(x)$ e $r(x)$ tais que
-  \[p(x)= q(x)g(x) + r(x) \ , \]
+\begin{equation}
+p(x)= q(x)g(x) + r(x) \ , 
+\end{equation}
   em que $gr(r) < gr (g)$. Essas condições permitem determinar os polinômio $q$ e $r$ de modo único.
  \end{teo}
 
@@ -504,13 +584,17 @@ p(0)&=& 0^2 + 7 \cdot 0 +10= 10\\
 
  \begin{cor}
  Seja $p$ um polinômio não-nulo sobre $K$. Seja $\alpha \in K$ tal que $p(\alpha)=0$. Então, existe um polinômio $q(x)$ sobre $K$ tal que
- \[p(x)= (x - \alpha)q(x) \ .\]
+\begin{equation}
+p(x)= (x - \alpha)q(x) \ .
+\end{equation}
  \end{cor}
 
  Como consequência deste Corolário, todo polinômio de grau $n \geq 1$ pode ser escrito como produto de $n$ fatores de grau $1$.
 
  \begin{teo}[Teorema da Decomposição]
   Todo polinômio $p(x)= a_nx^n + a_{n-1}x^{n-1}+ \ldots + a_1x+ a_0$, com $a_n \neq 0$, pode ser escrito de forma fatorada
-  \[p(x)= a_n(x - r_1)(x - r_2) \ldots (x - r_n)\]
+\begin{equation}
+p(x)= a_n(x - r_1)(x - r_2) \ldots (x - r_n)
+\end{equation}
   onde $r_1, r_2, \cdots, r_n$ são as raízes do polinômio.
  \end{teo}
