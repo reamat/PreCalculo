@@ -52,8 +52,8 @@ Podemos resolver isso de duas formas:
                         para ter o direito de usar o dinheiro até o dia do pagamento.
                         Pode ser expresso em valor monetário (\$) ou como uma taxa de juro (\%). \\\hline
  Prazo (\textbf{n})  &  Número de períodos que compõem o intervalo de tempo utilizado. \\\hline
- Montante (\textbf{M})  & Soma do capital aplicado ou emprestado mais juros. \[\destaque{M= C + J}\]  \\\hline
- Taxa de juros (\textbf{i})  & É o coeficiente resultante da razão entre o juro e o capital. A cada taxa, deverá vir anexado o período a que ela se refere. \[\destaque{i = \frac{J}{C}}\] \\\hline
+ Montante (\textbf{M})  & Soma do capital aplicado ou emprestado mais juros. \destaque{M= C + J}  \\\hline
+ Taxa de juros (\textbf{i})  & É o coeficiente resultante da razão entre o juro e o capital. A cada taxa, deverá vir anexado o período a que ela se refere. \destaque{i = \frac{J}{C}} \\\hline
  \end{tabular}
 \end{table}
 
@@ -119,10 +119,12 @@ Outra forma de apresentação da taxa de juros é a unitária, que é igual a ta
   \end{eqnarray*}
 
  Portanto, o juro simples após um determinado período $n$ pode ser calculado através da fórmula:
-  \[\destaque{J= C \cdot n \cdot i}\]
+ 
+ \destaque{J= C \cdot n \cdot i}
 
  Assim o montante resultante após um período $n$ de capitalização sob juros simples é:
- \[M= C + J = C + C \cdot n \cdot i \Rightarrow \destaque{M=  C \cdot (1 + n \cdot i)}\]
+ 
+ \destaque{M= C + J = C + C \cdot n \cdot i \Rightarrow M=  C \cdot (1 + n \cdot i)}
 
  Da fórmula do montante, dada por, $M= C \cdot (1 + n \cdot i)$ decorrem as fórmulas para os cálculos do período, da taxa, e do capital.
  \begin{obs}
@@ -150,20 +152,27 @@ Outra forma de apresentação da taxa de juros é a unitária, que é igual a ta
   M_n&=& C(1+i)^n
  \end{eqnarray*}
  portanto, o montante após $n$ períodos, a uma taxa de juros $i$ ao período passa a ser
- \[\destaque{M= C(1+i)^n.}\]
+ 
+ \destaque{M= C(1+i)^n.}
 
  Decorre portanto da fórmula do montante as seguintes fórmulas:
  \begin{itemize}
   \item Cálculo dos juros compostos:
-  \[M=C+J \Rightarrow J= M-C \Rightarrow J= C(1+i)^n - C \Rightarrow \destaque{J= C((1+i)^n - 1)}.\]
+  
+  \destaque{M=C+J \Rightarrow J= M-C \Rightarrow J= C(1+i)^n - C \Rightarrow J= C((1+i)^n - 1)}.
+
   \item Cálculo do capital:
-  \[M= C(1+i)^n \Rightarrow \destaque{C= \frac{M}{(1+i)^n}}.\]
+  
+  \destaque{M= C(1+i)^n \Rightarrow C= \frac{M}{(1+i)^n}}.
+  
   \item Cálculo da taxa:
-  \[M= C(1+i)^n \Rightarrow (1+i)^n= \frac{M}{C} \Rightarrow 1+i= \left(\frac{M}{C}\right)^{1/n} \Rightarrow \destaque{i= \left(\frac{M}{C}\right)^{1/n} -1}\]
+  
+  \destaque{M= C(1+i)^n \Rightarrow (1+i)^n= \frac{M}{C} \Rightarrow 1+i= \left(\frac{M}{C}\right)^{1/n} \Rightarrow i= \left(\frac{M}{C}\right)^{1/n} -1}
+  
   \item Cálculo do período ou prazo:
   \begin{align*}
   M= C(1+i)^n & \Rightarrow (1+i)^n= \frac{M}{C} \Rightarrow ln(1+i)^n= ln\left(\frac{M}{C}\right) \Rightarrow n \cdot ln(1+i)= ln\left(\frac{M}{C}\right) \\
-  & \Rightarrow \destaque{n= \frac{ln\left(\frac{M}{C}\right)}{ln(1+i)}}
+  & \Rightarrow n= \frac{ln\left(\frac{M}{C}\right)}{ln(1+i)}
   \end{align*}
  \end{itemize}
 
