@@ -297,9 +297,13 @@ A \times B= \{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c), (3, a), (3, b), (3
  Dada uma família $\mathcal{A}$ de conjuntos, ou seja, dado um conjunto $\mathcal{A}$ de conjuntos, temos:
  \begin{itemize}
  \item União de todos os conjuntos que são elementos de $\mathcal{A}$:
- $$\bigcup_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para algum } A \in \mathcal{A}\}$$
+\begin{equation}
+\bigcup_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para algum } A \in \mathcal{A}\}
+\end{equation}
  \item Interseção de todos os conjuntos que são elementos de $\mathcal{A}$:
- $$\bigcap_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para todo } A \in \mathcal{A}\}$$
+\begin{equation}
+\bigcap_{A \in \mathcal{A}} A = \{x\mid x \in A \text{ para todo } A \in \mathcal{A}\}
+\end{equation}
 \end{itemize}
 
 \begin{prop}
@@ -313,11 +317,15 @@ Sejam $A$, $B$ e $C$ conjunto arbitrários, temos que:
  \item $A - (B \cap C) = (A - B) \cup (A - C)$ (lei de DeMorgan)
  \item $\bigcap_{\alpha \in J}(U_{\alpha} \cap Y) = (\bigcap_{\alpha \in J} U_{\alpha}) \cap Y$
 
-  $$(U_1 \cap Y) \cap \cdots \cap (U_n \cap Y) = (U_1 \cap \cdots \cap U_n) \cap Y$$
+\begin{equation}
+(U_1 \cap Y) \cap \cdots \cap (U_n \cap Y) = (U_1 \cap \cdots \cap U_n) \cap Y
+\end{equation}
 
  \item $\bigcup_{\alpha \in J}(U_{\alpha} \cap Y) = (\bigcup_{\alpha \in J} U_{\alpha}) \cap Y$
 
- $$(U_1 \cap Y) \cup \cdots \cup (U_n \cap Y) = (U_1 \cup \cdots \cup U_n) \cap Y$$
+\begin{equation}
+(U_1 \cap Y) \cup \cdots \cup (U_n \cap Y) = (U_1 \cup \cdots \cup U_n) \cap Y
+\end{equation}
 
  \item $(U \times V) \cap (A \times B) = (U \cap A) \times (V \cap B)$
 
