@@ -49,7 +49,7 @@ main.html: main.tex
 	bibtex main
 	latex main
 	latex main
-	htlatex main.tex "myconfig.cfg,3,notoc*" " -cunihtf" "-d./html/"
+	htlatex main "myconfig,3,notoc*" " -cunihtf" "-d./html/"
 	cp config-book.knd config.knd
 
 ########################################
