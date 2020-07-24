@@ -20,6 +20,13 @@
 # *.ps
 # *.eps
 # *.pdf
+main.pdf
+main.css
+main.mtc
+main.tmp
+main*.html
+main*.svg
+html*
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
