@@ -1,3 +1,4 @@
+ [![Licença: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 ![pdf](https://github.com/he7d3r/PreCalculo/workflows/pdf/badge.svg)
 ![dvi](https://github.com/he7d3r/PreCalculo/workflows/dvi/badge.svg)
 ![html](https://github.com/he7d3r/PreCalculo/workflows/html/badge.svg)
@@ -19,7 +20,7 @@ Antes de nos enviar uma colaboração, por favor, verifique se ela está de acor
 
 ## Licença
 
-Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada. Para ver uma cópia desta licença, visite <https://creativecommons.org/licenses/by-sa/3.0/> ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Não Adaptada. Para ver uma cópia desta licença, visite <https://creativecommons.org/licenses/by-sa/4.0/> ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ### Aviso de violação de _copyright_
 
