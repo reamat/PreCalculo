@@ -1361,7 +1361,7 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
  
  \end{exem}
  
- \section{Inequações exponenciais (fazer)}
+ \section{Inequações exponenciais}
  
  \vskip0.3cm
  \colorbox{azul}{
@@ -1416,12 +1416,91 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
  \end{eqnarray*}
  ou seja, neste caso a desigualdade se mantém.
  
+  \begin{exem}
+  $\left( \dfrac{1}{32} \right)^x > \left( \dfrac{1}{2} \right)^2$
   
+  Para resolver esta inequação exponencial observamos que da fatoração em primos decorre que $32= 2^5$, substituindo na inequação e usando propriedades de potência obtemos duas potências com mesma base, e podemos então passar a trabalhar apenas com os expoentes.
+  \begin{eqnarray*}
+  \left( \dfrac{1}{32} \right)^x > \left( \dfrac{1}{2} \right)^2 \Leftrightarrow
+  \left( \dfrac{1}{2^5} \right)^x > \left( \dfrac{1}{2} \right)^2 \Leftrightarrow
+  \left( \dfrac{1}{2} \right)^{5x} > \left( \dfrac{1}{2} \right)^2 
+  \Leftrightarrow 5x < 2 \Leftrightarrow x < \dfrac{2}{5}
+  \end{eqnarray*}
+  Obtemos assim o seguinte conjunto solução, $S= \{x \in \R \mid x < \dfrac{2}{5}\}$.
+  \end{exem}
+  
+  \begin{exem}
+  $\left( \dfrac{1}{9} \right)^x \leq \left( \dfrac{1}{243} \right)^4$
+  
+  Note que, $9= 3^2$ e $243= 3^5$ substituindo na inequação temos que,
+  \begin{eqnarray*}
+  \left( \dfrac{1}{9} \right)^x \leq \left( \dfrac{1}{243} \right)^4 \Leftrightarrow
+  \left( \dfrac{1}{3^2} \right)^x \leq \left( \dfrac{1}{3^5} \right)^4 \Leftrightarrow
+  \left( \dfrac{1}{3} \right)^{2x} \leq \left( \dfrac{1}{3} \right)^{20}
+  \Leftrightarrow 2x \geq 20 \Leftrightarrow x \geq 10
+  \end{eqnarray*}
+  Obtemos assim o seguinte conjunto solução, $S= \{x \in \R \mid x \geq 10 \}$.
+  \end{exem}
+  
+  \begin{exem}
+  $\left( \dfrac{3}{2} \right)^{3x} < \left( \dfrac{8}{27} \right)^5$
+  
+  Note que, $8= 2^3$ e $27= 3^3$ substituindo na inequação temos que,
+  \begin{eqnarray*}
+  \left( \dfrac{3}{2} \right)^{3x} < \left( \dfrac{8}{27} \right)^5 \Leftrightarrow
+  \left( \dfrac{3}{2} \right)^{3x} < \left( \dfrac{2^3}{3^3} \right)^5 \Leftrightarrow
+  \left( \dfrac{3}{2} \right)^{3x} < \left(\left( \dfrac{2}{3}\right)^3 \right)^5 \Leftrightarrow \\
+  \left( \dfrac{3}{2} \right)^{3x} < \left(\dfrac{2}{3} \right)^{15} \Leftrightarrow
+  \left( \dfrac{3}{2} \right)^{3x} < \left(\dfrac{3}{2} \right)^{-15} \Leftrightarrow
+   3x < -15 \Leftrightarrow x < -5
+  \end{eqnarray*}
+  Obtemos assim o seguinte conjunto solução, $S= \{x \in \R \mid x < -5 \}$.
+  Observe que, $\dfrac{3}{2}= 1,5 > 1$ por isso, quando passamos a trabalhar somente com os expoentes a desigualdade de mantém.
+  \end{exem}
+  
+  \begin{exem}
+  $\left( \dfrac{1}{5} \right)^x \geq 125$
+  
+  Note que, $125= 5^3$ substituindo na inequação temos que,
+  \begin{eqnarray*}
+  \left( \dfrac{1}{5} \right)^x \geq 125 \Leftrightarrow
+  \left( 5^{-1} \right)^x \geq 5^3 \Leftrightarrow
+  5^{-x} \geq 5^3 \\
+  \Leftrightarrow -x \geq 3 \Leftrightarrow x \leq -3.
+  \end{eqnarray*}
+  Obtemos assim o seguinte conjunto solução, $S= \{x \in \R \mid x \leq -3 \}$.
+  \end{exem}
+  
+  \begin{exem}
+  $216^x < \sqrt[3]{36}$
+  
+  Note que, $36= 6^2$ e $216= 6^3$ portanto,
+  \begin{eqnarray*}
+  216^x < \sqrt[3]{36} \Leftrightarrow (6^3)^x < \sqrt[3]{6^2} \Leftrightarrow 
+  6^{3x} < 6^{\frac{2}{3}}  \Leftrightarrow 3x < \dfrac{2}{3} \Leftrightarrow 
+  x < \dfrac{2}{9}
+  \end{eqnarray*}
+  Portanto o conjunto solução desta inequação é: $S= \{x \in \R \mid x < \dfrac{2}{9} \}$.
+  \end{exem}
+  
+  \begin{exem}
+  $0,07^{x+4} > 0,000343$
+  
+  Para resolver esta inequação vamos começar observando que:
+  \begin{eqnarray*}
+  0,000343= \dfrac{343}{1000000}= \dfrac{7^3}{10^6}= \left(\dfrac{7}{10^2}\right)^3= 0,07^3
+  \end{eqnarray*}
+  substituindo na inequação temos,
+  \begin{eqnarray*}
+  0,07^{x+4} > 0,000343 \Leftrightarrow 0,07^{x+4} > 0,07^3 \Leftrightarrow x+4 < 3 \Leftrightarrow x < -1.
+  \end{eqnarray*}
+  Portanto o conjunto solução desta inequação é: $S= \{x \in \R \mid x < -1 \}$.
+  \end{exem}
 
  \chapter{Equações e inequações}
 
- \section{Equações com fração (fazer)}
- \section{Inequações com fração (fazer)}
+ \section{Equações com fração}
+ \section{Inequações com fração}
 
  \begin{exem}
   $4 - \dfrac{x^2+x+4}{x+1} \leq 0$
@@ -1809,6 +1888,6 @@ S= (-\infty, -5] \cup [5, \infty) \ .
  \end{exem}
 
 
- \section{Equações com raízes (fazer)}
+ \section{Equações com raízes}
 
- \section{Inequações com raízes (fazer)}
+ \section{Inequações com raízes}
