@@ -1,7 +1,10 @@
 %Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/ ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 \chapter{Trigonometria}
-
+ Possivelmente seu primeiro contato com trigonometria, foi ao estudar a trigonometria no triângulo retângulo, neste caso definimos as funções trigonométricas como razões entre os lados do triângulo e estamos restringindo seu domínio aos ângulos entre $0 \degree$ e $90 \degree$.
+ Quando a trigonometria aparece novamente nos currículos ela ressurge através do círculo trigonométrico, que no começo fica restrito a compreensão da primeira volta do círculo ou seja ângulos entre $0 \degree$ e $360 \degree$, para depois ainda sobre o círculo aumentar o domínio da função.
+ Antes de estudarmos as funções trigonométricas com domínio real vamos relembrar como este conceito era abordado nestes dois contextos já conhecidos.
+ 
  \section{Triângulo retângulo}
 
   Considere o triângulo retângulo, (triângulo que possui um de seus ângulos internos medindo $90 \degree$), como na figura abaixo:
@@ -26,6 +29,8 @@ a^2= b^2 + c^2.
 
  \vskip0.3cm
 
+ \textit{Nota histórica:} De acordo com Howard Eves, em seu livro: \textit{"Introdução à história da Matemática"}, acredita-se que Pitágoras nasceu por volta de 572 a.c. na ilha egéia de Samos, e apesar deste teorema levar seu nome, este resultado já era conhecido pelos babilônios dos tempos de Hamurabi, mais de um milênio antes, mas sua primeira demonstração geral pode ter sido dada por Pitágoras.
+ 
  Este é um resultado importante, já que com ele é possível encontrar o valor de um dos lados do triângulo, nos casos em que não temos todos os lados dados.
 
  Para este triângulo, as funções seno, cosseno e tangente são dadas pelas seguintes razões trigonométricas, nesta ordem:
@@ -46,9 +51,9 @@ a^2= b^2 + c^2.
 
  \vskip0.3cm
 
- Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. Porém estas funções estão definidas para qualquer número real, mas para um primeiro estudo é suficiente conhecer seus valores para os ângulos $0 \degree \leqslant \alpha \leqslant 360 \degree$.
-
- Destacamos aqui os valores do seno, cosseno e tangente dos \emph{ângulos notáveis} que são os mais utilizados:
+ Como a soma dos ângulos internos de um triângulo é $180 \degree$, e estamos aqui tratando de um triângulo retângulo, decorre que neste caso $0 \degree \leqslant \alpha \leqslant 90 \degree$. 
+ 
+ Destacamos aqui os valores do seno, cosseno e tangente dos \emph{ângulos notáveis} que são os mais conhecidos:
 
  \begin{table}[H]
  \centering
@@ -71,6 +76,8 @@ a^2= b^2 + c^2.
    \caption{Círculo trigonométrico}
   \end{figure}
 
+ No círculo trigonométrico acima, temos destacado o ângulo de $30 \degree$ formado pelo raio do círculo com o eixo $x$. A projeção ortogonal deste raio sobre o eixo $x$ determina um segmento cujo comprimento é o valor do $cos(30 \degree)$, sobre o eixo $y$ determina um segmento cujo comprimento é o valor do $sen(30 \degree)$, e sobre a reta tangente determina um segmento cujo comprimento é o valor da $tan(30 \degree)$. Podemos aqui trocar o ângulo de $30 \degree$ por qualquer outro valor e encontraremos os valores do cosseno, seno e tangente deste novo ângulo da mesma forma.
+ 
   A partir do círculo trigonométrico concluímos que:
 
   \begin{table}[H]
@@ -95,7 +102,7 @@ a^2= b^2 + c^2.
  \end{tabular}
 \end{table}
 
- \begin{table}[h]
+ \begin{table}[H]
  \centering
  \begin{tabular}{|c|c|c|c|} \hline
  \rowcolor{cinza}
@@ -108,7 +115,6 @@ a^2= b^2 + c^2.
 
 
   Os ângulos podem também ser representados em radianos, respeitando a seguinte relação:
-
   \destaque{\pi \text{ radianos}= 180 \degree}
 
   Usando esta relação podemos transformar graus para radianos e radianos para graus, vamos ver dois exemplos:
@@ -341,21 +347,32 @@ Qual é a distância de seu ponto de apoio no solo até a parede?
 
 
 \chapter{Funções trigonométricas}
-
-  As funções trigonométricas fazem parte do grupo de funções periódicas, que são as funções que satisfazem a seguinte definição.
+   
+ Vamos agora definir as funções trigonométricas no maior subconjunto real possível, e estudar o comportamento de seus gráficos. Mas para que este estudo seja completo precisamos antes definir os conceitos de período e amplitudade que são particularmente utéis para a compreenssão das funções trigonométricas.
+ 
+  Estas funções fazem parte do grupo de funções periódicas, que são as funções que satisfazem a seguinte definição.
 
   \begin{defi}
-   Uma função $f: \R \rightarrow \R$ é denominada \textbf{periódica} quando existe um número real positivo $P$ tal que
+   Uma função $f: \R \rightarrow \R$ é denominada \emph{periódica} quando existe um número real positivo $P$ tal que
 \begin{equation}
 f(x + P)= f(x)
 \end{equation}
    para todo $x$ no domínio da $f$. O menor número real positivo $P$ que satisfaz esta propriedade é denominado período de $f$.
   \end{defi}
-
-  Vamos definir as funções trigonométricas no maior subconjunto real possível, e estudar o comportamento de seus gráficos.
-
-  \todo{ períodos, amplitude, intervalo de bijetividade, função inversa}
-
+  
+  Assim para entender seu comportamento em $\R$ basta conhecer como ela se comporta em um período.
+  
+  Além de periódica algumas funções trigonométricas são limitadas, ou seja admitem um valor máximo e um valor mínimo, e para estas funções podemos definir o conceito de amplitude como segue.
+  
+  \begin{defi}
+  A \emph{amplitude} de oscilação $A$ de uma função limitada é dada por
+  \begin{equation}
+  A= \frac{y_{max} - y_{min}}{2} .
+  \end{equation}
+  \end{defi}
+  
+  De posse deste conceitos passamos agora para a definição das funções trigonométricas.
+  
   \begin{itemize}
   \item Função Seno: $f: \R \rightarrow [-1, 1]$ dada por $f(x)= \sen (x)$, cujo gráfico é:
 
@@ -390,6 +407,13 @@ f(x + P)= f(x)
 \cos(x + 2\pi)= \cos(x) \ , 
 \end{equation}
   logo as funções seno e cosseno são de fato funções períodicas de período $2\pi$.
+  
+  Além disso note que ambas as funções seno e cosseno são limitadas, com $y_{max}= 1$ e $y_{min}= -1$, portanto para ambas temos sua amplitude será:
+  \begin{equation}
+  A= \frac{y_{max} - y_{min}}{2}= \frac{1 - (-1)}{2}= \frac{1+1}{2}= 1.
+  \end{equation}
+  
+  Para as demais funções trigonométricas que apresentaremos a seguir, convidamos o leitor a observar que elas não são limitadas e por este motivo não faz sentido falar de amplitudade para estas funções.
 
   \item Função Tangente: $f: \R \setminus \{\frac{k\pi}{2} | k \in \Z\} \rightarrow \R$ dada por $f(x)= \tan(x)$, cujo gráfico é:
 
