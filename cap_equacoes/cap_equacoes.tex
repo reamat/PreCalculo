@@ -758,7 +758,8 @@ Como nossa situação problema é saber quantidade inicial de rapazes não faz s
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
-  As equações exponenciais são aquelas em que a incógnita aparece nos expoentes.
+  As equações exponenciais são aquelas nas quais temos $a \in \R \setminus \{0, 1\}$ elevado a um polinômio $p(x)$. Como por exemplo:
+  \[a^{p(x)}= 0\]
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -1490,7 +1491,7 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
-  Uma inequação exponencial é uma inequação na qual a incógnita aparece no expoente.
+ As inequações exponenciais são aquelas nas quais temos $a \in \R \setminus \{0, 1\}$ elevado a um polinômio $p(x)$.
  \end{center}
  \end{minipage}}
  \vskip0.3cm 
@@ -1509,10 +1510,10 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
  \begin{center}
   Sendo $x \in \R$, $a \in \R$ satisfazendo $a > 0$ e $a \neq 1$, e $b \in \R$ satisfazendo $b > 0$, temos então as seguintes possíveis inequações exponenciais:
  \begin{eqnarray*}
- a^x \leq b \\
- a^x < b \\
- a^x \geq b \\
- a^x > b 
+ a^{p(x)} \leq b \\
+ a^{p(x)} < b \\
+ a^{p(x)} \geq b \\
+ a^{p(x)} > b 
  \end{eqnarray*} 
  nas quais é possível escrever $b=a^m$ para algum $m \in \R$.
  \end{center}
@@ -1523,19 +1524,19 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
  
  Caso 1: $0 < a < 1$ temos que,
   \begin{eqnarray*}
- a^x \leq a^m \Rightarrow x \geq m\\
- a^x < a^m \Rightarrow x > m \\
- a^x \geq a^m \Rightarrow x \leq m\\
- a^x > a^m \Rightarrow x < m
+ a^{p(x)} \leq a^m \Rightarrow p(x) \geq m\\
+ a^{p(x)} < a^m \Rightarrow p(x) > m \\
+ a^{p(x)} \geq a^m \Rightarrow p(x) \leq m\\
+ a^{p(x)} > a^m \Rightarrow p(x) < m
  \end{eqnarray*}
  ou seja, nesta situação ocorre uma inversão da desigualdade.
  
  Caso 2: $a > 1$ temos que,
   \begin{eqnarray*}
- a^x \leq a^m \Rightarrow x \leq m \\
- a^x < a^m \Rightarrow x < m \\
- a^x \geq a^m \Rightarrow x \geq m \\
- a^x > a^m \Rightarrow x > m
+ a^{p(x)} \leq a^m \Rightarrow p(x) \leq m \\
+ a^{p(x)} < a^m \Rightarrow p(x) < m \\
+ a^{p(x)} \geq a^m \Rightarrow p(x) \geq m \\
+ a^{p(x)} > a^m \Rightarrow p(x) > m
  \end{eqnarray*}
  ou seja, neste caso a desigualdade se mantém.
  
@@ -1549,7 +1550,7 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
   \left( \dfrac{1}{2} \right)^{5x} > \left( \dfrac{1}{2} \right)^2 
   \Leftrightarrow 5x < 2 \Leftrightarrow x < \dfrac{2}{5}
   \end{eqnarray*}
-  Obtemos assim o seguinte conjunto solução, $S= \{x \in \R \mid x < \dfrac{2}{5}\}$.
+  Obtemos assim o seguinte conjunto solução, $S= \left\{ x \in \R \mid x < \dfrac{2}{5} \right\}$.
   \end{exem}
   
   \begin{exem}
@@ -1603,7 +1604,7 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
   6^{3x} < 6^{\frac{2}{3}}  \Leftrightarrow 3x < \dfrac{2}{3} \Leftrightarrow 
   x < \dfrac{2}{9}
   \end{eqnarray*}
-  Portanto o conjunto solução desta inequação é: $S= \{x \in \R \mid x < \dfrac{2}{9} \}$.
+  Portanto o conjunto solução desta inequação é: $S= \left\{x \in \R \mid x < \dfrac{2}{9} \right\}$.
   \end{exem}
   
   \begin{exem}
@@ -1626,47 +1627,14 @@ x^2-7x+6 = (x-1) \cdot (x-6) .
 
  \chapter{Equações e inequações}
 
- \section{Equações com fração}
- \section{Inequações com fração}
+ \section{Equações modulares}
 
- \begin{exem}
-  $4 - \dfrac{x^2+x+4}{x+1} \leq 0$
-   \vskip0.3cm
-
-  1º passo: tirar o minímo múltiplo comum das duas frações para poder efetuar a soma das frações, lembrando que quando o denominador não aparece ele é um.
-
-  \[4 - \frac{x^2+x+4}{x+1} \leq 0 \Rightarrow
-    \frac{4x+4-x^2-x-4}{x+1} \leq 0 \Rightarrow
-    \frac{-x^2 + 3x}{x+1} \leq 0
-  \]
-  Agora vamos calcular os zeros de cada uma das equações $-x^2 + 3x$ e $x+1$ separadamente para poder fazer o estudo de sinal do quociente entre elas.
-\begin{equation}
-x+1=0 \Leftrightarrow x= -1
-\end{equation}
-\begin{equation}
--x^2 + 3x= 0 \Leftrightarrow x(-x+3)=0 \Leftrightarrow x=0 \ \ \text{ou} \ \ x=-3
-\end{equation}
-   \begin{figure}[H]
- \centering
- \includegraphics[width=8cm]{./cap_equacoes/figs/sinais}
- \end{figure}
-
- Logo pelo jogo de sinais da figura acima, e considerando que a equação não pode ser calculada em $x= -1$, pois este número real zera o denominador, obtemos
-\begin{equation}
-S= [-3, -1) \cup [0, +\infty)
-\end{equation}
- como conjunto solução desta inequação.
-
- \end{exem}
-
-
- \section{Equações com módulo}
-
-   \vskip0.3cm
+ \vskip0.3cm
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
-  As equações modulares são equações que apresentam expressões algébricas dentro de um módulo.
+  As equações modulares são equações que apresentam polinômios dentro de um módulo. Como por exemplo:
+  \[\abs{p(x)}= 0\]
  \end{center}
  \end{minipage}}
  \vskip0.3cm
@@ -2013,11 +1981,115 @@ x+a> 0 \Rightarrow x> -a
 S= (-\infty, -5] \cup [5, \infty) \ . 
 \end{equation}
  \end{exem}
+ 
+ \section{Equações racionais}
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As equações racionais são dadas por quocientes/razões de polinômios. Como por exemplo:
+  \[\dfrac{p(x)}{q(x)}= 0\]
+  onde $p(x)$ e $q(x)$ são polinômios na variável $x$ e $q(x) \neq 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Lembre-se que não podemos dividir por $0$ (zero), logo a equação racional
+ \[\dfrac{p(x)}{q(x)}= 0\]
+ está definida apenas no conjunto $D= \{x \in \R \mid q(x) \neq 0\}$.
+ 
+ Este subconjunto dos números reais no qual a equação está bem definida é chamado de domínio da equação. A solução de uma equação racional é necessariamente um subconjunto do domínio da mesma.
+ 
+ \section{Inequações racionais}
+
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As inequações racionais são inequações dadas por quocientes/razões de polinômios. Estas inequações possuem restrições em seus domínios assim como as equações racionais.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ \begin{exem}
+  $4 - \dfrac{x^2+x+4}{x+1} \leq 0$
+   \vskip0.3cm
+  Antes de começar a resolver a inequação vamos determinar seu domínio. Neste caso para que a inequação esteja bem definida precisamos ter $x+1 \neq 0$ o que é satisfeito para $x \neq -1$. Portanto o domínio desta inequação é:
+  \[D= \{x \in \R \mid x \neq -1\} \ .\]
+  
+  Para resolver a inequação começamos tirando o minímo múltiplo comum das duas frações para poder efetuar a soma das frações, lembrando que quando o denominador não aparece ele é um.
+
+  \[4 - \frac{x^2+x+4}{x+1} \leq 0 \Rightarrow
+    \frac{4x+4-x^2-x-4}{x+1} \leq 0 \Rightarrow
+    \frac{-x^2 + 3x}{x+1} \leq 0
+  \]
+  Agora vamos calcular os zeros de cada uma das equações $-x^2 + 3x$ e $x+1$ separadamente para poder fazer o estudo de sinal do quociente entre elas.
+\begin{equation}
+x+1=0 \Leftrightarrow x= -1
+\end{equation}
+\begin{equation}
+-x^2 + 3x= 0 \Leftrightarrow x(-x+3)=0 \Leftrightarrow x=0 \ \ \text{ou} \ \ x=-3
+\end{equation}
+   \begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{./cap_equacoes/figs/sinais}
+ \end{figure}
+
+ Logo pelo jogo de sinais da figura acima, e considerando o domínio da inequação, obtemos
+\begin{equation}
+S= [-3, -1) \cup [0, +\infty)
+\end{equation}
+ como conjunto solução desta inequação.
+
+ \end{exem}
 
 
- \section{Equações com raízes}
 
- \section{Inequações com raízes}
+ \section{Equações radicais ou irracionais}
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As equações radicais são equações nas quais temos polinômios dentro de raízes. Como por exemplo:
+  \[\sqrt[n]{p(x)}= 0\]
+  onde $n \in \N$ e $p(x)$ é um polinômio na variável $x$. Caso $n \in \N$ seja par precisamos ainda ter $p(x) \geqslant 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+ 
+ Lembre-se que não existe raíz de ordem par de número negativo, logo a equação radical
+ \[\sqrt[n]{p(x)}= 0\]
+ caso $n \in \N$ seja par, está definida apenas no conjunto $D= \{x \in \R \mid p(x) \geqslant 0\}$.
+ 
+ Este subconjunto dos números reais no qual a equação está bem definida é chamado de domínio da equação. A solução de uma equação radical é necessariamente um subconjunto do domínio da mesma.
+ 
+ \begin{exem}
+ $\dfrac{1}{\sqrt{x}}= 4$
+ 
+ Para resolver esta equação começamos determinando seu domínio. Note que aqui precisamos ter duas condições sendo satisfeitas:
+ \begin{enumerate}[i)]
+ \item $\sqrt{x} \neq 0 \Rightarrow x \neq 0$;
+ \item $x \geqslant 0$ pois temos uma raíz de ordem $2$.
+ \end{enumerate}
+ O domínio será portanto a interseção dos dois conjuntos acima que é dado por:
+ \[D= \{ x \in \R \mid x > 0 \} \ . \]
+ 
+ Vamos agora resolver a equação, 
+ \[\dfrac{1}{\sqrt{x}}= 4 \Rightarrow \left(\dfrac{1}{\sqrt{x}}\right)^2= 4^2 \Rightarrow \dfrac{1}{x}= 16 \Rightarrow \dfrac{1}{16}= x\]
+ 
+ Como $\dfrac{1}{16} \in D$ esta é de fato a solução da equação.
+ \end{exem}
+ 
+ \section{Inequações radicais ou irracionais}
+ 
+  \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  As inequações radicais são inequações nas quais temos polinômios dentro de raízes. Estas inequações possuem domínios com as mesmas restrições das equações radicais.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
  
  \section{Exercícios}
 
