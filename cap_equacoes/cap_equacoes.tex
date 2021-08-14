@@ -18,7 +18,7 @@
 \begin{enumerate}[(1)]
  \item $x+1=3$;
  \item $\sin(x)=0$;
- \item $2x+3=7x-2$;
+ \item $2x+ 2=7x-2$;
  \item $x^2+3x+1=0$;
  \item $x+y= 5$.
 \end{enumerate}
@@ -1106,6 +1106,8 @@ Determine o valor de $x$ que torna verdadeira a equação $\sqrt[10]{3^8}= \sqrt
 \end{resp}
 
 
+
+
 \chapter{Inequações}
 
  As resoluções das inequações utilizam as propriedades de ordem dos números reais listadas na \autoref{prop.ordem}, por isso sugiro ao leitor relembrar estas propriedades antes de iniciar a leitura deste capítulo.
@@ -2000,6 +2002,141 @@ S= (-\infty, -5] \cup [5, \infty) \ .
  
  Este subconjunto dos números reais no qual a equação está bem definida é chamado de domínio da equação. A solução de uma equação racional é necessariamente um subconjunto do domínio da mesma.
  
+ Vejamos alguns exemplos de como resolver uma equação racional.
+ 
+ \begin{exem} $\dfrac{1}{x}= \dfrac{4}{3x} + 1$
+ 
+ Para resolver esta equação começamos determinando seu domínio. Para isso lembremos que não existe divisão por $0$ (zero), logo um número real $x$ pertence ao domínio desta equação se, e somente se, 
+ $x \neq 0$ e $3x \neq 0 \Rightarrow x \neq 0$.
+ 
+ Portanto, o domínio desta equação é o conjunto
+ \[D= \{ x \in \R \mid x \neq 0 \} \ . \]
+ 
+ Agora vamos resolver a equação,
+ \begin{eqnarray}
+ \dfrac{1}{x} = \dfrac{4}{3x} + 1
+ \end{eqnarray}
+ precisamos tirar o mmc dos denominadores, pois os mesmos são diferentes
+ \begin{eqnarray}
+ \dfrac{3}{3x}= \dfrac{4 + 3x}{3x} \\
+ \dfrac{3-4-3x}{3x} = 0 
+ \end{eqnarray}
+ lembre que esta equação é zero somente quando o numerador for zero, logo basta olhar o numerador,
+ \begin{eqnarray}
+ -1 = 3x \Rightarrow x= \dfrac{-1}{3}
+ \end{eqnarray}
+ como $\frac{-1}{3} \in D$ decorre que o conjunto solução desta equação é
+ \[S= \left\{ \dfrac{-1}{3} \right\} \ . \]
+ \end{exem}
+ 
+ \begin{exem} $\dfrac{2x^2 - 6x}{x - x^3}= 0$
+ 
+ Calculando o domínio:
+ \begin{eqnarray}
+ x - x^3 \neq 0 
+ \end{eqnarray}
+ \begin{eqnarray}
+ x - x^3 = 0 \Leftrightarrow x(1-x^2)= 0 \Leftrightarrow x= 0 \text{ ou } x^2= 1 \Rightarrow x= \pm 1
+ \end{eqnarray}
+ 
+ Portanto, o domínio desta equação é o conjunto
+ \[D= \{ x \in \R \mid x \neq 0; x \neq 1; x \neq -1 \}= \R \setminus \{-1, 0, 1\} \ . \]
+ 
+ Agora vamos resolver a equação,
+ \begin{eqnarray}
+ \dfrac{2x^2 - 6x}{x - x^3}= 0 \\
+ \dfrac{x(2x - 6)}{x(1 - x^2)}= 0 \\
+ \dfrac{2x - 6}{1 - x^2}= 0 \\
+ 2x - 6= 0 \\
+ x= 3
+ \end{eqnarray}
+ 
+ como $3 \in D$ decorre que o conjunto solução desta equação é
+ \[S= \{ 3 \} \ . \]
+ \end{exem}
+ 
+ \begin{exem} $1 - \dfrac{2}{x}= \dfrac{8}{x^2}$
+ 
+ Calculando o domínio. Um número real $x$ pertence ao domínio desta equação se:
+ \begin{eqnarray}
+  x \neq 0 \text{ e } x^2 \neq 0 \Rightarrow x \neq 0
+ \end{eqnarray}
+ 
+ Portanto, o domínio neste caso é
+ \[D= \{ x \in \R \mid x \neq 0 \}= \R \setminus \{0\} \ . \]
+ 
+ Agora vamos resolver a equação,
+ \begin{eqnarray}
+ 1 - \dfrac{2}{x}= \dfrac{8}{x^2} \\
+ \dfrac{x^2}{x^2} - \dfrac{2x}{x^2}= \dfrac{8}{x^2} \\
+ x^2 - 2x= 8 \\
+ x^2 -2x -8= 0 \\
+ (x-4)(x+2)= 0 \\
+ x_1= 4 \text{ ou } x_2= -2
+ \end{eqnarray}
+ 
+ como $\{-2, 4\} \subset D$ decorre que o conjunto solução desta equação é
+ \[S= \{ -2, 4 \} \ . \]
+ \end{exem}
+ 
+ \begin{exem} $\dfrac{x^3 -39x + 70}{x^2 + 2x - 8}= 0$
+ 
+ Calculando o domínio. 
+ 
+ Um número real $x$ pertence ao domínio desta equação se:
+ \begin{eqnarray}
+  x^2 + 2x - 8 \neq 0 
+ \end{eqnarray}
+ como as raízes desta equação do 2º grau são $-4$ e $2$, decorre que o domínio neste caso é
+ \[D= \{ x \in \R \mid x \neq -4; x \neq 2 \}= \R \setminus \{-4, 2\} \ . \]
+ 
+ Vamos resolver a equação.
+ 
+ 1ª Forma: Note que a equação é satifeita quando o numerador for zero, logo basta resolver
+ \begin{eqnarray}
+ x^3 -39x + 70= 0 \\
+ (x+7)(x-2)(x-5)= 0 \\
+ x= -7 \text{ ou } x= 2 \text{ ou } x= 5
+ \end{eqnarray}
+ 
+ Agora precisamos verificar quais soluções da equação $x^3 -39x + 70= 0$ estão no conjunto $D$, note que $2 \notin D$ e $\{-7, 5\} \subset D$ portanto nosso conjunto solução é:
+ \[S= \{ -7, 5 \} \ . \]
+ 
+ 2º Forma: Podemos também proceder da seguinte forma:
+ \begin{eqnarray}
+ \dfrac{x^3 -39x + 70}{x^2 + 2x - 8}= 0 \\
+ \dfrac{(x+7)(x-2)(x-5)}{(x-2)(x+4)}= 0 \\
+ \dfrac{(x+7)(x-5)}{(x+4)}= 0 \\
+ (x+7)(x-5)= 0 \\
+ x= -7 \text{ ou } x= 5
+ \end{eqnarray}
+ Como $x= -7$ e $x= 5$ não são raízes de $x^2+2x-8=0$, e portanto pertecem ao domínio $D$, decorre que nosso conjunto solução é:
+  \[S= \{ -7, 5 \} \ . \]
+ \end{exem}
+ 
+  \begin{exem} $\dfrac{x^3 - 7x^2 + 16x -12}{x-2}=0 $
+ 
+ Calculando o domínio. Um número real $x$ pertence ao domínio desta equação se:
+ \begin{eqnarray}
+  x - 2 \neq 0  \Rightarrow x \neq 2
+ \end{eqnarray}
+ 
+ Portanto, o domínio neste caso é
+ \[D= \R \setminus \{2\} \ . \]
+ 
+ Agora vamos resolver a equação, para isso vou escrever o polinômio de grau 3 na forma fatorada.
+ \begin{eqnarray}
+ \dfrac{x^3 - 7x^2 + 16x -12}{x-2}=0 \\
+ \dfrac{(x-2)(x-2)(x-3)}{x -2}=0 \\
+ (x-2)(x-3)=0 \\
+ x_1= 2 \text{ ou } x_2= 3
+ \end{eqnarray}
+ 
+ como $2 \notin D$ e $3 \in D$ decorre que o conjunto solução desta equação é
+ \[S= \{ 3 \} \ . \]
+ Observe que neste caso mesmo após a simplicação da fração, uma das raízes da equação resultante não pertence ao domínio da nossa equação racional, pois ela é também raíz do polinômio presente no denominador da equação original, e por isso não pode fazer parte do conjunto solução procurado.
+ \end{exem}
+ 
  \section{Inequações racionais}
 
  \vskip0.3cm
@@ -2092,5 +2229,27 @@ S= [-3, -1) \cup [0, +\infty)
  \vskip0.3cm
  
  \section{Exercícios}
+ 
+ \begin{exer}
+Resolva as seguintes equações racionais:
+
+\begin{multicols}{2}
+\begin{enumerate}[a)]
+\item $\dfrac{448}{7x}= \dfrac{144}{9x} + 8$
+\item $\dfrac{2x^2 - 2x}{x - x^3}= 0$
+\item $\dfrac{-1}{x}= \dfrac{-6}{x^2} + 1$
+\end{enumerate}
+\end{multicols}
+\end{exer}
+
+\begin{resp}
+\begin{multicols}{2}
+ \begin{enumerate}[a)]
+\item $S= \{6 \}$
+\item $S= \varphi$
+\item $S= \{-3; 2\}$
+\end{enumerate}
+\end{multicols}
+\end{resp}
 
 \construirExer
