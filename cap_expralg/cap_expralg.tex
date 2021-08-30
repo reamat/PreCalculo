@@ -112,28 +112,50 @@
 
  Os seguintes casos de fatoração são os mais utilizados:
  \begin{itemize}
-  \item Fator em comum: $x^2 + x= x(x + 1)$; $4x^2 + 6= 2(2x^2 + 3)$
-  \item Agrupamento: $ax + bx + ay + by= (a+b)x+(a+b)y= (a+b)(x+y)$
+  \item Fator em comum: 
+ \begin{eqnarray}
+   x^2 + x= x(x + 1) \\
+   4x^2 + 6= 2(2x^2 + 3)
+ \end{eqnarray}
+  
+  \item Agrupamento:
+ \begin{equation}
+   ax + bx + ay + by= (a+b)x+(a+b)y= (a+b)(x+y)
+ \end{equation}
+  
   \item Trinômio quadrado perfeito (+): 
-\begin{equation}
-(x + y)^2= (x+y) \cdot (x+y)= x^2 + xy + yx + y^2= x^2 + 2xy + y^2
-\end{equation}
+\begin{eqnarray}
+(x + y)^2&=& (x+y) \cdot (x+y)\\
+         &=& x^2 + xy + yx + y^2 \\
+         &=& x^2 + 2xy + y^2
+\end{eqnarray}
+
   \item Trinômio quadrado perfeito (-): 
-\begin{equation}
-(x - y)^2= (x - y) \cdot (x - y)= x^2 - xy - yx + y^2 = x^2 - 2xy + y^2
-\end{equation}
+\begin{eqnarray}
+(x - y)^2&=& (x - y) \cdot (x - y) \\
+         &=& x^2 - xy - yx + y^2 \\
+         &=& x^2 - 2xy + y^2
+\end{eqnarray}
+
   \item Diferença de dois quadrados: 
 \begin{equation}
 (x + y) \cdot (x - y)= x^2 - xy + yx - y^2 = x^2 - y^2
 \end{equation}
+
   \item Cubo perfeito (+): 
-\begin{equation}
-(x+y)^3= (x+y)^2 \cdot (x+y)= (x^2 + 2xy + y^2) \cdot (x+y)  =x^3 + 3x^2y + 3xy^2 + y^3
-\end{equation}
+\begin{eqnarray}
+(x+y)^3&=& (x+y)^2 \cdot (x+y) \\
+       &=& (x^2 + 2xy + y^2) \cdot (x+y) \\
+       &=& x^3 + 3x^2y + 3xy^2 + y^3
+\end{eqnarray}
+
   \item Cubo perfeito (-): 
-\begin{equation}
-(x-y)^3= (x-y)^2 \cdot (x-y)= (x^2 - 2xy + y^2) \cdot (x-y)= x^3 - 3x^2y + 3xy^2 - y^3
-\end{equation}
+\begin{eqnarray}
+(x-y)^3&=& (x-y)^2 \cdot (x-y) \\
+       &=& (x^2 - 2xy + y^2) \cdot (x-y) \\
+       &=& x^3 - 3x^2y + 3xy^2 - y^3
+\end{eqnarray}
+
   \item Diferença de dois cubos:
 \begin{equation}
 x^3 - y^3= (x-y) \cdot (x^2 + xy + y^2)
@@ -148,9 +170,11 @@ x^3 - y^3= (x-y) \cdot (x^2 + xy + y^2)
 (x + y)^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} y^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{k} y^{n-k} 
 \end{equation}
  
-\begin{equation}
-(x - y)^n= (x +(-y))^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-y)^{k}= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-1)^{k}y^{k}= \sum^{n}_{k=0} (-1)^{k} \binom{n}{k} \cdot x^{n-k} y^{k}
-\end{equation}
+\begin{eqnarray}
+(x - y)^n &=& (x +(-y))^n= \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-y)^{k} \\
+          &=& \sum^{n}_{k=0} \binom{n}{k} \cdot x^{n-k} (-1)^{k}y^{k} \\
+          &=& \sum^{n}_{k=0} (-1)^{k} \binom{n}{k} \cdot x^{n-k} y^{k}
+\end{eqnarray}
  
  Os coeficientes $\binom{n}{k}$ são chamados coeficientes binomiais e são definidos por:
  
@@ -354,7 +378,7 @@ n!= n \cdot (n-1) \cdot (n-2) \cdots 2 \cdot 1 \ .
   \]
  \end{exem}
  
- \newpage
+ %\newpage
  \section{Expressões algébricas radicais ou irracionais}
  
  Vejamos alguns exemplos de expressões algébricas radicais;
@@ -421,6 +445,40 @@ x^{\frac{5}{7}} \cdot x^{\frac{10}{7}} \cdot x^{\frac{6}{7}}= x^{\frac{5+10+6}{7
  \end{exem}
  
  \section{Exercícios}
+ 
+ \begin{exer}
+ Efetuando a multiplicação $\dfrac{2k-2g}{k^2-g^2} \cdot \dfrac{k^2+2kg+g^2}{4k + 4g}$, obteremos:
+
+\begin{enumerate}[a)]
+\item $\dfrac{k+g}{2}$
+\item $\dfrac{k-g}{k}$
+\item $\dfrac{1}{g+1}$
+\item $\dfrac{1}{2}$
+\item $2$
+\end{enumerate}
+\end{exer}
+
+\begin{resp}
+ Letra D
+\end{resp}
+
+\begin{exer}
+Aplicando o conceito de produtos notáveis, qual expressão algébrica obtemos após simplificar corretamente a seguinte expressão?
+\[\dfrac{(2m+3)^2-2(2m+3)(m-2)+(m-2)^2}{(m+5)(m-5)}\]
+\end{exer}
+
+\begin{resp}
+ $\dfrac{m+5}{m-5}$
+\end{resp}
+
+\begin{exer}
+Aplicando o conceito de produtos notáveis, qual expressão algébrica obtemos após simplificar corretamente a seguinte divisão de frações algébricas?
+\[\dfrac{\dfrac{3}{x+1}}{\dfrac{3x+6}{x^2-1}}\]
+\end{exer}
+
+\begin{resp}
+ $\dfrac{x-1}{x+2}$
+\end{resp}
 
 \construirExer
 
