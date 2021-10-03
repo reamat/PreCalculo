@@ -2143,10 +2143,48 @@ S= (-\infty, -5] \cup [5, \infty) \ .
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
-  As inequações racionais são inequações dadas por quocientes/razões de polinômios. Estas inequações possuem restrições em seus domínios assim como as equações racionais.
+  As inequações racionais são inequações dadas por quocientes/razões de polinômios. Como por exemplo:
+  \[\dfrac{p(x)}{q(x)} > 0\]
+  onde $p(x)$ e $q(x)$ são polinômios na variável $x$, com $q(x) \neq 0$. 
+  
+  Aqui podemos trocar $>$ por $<$, $\leq$ ou $\geq$ e contínuamos com uma inequação.    
  \end{center}
  \end{minipage}}
  \vskip0.3cm
+ 
+ Lembramos que não existe divisão por $0$ (zero), logo estas inequações estão definidas apenas no conjunto
+  \[D= \{ x \in \R \mid  q(x) \neq 0\} \ . \]  
+  Este subconjunto $D$ dos números Reais no qual a inequação esta definida é chamado domínio da inequação. O conjunto solução da inequação é necessariamente um subconjunto do domínio da inequação.
+  
+  Quando ambos os lados de uma inequação racional são não nulos, como por exemplo $\dfrac{p(x)}{q(x)} > 3$, um dos possíveis caminhos a se seguir na resolução da inequação é multiplicar ambos os lados da inequação por $q(x)$, mas para fazer isso corretamente é necessário levar em consideração o sinal de $q(x)$, o que nos força a quebrar a resolução em casos, daremos um exemplo de como fazer isso. Mas para evitar este tipo de problema temos como sugestão seguir os seguintes passos:
+  \begin{enumerate}[1)]
+  \item Mova todos os termos para o lado esquerdo da inequação, ficando com $0$ do lado direito;
+  \item Escreva a expressão resultante no lado esquerdo como uma única fração, com numerador e denominador fatorados;
+  \item Determine o domínio da inequação resultante;
+  \item Determine as raízes do numerador e denominador (quando for o caso) e use-os para definir os extremos dos intervalos;
+  \item Construa uma tabela, relacionando os sinais de cada fator em cada um dos intervalos, use esta tabela para fazer o estudo de sinal da inequação racional.
+  \item Determine a solução da inequação racional com base nas informações obtidas na tabela.
+  \end{enumerate}
+ 
+	Após a realização dos dois primeiros passos listados acima, obtemos uma inequação de uma das seguintes formas:
+	\begin{eqnarray}
+	\dfrac{p(x)}{q(x)} \leq 0 \\
+	\dfrac{p(x)}{q(x)} \geq 0
+	\end{eqnarray}
+nas quais o lado direito é zero. Assim para chegar ao conjunto solução basta fazer a análise de sinal da expressão $\dfrac{p(x)}{q(x)}$, para isso consideramos os seguintes casos:
+
+Caso 1:	$\dfrac{p(x)}{q(x)} > 0$ se $p(x)$ e $q(x)$ tem o mesmo sinal, ou seja, nos seguintes conjuntos 
+\[ S_1= \{x \in \R \mid p(x)>0 \text{ e } q(x)>0 \} \]
+ou
+\[ S_2= \{x \in \R \mid p(x)<0 \text{ e } q(x)<0 \} \]
+logo o conjunto solução da inequação neste caso é $S= S_1 \cup S_2$.
+
+Caso 2:	$\dfrac{p(x)}{q(x)} < 0$ se $p(x)$ e $q(x)$ tem sinais opostos, ou seja, nos seguintes conjuntos 
+\[ R_1= \{x \in \R \mid p(x)>0 \text{ e } q(x)<0 \} \]
+ou
+\[ R_2= \{x \in \R \mid p(x)<0 \text{ e } q(x)>0 \} \]
+logo o conjunto solução da inequação neste caso é $S= R_1 \cup R_2$.
+	
  
  \begin{exem}
   $4 - \dfrac{x^2+x+4}{x+1} \leq 0$
@@ -2167,6 +2205,9 @@ x+1=0 \Leftrightarrow x= -1
 \begin{equation}
 -x^2 + 3x= 0 \Leftrightarrow x(-x+3)=0 \Leftrightarrow x=0 \ \ \text{ou} \ \ x=-3
 \end{equation}
+
+Aqui alternativamente a tabela faremos o estudo de sinal da inequação quociente graficamente, que pode ser mais fácil para algumas pessoas visualizar o resultado.
+
    \begin{figure}[H]
  \centering
  \includegraphics[width=8cm]{./cap_equacoes/figs/sinais}
