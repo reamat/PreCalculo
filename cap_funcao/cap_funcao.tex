@@ -1,22 +1,21 @@
 %Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/ ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-\chapter{Funções}
 
-\section{Definição de funções}
+\chapter{Introdução às funções}
 
-\vskip0.3cm
+\vskip0.1cm
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
   Dados dois conjuntos $A$ e $B$ não vazios, de números reais, ou seja, $A \subseteq \mathbb{R}$ e $B \subseteq \mathbb{R}$. Uma \textbf{aplicação} de $A$ em $B$ ou \textbf{função} definida no conjunto $A$ com imagens em $B$ é uma regra (equação) que diz como associar cada elemento $x \in A$ a um \underline{único} $y \in B$.
  \end{center}
  \end{minipage}}
- \vskip0.3cm
+ \vskip0.1cm
 
 
  Exemplos de relações que são funções de $A$ em $B$:
  \begin{multicols}{3}
- \begin{tikzpicture}[scale=0.80]
+ \begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -32,7 +31,7 @@
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
 \end{tikzpicture} 
 
- \begin{tikzpicture}[scale=0.80]
+ \begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -48,7 +47,7 @@
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
 \end{tikzpicture}
 
-\begin{tikzpicture}[scale=0.80]
+\begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -66,11 +65,9 @@
 
 \end{multicols}
 
-
-
  Exemplos de relações que não são funções de $A$ em $B$:
-\begin{multicols}{3}
-\begin{tikzpicture}[scale=0.80]
+\begin{multicols}{2}
+\begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -87,7 +84,11 @@
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
 \end{tikzpicture}
 
-\begin{tikzpicture}[scale=0.80]
+Não é função pois o elemento $1 \in A$ está relacionado aos elementos $a$ e $b$ do conjunto $B$.
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -103,7 +104,11 @@
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
 \end{tikzpicture}
 
-\begin{tikzpicture}[scale=0.80]
+Não é função pois o elemento $2 \in A$ não está relacionado com nenhum elemento do conjunto $B$.
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{tikzpicture}[scale=0.50]
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
@@ -119,6 +124,8 @@
  %\draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
 \end{tikzpicture}
+
+Não é função pois o elemento $1 \in A$ está relacionado aos elementos $a$ e $b$ do conjunto $B$ e o elemento $2 \in A$ não está relacionado com nenhum elemento do conjunto $B$
 \end{multicols}
 
 Usamos normalmente a seguinte notação:
@@ -181,15 +188,953 @@ que pode ser representado geometricamente como feito na figura abaixo:
 
 \begin{figure}[H]
  \centering
-    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/Grf}}
+    \fbox{\includegraphics[width=5cm]{./cap_funcao/figs/Grf}}
     \caption{Gráfico da função $f$}
   \end{figure}
 
 \end{exem}
 
+\section{Operações com funções}
+Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, se $A \cap B \neq \emptyset$, então $\forall x \in A \cap B$, definimos as seguintes operações entre estas funções:
+\begin{equation}
+(f + g)(x)= f(x) + g(x); 
+\end{equation}
+\begin{equation}
+(f - g)(x)= f(x) - g(x); 
+\end{equation}
+\begin{equation}
+(f \cdot g)(x)= f(x) \cdot g(x); 
+\end{equation}
+\begin{equation}
+ \left( \frac{f}{g} \right) (x)= \frac{f(x)}{g(x)} ;
+\end{equation}
+\begin{equation}
+(k \cdot f)(x)= k \cdot f(x), \text{ para } k \text{ constante} ,
+\end{equation}
 
-\subsection{Propriedades}
-As funções são classificadas em:
+note que:
+\begin{equation}
+dom(f+g)= dom(f-g)= dom(f \cdot g)= dom(k \cdot f)= A \cap B ,
+\end{equation}
+\begin{equation}
+ dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}. 
+\end{equation}
+
+\section{Função constante}
+
+É a função que associa todos os elementos do domínio a um único elemento do contradomínio. Ou seja, dado $a \in \R$ fixo, a função $f$:
+\begin{eqnarray*}
+ f: \R & \rightarrow & \R \\
+ x & \mapsto & a,
+\end{eqnarray*}
+é uma função constante.
+
+Por exemplo, a função $f$:
+\begin{eqnarray*}
+ f: \R & \rightarrow & \R \\
+ x & \mapsto & 2 \ .
+\end{eqnarray*}
+
+É uma função constante. Para construir o gráfico desta função começamos encontrando alguns pontos $(x, y)= (x, f(x))$ do gráfico, o que pode ser feito através da seguinte tabela:
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+  x & f(x)= 2 & (x, y)  \\\hline
+  -1 & f(-1)= 2 & (-1, 2) \\\hline
+   0 & f(0)= 2 & (0, 2)  \\\hline
+   1 & f(1)= 2 & (1, 2) \\\hline
+ \end{tabular}
+\end{table}
+
+Após encontrar os pontos basta marcar os mesmo o plano cartesiano e traçar a curva que liga estes pontos com isso objetos o gráfico da função. Neste caso o gráfico é:
+\begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/f(x)=2}}
+    \caption{Gráfico da função $f(x)=2$}
+  \end{figure}
+
+\section{Função identidade}
+
+A função $Id$:
+\begin{eqnarray*}
+ Id: \R & \rightarrow & \R \\
+ x & \mapsto & x \ ,
+\end{eqnarray*}
+é chamada \textit{função identidade real}.
+
+Para encontrar alguns pontos $(x, f(x))$ do gráfico desta função, construímos a seguinte tabela:
+
+ \begin{table}[H]
+ \centering
+ \begin{tabular}{|c|c|c|} \hline
+ \rowcolor{cinza}
+  x & f(x)= x & (x, y)  \\\hline
+  -1 & f(-1)= -1 & (-1, -1) \\\hline
+   0 & f(0)= 0 & (0, 0)  \\\hline
+   1 & f(1)= 1 & (1, 1) \\\hline
+ \end{tabular}
+\end{table}
+
+Logo o gráfico da função $Id$ é:
+\begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/Id(x)=x}}
+    \caption{Gráfico da função $Id(x)=x$}
+  \end{figure}
+
+
+\section{Funções do 1º grau}
+ As funções do 1º grau, ou funções afim são funções $f: \R \rightarrow \R$ dadas por:
+\begin{equation}
+f(x)= ax + b \ , 
+\end{equation}
+
+ para certos $a, b \in \R$ com $a \neq 0$. Note que um caso particular e já conhecido de função de 1º grau é a função identidade, $f(x)= x$, a qual possui $a=1$ e $b=0$.
+
+ Vejamos mais alguns exemplos de funções de 1º grau.
+
+ Consideremos as funções $f, g: \R \to \R$ dadas por:
+ \begin{enumerate}[a)]
+  \item $f(x)= x+2$
+  \item $g(x)= x-1$
+ \end{enumerate}
+
+
+ \begin{figure}[H]
+   \fbox{\subfigure[$f(x)= x+2$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=x+2}}}
+   \fbox{\subfigure[$g(x)= x-1$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=x-1}}}
+  \end{figure}
+  Note que o que muda na definição destas funções é apenas o coeficiente $b$. Fazendo uma análise comparativa dos gráficos destas funções notamos que os ângulos que as retas formam com o eixo $x$ é o mesmo, portanto as retas são paralelas, porém o ponto de interseção das retas com o eixo $y$, que são os pontos $(0, f(0))$, $(0, g(0))$ muda, ou seja, $f(0) \neq g(0)$. De fato:
+\begin{equation}
+f(0)= 0 + 2= 2
+\end{equation}
+\begin{equation}
+g(0)= 0 -1 = -1 \ .
+\end{equation}
+  No caso geral em que $f(x)=ax+b$, teremos que $f(0)=a0 + b= b$, portanto o gráfico de $f$ irá intersectar o eixo $y$ no ponto $(0,b)$. O coeficiente $b$ é chamado de \textbf{coeficiente linear} da reta/função linear.
+
+  Consideremos as funções $f, g: \R \to \R$ dadas por:
+ \begin{enumerate}[a)]
+  \item $f(x)= 2x$
+  \item $g(x)= -2x$
+ \end{enumerate}
+
+ \begin{figure}[H]
+   \fbox{\subfigure[$f(x)= 2x$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=2x}}}
+   \fbox{\subfigure[$g(x)= -2x$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/g(x)=-2x}}}
+  \end{figure}
+  Neste exemplos estamos mudando apenas o coeficiente $a$ das funções, o que está alterando o ângulo que as retas formam com o eixo $x$, ou seja a inclinação das retas em relação ao eixo $x$. Já o ponto de interseção das retas com o eixo $y$ é o mesmo pois $f(0)= g(0)= 0$. O coeficiente $a$ é chamado de \textbf{coeficiente angular} da reta/função linear.
+
+   \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ O gráfico de uma função linear $f: \R \to \R$ dada por:
+\begin{equation}
+f(x) = ax + b
+\end{equation}
+ é uma reta com coeficiente angular $a$ e cuja interseção com o eixo $y$ ocorre no ponto $(0, b)$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ Frequentemente a equação da reta é dada pela equação $y=mx+n$, que nada mais é do que uma função de 1º grau, basta considerar $y=f(x)$ o que fazemos no contexto de funções para trabalhar com o gráfico da função.
+
+\vskip0.3cm
+ \textbf{Coeficiente angular da reta}
+\vskip0.3cm
+
+  Dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, como na figura:
+
+ \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/coefangular}}
+    \caption{Coeficiente angular da reta}
+  \end{figure}
+
+  o coeficiente angular da reta que passa por estes dois pontos é dado por:
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1} \ .
+\end{equation}
+
+  De fato, dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, podemos encontrar a função $f(x)= ax+b$, cujo gráfico passa por estes dois pontos lembrando que ambos devem satisfazer a equação da função assim obtemos:
+  \[ \begin{cases}
+   y_0= ax_0 + b \\
+   y_1= ax_1 + b
+  \end{cases} \]
+  logo $y_0 - ax_0= b$, substituindo na segunda equação decorre que:
+\begin{equation}
+y_1= ax_1 + y_0 - ax_0 \Rightarrow y_1 - y_0= a(x_1 - x_0) \Rightarrow a= \frac{y_1 - y_0}{x_1 - x_0} \ . 
+\end{equation}
+
+  Este sistema linear sempre pode ser usado para encontrar a regra da função linear que passa por dois pontos dados.
+
+
+  \begin{exem}
+  Vamos determinar o coeficiente angular da reta que passa pelos pontos:
+   \begin{enumerate}[a)]
+    \item $P_0=(0,2)$ e $P_1=(-2,0)$
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{0 - 2}{-2 - 0}= \frac{-2}{-2}= 1
+\end{equation}
+    \item $P_0=(1,2)$ e $P_1=(-1,-2)$
+\begin{equation}
+a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{-2 - 2}{-1 - 1}= \frac{-4}{-2}= 2
+\end{equation}
+   \end{enumerate}
+
+  \end{exem}
+
+  Quando dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 = x_1$, temos uma reta vertical, cuja equação é $x= a$ para algum $a \in \R$, que não é o gráfico de uma função, por isso não iremos detalhar este caso.
+
+  Dadas duas funções lineares $f(x)=a_1 x + b_1$ e $g(x)= a_2 x + b_2$, tais que $f(x) \neq g(x)$, a partir da análise de seus coeficientes angulares podemos conhecer a posição relativa de seus gráficos. Nesta situação temos que dois casos especiais:
+  \begin{itemize}
+  \item Se $a_1= a_2$ então os gráficos de $f$ e $g$ são retas \textbf{paralelas};
+  \item Se $a_1 \cdot a_2= -1$ então os gráficos de $f$ e $g$ são retas \textbf{perpendiculares}.
+  \end{itemize}
+
+  \begin{exem}
+  Considere as funções $g(x)= -2x+4$, $f(x)= -2x+2$, $h(x)= \frac{-1}{-2}x+ 1,5$, pela análise com coeficientes angulares temos que os gráficos de $g$ e $f$ são retas paralelas e os gráficos $g$ e $h$ são retas perpendiculares, como podemos ver nos seguintes gráficos:
+     \begin{figure}[H]
+   \fbox{\subfigure[Retas paralelas]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/retasparalelas}}}
+   \fbox{\subfigure[Retas perpendiculares]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/retasperpendiculares}}}
+  \end{figure}
+  \end{exem}
+
+
+\vskip0.3cm
+ \textbf{Zeros ou raízes das funções lineares}
+
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ Os zeros ou raízes de uma função $y= f(x)$ são os $x \in Dom(f)$ tais que $f(x)= 0$.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ Desta definição de \textbf{zeros} decorre que os zeros de uma função de 1º grau são as raízes da equação $ax+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
+
+\section{Função (De)crescente}
+
+   \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+  Dados $A, B \subset \R$ e uma função $f: A \rightarrow B$.
+
+  Dizemos que $f$ é uma \textbf{função crescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
+\begin{equation}
+ x < y \Rightarrow f(x) < f(y) \ .
+\end{equation}
+  Dizemos que $f$ é uma \textbf{função decrescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
+\begin{equation}
+x < y \Rightarrow f(x) > f(y) \ .
+\end{equation}
+  Dizemos que $f$ é uma \textbf{função constante} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
+\begin{equation}
+x \neq y \Rightarrow f(x) = f(y) \ .
+\end{equation}
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+ \begin{exem}
+ Seja $f: \R \to \R$ uma função dada por $f(x)= ax + b$.
+
+ Quando \destaque{a > 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
+\begin{equation}
+x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,
+\end{equation}
+  portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}.
+
+ Quando \destaque{a < 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
+\begin{equation}
+x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,
+\end{equation}
+ portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
+
+ Observe que no caso das funções de 1º grau a propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
+ \end{exem}
+
+ \begin{exem}
+ Vamos retomar alguns dos nossos exemplos de funções para classificar como crescente, decrescente e constante. Para isso considere $x_1= -2$ e $x_2= 1$, neste caso, $x_1 < x_2$.
+  \begin{enumerate}[a)]
+   \item Sendo $f(x)= \frac{1}{2}x + 1,5$, temos que
+\begin{equation}
+f(x_1)= f(-2)= \frac{1}{2}\cdot (-2) + 1,5= -1 + 1,5= 0,5
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= \frac{1}{2} \cdot 1+\frac{3}{2}= \frac{4}{2}= 2
+\end{equation}
+   logo $f(x_1)= 0,5 < 2= f(x_2)$. Portanto $f$ é crescente.
+   \item Sendo $f(x)= -2x + 2$, temos que
+\begin{equation}
+f(x_1)= f(-2)= -2 \cdot (-2) + 2= 4 + 2= 6
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= -2 \cdot 1 + 2= 0
+\end{equation}
+   logo $f(x_1)= 6 > 0 = f(x_2)$. Portanto $f$ é decrescente.
+   \item Sendo $f(x)= 2$, temos que
+\begin{equation}
+f(x_1)= f(-2)= 2
+\end{equation}
+\begin{equation}
+f(x_2)= f(1)= 2
+\end{equation}
+   logo $f(x_1)= 2 = 2= f(x_2)$. Portanto $f$ é constante.
+  \end{enumerate}
+  Como já mostramos acima que para as funções lineares esta propriedade é global, para fazer esta classificação é suficiente testar dois valores de $x$ como fizemos acima.
+
+ \end{exem}
+ 
+\section{Funções do 2º grau}
+As funções do 2º grau ou função quadrática são funções $f: \R \rightarrow \R$ dadas por:
+\begin{equation}
+f(x)= ax^2 + bx + c \ ,
+\end{equation}
+
+  para certos $a, b, c \in \R$ com $a \neq 0$. Os \textbf{zeros} ou \textbf{raízes} das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
+ 
+ \destaque{\Delta= b^2 - 4*a*c}
+
+ Se \destaque{\Delta < 0} a função $f$ não possui raízes reais;
+
+ Se \destaque{\Delta = 0} a função $f$ possui uma única raiz real;
+
+ Se \destaque{\Delta > 0} a função $f$ possui duas raízes reais distintas, que podem ser calculadas resolvendo a equação de 2º grau através da fórmula para equações de 2º grau.
+
+ Por definição, os zeros da função $f(x)= ax^2+bx+c$, são as raízes da equação $ax^2+bx+c=0$, já que estes são os valores de $x$ para os quais $f(x)=0$. Graficamente, quando estas funções possuem zeros eles são exatamente os pontos de interseção do gráfico da $f$ com o eixo $x$.
+
+ Com relação a concavidade, o gráfico da função de 2º grau tem concavidade voltada \textbf{para cima} quando \destaque{a > 0}, e concavidade voltada \textbf{para baixo} quando \destaque{a < 0}.
+
+ Em ambos os casos a função do 2º grau possui um vértice dado pela seguinte equação:
+
+ \destaque{V= \left(\frac{- b}{2a}, \frac{- \Delta}{4a} \right)}.
+
+ No caso em que $a > 0$, o vértice do gráfico da função de 2º grau é um ponto de mínimo da função.
+
+ No caso em que $a < 0$, o vértice do gráfico da função de 2º grau é um ponto de máximo da função.
+ 
+ \begin{exem}
+ Considere a função $f(x)= x^2+x+1$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f1}}
+   \caption{Gráfico da função $f(x)= x^2+x+1$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] A função $f$ não possui zeros.
+\item [b)] O vértice de $f$ é o ponto $V= (-0,5, 0,75)$.
+\item [c)] Esta função tem concavidade para cima.
+\item [d)] O vértice desta função é ponto de mínimo.
+\item [e)] A função é crescente no intervalo $(-0,5, \infty)$.
+\item [f)] A função é decrescente no intervalo $(- \infty, -0,5)$.
+\end{enumerate}
+ \end{exem}
+ 
+  \begin{exem}
+ Considere a função $f(x)= x^2-4x+4$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f2}}
+   \caption{Gráfico da função $f(x)= x^2-4x+4$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] O zero de $f$ é $S= \{2\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (2, 0)$.
+\item [c)] Esta função tem concavidade para cima.
+\item [d)] O vértice desta função é ponto de mínimo.
+\item [e)] A função é crescente no intervalo $(2, \infty)$.
+\item [f)] A função é decrescente no intervalo $(- \infty, 2)$.
+\end{enumerate}
+ \end{exem}
+ 
+\begin{exem}
+ Considere a função $f(x)= x^2-x-2$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f3}}
+   \caption{Gráfico da função $f(x)= x^2-x-2$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] Os zeros de $f$ são $S= \{-1, 2\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (0,5, -2,25)$.
+\item [c)] Esta função tem concavidade para cima.
+\item [d)] O vértice desta função é ponto de mínimo.
+\item [e)] A função é crescente no intervalo $(0,5, \infty)$.
+\item [f)] A função é decrescente no intervalo $(- \infty, 0,5)$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+ Considere a função $f(x)= -x^2-x-2$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f4}}
+   \caption{Gráfico da função $f(x)= -x^2-x-2$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] A função $f$ não possui zeros.
+\item [b)] O vértice de $f$ é o ponto $V= (-0,5, -1,75)$.
+\item [c)] Esta função tem concavidade para baixo.
+\item [d)] O vértice desta função é ponto de máximo.
+\item [e)] A função é crescente no intervalo $(- \infty, -0,5)$.
+\item [f)] A função é decrescente no intervalo $(-0,5, \infty)$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+ Considere a função $f(x)= -x^2+6x-9$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f5}}
+   \caption{Gráfico da função $f(x)= -x^2+6x-9$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] O zero de $f$ é $S= \{3\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (3, 0)$.
+\item [c)] Esta função tem concavidade para baixo.
+\item [d)] O vértice desta função é ponto de máximo.
+\item [e)] A função é crescente no intervalo $(-\infty, 3)$.
+\item [f)] A função é decrescente no intervalo $(3, \infty)$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+ Considere a função $f(x)= -x^2+x+2$.
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/f6}}
+   \caption{Gráfico da função $f(x)= -x^2+x+2$}
+  \end{figure}
+ Observamos que:
+ \begin{enumerate}
+\item [a)] Os zeros de $f$ são $S= \{-1, 2\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (0,5, 2,25)$.
+\item [c)] Esta função tem concavidade para baixo.
+\item [d)] O vértice desta função é ponto de máximo.
+\item [e)] A função é crescente no intervalo $(-\infty, 0,5)$.
+\item [f)] A função é decrescente no intervalo $(0,5, \infty)$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+Considere a função $f(x)= x^2 - 2x - 3$, determine:
+\begin{enumerate}
+\item [a)] Os zeros de $f$.
+\item [b)] O vértice de $f$.
+\item [c)] Esta função tem concavidade para cima ou para baixo?
+\item [d)] O vértice desta função é ponto de máximo ou mínimo?
+\item [e)] Qual o intervalo no qual a função é crescente?
+\item [f)] Qual o intervalo no qual a função é decrescente?
+\end{enumerate}
+  \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/funcao2grauexem1}}
+   \caption{Gráfico da função $f(x)= x^2 - 2x - 3$}
+  \end{figure}
+\end{exem}
+
+\begin{resol}
+\begin{enumerate}
+\item [a)] Os zeros de $f$ são $S= \{-1, 3\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (1, -4)$.
+\item [c)] Esta função tem concavidade para cima.
+\item [d)] O vértice desta função é ponto de mínimo.
+\item [e)] A função é crescente no intervalo $(1, \infty)$.
+\item [f)] A função é decrescente no intervalo $(- \infty, 1)$.
+\end{enumerate}
+\end{resol}
+
+\begin{exem}
+Considere a função $f(x)= -x^2 + 2x + 8$, determine:
+\begin{enumerate}
+\item [a)] Os zeros de $f$.
+\item [b)] O vértice de $f$.
+\item [c)] Esta função tem concavidade para cima ou para baixo?
+\item [d)] O vértice desta função é ponto de máximo ou mínimo?
+\item [e)] Qual o intervalo no qual a função é crescente?
+\item [f)] Qual o intervalo no qual a função é decrescente?
+\end{enumerate}
+  \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/funcao2grauexem2}}
+   \caption{Gráfico da função $f(x)= -x^2 + 2x + 8$}
+  \end{figure}
+\end{exem}
+
+\begin{resol}
+\begin{enumerate}
+\item [a)] Os zeros de $f$ são $S= \{-2, 4\}$.
+\item [b)] O vértice de $f$ é o ponto $V= (1,9)$.
+\item [c)] Esta função tem concavidade voltada para baixo.
+\item [d)] O vértice desta função é ponto de máximo.
+\item [e)] A função é crescente no intervalo $(-\infty, 1)$.
+\item [f)] A função é decrescente no intervalo $(1, \infty)$.
+\end{enumerate}
+\end{resol}
+
+ \section{Funções do 3º grau}
+ As funções do 3º grau ou funções cúbicas são funções $f: \R \rightarrow \R$ dadas por:
+\begin{equation}
+f(x)= ax^3 + bx^2 + cx + d \ ,
+\end{equation}
+
+  para certos $a, b, c, d \in \R$ com $a \neq 0$. As \textbf{raízes} ou \textbf{zeros} das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
+ \begin{enumerate}[(I)]
+  \item 3 raízes reais distintas;
+  \item 1 raiz real e duas raízes complexas;
+  \item 3 raízes reais sendo duas delas iguais;
+  \item 3 raízes reais iguais.
+ \end{enumerate}
+ Estes casos estão representados nos gráficos abaixo, onde consideramos sempre $a< 0$, o caso $a> 0$ é análogo.
+
+
+   \begin{figure}[H]
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g1}}}
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g2}}}
+   \end{figure}
+
+  \begin{figure}[H]
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g3}}}
+   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g4}}}
+   \caption{Gráficos de funções do 3º grau}
+  \end{figure}
+  
+
+
+\section{Funções polinomiais de grau \texorpdfstring{$n$}{n}}
+
+ \vskip0.3cm
+ \colorbox{azul}{
+ \begin{minipage}{0.9\linewidth}
+ \begin{center}
+ As funções $f: \R \to \R$ com a seguinte regra geral:
+\begin{equation}
+f(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n
+\end{equation}
+ para $\{a_0, a_1, a_2, a_3, \ldots a_n\} \in \R$ e $n \in \N$, tais que $a_n \neq 0$ são denominadas \\ \textbf{funções polinomiais de grau $n$}.
+ \end{center}
+ \end{minipage}}
+ \vskip0.3cm
+
+Observe que as funções de 1ª, 2ª e 3ª grau são exemplos de funções polinomiais.
+
+\section{Função definida por partes}
+
+\begin{defi}
+Uma função $f: A \to \R$, para $A \subset \R$, é dita ser definida por partes, quando particionamos o domínio $A$ em subconjuntos $U_i$ tais que $A= \bigcup_{i}U_i$, e para cada $U_i$ a função é dada por uma regra diferente. 
+\end{defi}
+
+\begin{exem}
+\begin{equation}
+f(x) = \begin{cases}
+                 3x + 4, \text{ se } x < 2 \\
+                 7 , \text{ se } x = 2 \\
+                 -x^2 + 8, \text{ se } x > 2
+                \end{cases} \ .
+\end{equation}
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/funcaoPartesexem1}}
+   \caption{Gráfico da função $f$}
+  \end{figure}
+\end{exem}
+
+\begin{exem}
+\begin{equation}
+f(x) = \begin{cases}
+                 -x^2 + 1, \text{ se } x < 0 \\
+                 e^x, \text{ se } x \geqslant 0
+                \end{cases} \ .
+\end{equation}
+   \begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/funcaoPartesexem2}}
+   \caption{Gráfico da função $f$}
+  \end{figure}
+\end{exem}
+
+\begin{exem}
+\begin{equation}
+f(x) = \begin{cases}
+                 -x + 1, \text{ se } x \leqslant 1 \\
+                 ln(x), \text{ se } x > 1
+                \end{cases} \ .
+\end{equation}
+\begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/funcaoPartesexem3}}
+   \caption{Gráfico da função $f$}
+  \end{figure}
+\end{exem}
+
+\begin{exem}
+\begin{equation}
+f(x) = \begin{cases}
+                 x^2+2x+1, \text{ se } x < 1 \\
+                 5, \text{ se } x = 1 \\
+                -x+5, \text{ se } x > 1
+                \end{cases} \ .
+\end{equation}
+\begin{figure}[H]
+  \centering
+  \fbox{\includegraphics[width=7cm,height=7cm]{./cap_funcao/figs/funcaoPartesexem4}}
+   \caption{Gráfico da função $f$}
+  \end{figure}
+\end{exem}
+
+\section{Função modular}
+
+  Considere a função $f: \R \rightarrow \R$, dada por $f(x)= \abs{x}$, pela definição de módulo temos que $f$ é uma função definida por partes, da seguinte forma:
+
+  \[f(x)= \abs{x} = \begin{cases}
+                 x, \text{ se } x \geq 0 \\
+                 -x, \text{ se } x < 0
+                \end{cases} \ .\]
+
+ Cujo gráfico é dado por:
+
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/funcaomodulo}}
+    \caption{Gráfico da função módulo}
+  \end{figure}
+
+Note que, $Im(f)= [0, \infty)$ e não todo o contradomínio que no caso é o conjunto $\R$. Além disso esta é uma função na qual as duas partes são lineares.
+  
+ \begin{exem}
+ Vamos determinar os intervalos de crescimento e decrescimento, caso existam, da função $f(x)= \abs{x}$. Lembramos que esta função é definida por partes, por isso faremos a análise em cada uma destas partes.
+
+  Caso 1: Se $x < 0$, temos que $f(x)= -x$, logo se $x_1 < x_2$,
+\begin{equation}
+x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,
+\end{equation}
+  por exemplo, sendo $x_1= -3$ e $x_2= -2$ temos que $x_1 < x_2$,
+\begin{equation}
+f(x_1)= f(-3)= -(-3)= 3 > 2= -(-2)= f(-2)= f(x_2) \ .
+\end{equation}
+
+  Portanto se $x < 0$ temos que $f$ é decrescente.
+
+  Caso 2: Se $x \geq 0$, temos que $f(x)= x$, logo se $x_1 < x_2$
+\begin{equation}
+x_1 < x_2 \Rightarrow  f(x_1) < f(x_2) \ ,
+\end{equation}
+  por exemplo, sendo $x_1= 2$ e $x_2= 3$ temos que $x_1 < x_2$,
+\begin{equation}
+f(x_1)= 2 > 3= f(x_2) \ .
+\end{equation}
+
+  Portanto se $x \geq 0$ temos que $f$ é crescente.
+ \end{exem}
+
+\begin{exem}
+  Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= \abs{x+1}$, observe que:
+\begin{equation}
+x+1 \geq 0 \Leftrightarrow  x \geq -1
+\end{equation}
+  com isso podemos reescrever a função $f_1$ sem os módulos da seguinte forma:
+
+  \[f_1(x)= \begin{cases}
+                 x + 1, \text{ se } x \geq -1 \\
+                 -x - 1, \text{ se } x < -1
+                \end{cases} \ .\]
+  Com isso a função modular pode ser vista como uma função linear por partes.
+\end{exem}
+
+\begin{exem}
+  Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= \abs{x+1}+2$, temos que:
+\begin{equation}
+x+1 \geq 0 \Leftrightarrow  x \geq -1
+\end{equation}
+  com isso podemos reescrever a função $f_2$ sem os módulos da seguinte forma:
+
+  \[f_2(x)= \begin{cases}
+                 x + 3, \text{ se } x \geq -1 \\
+                 -x + 1, \text{ se } x < -1
+                \end{cases} \ .\]
+  Com isso a função modular também pode ser vista como uma função linear por partes.
+\end{exem}
+
+Os gráficos das funções $f$, $f_1$ e $f_2$ estão dados na figura a seguir.
+
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaomodulo2}}
+    \caption{Gráfico da função módulo}
+  \end{figure}
+
+  Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante ``dentro'' do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante ``fora'' do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
+  
+\section{Composição de funções}
+
+\begin{defi}
+Consideremos duas funções $f: A \rightarrow B$ e $g: B \rightarrow C$, com $A, B \text{ e } C \subset \R$, e note que $Im(f) \subset B$. A função composta $g \circ f: A \rightarrow C$ é definida por:
+\begin{equation}
+(g \circ f)(x)= g(f(x)). 
+\end{equation}
+
+ \begin{figure}[H]
+ \centering
+ \begin{tikzpicture}
+ \centering
+ \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
+ \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
+ \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
+ \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
+
+ \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
+ \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
+ \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
+ \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
+ \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
+ 
+ \node (A) at (6,0) {A};%\filldraw($b_1$.west) circle (1pt)
+ \node (B) [below of=A] {B};%\filldraw($b_2$.west) circle (1pt)
+ \node (C) [below of=B] {C};%\filldraw($b_3$.west) circle (1pt)
+ \node (D) [below of=C] {D};%\filldraw($b_3$.west) circle (1pt)
+ \node[fit=(A) (B) (C) (D),ellipse,draw=blue,minimum width=1cm,thick,label=below:\(C\)]{};
+
+ \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
+ 
+ \draw[->, shorten >=.1cm, >=stealth'] (a.east) to (A.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (b.east) to (B.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (c.east) to (C.west);
+\end{tikzpicture}
+\caption{Composição de funções}
+\end{figure}
+
+\end{defi}
+
+Vejamos alguns exemplos de composições de função $\R \to \R$.
+
+\begin{exem}
+Com a função modular $f(x)= |x|$, e as funções lineares $g(x)= x+1$ e $h(x)= x-1$. Obtemos as seguintes funções compostas $\R \to \R$:
+\begin{enumerate}
+\item [a)] $(f \circ g)(x)= f(g(x)) \Rightarrow (f \circ g)(x)= |x+1|$;
+\item [b)] $(f \circ h)(x)= f(h(x)) \Rightarrow (f \circ h)(x)= |x-1|$;
+\item [c)] $(g \circ f)(x)= g(f(x)) \Rightarrow (g \circ f)(x)= |x|+1$;
+\item [d)] $(h \circ f)(x)= h(f(x)) \Rightarrow (h \circ f)(x)= |x|-1$.
+\end{enumerate}
+Em cada um dos exemplos acima sugiro observar o movimento do gráfico no plano cartesiano.
+\end{exem}
+
+\begin{exem}
+Considere a função modular $f(x)= |x|$, e a função quadrática $g(x)= x^2-x-6$. Temos as seguintes funções compostas $\R \to \R$:
+\begin{enumerate}
+\item [a)] $(f \circ g)(x)= f(g(x))= |x^2-x-6|$;
+\item [b)] $(g \circ f)(x)= g(f(x))= |x|^2 - |x|- 6$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+Considerando a função linear $f(x)= -2x+4$, e a função quadrática $g(x)= x^2$. Chegamos as funções compostas 
+\begin{enumerate}
+\item [a)] $(f \circ g)(x)= f(g(x))= -2x^2 + 4$;
+\item [b)] $(g \circ f)(x)= g(f(x))= (-2x+4)^2$.
+\end{enumerate}
+\end{exem}
+
+\begin{exem}
+Considere as funções reais:
+\begin{eqnarray}
+f(x)= -x^2 + 8x -7
+\end{eqnarray}
+
+\begin{eqnarray}
+g(x)= \begin{cases}
+       g_1(x)= |x|, \text{ se } x \leqslant 9 \\
+       g_2(x)= x-3, \text{ se } x > 9
+	  \end{cases}
+\end{eqnarray}
+Determine a função $(g \circ f)(x)= g(f(x))$.
+\begin{resol}
+Para fazer esta composição como a função $g$ é definida por partes precisamos qual é o conjunto imagem da função $f$. Note que $f$ é uma função do 2º grau com $a< 0$ logo concavidade voltada para baixo, o que nos diz que $Im(f)= (-\infty, y_v]$, por tanto basta calcular o $y_v$,
+\begin{eqnarray}
+y_v= \dfrac{- \Delta}{4a}= \dfrac{-(8^2-4.(-1).(-7))}{4.(-1)}= \dfrac{-36}{-4}= 9 \ .
+\end{eqnarray}
+Portanto, $Im(f)= (-\infty, 9]$. Assim, considerando a definição da função $g$, temos que
+\begin{eqnarray}
+(g \circ f)(x)= g(f(x))= g_1(f(x))= |-x^2 + 8x -7| \ .
+\end{eqnarray}
+\end{resol}
+\end{exem}
+
+\begin{exem}
+Considere as funções reais:
+\begin{eqnarray}
+f(x)= \begin{cases}
+      f_1(x)= -x^2+8x-7, \text{ se } x < 6 \\
+      f_2(x)= x-1, \text{ se } x \geqslant 6
+      \end{cases}
+\end{eqnarray}
+
+\begin{eqnarray}
+g(x)= \begin{cases}
+      g_1(x)= |x|, \text{ se } x < 5 \\
+      g_2(x)= 2x-5, \text{ se } 5 \leqslant x \leqslant 9 \\
+      g_3(x)= -x+22, \text{ se } x > 9
+      \end{cases}
+\end{eqnarray}
+Determine a função $(g \circ f)(x)= g(f(x))$.
+
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaoCompostaexem5}}
+    \caption{Gráfico da função $f$}
+  \end{figure}
+
+\begin{resol}
+Como a função $g$ está definida por partes, para fazer a composição precisamos entender o comportamento do conjunto imagem da função $f$. Observamos que:
+\begin{eqnarray}
+\begin{cases}
+f_1: (-\infty, 6) \to (-\infty, 9) \\
+f_2: [6, \infty) \to [5, \infty) \ .
+\end{cases}
+\end{eqnarray}
+ Com isso vemos que 
+ \begin{eqnarray}
+(g \circ f)(x)= \begin{cases}
+      g_1(f_1(x))= |-x^2+8x-7|, \text{ se } x < 2 \\
+      g_2(f_1(x))= 2*(-x^2+8x-7), \text{ se } 2 \leqslant x < 6 \\
+      g_2(f_2(x))= 2*(x-1)-5, \text{ se } 6 \leqslant x \leqslant 10 \\
+      g_3(f_2(x))= -(x-1)+22, \text{ se } x > 10
+      \end{cases}
+\end{eqnarray}
+\end{resol}
+\end{exem}
+
+\begin{exem}
+Considere as funções reais:
+\begin{eqnarray}
+f: [0, 2\pi] \to [-1, 1] \\
+f(x)= sen(x)
+\end{eqnarray}
+
+\begin{eqnarray}
+g(x)= \begin{cases}
+      g_1(x)= -2x, \text{ se } x < -1 \\
+      g_2(x)= 2|x|, \text{ se } -1 \leqslant x < 0 \\
+      g_3(x)= 4x, \text{ se } 0 \leqslant x \leqslant 1 \\
+      g_4(x)= x^2 + 3, \text{ se } x > 1
+      \end{cases}
+\end{eqnarray}
+Determine a função $(g \circ f)(x)= g(f(x))$.
+
+\begin{resol}
+Sabemos que $Im(f)= [-1, 1]$, logo
+\begin{eqnarray}
+g(f(x))= \begin{cases}
+      g_2(f(x))= 2|sen(x)|, \text{ se } \pi \leqslant x < 2\pi \\
+      g_3(f(x))= 4*sen(x), \text{ se }  0 \leqslant x \leqslant \pi \\
+      \end{cases}
+\end{eqnarray}
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaoCompostaexem6}}
+    \caption{Gráfico da função $(g \circ f)(x)$}
+  \end{figure}
+\end{resol}
+\end{exem}
+
+\begin{exem}
+As funções:
+\begin{itemize}
+\item $h_1: \R \setminus \{k*\pi \mid k \in \Z\} \to \R$ dada por $h_1(x)= \dfrac{1}{sen(x)}$;
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaoCompostaexem7h1}}
+    \caption{Gráfico da função $h_1(x)$}
+  \end{figure}
+\item $h_2: \R \setminus \{0\} \to \R$ dada por $h_2(x)= sen \left(\dfrac{1}{x} \right)$
+  \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaoCompostaexem7h2}}
+    \caption{Gráfico da função $h_2(x)$}
+  \end{figure}
+\end{itemize}
+podem ser entendidas como composição das funções $f(x)= sen(x)$ e $g(x)= \dfrac{1}{x}$, com as devidas restrições nos conjuntos domínio. Observe que $h_1(x)= g(f(x))$ e $h_2(x)= f(g(x))$.
+\end{exem}
+
+
+
+\section{Algumas funções interessantes}
+
+  \textbf{Função raiz quadrada}
+
+  É a função $f: \R_{+} \to \R_{+}$ dada por $f(x)= \sqrt{x}$, cujo gráfico é:
+
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoraizquadrada}}
+    \caption{Função raiz quadrada}
+  \end{figure}
+
+  Note que neste caso o domínio da função são apenas os números reais positivos, já que não existe raiz quadrada de número negativo.
+
+  \textbf{Função raiz cúbica}
+
+  É a função $f: \R \to \R$ dada por $f(x)= \sqrt[3]{x}$, cujo gráfico é:
+
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoraizcubica}}
+    \caption{Função raiz cúbica}
+  \end{figure}
+
+  \textbf{Função recíproca}
+
+  É a função $f: \R \setminus \{0\} \to \R$ dada por $f(x)= \frac{1}{x}$, cujo gráfico é:
+
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoreciproca}}
+    \caption{Função recíproca}
+  \end{figure}
+
+  Neste caso o domínio da função é o conjunto $\R \setminus \{0\}$, pois não existe divisão por $0$ (zero).
+
+
+
+  \textbf{Função floor}
+
+  É a função $f: \R \to \R$ dada por $f(x)= \lfloor {x} \rfloor$, cujo gráfico é:
+
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaofloor}}
+    \caption{Função floor}
+  \end{figure}
+
+  Esta função aplicada em um número $x$ tem como imagem a parte inteira do número $x$.
+
+  \textbf{Função ceil}
+
+  É a função $f: \R \to \R$ dada por $f(x)= \lceil {x} \rceil$, cujo gráfico é:
+
+   \begin{figure}[H]
+ \centering
+    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoceil}}
+    \caption{Função ceil}
+  \end{figure}
+
+  Esta função aplicada em um número $x$ tem como imagem o menor inteiro maior ou igual a $x$.
+
+\newpage
+\section{Funções injetoras e/ou sobrejetoras}
 
 \begin{itemize}
  \item \textbf{Injetora}
@@ -219,6 +1164,8 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
 \end{itemize}
 
 \begin{multicols}{2}
+\begin{figure}[H]
+\centering
  \begin{tikzpicture}
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
@@ -233,8 +1180,12 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
  \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (c.west);
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture} \\
- \textbf{bijetora}\\
+\end{tikzpicture}
+\caption{Função bijetora}
+\end{figure}
+
+\begin{figure}[H]
+\centering
  \begin{tikzpicture}
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
@@ -248,11 +1199,15 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
  \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (a.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (b.west);
-\end{tikzpicture} \\
-\textbf{sobrejetora e não injetora}
+\end{tikzpicture}
+\caption{Função sobrejetora e não injetora}
+\end{figure}
 \end{multicols}
 
+
 \begin{multicols}{2}
+\begin{figure}[H]
+\centering
  \begin{tikzpicture}
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
@@ -267,8 +1222,12 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
  \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture} \\
-\textbf{não sobrejetora e não injetora}\\
+\end{tikzpicture}
+\caption{Função não sobrejetora e não injetora}
+\end{figure}
+
+\begin{figure}[H]
+\centering
  \begin{tikzpicture}
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
@@ -284,8 +1243,9 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
  \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
  \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture} \\
-\textbf{não sobrejetora e injetora}
+\end{tikzpicture}
+\caption{Função não sobrejetora e injetora}
+\end{figure}
 \end{multicols}
 
 \begin{exem}
@@ -388,551 +1348,49 @@ f(x_1) = f(x_2) \Rightarrow x_1^2= x_2^2 \Rightarrow \sqrt{x_1^2}= \sqrt{x_2^2} 
 
 \end{exem}
 
-\subsection{Operações com funções}
-Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, se $A \cap B \neq \emptyset$, então $\forall x \in A \cap B$, definimos as seguintes operações entre estas funções:
-\begin{equation}
-(f + g)(x)= f(x) + g(x); 
-\end{equation}
-\begin{equation}
-(f - g)(x)= f(x) - g(x); 
-\end{equation}
-\begin{equation}
-(f \cdot g)(x)= f(x) \cdot g(x); 
-\end{equation}
-\begin{equation}
- \left( \frac{f}{g} \right) (x)= \frac{f(x)}{g(x)} ;
-\end{equation}
-\begin{equation}
-(k \cdot f)(x)= k \cdot f(x), \text{ para } k \text{ constante} ,
-\end{equation}
+\subsection{Função inversa}
 
-note que:
-\begin{equation}
-dom(f+g)= dom(f-g)= dom(f \cdot g)= dom(k \cdot f)= A \cap B ,
-\end{equation}
-\begin{equation}
- dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}. 
-\end{equation}
+ Considere uma função $f: A \rightarrow B$, para $A, B \subset \R$. Se existir uma função $g: B \rightarrow A$ tal que:
+ \[(g \circ f)(x)= x, \forall x \in A \ \ \ \text {e} \ \ \
+ (f \circ g)(x)= x, \forall x \in B\]
+ dizemos que $f$ é inversível e que $g$ é a inversa de $f$. Denotamos por $g= f^{-1}$.
 
-Além destas operações, é possível também definir a composição de funções. Para isso consideremos duas funções $f: A \rightarrow B$ e $g: C \rightarrow D$, com $A, B, C \text{ e } D \subset \R$, e tais que $Im(f) \subset C$ , assim a função composta $g \circ f: A \rightarrow D$ é definida por:
-\begin{equation}
-(g \circ f)(x)= g(f(x)). 
-\end{equation}
-
-\section{Tipos de funções}
-
-\subsection{Função constante}
-
-É a função que associa todos os elementos do domínio a um único elemento do contradomínio. Ou seja, dado $a \in \R$ fixo, a função $f$:
-\begin{eqnarray*}
- f: \R & \rightarrow & \R \\
- x & \mapsto & a,
-\end{eqnarray*}
-é uma função constante.
-
-Por exemplo, a função $f$:
-\begin{eqnarray*}
- f: \R & \rightarrow & \R \\
- x & \mapsto & 2 \ .
-\end{eqnarray*}
-
-É uma função constante. Para construir o gráfico desta função começamos encontrando alguns pontos $(x, y)= (x, f(x))$ do gráfico, o que pode ser feito através da seguinte tabela:
-
- \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|} \hline
- \rowcolor{cinza}
-  x & f(x)= 2 & (x, y)  \\\hline
-  -1 & f(-1)= 2 & (-1, 2) \\\hline
-   0 & f(0)= 2 & (0, 2)  \\\hline
-   1 & f(1)= 2 & (1, 2) \\\hline
- \end{tabular}
-\end{table}
-
-Após encontrar os pontos basta marcar os mesmo o plano cartesiano e traçar a curva que liga estes pontos com isso objetos o gráfico da função. Neste caso o gráfico é:
-\begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/f(x)=2}}
-    \caption{Gráfico da função $f(x)=2$}
-  \end{figure}
-
-\subsection{Função identidade}
-
-A função $Id$:
-\begin{eqnarray*}
- Id: \R & \rightarrow & \R \\
- x & \mapsto & x \ ,
-\end{eqnarray*}
-é chamada \textit{função identidade real}.
-
-Para encontrar alguns pontos $(x, f(x))$ do gráfico desta função, construímos a seguinte tabela:
-
- \begin{table}[H]
- \centering
- \begin{tabular}{|c|c|c|} \hline
- \rowcolor{cinza}
-  x & f(x)= x & (x, y)  \\\hline
-  -1 & f(-1)= -1 & (-1, -1) \\\hline
-   0 & f(0)= 0 & (0, 0)  \\\hline
-   1 & f(1)= 1 & (1, 1) \\\hline
- \end{tabular}
-\end{table}
-
-Logo o gráfico da função $Id$ é:
-\begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=7cm]{./cap_funcao/figs/Id(x)=x}}
-    \caption{Gráfico da função $Id(x)=x$}
-  \end{figure}
-
-
-\subsection{Funções polinomiais de grau \texorpdfstring{$n$}{n}}
+ Ficamos com a seguinte pergunta: Quando existe $f^{-1}$? E a resposta é:
 
  \vskip0.3cm
+
  \colorbox{azul}{
  \begin{minipage}{0.9\linewidth}
  \begin{center}
- As funções $f: \R \to \R$ com a seguinte regra geral:
-\begin{equation}
-f(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n
-\end{equation}
- para $\{a_0, a_1, a_2, a_3, \ldots a_n\} \in \R$ e $n \in \N$, tais que $a_n \neq 0$ são denominadas \\ \textbf{funções polinomiais de grau $n$}.
+ Uma função $f: A \to B$ é inversível se, e somente se, $f$ for bijetora, ou seja, injetora e sobrejetora.
  \end{center}
  \end{minipage}}
+
  \vskip0.3cm
 
-
-
- Casos particulares:
- \begin{itemize}
- \item Funções do 1º grau, ou funções afim
-
- São funções $f: \R \rightarrow \R$ dadas por:
-\begin{equation}
-f(x)= ax + b \ , 
-\end{equation}
-
- para certos $a, b \in \R$ com $a \neq 0$. Note que um caso particular e já conhecido de função de 1º grau é a função identidade, $f(x)= x$, a qual possui $a=1$ e $b=0$.
-
- Vejamos mais alguns exemplos de funções de 1º grau.
-
- Consideremos as funções $f, g: \R \to \R$ dadas por:
- \begin{enumerate}[a)]
-  \item $f(x)= x+2$
-  \item $g(x)= x-1$
- \end{enumerate}
-
-
- \begin{figure}[H]
-   \fbox{\subfigure[$f(x)= x+2$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=x+2}}}
-   \fbox{\subfigure[$g(x)= x-1$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=x-1}}}
-  \end{figure}
-  Note que o que muda na definição destas funções é apenas o coeficiente $b$. Fazendo uma análise comparativa dos gráficos destas funções notamos que os ângulos que as retas formam com o eixo $x$ é o mesmo, portanto as retas são paralelas, porém o ponto de interseção das retas com o eixo $y$, que são os pontos $(0, f(0))$, $(0, g(0))$ muda, ou seja, $f(0) \neq g(0)$. De fato:
-\begin{equation}
-f(0)= 0 + 2= 2
-\end{equation}
-\begin{equation}
-g(0)= 0 -1 = -1 \ .
-\end{equation}
-  No caso geral em que $f(x)=ax+b$, teremos que $f(0)=a0 + b= b$, portanto o gráfico de $f$ irá intersectar o eixo $y$ no ponto $(0,b)$. O coeficiente $b$ é chamado de \textbf{coeficiente linear} da reta/função linear.
-
-  Consideremos as funções $f, g: \R \to \R$ dadas por:
- \begin{enumerate}[a)]
-  \item $f(x)= 2x$
-  \item $g(x)= -2x$
- \end{enumerate}
-
- \begin{figure}[H]
-   \fbox{\subfigure[$f(x)= 2x$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f(x)=2x}}}
-   \fbox{\subfigure[$g(x)= -2x$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/g(x)=-2x}}}
-  \end{figure}
-  Neste exemplos estamos mudando apenas o coeficiente $a$ das funções, o que está alterando o ângulo que as retas formam com o eixo $x$, ou seja a inclinação das retas em relação ao eixo $x$. Já o ponto de interseção das retas com o eixo $y$ é o mesmo pois $f(0)= g(0)= 0$. O coeficiente $a$ é chamado de \textbf{coeficiente angular} da reta/função linear.
-
-   \vskip0.3cm
- \colorbox{amarelo}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- O gráfico de uma função linear $f: \R \to \R$ dada por:
-\begin{equation}
-f(x) = ax + b
-\end{equation}
- é uma reta com coeficiente angular $a$ e cuja interseção com o eixo $y$ ocorre no ponto $(0, b)$.
- \end{center}
- \end{minipage}}
- \vskip0.3cm
-
- Frequentemente a equação da reta é dada pela equação $y=mx+n$, que nada mais é do que uma função de 1º grau, basta considerar $y=f(x)$ o que fazemos no contexto de funções para trabalhar com o gráfico da função.
-
- \textbf{Coeficiente angular da reta}
-
-  Dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, como na figura:
+\begin{exem}
+ A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
+\begin{eqnarray}
+(f \circ g)(x)&=& (x-2) + 2= x-2+2= x \\
+\Rightarrow (f \circ g)(x)&=& Id(x)
+\end{eqnarray}
+e ainda,
+\begin{eqnarray}
+(g \circ f)(x)&=& (x+2) - 2= x+2-2= x \\
+\Rightarrow (g \circ f)(x)&=& Id(x) ,
+\end{eqnarray}
+logo $g= f^{-1}$ é a função inversa de $f$.
 
  \begin{figure}[H]
  \centering
-    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/coefangular}}
-    \caption{Coeficiente angular}
+    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcao_composta}}
+    \caption{Composta das funções $f$ e $g$}
   \end{figure}
 
-  o coeficiente angular da reta que passa por estes dois pontos é dado por:
-\begin{equation}
-a= \frac{y_1 - y_0}{x_1 - x_0} \ \ \ \text{ ou } \ \ \ a= \frac{y_0 - y_1}{x_0 - x_1} \ .
-\end{equation}
+\end{exem}
 
-  De fato, dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 \neq x_1$, podemos encontrar a função $f(x)= ax+b$, cujo gráfico passa por estes dois pontos lembrando que ambos devem satisfazer a equação da função assim obtemos:
-  \[ \begin{cases}
-   y_0= ax_0 + b \\
-   y_1= ax_1 + b
-  \end{cases} \]
-  logo $y_0 - ax_0= b$, substituindo na segunda equação decorre que:
-\begin{equation}
-y_1= ax_1 + y_0 - ax_0 \Rightarrow y_1 - y_0= a(x_1 - x_0) \Rightarrow a= \frac{y_1 - y_0}{x_1 - x_0} \ . 
-\end{equation}
 
-  Este sistema linear sempre pode ser usado para encontrar a regra da função linear que passa por dois pontos dados.
-
-
-  \begin{exem}
-  Vamos determinar o coeficiente angular da reta que passa pelos pontos:
-   \begin{enumerate}[a)]
-    \item $P_0=(0,2)$ e $P_1=(-2,0)$
-\begin{equation}
-a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{0 - 2}{-2 - 0}= \frac{-2}{-2}= 1
-\end{equation}
-    \item $P_0=(1,2)$ e $P_1=(-1,-2)$
-\begin{equation}
-a= \frac{y_1 - y_0}{x_1 - x_0}= \frac{-2 - 2}{-1 - 1}= \frac{-4}{-2}= 2
-\end{equation}
-   \end{enumerate}
-
-  \end{exem}
-
-  Quando dados dois pontos $P_0=(x_0, y_0)$, $P_1=(x_1, y_1)$, com $x_0 = x_1$, temos uma reta vertical, cuja equação é $x= a$ para algum $a \in \R$, que não é o gráfico de uma função, por isso não iremos detalhar este caso.
-
-  Dadas duas funções lineares $f(x)=a_1 x + b_1$ e $g(x)= a_2 x + b_2$, tais que $f(x) \neq g(x)$, a partir da análise de seus coeficientes angulares podemos conhecer a posição relativa de seus gráficos. Nesta situação temos que dois casos especiais:
-  \begin{itemize}
-  \item Se $a_1= a_2$ então os gráficos de $f$ e $g$ são retas \textbf{paralelas};
-  \item Se $a_1 \cdot a_2= -1$ então os gráficos de $f$ e $g$ são retas \textbf{perpendiculares}.
-  \end{itemize}
-
-  \begin{exem}
-  Considere as funções $g(x)= -2x+4$, $f(x)= -2x+2$, $h(x)= \frac{-1}{-2}x+ 1,5$, pela análise com coeficientes angulares temos que os gráficos de $g$ e $f$ são retas paralelas e os gráficos $g$ e $h$ são retas perpendiculares, como podemos ver nos seguintes gráficos:
-     \begin{figure}[H]
-   \fbox{\subfigure[Retas paralelas]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/retasparalelas}}}
-   \fbox{\subfigure[Retas perpendiculares]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/retasperpendiculares}}}
-  \end{figure}
-  \end{exem}
-
-
-
- \textbf{Zeros ou raízes das funções lineares}
-
- \vskip0.3cm
- \colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- Os zeros ou raízes de uma função $y= f(x)$ são os $x \in Dom(f)$ tais que $f(x)= 0$.
- \end{center}
- \end{minipage}}
- \vskip0.3cm
-
- Desta definição de \textbf{zeros} decorre que os zeros de uma função de 1º grau são as raízes da equação $ax+b=0$. Como esta equação é do 1º grau, ela possui uma única raiz, logo a função de 1º grau também possui uma única raiz, que denotaremos por $\tilde{x}$. Note que o ponto $(\tilde{x}, 0) \in \R^2$ é o ponto de interseção do gráfico da $f$ com o eixo $x$, assim podemos interpretar graficamente as raízes da nossa função como sendo os pontos de interseção do gráfico da função com o eixo das abscissas.
-
- \item Funções do 2º grau ou função quadrática
-
- São funções $f: \R \rightarrow \R$ dadas por:
-\begin{equation}
-f(x)= ax^2 + bx + c
-\end{equation}
-
- Os \textbf{zeros} ou \textbf{raízes} das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
- 
- \destaque{\Delta= b^2 - 4*a*c}
-
- Se \destaque{\Delta < 0} a função $f$ não possui raízes reais;
-
- Se \destaque{\Delta = 0} a função $f$ possui uma única raiz real;
-
- Se \destaque{\Delta > 0} a função $f$ possui duas raízes reais distintas, que podem ser calculadas resolvendo a equação de 2º grau através da fórmula para equações de 2º grau.
-
- Por definição, os zeros da função $f(x)= ax^2+bx+c$, são as raízes da equação $ax^2+bx+c=0$, já que estes são os valores de $x$ para os quais $f(x)=0$. Graficamente, quando estas funções possuem zeros eles são exatamente os pontos de interseção do gráfico da $f$ com o eixo $x$.
-
- Com relação a concavidade, o gráfico da função de 2º grau tem concavidade voltada \textbf{para cima} quando \destaque{a > 0}, e concavidade voltada \textbf{para baixo} quando \destaque{a < 0}.
-
- Em ambos os casos a função do 2º grau possui um vértice dado pela seguinte equação:
-
- \destaque{V= \left(\frac{- b}{2a}, \frac{- \Delta}{4a} \right)}.
-
- No caso em que $a > 0$, o vértice do gráfico da função de 2º grau é um ponto de mínimo da função.
-
- No caso em que $a < 0$, o vértice do gráfico da função de 2º grau é um ponto de máximo da função.
-
-
-  \begin{figure}[H]
-   \fbox{\subfigure[$a > 0$ e $\Delta < 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f1}}}
-   \fbox{\subfigure[$a > 0$ e $\Delta = 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f2}}}
-  \end{figure}
-
-  \begin{figure}[H]
-   \fbox{\subfigure[$a > 0$ e $\Delta > 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f3}}}
-   \fbox{\subfigure[$a < 0$ e $\Delta < 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f4}}}
-  \end{figure}
-
-   \begin{figure}[H]
-   \fbox{\subfigure[$a < 0$ e $\Delta = 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f5}}}
-   \fbox{\subfigure[$a < 0$ e $\Delta > 0$]{\includegraphics[width=7cm,height=6cm]{./cap_funcao/figs/f6}}}
-   \caption{Gráficos de funções do 2º grau}
- \end{figure}
-
-
- \newpage
- \item Funções do 3º grau ou funções cúbicas
-
- São funções $f: \R \rightarrow \R$ dadas por:
-\begin{equation}
-f(x)= ax^3 + bx^2 + cx + d .
-\end{equation}
-
- As \textbf{raízes} ou \textbf{zeros} das funções de 3º grau são os $x \in \R$ tais que $ax^3 + bx^2 + cx + d=0$. Assim as funções de 3º grau podem classificadas de acordo com suas raízes em 4 casos:
- \begin{enumerate}[(I)]
-  \item 3 raízes reais distintas;
-  \item 1 raiz real e duas raízes complexas;
-  \item 3 raízes reais sendo duas delas iguais;
-  \item 3 raízes reais iguais.
- \end{enumerate}
- Estes casos estão representados nos gráficos abaixo, onde consideramos sempre $a< 0$, o caso $a> 0$ é análogo.
-
-
-   \begin{figure}[H]
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g1}}}
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g2}}}
-   \end{figure}
-
-  \begin{figure}[H]
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g3}}}
-   \fbox{\subfigure[$a < 0$]{\includegraphics[width=7cm,height=5cm]{./cap_funcao/figs/g4}}}
-   \caption{Gráficos de funções do 3º grau}
-  \end{figure}
-
- \end{itemize}
-
-
-  \subsection{Função modular}
-
-  Considere a função $f: \R \rightarrow \R$, dada por $f(x)= \abs{x}$, pela definição de módulo temos que $f$ é uma função definida por partes, da seguinte forma:
-
-  \[f(x)= \abs{x} = \begin{cases}
-                 x, \text{ se } x \geq 0 \\
-                 -x, \text{ se } x < 0
-                \end{cases} \ .\]
-
- Cujo gráfico é dado por:
-
-  \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaomodulo}}
-    \caption{Gráfico da função módulo}
-  \end{figure}
-
-  Note que $f$ é decrescente no intervalo $]-\infty, 0[$, e crescente no intervalo $]0, \infty[$, e admite um mínimo em $x=0$.
-
-  Consideramos agora a função $f_1: \R \rightarrow \R$ dada por $f_1(x)= \abs{x+1}$, observe que:
-\begin{equation}
-x+1 \geq 0 \Leftrightarrow  x \geq -1
-\end{equation}
-  com isso podemos reescrever a função $f_1$ sem os módulos da seguinte forma:
-
-  \[f_1(x)= \begin{cases}
-                 x + 1, \text{ se } x \geq -1 \\
-                 -x - 1, \text{ se } x < -1
-                \end{cases} \ .\]
-  Com isso a função modular pode ser vista como uma função linear por partes.
-
-  Analogamente, para a função $f_2: \R \rightarrow \R$ dada por $f_2(x)= \abs{x+1}+2$, temos que:
-\begin{equation}
-x+1 \geq 0 \Leftrightarrow  x \geq -1
-\end{equation}
-  com isso podemos reescrever a função $f_2$ sem os módulos da seguinte forma:
-
-  \[f_2(x)= \begin{cases}
-                 x + 3, \text{ se } x \geq -1 \\
-                 -x + 1, \text{ se } x < -1
-                \end{cases} \ .\]
-  Com isso a função modular também pode ser vista como uma função linear por partes.
-
-  Os gráficos das funções $f$, $f_1$ e $f_2$ estão dados na figura a seguir.
-
-  \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcaomodulo2}}
-    \caption{Gráfico da função módulo}
-  \end{figure}
-
-  Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante ``dentro'' do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante ``fora'' do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
-
-  \subsection{Mais algumas funções interessantes}
-
-  \textbf{Função raiz quadrada}
-
-  É a função $f: \R_{+} \to \R_{+}$ dada por $f(x)= \sqrt{x}$, cujo gráfico é:
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoraizquadrada}}
-    \caption{Função raiz quadrada}
-  \end{figure}
-
-  Note que neste caso o domínio da função são apenas os números reais positivos, já que não existe raiz quadrada de número negativo.
-
-  \newpage
-  \textbf{Função raiz cúbica}
-
-  É a função $f: \R \to \R$ dada por $f(x)= \sqrt[3]{x}$, cujo gráfico é:
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoraizcubica}}
-    \caption{Função raiz cúbica}
-  \end{figure}
-
-  \textbf{Função recíproca}
-
-  É a função $f: \R \setminus \{0\} \to \R$ dada por $f(x)= \frac{1}{x}$, cujo gráfico é:
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoreciproca}}
-    \caption{Função recíproca}
-  \end{figure}
-
-  Neste caso o domínio da função é o conjunto $\R \setminus \{0\}$, pois não existe divisão por $0$ (zero).
-
-  \newpage
-
-  \textbf{Função floor}
-
-  É a função $f: \R \to \R$ dada por $f(x)= \lfloor {x} \rfloor$, cujo gráfico é:
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaofloor}}
-    \caption{Função floor}
-  \end{figure}
-
-  Esta função aplicada em um número $x$ tem como imagem a parte inteira do número $x$.
-
-  \textbf{Função ceil}
-
-  É a função $f: \R \to \R$ dada por $f(x)= \lceil {x} \rceil$, cujo gráfico é:
-
-   \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=6cm]{./cap_funcao/figs/funcaoceil}}
-    \caption{Função ceil}
-  \end{figure}
-
-  Esta função aplicada em um número $x$ tem como imagem o menor inteiro maior ou igual a $x$.
-
-  \section{Algumas propriedades das funções}
-
-   \vskip0.3cm
- \colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
-  Dados $A, B \subset \R$ e uma função $f: A \rightarrow B$.
-
-  Dizemos que $f$ é uma \textbf{função crescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-\begin{equation}
- x < y \Rightarrow f(x) < f(y) \ .
-\end{equation}
-  Dizemos que $f$ é uma \textbf{função decrescente} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-\begin{equation}
-x < y \Rightarrow f(x) > f(y) \ .
-\end{equation}
-  Dizemos que $f$ é uma \textbf{função constante} em um intervalo $I \subset A$ se, para todo $x, y \in I$,
-\begin{equation}
-x \neq y \Rightarrow f(x) = f(y) \ .
-\end{equation}
- \end{center}
- \end{minipage}}
- \vskip0.3cm
-
- \begin{exem}
- Seja $f: \R \to \R$ uma função dada por $f(x)= ax + b$.
-
- Quando {a > 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
-\begin{equation}
-x_1 < x_2 \Rightarrow ax_1 < ax_2 \Rightarrow ax_1 + b < ax_2 + b \ ,
-\end{equation}
-  portanto $f(x_1) < f(x_2)$, neste caso dizemos que $f$ é \textbf{crescente}.
-
- Quando \destaque{a < 0}, dados $x_1 < x_2 \in dom(f)$, temos que:
-\begin{equation}
-x_1 < x_2 \Rightarrow ax_1 > ax_2 \Rightarrow ax_1 + b > ax_2 + b \ ,
-\end{equation}
- portanto $f(x_1) > f(x_2)$, neste caso dizemos que $f$ é \textbf{decrescente}.
-
- Observe que no caso das funções de 1º grau a propriedade de ser crescente ou decrescente é válida em todo o domínio da função, nestes casos dizemos que é uma propriedade global da função.
- \end{exem}
-
- \begin{exem}
- Vamos retomar alguns dos nossos exemplos de funções para classificar como crescente, decrescente e constante. Para isso considere $x_1= -2$ e $x_2= 1$, neste caso, $x_1 < x_2$.
-  \begin{enumerate}[a)]
-   \item Sendo $f(x)= \frac{1}{2}x + 1,5$, temos que
-\begin{equation}
-f(x_1)= f(-2)= \frac{1}{2}\cdot (-2) + 1,5= -1 + 1,5= 0,5
-\end{equation}
-\begin{equation}
-f(x_2)= f(1)= \frac{1}{2} \cdot 1+\frac{3}{2}= \frac{4}{2}= 2
-\end{equation}
-   logo $f(x_1)= 0,5 < 2= f(x_2)$. Portanto $f$ é crescente.
-   \item Sendo $f(x)= -2x + 2$, temos que
-\begin{equation}
-f(x_1)= f(-2)= -2 \cdot (-2) + 2= 4 + 2= 6
-\end{equation}
-\begin{equation}
-f(x_2)= f(1)= -2 \cdot 1 + 2= 0
-\end{equation}
-   logo $f(x_1)= 6 > 0 = f(x_2)$. Portanto $f$ é decrescente.
-   \item Sendo $f(x)= 2$, temos que
-\begin{equation}
-f(x_1)= f(-2)= 2
-\end{equation}
-\begin{equation}
-f(x_2)= f(1)= 2
-\end{equation}
-   logo $f(x_1)= 2 = 2= f(x_2)$. Portanto $f$ é constante.
-  \end{enumerate}
-  Como já mostramos acima que para as funções lineares esta propriedade é global, para fazer esta classificação é suficiente testar dois valores de $x$ como fizemos acima.
-
- \end{exem}
-
- \begin{exem}
-  Considere a função $f(x)= \abs{x}$. Lembramos que esta função é definida por partes, por isso faremos a análise de crescimento e decrescimento em cada uma destas partes.
-
-  Caso 1: Se $x < 0$, temos que $f(x)= -x$, logo se $x_1 < x_2$,
-\begin{equation}
-x_1 < x_2 \Rightarrow -x_1 > -x_2 \Rightarrow f(x_1) > f(x_2) \ ,
-\end{equation}
-  por exemplo, sendo $x_1= -3$ e $x_2= -2$ temos que $x_1 < x_2$,
-\begin{equation}
-f(x_1)= f(-3)= -(-3)= 3 > 2= -(-2)= f(-2)= f(x_2) \ .
-\end{equation}
-
-  Portanto se $x < 0$ temos que $f$ é decrescente.
-
-  Caso 2: Se $x \geq 0$, temos que $f(x)= x$, logo se $x_1 < x_2$
-\begin{equation}
-x_1 < x_2 \Rightarrow  f(x_1) < f(x_2) \ ,
-\end{equation}
-  por exemplo, sendo $x_1= 2$ e $x_2= 3$ temos que $x_1 < x_2$,
-\begin{equation}
-f(x_1)= 2 > 3= f(x_2) \ .
-\end{equation}
-
-  Portanto se $x \geq 0$ temos que $f$ é crescente.
- \end{exem}
-
-
+\section{Paridade de uma função}
 
  \vskip0.3cm
  \colorbox{azul}{
@@ -994,47 +1452,6 @@ f(x)= f(2)= \abs{2}= 2= -(-2)= \abs{-2}= f(-2)= f(-x) \ .
   Portanto $f$ é uma função par.
  \end{exem}
 
-
-  \subsection{Função inversa}
-
- Considere uma função $f: A \rightarrow B$, para $A, B \subset \R$. Se existir uma função $g: B \rightarrow A$ tal que:
- \[(g \circ f)(x)= x, \forall x \in A \ \ \ \text {e} \ \ \
- (f \circ g)(x)= x, \forall x \in B\]
- dizemos que $f$ é inversível e que $g$ é a inversa de $f$. Denotamos por $g= f^{-1}$.
-
- Ficamos com a seguinte pergunta: Quando existe $f^{-1}$? E a resposta é:
-
- \vskip0.3cm
-
- \colorbox{azul}{
- \begin{minipage}{0.9\linewidth}
- \begin{center}
- Uma função $f: A \to B$ é inversível se, e somente se, $f$ for bijetora, ou seja, injetora e sobrejetora.
- \end{center}
- \end{minipage}}
-
- \vskip0.3cm
-
-\begin{exem}
- A função $f: \R \rightarrow \R$ dada por $f(x)= x+2$ é injetora, e sobrejetora portanto, existe uma função $g: \R \rightarrow \R$ dada por $g(x)= x-2$, tal que:
-\begin{equation}
-h(x)= (f \circ g)(x)= f(g(x))= (x-2) + 2= x-2+2= x \Rightarrow (f \circ g)(x)= Id(x)
-\end{equation}
-\begin{equation}
-\text{e}
-\end{equation}
-\begin{equation}
-(g \circ f)(x)= g(f(x))= (x+2) - 2= x+2-2= x \Rightarrow (g \circ f)(x)= Id(x) ,
-\end{equation}
- logo $g= f^{-1}$ é a função inversa de $f$.
-
- \begin{figure}[H]
- \centering
-    \fbox{\includegraphics[width=8cm]{./cap_funcao/figs/funcao_composta}}
-    \caption{Composta das funções $f$ e $g$}
-  \end{figure}
-
-\end{exem}
 
 \newpage
  \section{Mudando os gráficos das funções}
