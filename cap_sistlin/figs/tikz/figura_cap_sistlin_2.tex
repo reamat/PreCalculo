@@ -1,0 +1,19 @@
+
+% Arquivo de origem: cap_sistlin/cap_sistlin.tex
+% Arquivo de destino: cap_sistlin/figs/tikz/figura_cap_sistlin_2.tex
+% Processamento: 07/15/22 - 14:29:15
+\documentclass[crop,tikz,convert=pdf2svg]{standalone}
+\usetikzlibrary{fit,shapes.geometric,arrows} 
+\begin{document}
+\begin{tikzpicture}[grow'=down,sibling distance=8em,
+  level 1/.style={sibling distance=10em},
+  level 2/.style={sibling distance=10em},
+  every node/.style = {shape=rectangle, draw, align=center, top color=white, bottom color=blue!20}]]
+
+  \node {Sistema}
+    child { node {Impossível \\ (não tem solução)}}
+    child { node {Possível \\ (tem solução)}
+             child { node {Indeterminado \\  (infinitas soluções)} }
+             child {  node {Determinado \\ (solução única)} } };
+ \end{tikzpicture}
+\end{document}

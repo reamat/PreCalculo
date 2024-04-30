@@ -1,0 +1,35 @@
+
+% Arquivo de origem: cap_funcao/cap_funcao.tex
+% Arquivo de destino: cap_funcao/figs/tikz/figura_cap_funcao_8.tex
+% Processamento: 07/15/22 - 14:24:30
+\documentclass[crop,tikz,convert=pdf2svg]{standalone}
+\usetikzlibrary{fit,shapes.geometric,arrows} 
+\begin{document}
+\begin{tikzpicture}
+ \centering
+ \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
+ \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
+ \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
+ \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
+
+ \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
+ \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
+ \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
+ \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
+ \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
+ 
+ \node (A) at (6,0) {A};%\filldraw($b_1$.west) circle (1pt)
+ \node (B) [below of=A] {B};%\filldraw($b_2$.west) circle (1pt)
+ \node (C) [below of=B] {C};%\filldraw($b_3$.west) circle (1pt)
+ \node (D) [below of=C] {D};%\filldraw($b_3$.west) circle (1pt)
+ \node[fit=(A) (B) (C) (D),ellipse,draw=blue,minimum width=1cm,thick,label=below:\(C\)]{};
+
+ \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
+ 
+ \draw[->, shorten >=.1cm, >=stealth'] (a.east) to (A.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (b.east) to (B.west);
+ \draw[->, shorten >=.1cm, >=stealth'] (c.east) to (C.west);
+\end{tikzpicture}
+\end{document}

@@ -15,115 +15,29 @@
 
  Exemplos de relações que são funções de $A$ em $B$:
  \begin{multicols}{3}
- \begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_1} 
 
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_2}
 
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
-\end{tikzpicture} 
-
- \begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
-\end{tikzpicture}
-
-\begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (b.west);
-\end{tikzpicture}
+\includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_3}
 
 \end{multicols}
 
  Exemplos de relações que não são funções de $A$ em $B$:
 \begin{multicols}{2}
-\begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
-\end{tikzpicture}
+\includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_4}
 
 Não é função pois o elemento $1 \in A$ está relacionado aos elementos $a$ e $b$ do conjunto $B$.
 \end{multicols}
 
 \begin{multicols}{2}
-\begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- %\draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
-\end{tikzpicture}
+\includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_5}
 
 Não é função pois o elemento $2 \in A$ não está relacionado com nenhum elemento do conjunto $B$.
 \end{multicols}
 
 \begin{multicols}{2}
-\begin{tikzpicture}[scale=0.50]
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- %\draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (c.west);
-\end{tikzpicture}
+\includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_6}
 
 Não é função pois o elemento $1 \in A$ está relacionado aos elementos $a$ e $b$ do conjunto $B$ e o elemento $2 \in A$ não está relacionado com nenhum elemento do conjunto $B$
 \end{multicols}
@@ -162,22 +76,7 @@ Gr(f) = \{ (x, y) \in A \times B \mid x \in A, y = f(x) \in B\} .
 
  \begin{figure}[H]
  \centering
- \begin{tikzpicture}
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_7}
 \end{figure}
 
 Note que esta regra define uma função $f: A \rightarrow B$, cujo domínio é $Dom(f) = A$, contra-domínio é $CDom(f) = B$, e a imagem é $Im(f)= \{a, b, c\}$, observe que $Im(f) \subset CDom(f)$. Pela definição, temos que o gráfico da $f$ será o conjunto
@@ -887,33 +786,7 @@ Consideremos duas funções $f: A \rightarrow B$ e $g: B \rightarrow C$, com $A,
 
  \begin{figure}[H]
  \centering
- \begin{tikzpicture}
- \centering
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
- 
- \node (A) at (6,0) {A};%\filldraw($b_1$.west) circle (1pt)
- \node (B) [below of=A] {B};%\filldraw($b_2$.west) circle (1pt)
- \node (C) [below of=B] {C};%\filldraw($b_3$.west) circle (1pt)
- \node (D) [below of=C] {D};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(A) (B) (C) (D),ellipse,draw=blue,minimum width=1cm,thick,label=below:\(C\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
- 
- \draw[->, shorten >=.1cm, >=stealth'] (a.east) to (A.west);
- \draw[->, shorten >=.1cm, >=stealth'] (b.east) to (B.west);
- \draw[->, shorten >=.1cm, >=stealth'] (c.east) to (C.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_8}
 \caption{Composição de funções}
 \end{figure}
 
@@ -1166,40 +1039,13 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
 \begin{multicols}{2}
 \begin{figure}[H]
 \centering
- \begin{tikzpicture}
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (c.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_9}
 \caption{Função bijetora}
 \end{figure}
 
 \begin{figure}[H]
 \centering
- \begin{tikzpicture}
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node[fit=(a) (b),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (a.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (b.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_10}
 \caption{Função sobrejetora e não injetora}
 \end{figure}
 \end{multicols}
@@ -1208,42 +1054,13 @@ f(x_1) = f(x_2) \in B \Rightarrow x_1 = x_2 .
 \begin{multicols}{2}
 \begin{figure}[H]
 \centering
- \begin{tikzpicture}
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_11}
 \caption{Função não sobrejetora e não injetora}
 \end{figure}
 
 \begin{figure}[H]
 \centering
- \begin{tikzpicture}
- \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
- \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
- \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
-
- \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
- \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
- \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
-
- \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
- \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
- \draw[->, shorten >=.1cm, >=stealth'] (3.east) to (a.west);
-\end{tikzpicture}
+ \includegraphics{cap_funcao/figs/tikz/figura_cap_funcao_7}
 \caption{Função não sobrejetora e injetora}
 \end{figure}
 \end{multicols}
