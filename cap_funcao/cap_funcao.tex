@@ -195,7 +195,7 @@ que pode ser representado geometricamente como feito na figura abaixo:
 \end{exem}
 
 \section{Operações com funções}
-Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, se $A \cap B \neq \emptyset$, então $\forall x \in A \cap B$, definimos as seguintes operações entre estas funções:
+Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, definimos as seguintes operações entre estas funções:
 \begin{equation}
 (f + g)(x)= f(x) + g(x); 
 \end{equation}
@@ -214,10 +214,13 @@ Dadas as funções $f: A \rightarrow \R$, $g: B \rightarrow \R$, se $A \cap B \n
 
 note que:
 \begin{equation}
-dom(f+g)= dom(f-g)= dom(f \cdot g)= dom(k \cdot f)= A \cap B ,
+dom(f+g)= dom(f-g)= dom(f \cdot g)= A \cap B ;
 \end{equation}
 \begin{equation}
- dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}. 
+ dom\left( \frac{f}{g} \right)= \{x \in A \cap B \mid g(x) \neq 0\}; 
+\end{equation}
+\begin{equation}
+ dom(k \cdot f)= dom(f)= A .
 \end{equation}
 
 \section{Função constante}
@@ -286,7 +289,7 @@ Logo o gráfico da função $Id$ é:
 
 
 \section{Funções do 1º grau}
- As funções do 1º grau, ou funções afim são funções $f: \R \rightarrow \R$ dadas por:
+ As funções de 1º grau, ou funções afim são funções $f: \R \rightarrow \R$ dadas por:
 \begin{equation}
 f(x)= ax + b \ , 
 \end{equation}
@@ -500,7 +503,7 @@ f(x)= ax^2 + bx + c \ ,
 
   para certos $a, b, c \in \R$ com $a \neq 0$. Os \textbf{zeros} ou \textbf{raízes} das funções de 2º grau $f$, quando existem, são os $x \in dom(f)$ tais que $ax^2+bx+c=0$. Por ser esta uma equação do 2º grau temos três situações a considerar, dependendo do valor de $\Delta$:
  
- \destaque{\Delta= b^2 - 4*a*c}
+ \destaque{\Delta= b^2 - 4 \cdot a \cdot c}
 
  Se \destaque{\Delta < 0} a função $f$ não possui raízes reais;
 
@@ -514,7 +517,7 @@ f(x)= ax^2 + bx + c \ ,
 
  Em ambos os casos a função do 2º grau possui um vértice dado pela seguinte equação:
 
- \destaque{V= \left(\frac{- b}{2a}, \frac{- \Delta}{4a} \right)}.
+ \destaque{V= (x_v, y_v)=  \left(\frac{- b}{2a}, \frac{- \Delta}{4a} \right)}.
 
  No caso em que $a > 0$, o vértice do gráfico da função de 2º grau é um ponto de mínimo da função.
 
@@ -878,11 +881,11 @@ Os gráficos das funções $f$, $f_1$ e $f_2$ estão dados na figura a seguir.
   Comparando os gráficos das funções $f$ e $f_1$ notamos que ao somar uma constante ``dentro'' do módulo transladamos o gráfico da função $f$ no eixo $x$, e ao comparar as funções $f_1$ e $f_2$ percebemos que ao somar uma constante ``fora'' do módulo fazemos uma translação do gráfico da função $f_1$ em relação ao eixo $y$.
   
 \section{Composição de funções}
-
 \begin{defi}
-Consideremos duas funções $f: A \rightarrow B$ e $g: B \rightarrow C$, com $A, B \text{ e } C \subset \R$, e note que $Im(f) \subset B$. A função composta $g \circ f: A \rightarrow C$ é definida por:
+Consideremos duas funções $f: A \rightarrow M$ e $g: C \rightarrow N$, com $A, M, C \text{ e } N \subset \R$. Se $Im(f) \cap C= B \neq \emptyset$ então, existe a função composta $g \circ f: \tilde{A} \rightarrow C$, onde
+$\tilde{A}= \{ x \in A \mid f(x) \in C \}$ definida por:
 \begin{equation}
-(g \circ f)(x)= g(f(x)). 
+(g \circ f)(x)= g(f(x)): \tilde{A} \rightarrow C. 
 \end{equation}
 
  \begin{figure}[H]
@@ -892,19 +895,17 @@ Consideremos duas funções $f: A \rightarrow B$ e $g: B \rightarrow C$, com $A,
  \node (1) at (0,0) {1};%\filldraw(1.east) circle (1pt)
  \node (2) [below of=1] {2};%\filldraw(2.east) circle (1pt)
  \node (3) [below of=2] {3};%\filldraw(3.east) circle (1pt)
- \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(A\)]{};
+ \node[fit=(1) (2) (3),ellipse,draw=red,minimum width=1cm,thick,label=below:\(\tilde{A}\)]{};
 
  \node (a) at (3,0) {a};%\filldraw($b_1$.west) circle (1pt)
  \node (b) [below of=a] {b};%\filldraw($b_2$.west) circle (1pt)
  \node (c) [below of=b] {c};%\filldraw($b_3$.west) circle (1pt)
- \node (d) [below of=c] {d};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(a) (b) (c) (d),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
+ \node[fit=(a) (b) (c),ellipse,draw=green,minimum width=1cm,thick,label=below:\(B\)]{};
  
  \node (A) at (6,0) {A};%\filldraw($b_1$.west) circle (1pt)
  \node (B) [below of=A] {B};%\filldraw($b_2$.west) circle (1pt)
  \node (C) [below of=B] {C};%\filldraw($b_3$.west) circle (1pt)
- \node (D) [below of=C] {D};%\filldraw($b_3$.west) circle (1pt)
- \node[fit=(A) (B) (C) (D),ellipse,draw=blue,minimum width=1cm,thick,label=below:\(C\)]{};
+ \node[fit=(A) (B) (C),ellipse,draw=blue,minimum width=1cm,thick,label=below:\(C\)]{};
 
  \draw[->, shorten >=.1cm, >=stealth'] (1.east) to (b.west);
  \draw[->, shorten >=.1cm, >=stealth'] (2.east) to (c.west);
@@ -1132,6 +1133,21 @@ podem ser entendidas como composição das funções $f(x)= sen(x)$ e $g(x)= \df
   \end{figure}
 
   Esta função aplicada em um número $x$ tem como imagem o menor inteiro maior ou igual a $x$.
+  
+  \textbf{Função de Thomae}
+  
+  É a função $T: \R \to \R$ dada por
+  
+\[T(x)= \begin{cases}
+         \frac{1}{q}, \ \ \ \text{ se } x= \frac{p}{q} (x \in \Q), \text{ com } p \in \Z \text{ e } q \in \N, \ \  mdc(p, q)= 1 \\
+         0 , \ \ \ \text{ se } x \in \R \setminus \Q
+        \end{cases}\]
+
+  \begin{figure}[H]
+  \centering
+    \fbox{\includegraphics[height=7cm]{./cap_funcao/figs/tomae.pdf}}
+    \caption{Gráfico da função de Thomae}
+  \end{figure}
 
 \newpage
 \section{Funções injetoras e/ou sobrejetoras}
